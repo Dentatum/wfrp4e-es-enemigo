@@ -1,0 +1,852 @@
+{
+  "label": "Actores (Enemigo en las sombras)",
+  "mapping": {
+    "species": "system.details.species.value",
+    "hit": "system.details.hitLocationTable.value",
+    "wounds": "flags.autoCalcWounds",
+    "status": "system.details.status.value",
+    "notes": "system.details.biography.value",
+    "gmnotes": "system.details.gmnotes.value",
+    "description": "system.details.description.value",
+    "biography": "system.details.biography.value",
+    "gender": {
+      "path": "system.details.gender.value",
+      "converter": "bestiary_gender"
+    },
+    "effects": {
+      "path": "effects",
+      "converter": "effects"
+    }
+  },
+  "folders": {
+    "Adventure": "Aventura",
+    "Chapter 1 - Wanted: Bold Adventurers": "Capítulo 1: ¡Se buscan aventureros audaces!",
+    "Chapter 2 - Mistaken Identity": "Capítulo 2: Confusión de identidad",
+    "Chapter 3 - Heart of the Empire": "Capítulo 3: Corazón del Imperio",
+    "Chapter 4 - On To Bögenhafen": "Capítulo 4: Hacia Bögenhafen",
+    "Chapter 6 - The Schaffenfest": "Capítulo 6: La Schaffenfest",
+    "Chapter 7 - Into The Darkness": "Capítulo 7: Hacia la oscuridad",
+    "Chapter 8 - Chasing Shadows": "Capítulo 8: Perseguir fantasmas",
+    "Chapter 9 - The Darkest Hour": "Chapter 9: El momento más oscuro",
+    "Appendices": "Apéndices",
+    "Companion": "Compendio",
+    "Mounts and Vehicles": "Monturas y vehículos",
+    "Road Wardens": "Guardas de caminos",
+    "Road Riffraff": "Chusma de carretera",
+    "Town Troublemakers": "Alborotadores de pueblos",
+    "On The Road": "Por el camino",
+    "Daemons": "Demonios",
+    "The Affair of the Hidden Jewel": "El Caso de la Joya Oculta",
+    "The Pandemonium Carnival": "La Feria del Pandemonium",
+    "Pregens": "Pregenerados"
+  },
+  "entries": {
+    "Blackie": {
+      "name": "Tizón",
+      "tokenName": "Tizón",
+      "species": "Cuervo",
+      "biography": "<section class=\"secret\" id=\"secret-4qJv2fsUCpSC9eQX\">\n    <p>La mascota de @UUID[Actor.ND2uvL1HRLr0ggfw]{Gustav} se aposta en una viga en lo alto de la barra del bar y, a veces, se le oye imitar a su dueño. La voz es perfecta, pero si Gustav es imparable, Tizón es incomprensible: ‘<em>Bien, bienvenido, ¿ya te vas?, me alegro de verte, ¿quieres un camino para recorrer o acabas de llegar? ¡Oh! ¡Claro que sí! ¡Toma un pollo para beber!’.</em> Tizón puede seguir así durante horas y es casi tan incansable como Gustav.</p>\n</section>"
+    },
+    "Ernst Heidlemann": {
+      "species": "Humano",
+      "status": "Plata 2",
+      "gmnotes": "<p><strong>Corrupción</strong>: 6</p>\n<p>A sus veintipocos, Heidlemann es de estatura normal e intenta, con mucho esfuerzo, dejarse crecer la barba. Tiene el cabello liso, castaño y los ojos azul pálido. Es un miembro de poco rango de la Corona Roja, una secta del Caos que está consagrada a Tzeentch y enemistada con la @UUID[JournalEntry.IZVgB7zmTm4rK2yJ]{Mano Púrpura}.</p>\n<p>Se hace pasar por aprendiz de físico que se dirige a continuar los estudios en la @UUID[Compendium.wfrp4e-altdorf.journals.EmhvOkkzAir6pzCB.JournalEntryPage.OiAVm63T9JEFsVfR]{Universidad de Altdorf}, pero en realidad va allí a entregar preparados vitales a un demonólogo y estudiar Magia Oscura. Si los PJs descubren su verdadera misión, Ernst intentará matarlos, ya sea por si solo o con la ayuda de matones contratados.</p>\n<p>El maletín de viaje de cuero de Ernst contiene sus efectos personales. En un compartimento oculto están los preparados que lleva a Altdorf: seis viales de líquidos verdes burbujeantes, polvos de colores y cualquier otro material que quieras inventarte.</p>\n<p>Ernst no sabe para qué sirven, sólo que deben entregarlos al <em>doktor</em> Schmidt de la @UUID[Compendium.wfrp4e-altdorf.journals.EmhvOkkzAir6pzCB.JournalEntryPage.OiAVm63T9JEFsVfR]{Universidad de Altdorf}. Lograr un Chequeo <strong>Desafiante (+0)</strong> de <strong>Oficio (Boticario)</strong> o uno <strong>Complicado (-10)</strong> de <strong>Sabiduría académica (Química)</strong> o similar los identifica como mejunjes para aliviar la parálisis y reponer las fuerzas. Si algún PJ que no esté cualificado se apodera de estos preparados, no podrá usarlos y puede incluso envenenarse por accidente. El consumo de dos sustancias diferentes causa ([[/r 1d10]] - Bonificador por Resistencia) Estados de @Condition[Envenenado] (mínimo 1), que se resisten superando un Chequeo <strong>Desafiante (+0)</strong> de <strong>Aguante</strong>.</p>\n<p>Ernst es un personaje recurrente y aparecerá más adelante en la campaña de <strong>El Enemigo Interior</strong>, así que haz lo posible por mantenerlo vivo por ahora.</p>"
+    },
+    "Fhluger'dagh": {
+      "species": "Demonio menor"
+    },
+    "Gunnar": {
+      "species": "Humano",
+      "status": "Plata 2",
+      "gmnotes": "<p>Gunnar, de cabello color arena, y @UUID[Actor.uzWAvJDoBl0osDnW]{Hultz}, de barba oscura, son los cocheros de @UUID[JournalEntry.XGUpnYfS67guNIWJ.JournalEntryPage.R2BCxi4CJH4hUrru#lineas-ratchett]{Ratchett Lines}. Ambos son de mediana estatura pero el segundo, a sus 40 años, está un poco más fondón. Ninguno de ellos tiene mucho que decir a los PJs, a menos que éstos les paguen una cerveza o tres (o más, a poder ser) después de lo cual se vuelven colegas y son una gran fuente potencial de información (ver @UUID[JournalEntry.mbXVJGCGSm8m7ANd.JournalEntryPage.LwuezrkCidrmlovt]{Rumores}).</p>"
+    },
+    "Gustav Fondleburger": {
+      "species": "Humano",
+      "status": "Plata 2",
+      "gmnotes": "<p>Gustav mide 5’ 7\", es calvo y tiene patillas canosas y ojos azules. Está entre los cincuenta y los sesenta y es un tipo grande y alegre que siempre tiene mucho que decir a todo el mundo, muestre inclinación a escucharlo o no. La mayor parte de la conversación de Gustav tiene gira en torno al bienestar de los huéspedes, el estado del tiempo, el estado de los caminos y cualquier otra cosa que se le ocurra. Gustav hablará durante horas con su acento de Altdorf si se le da oportunidad y puede ser una fuente de información muy valiosa (ver @UUID[JournalEntry.mbXVJGCGSm8m7ANd.JournalEntryPage.LwuezrkCidrmlovt]{Rumores}).</p>\n<p>Gustav suele guardar su trabuco bajo la barra. Sus pertenencias también incluyen la posada @UUID[JournalEntry.mbXVJGCGSm8m7ANd.JournalEntryPage.U1AyyYhJ5Oqyb6VP]{La Diligencia y los Caballos} y semillas (para alimentar a @UUID[Actor.fuSC9ZpTC5GfxZJT]{Tizón}).</p>"
+    },
+    "Herpin Stiggerwurt": {
+      "species": "Humano",
+      "status": "Bronce 3",
+      "gmnotes": "<p>Herpin tiene un marcado acento middenlandés, pelo castaño canoso y ojos azules. Está a punto de cumplir los treinta años, pero parece mayor. Es alto, delgado y taciturno y no quiere que nadie se sienta bienvenido. Proviene de la aldea cercana de Moersum y le pagan por sus dotes para elaborar cerveza y su ética de trabajo, no por sus habilidades sociales.</p>"
+    },
+    "Hultz": {
+      "species": "Humano",
+      "status": "Plata 2",
+      "gmnotes": "<p>@UUID[Actor.ND9BHKtUxtQqty7w]{Gunnar}, de cabello color arena, y Hultz, de barba oscura, son los cocheros de @UUID[JournalEntry.XGUpnYfS67guNIWJ.JournalEntryPage.R2BCxi4CJH4hUrru#lineas-ratchett]{Ratchett Lines}. Ambos son de mediana estatura pero el segundo, a sus 40 años, está un poco más fondón. Ninguno de ellos tiene mucho que decir a los PJs, a menos que éstos les paguen una cerveza o tres (o más, a poder ser) después de lo cual se vuelven colegas y son una gran fuente potencial de información (ver @UUID[JournalEntry.mbXVJGCGSm8m7ANd.JournalEntryPage.LwuezrkCidrmlovt]{Rumores}).</p>"
+    },
+    "Isolde von Strudeldorf": {
+      "species": "Humano",
+      "status": "Oro 1",
+      "gmnotes": "<p>Como típica mujer de la nobleza de Drakwald, lady Isolde von Strudeldorf es esbelta, tiene el cabello dorado rojizo, los ojos verdes y un refinado acento noble de Reikland. Es joven, testaruda y cubre su falta de confianza con un aire esnob. Se viste con ropa de la mayor calidad y tiene una gran variedad de sombreros inusuales y elegantes: las cajas de éstos ocupan mucho espacio del techo del carruaje. Durante el viaje en diligencia está sentada, aferrando el estuche de un laúd, y se opondrá con firmeza si los PJ intentan entrar por la fuerza y los amenazará con todo tipo de represalias por parte de sus importantes parientes en Altdorf.</p>\n<p>Los objetos de valor de la dama Isolde están guardados en un baúl de la habitación que ocupa. El baúl tiene una cerradura <strong>Complicada (-10)</strong> que requiere <strong>2 NE</strong> para abrirse y contiene ropa y joyas caras por valor de 7 co.</p>"
+    },
+    "Janna Elleiner": {
+      "species": "Humano",
+      "status": "Plata 3",
+      "gmnotes": "<p>Con sólo 16 años, Janna es delgada, con el pelo castaño claro y\n unos tímidos ojos de color gris azulado. Dice pocas cosas, aunque a \nveces @UUID[Actor.goVesadmHWsl5E98]{Lady Isolde} la obliga a hablar en su nombre. Cuando esto \nsucede, habla con un leve acento de Drakwald y parece harto incómoda. A \npesar de su timidez, Janna es muy buena en su trabajo.</p>"
+    },
+    "Marie Schutz": {
+      "species": "Humano",
+      "status": "Plata 3",
+      "gmnotes": "<p>Cual guerrera de las leyendas de Middenland, Marie es inusualmente alta, atlética y musculosa y tiene una melena tupida de cabello rubio oscuro y ojos azul hielo. Con treinta años, lleva ropa oscura y apagada y nunca sonríe. Marie lleva 15 años trabajando para la familia von Strudeldorf y es más que capaz de cuidar de @UUID[Actor.goVesadmHWsl5E98]{Lady Isolde}. Habla muy poco, y cuando lo hace sólo suele ser para decirle a la gente: <em>‘No molesten a la señorita’.</em> Si se trata de una pelea, prefiere actuar a la defensiva y proteger a su ama por encima de cualquier otra cosa.</p>"
+    },
+    "Phillipe Descartes": {
+      "species": "Humano",
+      "status": "Bronce 1",
+      "gmnotes": "<p>Phillipe es de Parravon, Bretonia, y lleva seis meses viajando por el Imperio. Este cuarentón fue sargento mercenario del ejército de un duque local antes de desertar al Imperio por el Paso de la Dama Gris. Phillipe afirma que se dirige a @UUID[Compendium.wfrp4e-core.journals.ozE2DMCMK64eE5pD.JournalEntryPage.V6tkgQ9A2skppjyl]{Altdorf} para visitar a un viejo amigo, pero en realidad sólo trabaja en las posadas de los caminos del Imperio. Es alto, apuesto y lleva una camisa adornada con encajes y una chaqueta y unos pantalones bordados. Tiene el cabello largo, negro y rizado y un lunar artificial en la mejilla izquierda. A pesar de esa apariencia de petimetre, Phillipe es muy capaz de cuidar de sí mismo y no teme al peligro.</p>"
+    },
+    "Anida Pflaster": {
+      "species": "Humano",
+      "status": "Plata 5",
+      "gmnotes": "<p>@UUID[JournalEntry.2JX9k58tn9lJfkqS.JournalEntryPage.X9ISuDA0vlbCKL0W#the-fortuitous-physician]{La física fortuita}</p>\n<p>Esta mujer siempre está con el ceño fruncido y es una persona brusca con el cabello negro y rizado, que se cubre cuando trata a los pacientes. Cualquiera que se dirija a ella debe hacerlo como ‘<em>doktora</em>’ o caerá sobre él un torrente de insultos muy elocuentes. Tiene los mismos ojos marrones y piel oscura que su hermano, el @UUID[Actor.qV5dluDJYZGoMpl1]{Sargento Pflaster}, y está muy interesada en mantenerse alejada de su sobreprotector pariente. No tiene tiempo para la idiotez de éste, y no se muerde la lengua si el tema sale a colación... lo que es probable que suceda si se le da la oportunidad.</p>\n<p>Anida no tolera la cháchara cuando trabaja y no hay duda de que es hábil y segura de sí misma. Va de camino a una conferencia médica –o vuelve de ella, según se necesite– en su alma mater, el @UUID[Compendium.wfrp4e-middenheim.journals.PuIrlGBOjxuWpK3P.JournalEntryPage.PJSTe8IXwh6oy78t]{Collegium Theologica} de Middenheim, por lo que tiene poco tiempo para bobos imprudentes que buscan problemas y no tarda en decirlo.</p>\n<p>Sin embargo, hizo el juramento de ayudar a los necesitados (por una cuota de @Pay[4cp]{4cp}) y, con un suspiro de cansancio, cuidará con esmero cualquier Herida tan pronto como las monedas cambien de manos.</p>\n<p>Si los PJs han apartado a Magnus de su camino y se lo dicen, estará encantada de ofrecerles un descuento de @Pay[1cp]{1cp} respecto al precio normal.</p>"
+    },
+    "Baldwin (Road Warden)": {
+      "name": "Baldwin (Guarda de Caminos)",
+      "tokenName": "Guarda de Caminos",
+      "species": "Humano",
+      "status": "Plata 2",
+      "gmnotes": "<p>@UUID[JournalEntry.2JX9k58tn9lJfkqS.JournalEntryPage.CfHPEuCzlIow7PAV#la-llegada-de-la-ley]{La llegada de la ley}</p>\n<p>Esta unidad, compuesta por cuatro guardas de caminos, tiene un fuerte acento de Altdorf pero deja toda charla oficial en manos de su @UUID[Actor.qV5dluDJYZGoMpl1]{sargento}, que cobra por ese tipo de tonterías. Si el sargento no está a la vista, ningún patrullero se priva de poner multas por infracciones inventadas o aceptar sobornos para que los problemas desaparezcan. De hecho, así adquieren la mayoría de ganancias, de las que gran parte se gastarán más tarde en <em>El Caballo Bayo</em>, su taberna favorita de Altdorf.</p>"
+    },
+    "Leopold (Road Warden)": {
+      "name": "Leopold (Guarda de Caminos)",
+      "tokenName": "Guarda de Caminos",
+      "species": "Humano",
+      "status": "Plata 2",
+      "gmnotes": "<p>@UUID[JournalEntry.2JX9k58tn9lJfkqS.JournalEntryPage.CfHPEuCzlIow7PAV#la-llegada-de-la-ley]{La llegada de la ley}</p>\n<p>Esta unidad, compuesta por cuatro guardas de caminos, tiene un fuerte acento de Altdorf pero deja toda charla oficial en manos de su @UUID[Actor.qV5dluDJYZGoMpl1]{sargento}, que cobra por ese tipo de tonterías. Si el sargento no está a la vista, ningún patrullero se priva de poner multas por infracciones inventadas o aceptar sobornos para que los problemas desaparezcan. De hecho, así adquieren la mayoría de ganancias, de las que gran parte se gastarán más tarde en <em>El Caballo Bayo</em>, su taberna favorita de Altdorf.</p>"
+    },
+    "Sunna (Road Warden)": {
+      "name": "Sunna (Guarda de Caminos)",
+      "tokenName": "Guarda de Caminos",
+      "species": "Humano",
+      "status": "Plata 2",
+      "gmnotes": "<p>@UUID[JournalEntry.2JX9k58tn9lJfkqS.JournalEntryPage.CfHPEuCzlIow7PAV#la-llegada-de-la-ley]{La llegada de la ley}</p>\n<p>Esta unidad, compuesta por cuatro guardas de caminos, tiene un fuerte acento de Altdorf pero deja toda charla oficial en manos de su @UUID[Actor.qV5dluDJYZGoMpl1]{sargento}, que cobra por ese tipo de tonterías. Si el sargento no está a la vista, ningún patrullero se priva de poner multas por infracciones inventadas o aceptar sobornos para que los problemas desaparezcan. De hecho, así adquieren la mayoría de ganancias, de las que gran parte se gastarán más tarde en <em>El Caballo Bayo</em>, su taberna favorita de Altdorf.</p>"
+    },
+    "Willirun (Road Warden)": {
+      "name": "Willirun (Guarda de Caminos)",
+      "tokenName": "Guarda de Caminos",
+      "species": "Humano",
+      "status": "Plata 2",
+      "gmnotes": "<p>@UUID[JournalEntry.2JX9k58tn9lJfkqS.JournalEntryPage.CfHPEuCzlIow7PAV#la-llegada-de-la-ley]{La llegada de la ley}</p>\n<p>Esta unidad, compuesta por cuatro guardas de caminos, tiene un fuerte acento de Altdorf pero deja toda charla oficial en manos de su @UUID[Actor.qV5dluDJYZGoMpl1]{sargento}, que cobra por ese tipo de tonterías. Si el sargento no está a la vista, ningún patrullero se priva de poner multas por infracciones inventadas o aceptar sobornos para que los problemas desaparezcan. De hecho, así adquieren la mayoría de ganancias, de las que gran parte se gastarán más tarde en <em>El Caballo Bayo</em>, su taberna favorita de Altdorf.</p>"
+    },
+    "Terenz (Mutant Brigand)": {
+      "name": "Terenz (Bandolero mutante)",
+      "tokenName": "Mutante",
+      "species": "Humano",
+      "biography": "<section class=\"secret\" id=\"secret-haIYXtMIzD7jCZye\">\n    <p>@UUID[JournalEntry.2JX9k58tn9lJfkqS.JournalEntryPage.CfHPEuCzlIow7PAV]{Visita a lo desconocido}</p>\n    <p>Los mutantes de Knud conforman un grupo inquietante y más horrible aún, ya que los restos de su humanidad están a la vista. Este tiene la cabeza diminuta, y habla (y a menudo se ríe) con la voz aguda y ceceante de un niño.</p>\n<p>* Le quedan 3 Heridas</p>\n</section>"
+    },
+    "Mikael (Mutant Brigand)": {
+      "name": "Mikael (Bandolero mutante)",
+      "tokenName": "Mutante",
+      "species": "Humano",
+      "biography": "<section class=\"secret\" id=\"secret-haIYXtMIzD7jCZye\">\n    <p>@UUID[JournalEntry.2JX9k58tn9lJfkqS.JournalEntryPage.CfHPEuCzlIow7PAV]{Visita a lo desconocido}</p>\n\n    <p>Los mutantes de Knud conforman un grupo inquietante y más \nhorrible aún, ya que los restos de su humanidad están a la vista. Este \ntiene la cabeza de un perro feroz y sólo es capaz de ladrar, gritar y quejarse.</p>\n<p>* Le queda 1 Herida</p>\n</section>"
+    },
+    "Johann (Mutant Brigand)": {
+      "name": "Johann (Bandolero mutante)",
+      "tokenName": "Mutante",
+      "species": "Humano",
+      "biography": "<section class=\"secret\" id=\"secret-haIYXtMIzD7jCZye\">\n    <p>@UUID[JournalEntry.2JX9k58tn9lJfkqS.JournalEntryPage.CfHPEuCzlIow7PAV]{Visita a lo desconocido}</p>\n\n    <p>Los mutantes de Knud conforman un grupo inquietante y más \nhorrible aún, ya que los restos de su humanidad están a la vista. Este \ntiene una testa puntiaguda muy peculiar y emite un quejido casi constante y cargado de dolor.</p>\n<p>* Le quedan 4 Heridas</p>\n</section>"
+    },
+    "Erik (Mutant Brigand)": {
+      "name": "Erik (Bandolero mutante)",
+      "tokenName": "Mutante",
+      "species": "Humano",
+      "biography": "<section class=\"secret\" id=\"secret-haIYXtMIzD7jCZye\">\n    <p>@UUID[JournalEntry.2JX9k58tn9lJfkqS.JournalEntryPage.CfHPEuCzlIow7PAV]{Visita a lo desconocido}</p>\n\n    <p>Los mutantes de Knud conforman un grupo inquietante y más \nhorrible aún, ya que los restos de su humanidad están a la vista. Este \ntiene patas de cabra y habla con un acento reiklandés sorprendentemente refinado.</p>\n<p>* Le quedan 2 Heridas</p>\n</section>"
+    },
+    "Knud Cratinx": {
+      "tokenName": "Knud",
+      "species": "Humano",
+      "biography": "<section class=\"secret\" id=\"secret-8ubmERw3pV81BX1X\">\n    <p>Con poca luz, Knud parece incluso humano. Sin embargo, a la fría luz del día, la mancha de la corrupción se ve con claridad: gruesas escamas verde oscuro cubren cada centímetro de su piel. La voz de Knud está también afectada y adopta una sibilancia inhumana mientras esa lengua bífida se mueve entre los dientes amarillentos y retorcidos. Habla con un acento fuerte y ceceante de Altdorf, aunque sólo para insultar, amenazar o intimidar, cosas con las que disfruta mucho.</p>\n</section>"
+    },
+    "Magnus Pflaster": {
+      "tokenName": "Sargento Pflaster",
+      "species": "Humano",
+      "status": "Plata 4",
+      "gmnotes": "<p>Es un hombre enjuto de estatura media, tiene el cabello negro muy corto, piel oscura y ojos castaños. Como buen oficial curtido de @UUID[Compendium.wfrp4e-core.journals.ozE2DMCMK64eE5pD.JournalEntryPage.V6tkgQ9A2skppjyl]{Altdorf}, no se deja avasallar por nadie. Tiene como trabajo mantener los caminos seguros y, aunque a veces esto implique proteger a los viajeros, da más valor a la seguridad de dichos caminos que a las vidas por separado. Habla con ritmo y acento de clase baja, con tono firme. No suele trabajar en estos caminos, pero hace poco se ha enterado de que @UUID[Actor.1KyqwFkCeyOkJ3l7]{su hermana} se dirige sola a @UUID[Compendium.wfrp4e-middenheim.journals.PuIrlGBOjxuWpK3P]{Middenheim}. Está ansioso por localizarla para persuadirla de que no cometa tal estupidez.</p>"
+    },
+    "Rolf Hurtsis": {
+      "species": "Humano",
+      "biography": "<section class=\"secret\" id=\"secret-uU4qoiSMwOM6toIR\">\n    <p>Rolf fue una vez un hombre normal, de estatura y complexión corrientes, pero ahora lleva la marca de una mutación espantosa que ha convertido su rostro en una ruina grotesca y supurante, ya que la piel se ha desprendido de éste. Va sucio y andrajoso, con los restos de ropa manchados de comidas anteriores y con su propia sangre. Debido a la mutación que sufre, las cuerdas vocales de Rolf se han atrofiado y podrido y no le permiten articular nada más que un gruñido bajo y amenazador.</p>\n</section>"
+    },
+    "Josef Quartjin": {
+      "tokenName": "Josef",
+      "species": "Humano",
+      "status": "Plata 5",
+      "gmnotes": "<p>Josef es un hombre alto, de pelo largo y gris y sonrisa omnipresente. Es de hombros anchos y musculoso, aunque ambas cosas quedan ocultas bajo una generosa capa de grasa. Tiene una gran barba erizada que cae justo sobre una panza enorme. Josef es de temperamento alegre y disfruta de la buena compañía.</p>\n<p>Habla en voz alta con un fuerte acento de Middenland. Es propenso a alabar a los dioses cuando las cosas van bien y suele dar las gracias a Sigmar, Taal y al Abuelo Reik, y ruega la ayuda de éstos cuando las cosas van mal.</p>"
+    },
+    "Max Ernst": {
+      "species": "Humano",
+      "status": "Plata 1",
+      "gmnotes": "<p>@UUID[JournalEntry.IjGUv51IPhj79Wxt.JournalEntryPage.E8nLFVw3Mmc024dc]{La Posada del Barquero}</p>\n<p>Max Ernst es un sádico de aspecto mezquino y de sangre fría. Es alto y fuerte, lleva el cabello castaño claro recogido y tiene los ojos de un tono azul metálico. Lo rodea un aire de autoridad imponente y nunca se le ve con otra ropa que no sea de cuero negro. Max dice poco, pero cuando habla su voz es grave y ronca, con un acento tosco de Altdorf. Suele mirar a los ojos de quien le habla, de manera muy desconcertante. Max bebe mucho y, cuando está solo ahoga en brandy y lágrimas, los recuerdos de su difícil vida.</p>"
+    },
+    "Jacob von Katzenreik": {
+      "tokenName": "Jacob",
+      "species": "Humano",
+      "status": "Oro 1",
+      "gmnotes": "<p>@UUID[JournalEntry.IjGUv51IPhj79Wxt.JournalEntryPage.E8nLFVw3Mmc024dc]{La Posada del Barquero}</p>\n<p>@UUID[Actor.G7YJHGe4JkHvcNja]{Jacob von Katzenreik} y @UUID[Actor.bur6uaXdENjetLwT]{Georg von Ostbrun} son justo el tipo de degenerados odiosos y privilegiados que tanto enardecen a los instigadores y agitadores de la Kaiserplatz. Son demasiado confiados y ambos exudan un gran sentido de superioridad. Van vestidos con ropa fina chillona y muy poco práctica, llevan los dedos cargados de anillos, tienen las mejillas sonrojadas y lucen pelucas empolvadas. Son más ricos de lo imaginable, desprecian los pensamientos, sentimientos y luchas de la gente corriente del Imperio y hablan con el nítido acento reiklandés de la clase alta. Y también son propensos a los ataques de risa, sobre todo cuando han dicho o hecho algo insultante.</p>\n<blockquote class=\"sidebar\">\n    <h3 style=\"text-align: center; text-transform:uppercase\" class=\"sidebar-title\"><em>IR DE SUBURBIOS</em></h3>\n    <p><em>Es un pasatiempo popular entre los jóvenes de la nobleza del Imperio. Combina varias actividades que les gustan mucho: beber en exceso, salir incólumes con un comportamiento escandaloso y sentirse superiores a la masa.</em></p>\n    <p><em>Algunos jóvenes merodean en manada, confiando en la ventaja numérica para protegerse cuando no basta el respeto por su rango o un puñado de monedas. Otros contratan a guardaespaldas para asegurarse de que nunca tengan que afrontar las consecuencias de comportarse mal. Al fin y al cabo, todo es en broma y muy divertido. ¿Qué les da a estos plebeyos maleducados el derecho a quejarse cuando sus negocios se van a la ruina o se les rompen algunos huesos? Hay personas que no tienen sentido del humor.</em></p>\n</blockquote>"
+    },
+    "Georg von Ostbrun": {
+      "tokenName": "Georg",
+      "species": "Humano",
+      "status": "Oro 1",
+      "gmnotes": "<p>@UUID[JournalEntry.IjGUv51IPhj79Wxt.JournalEntryPage.E8nLFVw3Mmc024dc]{La Posada del Barquero}</p>\n<p>@UUID[Actor.G7YJHGe4JkHvcNja]{Jacob von Katzenreik} y @UUID[Actor.bur6uaXdENjetLwT]{Georg von Ostbrun} son justo el tipo de degenerados odiosos y privilegiados que tanto enardecen a los instigadores y agitadores de la Kaiserplatz. Son demasiado confiados y ambos exudan un gran sentido de superioridad. Van vestidos con ropa fina chillona y muy poco práctica, llevan los dedos cargados de anillos, tienen las mejillas sonrojadas y lucen pelucas empolvadas. Son más ricos de lo imaginable, desprecian los pensamientos, sentimientos y luchas de la gente corriente del Imperio y hablan con el nítido acento reiklandés de la clase alta. Y también son propensos a los ataques de risa, sobre todo cuando han dicho o hecho algo insultante.</p>\n<blockquote class=\"sidebar\">\n    <h3 style=\"text-align: center; text-transform:uppercase\" class=\"sidebar-title\"><em>IR DE SUBURBIOS</em></h3>\n    <p><em>Es un pasatiempo popular entre los jóvenes de la nobleza del Imperio. Combina varias actividades que les gustan mucho: beber en exceso, salir incólumes con un comportamiento escandaloso y sentirse superiores a la masa.</em></p>\n    <p><em>Algunos jóvenes merodean en manada, confiando en la ventaja numérica para protegerse cuando no basta el respeto por su rango o un puñado de monedas. Otros contratan a guardaespaldas para asegurarse de que nunca tengan que afrontar las consecuencias de comportarse mal. Al fin y al cabo, todo es en broma y muy divertido. ¿Qué les da a estos plebeyos maleducados el derecho a quejarse cuando sus negocios se van a la ruina o se les rompen algunos huesos? Hay personas que no tienen sentido del humor.</em></p>\n</blockquote>"
+    },
+    "Arwin (Guard)": {
+      "name": "Arwin (Guarda)",
+      "tokenName": "Guardaespaldas",
+      "species": "Humano",
+      "biography": "<section class=\"secret\" id=\"secret-4UorWorAR19Lv3BK\">\n    <p>@UUID[JournalEntry.IjGUv51IPhj79Wxt.JournalEntryPage.E8nLFVw3Mmc024dc]{La Posada del Barquero}</p>\n    <p>Los dos nobles van acompañados de cuatro guardaespaldas. Son grandes como armarios, cada uno de ellos mide más de 6 pies de altura y son muy musculosos. Rara vez hablan y se contentan con estar al acecho cerca de sus amos, siempre listos para intervenir si alguien se atreve a dirigirse (no digamos ponerle la mano encima) a estas preciadas joyas de la nobleza de Reikland. Si se les presiona para que hablen, su acento gruñón es el típico de los rufianes más bajos del @UUID[Compendium.wfrp4e-altdorf.journals.85UN6bKPTfGEBtBb]{Extremo Oriental de Altdorf}.</p>\n</section>"
+    },
+    "Frank (Guard)": {
+      "name": "Frank (Guarda)",
+      "tokenName": "Guardaespaldas",
+      "species": "Humano",
+      "biography": "<section class=\"secret\" id=\"secret-4UorWorAR19Lv3BK\">\n    <p>@UUID[JournalEntry.IjGUv51IPhj79Wxt.JournalEntryPage.E8nLFVw3Mmc024dc]{La Posada del Barquero}</p>\n    <p>Los dos nobles van acompañados de cuatro guardaespaldas. Son grandes como armarios, cada uno de ellos mide más de 6 pies de altura y son muy musculosos. Rara vez hablan y se contentan con estar al acecho cerca de sus amos, siempre listos para intervenir si alguien se atreve a dirigirse (no digamos ponerle la mano encima) a estas preciadas joyas de la nobleza de Reikland. Si se les presiona para que hablen, su acento gruñón es el típico de los rufianes más bajos del @UUID[Compendium.wfrp4e-altdorf.journals.85UN6bKPTfGEBtBb]{Extremo Oriental de Altdorf}.</p>\n</section>"
+    },
+    "Gorrof (Guard)": {
+      "name": "Gorrof (Guarda)",
+      "tokenName": "Guardaespaldas",
+      "species": "Humano",
+      "biography": "<section class=\"secret\" id=\"secret-4UorWorAR19Lv3BK\">\n    <p>@UUID[JournalEntry.IjGUv51IPhj79Wxt.JournalEntryPage.E8nLFVw3Mmc024dc]{La Posada del Barquero}</p>\n    <p>Los dos nobles van acompañados de cuatro guardaespaldas. Son grandes como armarios, cada uno de ellos mide más de 6 pies de altura y son muy musculosos. Rara vez hablan y se contentan con estar al acecho cerca de sus amos, siempre listos para intervenir si alguien se atreve a dirigirse (no digamos ponerle la mano encima) a estas preciadas joyas de la nobleza de Reikland. Si se les presiona para que hablen, su acento gruñón es el típico de los rufianes más bajos del @UUID[Compendium.wfrp4e-altdorf.journals.85UN6bKPTfGEBtBb]{Extremo Oriental de Altdorf}.</p>\n</section>"
+    },
+    "Miltrud (Guard)": {
+      "name": "Miltrud (Guarda)",
+      "tokenName": "Guardaespaldas",
+      "species": "Humano",
+      "biography": "<section class=\"secret\" id=\"secret-4UorWorAR19Lv3BK\">\n    <p>@UUID[JournalEntry.IjGUv51IPhj79Wxt.JournalEntryPage.E8nLFVw3Mmc024dc]{La Posada del Barquero}</p>\n    <p>Los dos nobles van acompañados de cuatro guardaespaldas. Son grandes como armarios, cada uno de ellos mide más de 6 pies de altura y son muy musculosos. Rara vez hablan y se contentan con estar al acecho cerca de sus amos, siempre listos para intervenir si alguien se atreve a dirigirse (no digamos ponerle la mano encima) a estas preciadas joyas de la nobleza de Reikland. Si se les presiona para que hablen, su acento gruñón es el típico de los rufianes más bajos del @UUID[Compendium.wfrp4e-altdorf.journals.85UN6bKPTfGEBtBb]{Extremo Oriental de Altdorf}.</p>\n</section>"
+    },
+    "Dockland Drinkers": {
+      "name": "Bebedores del puerto",
+      "tokenName": "Bebedores del puerto",
+      "species": "Humano",
+      "biography": "<section class=\"secret\" id=\"secret-OoCKULRj6KQcHYrR\">\n    <p>@UUID[JournalEntry.IjGUv51IPhj79Wxt.JournalEntryPage.E8nLFVw3Mmc024dc]{La Posada del Barquero}</p>\n    <p>Los PJs no son las únicas personas que hay en la posada. Es sabido que los estibadores son duros, pero no son tontos.</p>\n    <p>Mientras que los ricachones no sean demasiado molestos y limiten su atención a los extraños, los clientes habituales evitan problemas y puede que incluso se diviertan a expensas de algún idiota de fuera de la ciudad, al que vean caer al agua merecidamente o algo peor.</p>\n    <p>Sin embargo, tarde o temprano –es decir, cuando consideren que los aventureros necesitan ayuda o, con más probabilidad, que están a punto de reaccionar con una violencia letal en lugar de una pelea sana–, es posible que algunos clientes habituales intervengan. Pegarán para aturdir, con la intención de echar de la posada a los niñatos, a los guardaespaldas, a los PJs y a cualquier otro extraño para volver a beber en paz.</p>\n    <p>Sin embargo, si alguien saca un arma, responderán con dagas, botellas rotas y cuanto tengan a mano.</p>\n    <p>Los clientes habituales son un batiburrillo de barqueros, mujeres de río y estibadores, la mayoría de Altdorf, pero algunos provenientes de todos los rincones del Imperio, así que los acentos son tan variados como quieras.</p>\n</section>"
+    },
+    "Una Mühlmauer": {
+      "species": "Humano",
+      "status": "Plata 2",
+      "gmnotes": "<p>La extrovertida dueña de @UUID[JournalEntry.IjGUv51IPhj79Wxt.JournalEntryPage.E8nLFVw3Mmc024dc]{La Posada del Barquero}, Una Mühlmauer, disfruta de este trabajo. Está orgullosa de su hostería y es cariñosa con el personal y los clientes habituales. Es una mujer de mediana estatura, delgada y de tez morena. Tiene el cabello liso y siempre luce una sonrisa.</p>\n<p>Ha heredado la posada de su trabajador padre, fallecido hace poco. Pese a que sólo tiene veinte años, Una es una mujer segura de sí misma. Si se la trata con respeto y quizá la invitan a un par de copas, estará encantada de pasar el rato con los PJs y darles información sobre el lado más sórdido de los muelles de Altdorf, un tema del que sabe mucho más de lo que la mayoría sospecharía.</p>\n<p>La madre de Una era una pandillera de Tilea, y ella finge el suave, susurrante y exótico acento de su ascendencia materna. Sin embargo, si ha bebido un poco, se le escapa su acento natural de clase baja de Altdorf y pronto le salen los tacos. Por encima de todo, a Una le encanta una buena broma.</p>"
+    },
+    "Adolphus Kuftsos": {
+      "tokenName": "???",
+      "species": "Humano",
+      "status": "Plata 5",
+      "gmnotes": "<p>Adolphus Kuftsos es una bola de ira, músculo y empecinamiento. Aunque es relativamente anodino –con el cabello castaño a media melena, barba corta y unos ojos azules llorosos–, los constantes gruñidos que emite le hacen destacar en cualquier multitud. La única otra característica distintiva que tiene es una cicatriz lívida que luce alrededor del cuello, recuerdo de cuando evitó por los pelos que lo ahorcara un grupo de bandidos. Esto le dañó la garganta, por lo que habla con una voz lenta y silbante que es difícil que sea más siniestra. A sus treinta años, Adolphus ha sido un cazarrecompensas durante seis y en este tiempo ha entregado o matado a muchos delincuentes. Es muy decidido y utiliza cualquier medio al alcance para llevar a su presa ante la justicia o a un final rápido. En la actualidad, está al servicio de Lady @UUID[Compendium.wfrp4e-rnhd.actors.hcAF95tFaOdoZoeF]{Emmanuelle Nacht}, una importante noble reiklandesa que lo ha contratado en Ubersreik para que persiga a la @UUID[JournalEntry.IZVgB7zmTm4rK2yJ]{Mano Púrpura} sin descanso, sea donde sea.</p>\n<p> </p>",
+      "items": {
+        "Letter": {
+          "name": "Carta",
+          "description": "<p>@UUID[JournalEntry.fCNnElQzxwEOeJWJ.JournalEntryPage.A0cwtyzO9lz4SMgU]{La carta}</p>"
+        }
+      }
+    },
+    "Bengt": {
+      "tokenName": "Matón",
+      "species": "Humano",
+      "biography": "<section class=\"secret\" id=\"secret-wWIZOUYhy0aF14MZ\">\n    <p>@UUID[Actor.rYlDGJx20M72PydJ]{Bengt}, @UUID[Actor.r5NgPWpDHpjRkGQM]{Gurt}, y @UUID[Actor.BLrqbYcSiVvWnmws]{Willie}, los tres matones que ha contratados Adolphus, trabajan en ocasiones en los muelles de @UUID[JournalEntry.tT80gcSmeK5oO5C2.JournalEntryPage.l2kZtajL8d3RlPqO]{Weissbruck} como estibadores. No son brillantes ni leales en particular y todos tienen acento reiklandés de clase baja. Si los PJs los capturan, los pueden persuadir de revelar el plan de @UUID[Actor.echM0Sjy5xpt5KAQ]{Adolphus} con un Chequeo <strong>Fácil (+40)</strong> de <strong>Intimidación</strong> o de <strong>Sobornar</strong>. Si uno de ellos queda herido durante un combate, realiza un Chequeo <strong>Desafiante (+0)</strong> de <strong>Mando</strong> por Adolphus. Si falla, los tres matones sufren 1 Estado de @Condition[Quebrantado].</p>\n</section>"
+    },
+    "Gurt": {
+      "tokenName": "Matón",
+      "species": "Humano",
+      "biography": "<section class=\"secret\" id=\"secret-wWIZOUYhy0aF14MZ\">\n    <p>@UUID[Actor.rYlDGJx20M72PydJ]{Bengt}, @UUID[Actor.r5NgPWpDHpjRkGQM]{Gurt}, y @UUID[Actor.BLrqbYcSiVvWnmws]{Willie}, los tres matones que ha contratados Adolphus, trabajan en ocasiones en los muelles de @UUID[JournalEntry.tT80gcSmeK5oO5C2.JournalEntryPage.l2kZtajL8d3RlPqO]{Weissbruck} como estibadores. No son brillantes ni leales en particular y todos tienen acento reiklandés de clase baja. Si los PJs los capturan, los pueden persuadir de revelar el plan de @UUID[Actor.echM0Sjy5xpt5KAQ]{Adolphus} con un Chequeo <strong>Fácil (+40)</strong> de <strong>Intimidación</strong> o de <strong>Sobornar</strong>. Si uno de ellos queda herido durante un combate, realiza un Chequeo <strong>Desafiante (+0)</strong> de <strong>Mando</strong> por Adolphus. Si falla, los tres matones sufren 1 Estado de @Condition[Quebrantado].</p>\n</section>"
+    },
+    "Willie": {
+      "tokenName": "Matón",
+      "species": "Humano",
+      "biography": "<section class=\"secret\" id=\"secret-wWIZOUYhy0aF14MZ\">\n    <p>@UUID[Actor.rYlDGJx20M72PydJ]{Bengt}, @UUID[Actor.r5NgPWpDHpjRkGQM]{Gurt}, y @UUID[Actor.BLrqbYcSiVvWnmws]{Willie}, los tres matones que ha contratados Adolphus, trabajan en ocasiones en los muelles de @UUID[JournalEntry.tT80gcSmeK5oO5C2.JournalEntryPage.l2kZtajL8d3RlPqO]{Weissbruck} como estibadores. No son brillantes ni leales en particular y todos tienen acento reiklandés de clase baja. Si los PJs los capturan, los pueden persuadir de revelar el plan de @UUID[Actor.echM0Sjy5xpt5KAQ]{Adolphus} con un Chequeo <strong>Fácil (+40)</strong> de <strong>Intimidación</strong> o de <strong>Sobornar</strong>. Si uno de ellos queda herido durante un combate, realiza un Chequeo <strong>Desafiante (+0)</strong> de <strong>Mando</strong> por Adolphus. Si falla, los tres matones sufren 1 Estado de @Condition[Quebrantado].</p>\n</section>"
+    },
+    "Klaus Schattiger": {
+      "species": "Humano",
+      "status": "Bronce 5",
+      "gmnotes": "<p>@UUID[JournalEntry.MB5a0zBGJcZhEYUI.JournalEntryPage.bJXsdQq1rSN5tfqd#el-cuadrilatero]{El cuadrilátero}</p>\n<p>El moreno Klaus Schattiger es el típico animador de poca monta que trabaja en las ferias del Viejo Mundo. Tiene una edad indeterminada, entre treinta y cincuenta años, quizá. Viste ropa chillona de colores brillantes y llamativos.El moreno Klaus Schattiger es el típico animador de poca monta que trabaja en las ferias del Viejo Mundo. Tiene una edad indeterminada, entre treinta y cincuenta años, quizá. Viste ropa chillona de colores brillantes y llamativos.</p>\n<p>En el escenario, su voz es melodiosa y profunda, suena casi como de clase alta y refuerza cada expresión con grandes gestos con los brazos. Fuera del escenario, tiene un acento algo nasal y quejumbroso de Hochland y suelta bastantes tacos.</p>\n<p>Tiene carro, cofre (que contiene 5 co, 107 cp y 56 p), chaqueta de cuero (bajo la ropa), daga, llave (del cofre), mula, ropajes (coloridos), reloj de arena (mide intervalos de tres minutos y medio), cuadrilátero (plegable), 1 co, 15 cp y 10 p</p>"
+    },
+    "'Crusher' Braugen": {
+      "name": "Braugen 'el Aplastador'",
+      "tokenName": "'Aplastador'",
+      "species": "Humano",
+      "status": "Plata 2",
+      "gmnotes": "<p>@UUID[JournalEntry.MB5a0zBGJcZhEYUI.JournalEntryPage.bJXsdQq1rSN5tfqd#el-cuadrilatero]{El cuadrilátero}</p>\n<p>Braugen el ‘Aplastador’ es un bruto capaz de intimidar a una pared de piedra. Cuando trabaja, se deja el pecho al descubierto y espera en el centro del cuadrilátero al próximo contendiente. Respira con fuerza, tal como le ha enseñado @UUID[Actor.akfYzVvdVRvSjl6q]{Klaus Schattiger}, asegurándose de parecer siempre que está al borde del agotamiento. El presentador y él han disfrutado de una asociación beneficiosa para ambos durante años. Schattiger atrae a las multitudes y cuida del dinero, mientras Braugen ruge en el cuadrilátero y les salta los dientes a los contrincantes. Los dos confían el uno en el otro de manera implícita, pero el resto del mundo es campo libre. Fuera del cuadrilátero, Braugen es un hombre sensible y pausado con un suave acento de Middenland.</p>"
+    },
+    "Heinz Richter": {
+      "species": "Humano",
+      "status": "Oro 2",
+      "gmnotes": "<p>@UUID[JournalEntry.MB5a0zBGJcZhEYUI.JournalEntryPage.bJXsdQq1rSN5tfqd#los-tribunales-del-festival-y-los-cepos]{Los Tribunales del festival y los cepos}</p>\n<p>Heinz Richter tiene unos cincuenta años, el pelo canoso y los ojos azul claro. Se esfuerza por parecer severo, pero no puede ocultar su carácter afable y bondad de corazón. Va bien vestido y luce una maravillosa peluca de jurista, como corresponde a la posición que ocupa. Cuando estudiaba en la universidad de Nuln, Richter era un ejemplo de salud muscular, pero ahora su estructura, antes bien construida, es blanda y fláccida, estropeada por demasiados años de buena vida.</p>\n<p>Richter no es tonto y no se le puede engañar o embaucar con facilidad. Habla con un tono medido y recortado que delata su costosa educación. Si algún PJ domina la <strong>Sabiduría académica (Derecho)</strong> y es cortés, Richter se mostrará educado con todos ellos e incluso podría convertirse en un posible aliado o mentor a largo plazo. Si los aventureros vienen de Ubersreik y conocen a @UUID[Compendium.wfrp4e-starter-set.actors.aUTBY5s6vCJhZsZp]{Osanna Winandus}, Richter se mostrará encantado. Ha estado intercambiando correspondencia con la ingeniosa abogada y le gustará mucho preguntar por ella.</p>"
+    },
+    "Gottri Gurnisson": {
+      "species": "Enano",
+      "status": "Bronce 0",
+      "gmnotes": "<p>@UUID[JournalEntry.MB5a0zBGJcZhEYUI.JournalEntryPage.bJXsdQq1rSN5tfqd#escena-clave:-el-enano-borracho]{Escena clave: El enano borracho}</p>\n<p>Gottri es fofo, sucio, tiene el pelo gris enmarañado y una barba desaliñada, y los ojos castaños e inyectados en sangre. Es una criatura maloliente y repugnante, cuya anterior vida de ingeniero ya es sólo un eco del pasado. Cuando los PJs lo ven por primera vez, da hasta pena, pero, si lo liberan, será probable que cambien de opinión cuando Gottri tome el siguiente trago. Y los que quedan. Tiene la barba y la ropa manchadas de fruta podrida y se rasca los piojos sin cesar. Cuando está en el cepo, sólo está medio consciente, con un pizarrín colgado alrededor del cuello que pone ‘BORRACHO Y VAGO’. Farfulla al hablar y es propenso a usar chanzas de borracho que tienen muy poco sentido.</p>"
+    },
+    "Hans Pfliefer": {
+      "tokenName": "Doctor Malthusius",
+      "species": "Humano",
+      "status": "Plata 2",
+      "gmnotes": "<p>@UUID[JournalEntry.MB5a0zBGJcZhEYUI.JournalEntryPage.bJXsdQq1rSN5tfqd#la-zoocopea-del-doctor-malthusius]{La Zoocopea del Doctor Malthusius}</p>\n<p>Puede que no sea el hombre más alto o el más guapo, pero sus ojos brillan de una forma especial. El Doctor Malthusius luce una melena rubia y brillante hasta los hombros y una sonrisa deslumbrante. Va vestido de forma llamativa, como muchos artistas de la feria, pero con las ropas viejas, descoloridas y gastadas. Sin embargo –y a pesar de su aspecto algo raído– Malthusius es un artista natural con un don para la hipérbole que no deja indiferente. Tiene un acento marcado del @UUID[Compendium.wfrp4e-altdorf.journals.85UN6bKPTfGEBtBb]{Extremo Oriental de Altdorf}, pero de alguna manera hace que cada palabra suene a poesía. Detrás de todas esas sonrisas, el verdadero nombre de Malthusius es Hans Pfliefer, un conocido estafador de @UUID[Compendium.wfrp4e-middenheim.journals.PuIrlGBOjxuWpK3P]{Middenheim}, que huyó de allí hace más de una década con la Guardia pisándole los talones. No lo reconocerá, pero está orgulloso de que todavía haya una recompensa de 5 co por su cabeza.</p>"
+    },
+    "Grunni": {
+      "species": "Enano",
+      "status": "Plata 1",
+      "gmnotes": "<p>@UUID[JournalEntry.MB5a0zBGJcZhEYUI.JournalEntryPage.bJXsdQq1rSN5tfqd#la-zoocopea-del-doctor-malthusius]{La Zoocopea del Doctor Malthusius}</p>\n<p>Grunni tiene los ojos de color pizarra y un aspecto mucho más abandonado que el de @UUID[Actor.kQyaJB0lSLQ2NLu8]{su jefe}. Se rasca de manera constante una barba sucia y canosa, murmurando para sí mismo y mirando con desdén. Está lleno de autocompasión y se desahoga con los ejemplares de la Zoocopea y los pincha con la estaca que siempre lleva encima. Creció en Altdorf y su áspero acento lo refleja, pero a él le basta con no volver a ver esa ciudad.</p>"
+    },
+    "Mutant Goblin": {
+      "name": "Goblin mutante",
+      "tokenName": "Goblin mutante",
+      "biography": "<section class=\"secret\" id=\"secret-RCAtpbarEFrdMJrS\">\n    <p>@UUID[JournalEntry.MB5a0zBGJcZhEYUI.JournalEntryPage.bJXsdQq1rSN5tfqd#escena-clave:-el-goblin-fugitivo]{Escena clave: El goblin fugitivo}</p>\n    <p>El Goblin de tres piernas de la @UUID[JournalEntry.MB5a0zBGJcZhEYUI.JournalEntryPage.bJXsdQq1rSN5tfqd#la-zoocopea-del-doctor-malthusius]{Zoocopea} es una criatura inusual. Ya sea porque los goblins criban a su propia gente o, simplemente, porque son más resistentes a los estragos del Caos, no es común encontrar mutaciones en ellos. A este o capturaron unos mercenarios en las Montañas Grises, está atrofiado, confundido y presenta un estado miserable y sólo quiere una cosa: alejarse de @UUID[Actor.hbVvPCmCGOAshxs9]{Grunni} a toda costa. Siempre que el enano está cerca, se echa a temblar y abre los aterrorizados ojos de par en par.</p>\n    <p>El @UUID[Actor.kQyaJB0lSLQ2NLu8]{Doctor Malthusius} sabe que tener un mutante es ilegal (o, al menos lo era, las noticias de Altdorf sugieren que las cosas están cambiando), pero nunca ha dejado que la legalidad de una situación se interponga entre él y una bolsa de monedas bien repleta. Si se le plantea la cuestión, dirá que pensó que la criatura era una especie de goblin menor, una especie poco conocida con tres piernas en lugar de dos. Fingirá sorpresa y horror si alguien dice que en realidad es un mutante.</p>\n</section>"
+    },
+    "Elvyra Kleinestun": {
+      "species": "Humano",
+      "status": "Plata 3",
+      "gmnotes": "<p>@UUID[JournalEntry.MB5a0zBGJcZhEYUI.JournalEntryPage.KrRntV6J4kytBcjR#espectaculos-de-medicina]{Espectáculos de medicina}</p>\n<p>Elvyra está más cerca de los cuarenta de que los treinta, es de cabello castaño claro y ojos azul oscuro y tiene una personalidad atractiva y extrovertida. Bajo esta apariencia superficial hay una mente penetrante muy entusiasmada por su profesión. Es capaz de hablar del trabajo todo el día y la mayor parte de la noche y siempre está encantada de conocer a alguien con intereses similares. Suele considerar a los físicos como ratones de biblioteca engreídos con poco conocimiento práctico y a los seguidores de Verena como idiotas sonrientes con más fe que inteligencia, por lo que cualquier PJ de una u otra Carrera debe demostrar que está interesado de verdad y, a ser posible bien informado, para que se empiece a entusiasmarse con él. Habla con un acento reiklandés inteligible y tiene debilidad por los huérfanos, la ginebra y la raíz extraña.</p>\n<p>Su cofre contiene 6 co, 17 cp y 6 p</p>"
+    },
+    "Megret See": {
+      "species": "Humano",
+      "status": "Bronce 3",
+      "gmnotes": "<p>@UUID[JournalEntry.MB5a0zBGJcZhEYUI.JournalEntryPage.KrRntV6J4kytBcjR#pitonisos]{Pitonisos}</p>\n<p>Megret es una mujer delgada de unos cincuenta años, de pelo rubio canoso y ojos gris pizarra que ha recorrido los rincones más recónditos de Vorbergland durante los últimos veinte años. ‘La Mística’ va de pueblo en pueblo, ganando lo que puede con el trabajo de pitonisa, como hiciera su padre antes que ella. Sabiendo que a los clientes les gusta una experiencia auténtica, Megret suele llevar una peluca negra y adopta un terrible acento de Sylvania cuando echa las cartas. También le gusta poner los ojos en blanco y agitar las manos de forma extravagante. Todo es innecesario, pero da resultados. Su acento natural, igual que su personalidad de verdad, es típico de Reikland.</p>"
+    },
+    "Goat (Booted Rottgeist)": {
+      "name": "Cabra (Cabra montesa de Rottgeist)",
+      "tokenName": "Montesa de Rottgeist",
+      "species": "Cabra",
+      "biography": "<section class=\"secret\" id=\"secret-VFQRiToR0eMQRlkz\">\n    <p>Las características siguientes describen animales de granja comunes de Reikland. Si crees que un animal no representa un desafío suficiente o estás usando el mismo encuentro por segunda vez, usa los Rasgos opcionales listados o los @UUID[Compendium.wfrp4e-core.journals.3ZynTGhFpgwv6l1n.JournalEntryPage.UyUu4g8GQRp16paM#generic-creature-traits]{Rasgos genéricos de criatura}.</p>\n</section>"
+    },
+    "Boar (Vorbergland Hog)": {
+      "name": "Jabalí (Puerco de Vorbergland)",
+      "tokenName": "Puerco de Vorbergland",
+      "species": "Jabalí",
+      "biography": "<section class=\"secret\" id=\"secret-VFQRiToR0eMQRlkz\">\n    <p>Las características siguientes describen animales de granja comunes de Reikland. Si crees que un animal no representa un desafío suficiente o estás usando el mismo encuentro por segunda vez, usa los Rasgos opcionales listados o los @UUID[Compendium.wfrp4e-core.journals.3ZynTGhFpgwv6l1n.JournalEntryPage.UyUu4g8GQRp16paM#generic-creature-traits]{Rasgos genéricos de criatura}.</p>\n</section>"
+    },
+    "Sheep (Hugeltal Longwool)": {
+      "name": "Oveja (Lanuda de Hugeltal)",
+      "tokenName": "Lanuda de Hugeltal",
+      "species": "Oveja",
+      "biography": "<section class=\"secret\" id=\"secret-VFQRiToR0eMQRlkz\">\n    <p>Las características siguientes describen animales de granja comunes de Reikland. Si crees que un animal no representa un desafío suficiente o estás usando el mismo encuentro por segunda vez, usa los Rasgos opcionales listados o los @UUID[Compendium.wfrp4e-core.journals.3ZynTGhFpgwv6l1n.JournalEntryPage.UyUu4g8GQRp16paM#generic-creature-traits]{Rasgos genéricos de criatura}.</p>\n</section>"
+    },
+    "Cow (Stimmigen Dairy Cattle)": {
+      "name": "Vaca (Lechera de Stimmigen)",
+      "tokenName": "Lechera de Stimmigen",
+      "species": "Vaca",
+      "biography": "<section class=\"secret\" id=\"secret-VFQRiToR0eMQRlkz\">\n    <p>Las características siguientes describen animales de granja comunes de Reikland. Si crees que un animal no representa un desafío suficiente o estás usando el mismo encuentro por segunda vez, usa los Rasgos opcionales listados o los @UUID[Compendium.wfrp4e-core.journals.3ZynTGhFpgwv6l1n.JournalEntryPage.UyUu4g8GQRp16paM#generic-creature-traits]{Rasgos genéricos de criatura}.</p>\n</section>"
+    },
+    "Schaffenfest Rogue": {
+      "name": "Pícaros de la Schaffenfest",
+      "tokenName": "Pícaro",
+      "species": "Humano",
+      "biography": "<p>@UUID[JournalEntry.MB5a0zBGJcZhEYUI.JournalEntryPage.KrRntV6J4kytBcjR#sucesos-aleatorios]{Sucesos aleatorios}</p>"
+    },
+    "Schaffenfest Warrior": {
+      "name": "Guerreros de la Schaffenfest",
+      "tokenName": "Guerrero",
+      "species": "Humano",
+      "biography": "<p>@UUID[JournalEntry.MB5a0zBGJcZhEYUI.JournalEntryPage.KrRntV6J4kytBcjR#sucesos-aleatorios]{Sucesos aleatorios}</p>"
+    },
+    "Schaffenfest Burgher": {
+      "name": "Burgueses de la Schaffenfest",
+      "tokenName": "Burgués",
+      "species": "Humano",
+      "biography": "<p>@UUID[JournalEntry.MB5a0zBGJcZhEYUI.JournalEntryPage.KrRntV6J4kytBcjR#sucesos-aleatorios]{Sucesos aleatorios}</p>"
+    },
+    "Schaffenfest Peasant": {
+      "name": "Campesinos de la Schaffenfest",
+      "tokenName": "Campesino",
+      "species": "Humano",
+      "biography": "<p>@UUID[JournalEntry.MB5a0zBGJcZhEYUI.JournalEntryPage.KrRntV6J4kytBcjR#sucesos-aleatorios]{Sucesos aleatorios}</p>"
+    },
+    "Amoeba": {
+      "name": "Ameba",
+      "tokenName": "Ameba",
+      "biography": "<section class=\"secret\" id=\"secret-073j4Dwjkc1ajOCf\">\n    <p>Las amebas son masas amorfas de una especie de baba gelatinosa. La gente las llama ‘gelatinas’ o ‘grumos’ y se suelen encontrar en las alcantarillas, pantanos y ríos del Viejo Mundo, alimentándose de cualquier cosa orgánica que encuentren, ya sea flora o fauna. Las atrae el calor corporal y las perturbaciones en el agua cuando cazan y pueden proyectar pseudópodos en forma de tentáculo para arrastrar a los oponentes hasta el cuerpo para digerirlos.</p>\n    <p>No tienen tipo alguno de cerebro, sólo siguen sus instintos dondequiera que eso las lleve.</p>\n    <p>La materia orgánica se digiere una vez la absorbe el cuerpo de una ameba. El material difícil de digerir, como huesos y cartílagos, les puede flotar dentro del cuerpo durante días y a veces semanas, dejando ver cualquier víctima reciente. Las amebas no pueden digerir metales ni minerales, que les pasan por el cuerpo sin verse afectados.</p>\n    <p>Se recomienda utilizar las características proporcionadas aquí para cualquier Ameba que se encuentre en las cloacas para asegurarse de que no sea un oponente demasiado peligroso. Si crees que al grupo le vendría bien enfrentarse a un peligro mayor, utiliza algún Rasgo opcional o un @UUID[Compendium.wfrp4e-core.journals.3ZynTGhFpgwv6l1n.JournalEntryPage.UyUu4g8GQRp16paM#rasgos-de-criatura]{Rasgo genérico de criatura}.</p>\n</section>"
+    },
+    "Guardian Daemon": {
+      "name": "Demonio guardián",
+      "tokenName": "Demonio guardián",
+      "biography": "<section class=\"secret\" id=\"secret-pjkLOFyDC7I8L6W7\">\n    <p>Es un regalo de Tzeentch, un heraldo del Señor del Cambio y un esclavo prescindible de la oscuridad que sólo existe para impulsar el Gran Plan de este Dios del Caos. Es una forma de muchos miembros, que brilla y crepita con magia, se mueve y se deforma por momentos. Este demonio recién invocado tiene órdenes de evitar que nadie entre en el @UUID[JournalEntry.qxnXlkXKtBuIHNfu.JournalEntryPage.0ZrNDqAfjPTAPgN1#templo-oculto]{templo oculto}, excepto los miembros de mayor rango de la <em>Ordo Septenarius</em>. Aunque ha estado en el Plano Material durante un corto periodo de tiempo, ya ha decidido que disfruta de los simples placeres de respirar, sentir y comer. Debido a ello, hará cuanto pueda para evitar la muerte mientras cumple con los deberes que se le han encomendado.</p>\n    <p>Si habla, la voz del demonio guardián se fragmenta en risitas, mientras cien bocas se abren a lo largo del cuerpo para ofrecer dulces tentaciones. Sólo usa la boca más grande de la cabeza para gruñir y comer y tiene lenguas como látigos, con las que azota a cualquiera que se acerque demasiado.</p>\n</section>"
+    },
+    "Franz Baumann": {
+      "species": "Humano",
+      "status": "Oro 1",
+      "gmnotes": "<p>@UUID[JournalEntry.qxnXlkXKtBuIHNfu.JournalEntryPage.0ZrNDqAfjPTAPgN1#unos-invitados-inesperados]{Unos invitados inesperados}</p>\n<p>Baumann es un hombre delgado de unos treinta años con el cabello grasiento y ojos castaños. Es ‘la dirección’ de Las Picas Cruzadas y un miembro de rango alto de los Dedos Torcidos de Ranald. Es un pícaro simpático que prefiere evitar la violencia si es posible. Sin embargo, si cree que su gente puede correr algún tipo de peligro, no es tan pacífico. Está bien conectado con los bajos fondos de la ciudad y –gracias a una red de chantajes, amenazas y ‘arreglos especiales’– tiene una esfera de influencia sorprendentemente amplia a todos los niveles.</p>\n<p>Para cualquier personaje que trabe amistad con él, resulta ser muy buen patrón, fuente de información o mentor. Habla con un acento callejero reiklandés fácil de entender y se suele limpiar las uñas con la daga.</p>\n<p><strong>Nota:</strong> Baumann no tiene Bendiciones ni Milagros de Ranald. Como la mayoría de la secta, no es un sacerdote bendecido, pero es un miembro importante de la Orden de los Dedos Torcidos.</p>"
+    },
+    "Reinholdt": {
+      "species": "Humano",
+      "status": "Bronce 3",
+      "gmnotes": "<p>@UUID[JournalEntry.qxnXlkXKtBuIHNfu.JournalEntryPage.0ZrNDqAfjPTAPgN1#unos-invitados-inesperados]{Unos invitados inesperados}</p>\n<p>Los gemelos @UUID[Actor.U7Y0XEF8Cnat4Y7Q]{Reinhold} y @UUID[Actor.x782doqfhFIEgP8V]{Reinhardt} trabajan para @UUID[Actor.sElqSPHULTbnUjf2]‘la dirección’} y, aunque no son muy brillantes, son leales por completo y hacen lo que se les pide. Reinhold es alto y corpulento, con cabello oscuro y perilla; Reinhardt es más bajito y compacto, con el pelo igual de oscuro y un bigotito. Ambos tienen una mirada firme y desconcertante, como si estuvieran considerando múltiples maneras de herir a quien sea que estén mirando, lo cual suele ser cierto. Cada uno llama al otro ‘Rein’ y suelen hablar entre ellos como una forma de intimidar a los demás, discutiendo diversas formas de violencia.</p>\n<blockquote>\n    <p><span class=\"fontstyle2\">‘No digo que quisiera hacer eso, ¿verdad, Rein?’</span></p>\n    <p><span class=\"fontstyle2\">‘No, eso ha sido muy poco juicioso, Rein. Quizás deberíamos darle una lección sobre lo divino, ¿no?’</span></p>\n    <p><span class=\"fontstyle2\">‘¿Te refieres a una divina lección sobre cómo llorar como una monja shallyana, Rein? Hombre, pues estoy de acuerdo. ¿Cómo crees que deberíamos hacer llorar a este hombre, que está claro que necesita educación religiosa?'</span></p>\n</blockquote>\n<p>Su acento es muy de clase baja de Reikland, pero es difícil de ubicar si vienen de Altdorf, Ubersreik, Tahme o cualquier otro lugar.</p>"
+    },
+    "Reinhardt": {
+      "species": "Humano",
+      "status": "Bronce 3",
+      "gmnotes": "<p>@UUID[JournalEntry.qxnXlkXKtBuIHNfu.JournalEntryPage.0ZrNDqAfjPTAPgN1#unos-invitados-inesperados]{Unos invitados inesperados}</p>\n<p>Los gemelos @UUID[Actor.U7Y0XEF8Cnat4Y7Q]{Reinhold} y @UUID[Actor.x782doqfhFIEgP8V]{Reinhardt} trabajan para @UUID[Actor.sElqSPHULTbnUjf2]‘la dirección’} y, aunque no son muy brillantes, son leales por completo y hacen lo que se les pide. Reinhold es alto y corpulento, con cabello oscuro y perilla; Reinhardt es más bajito y compacto, con el pelo igual de oscuro y un bigotito. Ambos tienen una mirada firme y desconcertante, como si estuvieran considerando múltiples maneras de herir a quien sea que estén mirando, lo cual suele ser cierto. Cada uno llama al otro ‘Rein’ y suelen hablar entre ellos como una forma de intimidar a los demás, discutiendo diversas formas de violencia.</p>\n<blockquote>\n    <p><span class=\"fontstyle2\">‘No digo que quisiera hacer eso, ¿verdad, Rein?’</span></p>\n    <p><span class=\"fontstyle2\">‘No, eso ha sido muy poco juicioso, Rein. Quizás deberíamos darle una lección sobre lo divino, ¿no?’</span></p>\n    <p><span class=\"fontstyle2\">‘¿Te refieres a una divina lección sobre cómo llorar como una monja shallyana, Rein? Hombre, pues estoy de acuerdo. ¿Cómo crees que deberíamos hacer llorar a este hombre, que está claro que necesita educación religiosa?'</span></p>\n</blockquote>\n<p>Su acento es muy de clase baja de Reikland, pero es difícil de ubicar si vienen de Altdorf, Ubersreik, Tahme o cualquier otro lugar.</p>"
+    },
+    "Thug": {
+      "name": "Matón",
+      "tokenName": "Matón",
+      "species": "Humano",
+      "biography": "<section class=\"secret\" id=\"secret-M7ie1uRhbOYPQfa3\">\n    <p>@UUID[JournalEntry.abUCs0O1oBGNonyi.JournalEntryPage.qekbEPjyKirEPlD7#matones-a-sueldo]{Matones a sueldo}</p>\n    <p>Hay varios matones en @UUID[JournalEntry.ro7SIltM899Ogrk8]{Bögenhafen} que pueden molestar a los Personajes. La mayoría son estibadores al servicio de @UUID[Actor.LG5qATEIFPE9bezB]{Teugen} o mano de obra contratada que apoya a uno de los demás PNJs influyentes. En la mayoría de casos los matones son sombríos, brutales y hablan con acento de clase baja.</p>\n    <p>Aquí tienes perfiles para los matones típicos y para sus brutales jefes. Si los Jugadores no tienen muchos Personajes con capacidad de combate (o ninguno), deberías seguir usando los matones básicos. Sin embargo, si crees que el grupo necesita un desafío mayor, añade un matón jefe o dos o incluso algún @UUID[Compendium.wfrp4e-core.journals.JournalEntry.3ZynTGhFpgwv6l1n.JournalEntryPage.UyUu4g8GQRp16paM#rasgos-genericos-de-las-criaturas]{Rasgo genérico} para personalizar el grupo.</p>\n</section>"
+    },
+    "Thug Boss": {
+      "name": "Matón jefe",
+      "tokenName": "Matón jefe",
+      "species": "Humano",
+      "biography": "<section class=\"secret\" id=\"secret-M7ie1uRhbOYPQfa3\">\n    <p>@UUID[JournalEntry.abUCs0O1oBGNonyi.JournalEntryPage.qekbEPjyKirEPlD7#matones-a-sueldo]{Matones a sueldo}</p>\n\n    <p>Hay varios matones en \n@UUID[JournalEntry.ro7SIltM899Ogrk8]{Bögenhafen} que pueden molestar a \nlos Personajes. La mayoría son estibadores al servicio de \n@UUID[Actor.LG5qATEIFPE9bezB]{Teugen} o mano de obra contratada que \napoya a uno de los demás PNJs influyentes. En la mayoría de casos los \nmatones son sombríos, brutales y hablan con acento de clase \nbaja.</p>\n    <p>Aquí tienes perfiles para los matones \ntípicos y para sus brutales jefes. Si los Jugadores no tienen muchos \nPersonajes con capacidad de combate (o ninguno), deberías seguir usando \nlos matones básicos. Sin embargo, si crees que el grupo necesita un \ndesafío mayor, añade un matón jefe o dos o incluso algún \n@UUID[Compendium.wfrp4e-core.journals.JournalEntry.3ZynTGhFpgwv6l1n.JournalEntryPage.UyUu4g8GQRp16paM#rasgos-genericos-de-las-criaturas]{Rasgo\n genérico} para personalizar el grupo.</p>\n</section>"
+    },
+    "Ulthar the Unstable": {
+      "name": "Ulthar el Inestable",
+      "tokenName": "Ulthar el Inestable",
+      "species": "Humano",
+      "status": "Bronce 2",
+      "gmnotes": "<p>@UUID[JournalEntry.abUCs0O1oBGNonyi.JournalEntryPage.qekbEPjyKirEPlD7#el-profeta-de-la-fatalidad]{El profeta de la fatalidad}</p>\n<p>Ulthar tiene unos cincuenta años, una barba canosa y una caballera larga y desordenada, también gris. Era un gran amigo de Karl Teugen, el hermano de @UUID[Actor.LG5qATEIFPE9bezB]{Johannes}, pero su mente no sobrevivió al verlo morir entre sufrimientos terribles (ver @UUID[JournalEntry.ro7SIltM899Ogrk8.JournalEntryPage.D7KSvLHIYm6SiXhg]{Templo de Verena}). El hombre ha conocido días mejores: tiene la piel llena de marcas; las uñas, rotas y amarillentas; sus dientes son un desastre; y, cuanto menos se hable de las diversas infestaciones que padece, mejor. Sin embargo, si los PJs llegan a él, tras esta fachada andrajosa y una cordura destrozada se halla un hombre educado y otrora brillante.</p>\n<p>Ulthar ocupa una chabola abandonada del @UUID[JournalEntry.ro7SIltM899Ogrk8.JournalEntryPage.NmhaWZTD7644IfbX]{Foso}, donde sobrevive lo mejor que puede. Tiene un acento es sorprendentemente bien educado dada su apariencia, pero se difumina de vez en cuando mientras los ojos se le mueven de izquierda a derecha. Tose mucho, suele murmurar y vive en la miseria más absoluta. También sospecha mucho de los que van vestidos de comerciante.</p>"
+    },
+    "Franz Steinhäger": {
+      "species": "Humano",
+      "status": "Oro 3",
+      "gmnotes": "<p>Franz Steinhäger es bajito, de pelo gris y corpulento y anda como los patos. Ve el plan de @UUID[Actor.LG5qATEIFPE9bezB]{Teugen} como un medio para hacerse rico con rapidez.</p>\n<p>Una vez que el ritual se complete, espera deponer a @UUID[Actor.LG5qATEIFPE9bezB]{Teugen} y ponerse al frente de la <em>Ordo Septenarius</em>. Para ayudar en esto, está aprendiendo los rudimentos de magia de @UUID[Actor.LG5qATEIFPE9bezB]{Teugen} y @UUID[Actor.IvvkdVTJzutEsrlX]{Gideon}, algo que le ha sorprendido bastante que fuera capaz de aprender (en verdad, la influencia del Caos de Gideon ha cambiado el alma de Steinhäger, lo que posibilita que ahora pueda aprender magia).</p>\n<p>Tanto @UUID[Actor.LG5qATEIFPE9bezB]{Teugen} como @UUID[Actor.IvvkdVTJzutEsrlX]{Gideon} sospechan del plan de Steinhäger, pero no ven razón para no seguirle el juego hasta que muera en el ritual. Steinhäger habla con un acento áspero de Reikland y siempre tiene el ceño fruncido.</p>"
+    },
+    "Gerhard Schutz": {
+      "species": "Humano",
+      "status": "Plata 2",
+      "gmnotes": "<p>@UUID[JournalEntry.abUCs0O1oBGNonyi.JournalEntryPage.67GdZ4epIhCwPcOT]{Las oficinas de los Steinhäger}</p>\n<p>Gerhard –un hombre delgado, de cabello blanco chillón y ojos grisáceos– ha servido a la familia @UUID[Actor.Coxv92EfL6VmlpCS]{Steinhäger} durante la mayor parte de sus sesenta y tres años. Es muy leal y hace todo lo posible para evitar cualquier robo. Sin embargo, no es un suicida y se rinde o huye si las cosas pintan mal. No tiene un acento refinado y habla resollando.</p>",
+      "items": {
+        "Keys": {
+          "name": "Llaves",
+          "description": "<p>Abre todas las puertas de la mansión excepto la del sótano</p>"
+        }
+      }
+    },
+    "Fang": {
+      "name": "Colmillo",
+      "tokenName": "Colmillo",
+      "species": "Pitbull de Telland",
+      "biography": "<section class=\"secret\" id=\"secret-SAqm1Ilc0gNFx02b\">\n    <p>@UUID[JournalEntry.abUCs0O1oBGNonyi.JournalEntryPage.67GdZ4epIhCwPcOT]{Las oficinas de los Steinhäger}</p>\n    <p>@UUID[Actor.FF4U0ls9YObaK0q5]{Schutz} va acompañado de Colmillo, una perra negra grande de dientes afilados. Sin embargo, aunque Colmillo es una pitbull de Telland (una de las razas de @UUID[Compendium.wfrp4e-core.actors.R1iWvfV9EvgIc8bJ]{perro} más feroces), es mucho menos intimidante de lo que parece. Piensa con el estómago y se muestra dócil ante cualquier PJ que le ofrezca comida o que tenga éxito en un Chequeo <strong>Normal (+20)</strong> de <strong>Carisma animal</strong>. Buena chica.</p>\n</section>"
+    },
+    "Reiner Goertrin": {
+      "species": "Humano",
+      "status": "Oro 1",
+      "gmnotes": "<p>@UUID[JournalEntry.abUCs0O1oBGNonyi.JournalEntryPage.Z3QGbxxJlrP3lm7q]{Los cuarteles de la Guardia}</p>\n<p>Goertrin es alto y enjuto, con cabello del color del hueso decolorado y un rostro casi cadavérico en su delgadez. En la actualidad se ocupa de que se mantenga la ley y el orden en la @UUID[JournalEntry.ro7SIltM899Ogrk8.JournalEntryPage.HlvtyG6davRZ3Xlk]{Schaffenfest} y tiene poco tiempo para nada más. Es de modales enérgicos y está muy acostumbrado a intimidar a la gente de menor estatus social, que es la mayoría. Tiene un acento duro de clase alta e interrumpe a cualquiera que habla demasiado tiempo. No tiene tiempo que perder para hablar de trivialidades.</p>"
+    },
+    "Friedrich Magirius": {
+      "species": "Humano",
+      "status": "Oro 1",
+      "gmnotes": "<p>@UUID[JournalEntry.abUCs0O1oBGNonyi.JournalEntryPage.FL6bncA84xulG5Gb#el-gremio-de-mercaderes]{El Gremio de Mercaderes}</p>\n<p>Friedrich Magirius tiene el cabello canoso, ojos azul claro y una perilla bifurcada. Es de apariencia distinguida y amable y siempre luce una sonrisa, incluso cuando se siente exasperado. Magirius encabeza una de las familias de comerciantes más pequeñas de la ciudad, pero trabaja duro y se ha asegurado el puesto de concejal en @UUID[JournalEntry.ro7SIltM899Ogrk8]{Bögenhafen}.</p>\n<p>@UUID[Actor.LG5qATEIFPE9bezB]{Teugen} lo ha engañado como a un niño con la promesa de convertir Bögenhafen en el principal centro de comercio del Imperio. Es una meta que apoya por completo y le venda los ojos ante los peligros en los que se adentra. Cree de verdad que Teugen sólo quiere el bien para la ciudad y se mostrará incrédulo si los PJs le dicen lo contrario.</p>\n<p>Magirius cuenta los hechos tal y como los ve, pero no revela nada del ritual que @UUID[Actor.LG5qATEIFPE9bezB]{Teugen} planea para llevar a @UUID[JournalEntry.ro7SIltM899Ogrk8]{Bögenhafen} a la prominencia por arte de magia. Como dice Teugen, poca gente entiende la magia y a Magirius no le interesa meterse en problemas por las supersticiones descontroladas de otros. Habla con un acento reiklandés asequible y de clase media y parece que tiene tiempo para todos.</p>"
+    },
+    "Georg Handelsson": {
+      "species": "Humano",
+      "biography": "<section class=\"secret\" id=\"secret-dY0rrKJaMzplgKkL\">\n<p>@UUID[JournalEntry.aI05RCFli7s2SPP2.JournalEntryPage.uWlg0JgRwaUQNInI#almacen-17]{Almacén 17}</p>\n    <p>El Gran Georg ronda los cincuenta años, mide 6’ 5\" y tiene la barba blanca como la nieve. Vive solo con sus dos perros, y en los últimos tres años apenas ha dicho más que un <em>‘¡Eh!’</em> si un idiota metía las narices en el almacén cuando no debía.</p>\n</section>"
+    },
+    "Kaden": {
+      "species": "Perro",
+      "biography": "<p>@UUID[JournalEntry.aI05RCFli7s2SPP2.JournalEntryPage.uWlg0JgRwaUQNInI#almacen-17]{Almacén 17}</p>"
+    },
+    "Wrench": {
+      "species": "Perro",
+      "biography": "<p>@UUID[JournalEntry.aI05RCFli7s2SPP2.JournalEntryPage.uWlg0JgRwaUQNInI#almacen-17]{Almacén 17}</p>"
+    },
+    "Bögenhafen Watch Recruits": {
+      "name": "Reclutas de la Guardia de Bögenhafen",
+      "tokenName": "Recluta de la Guardia",
+      "biography": "<section class=\"secret\" id=\"secret-wuwkQDehqXeAAALI\">\n    <p>Aunque éste es el primer capítulo en el que los personajes se enfrentan sin paliativos a la Guardia, es posible que antes se dé una confrontación con lo mejor de Bögenhafen. Las patrullas de la ciudad suelen estar formadas por un @UUID[Actor.opX8C6mLOuvFvV0B]{sargento} que dirige a tres @UUID[Actor.nCzNGuS22drsDAIe]{guardias} y un @UUID[Actor.4RZRWe2dSK8hA9OZ]{recluta}. En comparación, en la @UUID[JournalEntry.ro7SIltM899Ogrk8.JournalEntryPage.HlvtyG6davRZ3Xlk]{Schaffenfest} una patrulla suele ser de un guardia que lidera a tres reclutas, movilizados para ayudar durante la feria.</p>\n</section>"
+    },
+    "Bögenhafen Watchman": {
+      "name": "Guardia de Bögenhafen",
+      "tokenName": "Guardia",
+      "biography": "<section class=\"secret\" id=\"secret-wuwkQDehqXeAAALI\">\n    <p>Aunque éste es el primer capítulo en el que los personajes se enfrentan sin paliativos a la Guardia, es posible que antes se dé una confrontación con lo mejor de Bögenhafen. Las patrullas de la ciudad suelen estar formadas por un @UUID[Actor.opX8C6mLOuvFvV0B]{sargento} que dirige a tres @UUID[Actor.nCzNGuS22drsDAIe]{guardias} y un @UUID[Actor.4RZRWe2dSK8hA9OZ]{recluta}. En comparación, en la @UUID[JournalEntry.ro7SIltM899Ogrk8.JournalEntryPage.HlvtyG6davRZ3Xlk]{Schaffenfest} una patrulla suele ser de un guardia que lidera a tres reclutas, movilizados para ayudar durante la feria.</p>\n</section>"
+    },
+    "Bögenhafen Watch Sergeant": {
+      "name": "Sargento de la Guardia de Bögenhafen",
+      "tokenName": "Sargento de la Guardia",
+      "biography": "<section class=\"secret\" id=\"secret-wuwkQDehqXeAAALI\">\n    <p>Aunque éste es el primer capítulo en el que los personajes se enfrentan sin paliativos a la Guardia, es posible que antes se dé una confrontación con lo mejor de Bögenhafen. Las patrullas de la ciudad suelen estar formadas por un @UUID[Actor.opX8C6mLOuvFvV0B]{sargento} que dirige a tres @UUID[Actor.nCzNGuS22drsDAIe]{guardias} y un @UUID[Actor.4RZRWe2dSK8hA9OZ]{recluta}. En comparación, en la @UUID[JournalEntry.ro7SIltM899Ogrk8.JournalEntryPage.HlvtyG6davRZ3Xlk]{Schaffenfest} una patrulla suele ser de un guardia que lidera a tres reclutas, movilizados para ayudar durante la feria.</p>\n</section>"
+    },
+    "Johannes Teugen": {
+      "species": "Humano",
+      "status": "Oro 3",
+      "gmnotes": "<p>Teugen es alto, de unos cincuenta años y tiene el cabello negro y los ojos castaños. Luce el emblema de la familia, una rosa estilizada en una cruz circular, en una pesada cadena que lleva alrededor del cuello y en uno de los enormes anillos que le adornan las manos. Tiene la cara llena de arrugas, pero parece gozar de buena salud para su edad; sin embargo, tiene la tez muy pálida, legado de los años de estudio y de su estilo de vida, que es sobre todo nocturno. Cuando sonríe, muestra unos caninos inusualmente pronunciados. Tiene una voz profunda y refinada, casi meliflua, que revela una larga educación en Nuln.</p>\n<p>Teugen es un @UUID[JournalEntry.ro7SIltM899Ogrk8.JournalEntryPage.MumhV0cvijjcPL6O#el-consejo]{concejal} respetado y un miembro importante del @UUID[JournalEntry.ro7SIltM899Ogrk8.JournalEntryPage.fZdKRk3o4e6rELi0]{Gremio de Mercaderes}. Es muy querido, sobre todo por sus compañeros comerciantes, y tiene una reputación excelente en todo Bögenhafen. No sólo nadie sospecha que es un demonólogo, decidido a cambiar las almas de siete desgraciados por la suya, sino que es difícil encontrar gente que no ensalce sus muchas virtudes.</p>\n<p>Sin embargo, a Teugen se le acaba el tiempo y cada vez le preocupa más que algo salga mal con el plan, así que últimamente su temperamento se ha visto afectado.</p>\n<p>Las incursiones de Teugen en las artes oscuras de la demonología han tenido un gran efecto en él. Poco después de comenzar los estudios con Gideon comenzó a desarrollar unos caninos de un tamaño inusual. Además, hace poco que adoptado hábitos nocturnos, ya que no tolera el sol. Cuando está bajo la luz directa de éste, todos los Chequeos de Teugen son 1 paso más difíciles. Además, ya no puede soportar el olor del ajo. Si se le acerca uno a menos de 1 metro de él, Teugen retrocede con disgusto, se le cierran los ojos e insiste en que el responsable se deshaga de éste lo más rápido posible. Si es atacado mientras está afectado por el ajo, todos sus Chequeos son un paso más difíciles.</p>\n<p>@UUID[Actor.IvvkdVTJzutEsrlX]{Gideon} conoce las aflicciones de Teugen y disfruta abusando de ellas: a veces mastica unos cuantos dientes de ajo antes de conversar con su ‘buen amigo’ Teugen. Debido a esto, el hombre ha llegado a creer que su aversión al ajo se debe a su aversión a Gideon, que siempre parece estar comiendo tan horrible planta.</p>\n<p>Teugen tiene cuidado de que nada empañe su buena imagen, y por ello sigue haciendo obras de caridad y asegurándose de que sus actividades delictivas sean lo más clandestinas posible.</p>\n<p>Cualquier trabajo sucio que necesite lo llevan a cabo @UUID[Actor.IvvkdVTJzutEsrlX]{Gideon} o matones a sueldo del @UUID[JournalEntry.ro7SIltM899Ogrk8.JournalEntryPage.8vxbXHGPEkkvKC8Q]{Gremio de Estibadores}, una organización que le es leal y que está bastante acostumbrada a mancharse las manos.</p>\n<p>Mientras está fuera de casa, Teugen siempre va acompañado por al menos dos guardaespaldas (utiliza para ellos el Perfil de Personaje de @UUID[Actor.4JYaYJqgsJMnTDe3]{Georg Handelsson}). Si tiene que hacer negocios durante el día, suele utilizar una silla de manos que llevan cuatro sirvientes, siempre flanqueado por los guardaespaldas. Para mantener la fachada de ser buena persona, Teugen da dinero a los pobres con frecuencia cuando está en la población. Nadie tiene nada malo que decir de él.</p>"
+    },
+    "Sheru-tar Gee'taru": {
+      "species": "Demonio",
+      "biography": "<section class=\"secret\" id=\"secret-o7bWt1ybCTocFjNP\">\n    <p>@UUID[Actor.LG5qATEIFPE9bezB]{Teugen} contactó por primera vez con el demonio al que llama Gideon hace ocho años en Nuln. El amo de Gideon, un gran demonio de Tzeentch con planes a gran escala para el Imperio, le ordenó que firmara un pacto con Teugen. A cambio del alma de Teugen, Gideon debía concederle gran riqueza y prosperidad durante siete años.</p>\n    <p>Para tentar a Teugen, Gideon le dijo que, si podía persuadir a otros siete para participar en un ritual antes de que pasaran los siete años, se llevaría esas almas en lugar de la de él. Esto pondría fin al pacto y liberaría a Teugen del trato. Después de pensarlo mucho, Teugen aceptó al fin. Sin embargo, ignora que Gideon le mintió y que nunca podrá recobrar el alma y que, encima, el ritual de intercambiar siete almas por la suya en realidad abre una puerta al Reino del Caos.</p>\n    <p>Gideon es un maestro de las ilusiones y puede adoptar otras formas. Su forma natural es la de un @UUID[Actor.iDy8SDTwJSlCzZMl]{Horror Rosa de Tzeentch} rodeado por una onda de magia constante: un demonio de múltiples brazos y carne rosada, con la boca abierta y llena de colmillos y tentáculos que no paran de cambiar. Sin embargo, Gideon no es como la mayoría de los demonios de Tzeentch. No es una criatura loca y farfullante de magia desenfrenada, es mucho más astuto. Su amo lo creó a partir de la codicia de otros con un propósito específico. Es ambicioso, inteligente e ingenioso y trabaja en pro de los objetivos de su amo con una resolución singular que aterrorizaría a Teugen si lo supiera.</p>\n    <p>En los primeros meses en Nuln, el demonio solía usar el aspecto de Nina Dietrich, una famosa actriz del @UUID[Scene.g07sPqjuua3lSWLk]{Teatro Staatsoper} y una favorita de Teugen. Eso fue antes de que se cerrara el trato, antes de que a Teugen se le ofreciera el mundo y más mientras el demonio le susurraba dulces promesas al oído. Después del pacto, el demonio adoptó la forma de Gideon, un primo lejano de Teugen. Aparece como un humano alto, delgado, vestido de manera impecable, de cabello oscuro y un rostro apuesto dominado por unos ojos intensos. El personaje que el demonio proyecta como Gideon es sardónico y finge tener un sentido del humor estrafalario e irónico. Aunque rara vez ríe –si es que alguna vez lo hace– siempre hay una sonrisa irónica y algo arrogante en sus labios.</p>\n    <p>Aunque sabe que no debería, el demonio está disfrutando de esta estancia en el Reino de los Mortales. Últimamente, Gideon ha empezado a aparecer como un niño cuando está cerca de Teugen y a masticar mucho ajo, ya que sabe que ambas cosas le irritan sobremanera. Con el paso de los años, la pretensión del demonio de divertirse con la codicia y la credulidad de los mortales se ha hecho bastante real y sólo se ve excedida por lo que le entusiasma la idea de su inminente triunfo, cuando el ritual de Teugen –en el que el muy ingenuo cree que salvará el alma– abra en realidad una Puerta del Caos en el corazón de Reikland. Su amo estará muy complacido.</p>\n</section>",
+      "items": {
+        "Bolt of Corruption": {
+          "name": "Rayo de corrupción",
+          "description": "<p>Canalizas magia oscura en forma de un dañino rayo de poder corrosivo. Esto equivale a un proyectil mágico con un Daño de 6. Los objetivos que se vean alcanzados por el hechizo deben hacer un Chequeo <strong>Desafiante (+0)</strong> de <strong>Aguante</strong> o sufrir 1 Corrupción.</p>\n<p><strong>Saber:</strong> Los objetivos de los hechizos del Saber de Tzeentch se ven desgarrados por la magia transformadora del Caos. Quienes quedan afectados por un hechizo del Saber de Tzeentch deben hacer un Chequeo <strong>Desafiante (+0)</strong> de <strong>Aguante</strong> o sufrir +1 Punto de Corrupción. Si pasan el Chequeo, obtienen +1 Punto de Fortuna, que pueden usar de forma normal. Así son los caprichos de Tzeentch.</p>"
+        },
+        "Power of Chaos": {
+          "name": "Poder del Caos",
+          "description": "<p>Llamas a los dioses oscuros del Caos para que te ayuden abriendo una pequeña rotura en el Aethyr. Cualquier hechizo que se lance dentro del área de efecto verá su NE reducido a la mitad. Cualquiera que esté en el interior del AdE deberá hacer un Chequeo <strong>Normal (+20)</strong> de <strong>Aguante</strong> al final de cada Asalto o sufrir +1 Punto de Corrupción. Cualquiera que lance un hechizo dentro del AdE hará el Chequeo a dificultad <strong>Normal (+20)</strong>.</p>\n<p><strong>Saber:</strong> Los objetivos de los hechizos del Saber de Tzeentch se ven desgarrados por la magia transformadora del Caos. Quienes quedan afectados por un hechizo del Saber de Tzeentch deben hacer un Chequeo <strong>Desafiante (+0)</strong> de <strong>Aguante</strong> o sufrir +1 Punto de Corrupción. Si pasan el Chequeo, obtienen +1 Punto de Fortuna, que pueden usar de forma normal. Así son los caprichos de Tzeentch.</p>"
+        }
+      }
+    },
+    "Pink Horror of Tzeentch": {
+      "name": "Horror Rosa de Tzeentch",
+      "tokenName": "Horror Rosa",
+      "species": "Demonio",
+      "biography": "<section class=\"secret\" id=\"secret-G9IB9TsLeEKGE1or\">\n    <p>Los horrores de Tzeentch son los vástagos mutables y balbuceantes de El Que Cambia las Cosas. Se encarnan en monstruosidades de muchas extremidades cuya forma parece retorcerse y cambiar cuando surgen brazos, piernas y tentáculos, serpenteando por el aire, buscando presas para arrastrarlas a sus enormes fauces. Al ser criaturas de magia pura, el aire alrededor de ellas cruje y se deforma con las impías energías arcanas.</p>\n    <p>Los @UUID[Actor.iDy8SDTwJSlCzZMl]{Horrores Rosas} se deleitan con el cambio y en la magia. Cuando se les invoca se ríen y se abren camino por el mundo, retozando y saltando de alegría. Su talante, de alegría bufona, comporta que a menudo se los conozca como 'chillones' o 'remolinos destructores'. Como criaturas del Caos, se atraen entre sí, lo cual les sirve para amplificar el poder de los demás y conjurar temibles rayos de llamas mágicas para causar estragos entre los que cometen la temeridad de acercarse.</p>\n    <p>Si un @UUID[Actor.iDy8SDTwJSlCzZMl]{Horror Rosa} recibe un impacto que basta para destruir su manifestación material, se divide con la explosión en dos @UUID[Actor.cLOGeMqUty61nYB9]{Horrores Azules}, en lugar de verse desterrado a los Reinos del Caos. En marcado contraste con su risueño precursor rosa, los @UUID[Actor.cLOGeMqUty61nYB9]{Horrores Azules} parecen hoscos y maliciosos y tienen la cara distorsionada en muecas y burlas. En lugar de risas, esas gargantas espeluznantes vomitan maldiciones quejumbrosas y murmuradas.</p>\n    <p>Si un grupo de nueve, o un múltiplo de nueve, criaturas tiene el Rasgo @UUID[Compendium.wfrp4e-eis.items.hrTMJNF0CFX8JXhI]{Fuego de Tzeentch}, todas ellas juntan sus recursos y en vez de eso lanzan el hechizo @UUID[Compendium.wfrp4e-eis.items.R0uUNtxsHEEddMLV]{Tormenta de fuego de Tzeentch}. El nueve, por supuesto, es el número sagrado de Tzeentch.</p>\n</section>"
+    },
+    "Blue Horror of Tzeentch": {
+      "name": "Horror Azul de Tzeentch",
+      "tokenName": "Horror Azul",
+      "species": "Demonio",
+      "biography": "<section class=\"secret\" id=\"secret-G9IB9TsLeEKGE1or\">\n    <p>Los horrores de Tzeentch son los vástagos mutables y balbuceantes de El Que Cambia las Cosas. Se encarnan en monstruosidades de muchas extremidades cuya forma parece retorcerse y cambiar cuando surgen brazos, piernas y tentáculos, serpenteando por el aire, buscando presas para arrastrarlas a sus enormes fauces. Al ser criaturas de magia pura, el aire alrededor de ellas cruje y se deforma con las impías energías arcanas.</p>\n    <p>Los @UUID[Actor.iDy8SDTwJSlCzZMl]{Horrores Rosas} se deleitan con el cambio y en la magia. Cuando se les invoca se ríen y se abren camino por el mundo, retozando y saltando de alegría. Su talante, de alegría bufona, comporta que a menudo se los conozca como 'chillones' o 'remolinos destructores'. Como criaturas del Caos, se atraen entre sí, lo cual les sirve para amplificar el poder de los demás y conjurar temibles rayos de llamas mágicas para causar estragos entre los que cometen la temeridad de acercarse.</p>\n    <p>Si un @UUID[Actor.iDy8SDTwJSlCzZMl]{Horror Rosa} recibe un impacto que basta para destruir su manifestación material, se divide con la explosión en dos @UUID[Actor.cLOGeMqUty61nYB9]{Horrores Azules}, en lugar de verse desterrado a los Reinos del Caos. En marcado contraste con su risueño precursor rosa, los @UUID[Actor.cLOGeMqUty61nYB9]{Horrores Azules} parecen hoscos y maliciosos y tienen la cara distorsionada en muecas y burlas. En lugar de risas, esas gargantas espeluznantes vomitan maldiciones quejumbrosas y murmuradas.</p>\n    <p>Si un grupo de nueve, o un múltiplo de nueve, criaturas tiene el Rasgo @UUID[Compendium.wfrp4e-eis.items.hrTMJNF0CFX8JXhI]{Fuego de Tzeentch}, todas ellas juntan sus recursos y en vez de eso lanzan el hechizo @UUID[Compendium.wfrp4e-eis.items.R0uUNtxsHEEddMLV]{Tormenta de fuego de Tzeentch}. El nueve, por supuesto, es el número sagrado de Tzeentch.</p>\n</section>"
+    },
+    "Chaos Fury": {
+      "name": "Furia del Caos",
+      "tokenName": "Furia del Caos",
+      "species": "Furia del Caos",
+      "biography": "<section class=\"secret\" id=\"secret-vnWhhwp0BnliHHFS\">\n    <p>Se considera que estas criaturas son los demonios más menores, en muchos sentidos. No sirven a ningún dios del Caos en particular, y son manifestaciones atávicas del Caos en su forma absoluta, primitiva y sin una personalidad distintiva. Su relativa debilidad, así como el hecho de que ningún poder del Caos tomaría represalias si las maltrataran, significa que a menudo las convocan los demonólogos novatos que buscan un sirviente flexible y útil.</p>\n    <p>Por toda su falta de poder, las Furias siguen siendo más fuertes que la mayoría de los humanos mortales, y son capaces de volar a gran velocidad gracias a sus alas coriáceas. En apariencia son cambiantes, como todos los sirvientes del Caos, aunque tienden a manifestarse siguiendo un patrón general no muy distinto al de un hombre bestia alado. Las Furias suelen presentar, además, largos hocicos caninos, cuernos cortos y afilados, ojos amarillos y ardientes, y una piel cubierta de parches de oscuro pelaje y escamas rojas de aspecto reptiliano.</p>\n    <p>Las Furias son, por naturaleza, de voluntad débil y cobardes. Un demonólogo puede atar fácilmente a una para transmitir mensajes sencillos o acosar a objetivos aislados. Sin embargo, si se les encomienda algo demasiado arduo, complejo o peligroso, tienden a volverse resentidas y poco cooperativas.</p>\n</section>"
+    },
+    "Helga Langstrasse": {
+      "species": "Humano",
+      "status": "Plata 5",
+      "gmnotes": "<p>@UUID[JournalEntry.fCNnElQzxwEOeJWJ.JournalEntryPage.8FQU5qZNjvPxUVbO#como-construir-tus-propios-pnjs]{Cómo construir tus propios PNJs}</p>\n<p>La doktora Helga Langstrasse es una mujer bajita y corpulenta, de pelo negro y rizado que se recoge en un moño apretado mientras trabaja. Tiene una piel aceitunada con marcas de viruela, casi todas en las mejillas. Habla con un acento característico de Ostland, por lo que se detiene antes de las palabras que quiere subrayar y rara vez usa artículos determinados o indeterminados (no dirá, <em>‘el hombre era muy grande’</em>, sino que dirá, <em>‘hombre era... grande’</em>). Sus inflexiones orientales comportan que la tomen a menudo por kislevita.</p>"
+    },
+    "Volker Drauchen": {
+      "species": "Humano",
+      "status": "Oro 2",
+      "gmnotes": "<p>Drauchen, el fundador del @UUID[JournalEntry.ro7SIltM899Ogrk8.JournalEntryPage.6pjg22hcwtaCERBb]{Culto del Ojo Vigilante}, pasa mucho tiempo meditando sobre las maquinaciones arcanas del Gran Arquitecto, Tzeentch. Flota dentro de una cámara tallada con patrones desconcertantes e intrincados, espirales y torbellinos irregulares y superpuestos que, según él, cartografían las innumerables intrigas de El Que Cambia las Cosas.</p>\n<p>Esta cámara secreta se encuentra bajo un almacén anodino en Bögenseite. Aunque lleva décadas soñando, las acciones de la <em>Ordo Septenarius</em> han hecho que se agite un poco. Cuando @UUID[JournalEntry.abUCs0O1oBGNonyi.JournalEntryPage.DiVj3o5EkDkj5oQ3]{Morrslieb está llena}, abre los ojos y su conciencia regresa al presente. Y tiene un propósito.</p>\n<p>Años de oscura brujería han alterado a Drauchen. Mide casi 7 pies de altura con los miembros largos y desgarbados y la cara delgada. Tiene la nariz larga y bulbosa, que se proyecta desde unas cejas arrugadas y unos ojos que brillan de color un azul intenso y relucen de forma poco natural desde las profundas cuencas. No tiene pelo y ha envuelto su cuerpo retorcido en ropas andrajosas de color negro y azul.</p>"
+    },
+    "Cart": {
+      "name": "Carreta",
+      "tokenName": "Carreta",
+      "description": "<p>@UUID[JournalEntry.GHueUtHKzlhvsd8L.JournalEntryPage.lLe63oYqpVSctopI]{Conducir y Montar}</p>\n<p>Las carretas son pequeños vehículos de dos ruedas de todo tipo, incluyendo carretas de burros, carros tirados por caballos y calesas. Las carretas de pasajeros tienen un asiento en forma de banco para un máximo de dos personas, y las que transportan mercancías tienen un asiento más pequeño y una plataforma abierta para la carga. Solo un animal tira de las carretas. Los ejes se proyectan a ambos lados del armazón, al que se une un arnés o collar.</p>"
+    },
+    "Chair": {
+      "name": "Silla de manos",
+      "tokenName": "Silla de manos",
+      "description": "<p>@UUID[JournalEntry.GHueUtHKzlhvsd8L.JournalEntryPage.lLe63oYqpVSctopI]{Conducir y Montar}</p>\n<p>A veces llamadas 'sillas Bordeleaux' por la ciudad bretona donde se utilizaron por primera vez, estos medios de transporte rara vez se ven en una carretera. Consisten en un recinto panelado, como un pequeño armario con una silla acolchada en el interior, y pértigas en la parte delantera y trasera. La silla la llevan dos porteadores, uno delante y otro detrás. Son los medios de transporte preferidos de la gente rica, sobre todo cuando regresan a casa después de una larga velada en la población. Algunos hogares tienen sus propias sillas, mientras que otros dependen de las de alquiler. Una tarifa típica dentro de una ciudad es de @Pay[3cp]{3cp} por barrio.</p>\n<p>Las sillas y las literas no tienen ruedas, sino que las portean. Los porteadores siempre llevan el 100% del valor total de su Impedimenta.</p>"
+    },
+    "Coach": {
+      "name": "Diligencia",
+      "tokenName": "Diligencia",
+      "description": "<p>@UUID[JournalEntry.GHueUtHKzlhvsd8L.JournalEntryPage.lLe63oYqpVSctopI]{Conducir y Montar}</p>\n<p>Una diligencia es un vehículo cerrado de cuatro ruedas, arrastrado un tiro de entre dos y seis caballos. Las diligencias son el medio preferido por los ricos para los viajes de larga distancia, y el Imperio cuenta con varias compañías de diligencias que ofrecen servicios regulares entre las grandes ciudades.</p>\n<p>Una diligencia noble, a menudo llamada 'carruaje', puede llevar hasta seis pasajeros y suele tener un escalón en la parte trasera para llevar el equipaje. Es impensable amarrar el equipaje al techo, ya que estropearía la estética. Muchos nobles tienen calados decorativos y emblemas heráldicos en los techos de sus carruajes, que hacen imposible poner allí el equipaje. Una diligencia tiene un solo conductor, con un par de lacayos de pie en los escalones a ambos lados del equipaje, a suficiente altura para mirar hacia adelante por encima del techo de la diligencia. Otros sirvientes suelen ir detrás, en carretas y diligencias menores, con una avanzadilla (o portalámparas en las poblaciones) que va por delante para despejar el camino y una retaguardia detrás para evitar peligros.</p>\n<p>Las diligencias normales llevan hasta seis pasajeros en el interior, y su equipaje se ata al techo. Cuatro pasajeros más pueden viajar con el equipaje, si están dispuestos a soportar los elementos. La tripulación consiste en un conductor y un ayudante (guarda). Este último suele ir armado con una ballesta o un trabuco y vigila por si hay problemas.</p>\n<p>Con la pintura nunca se gasta bastante en una diligencia, y vale la pena cada penique invertido en aumentar el estatus aparente del dueño. De hecho, nunca se gasta bastante en una diligencia. Sólo un tacaño se pasea en una diligencia corriente.</p>"
+    },
+    "Handcart": {
+      "name": "Carretilla",
+      "tokenName": "Carretilla",
+      "description": "<p>@UUID[JournalEntry.GHueUtHKzlhvsd8L.JournalEntryPage.lLe63oYqpVSctopI]{Conducir y Montar}</p>\n<p>Las carretillas son versiones más pequeñas de la carreta de dos ruedas, que se tiran o empujan a mano. Tienen una plataforma abierta en lugar de asientos, aunque dicen que en Catai los palanquines cuentan con un asiento acolchado para un par de personas. Igual que una carreta, una carretilla tiene dos ejes salientes, conectados por lo general por un travesaño para que una o dos personas la muevan.</p>"
+    },
+    "Small Litter": {
+      "name": "Litera pequeña",
+      "tokenName": "Litera pequeña",
+      "description": "<p>@UUID[JournalEntry.GHueUtHKzlhvsd8L.JournalEntryPage.lLe63oYqpVSctopI]{Conducir y Montar}</p>\n<p>Una litera, o palanquín, es una versión más grande de una silla Bordeleaux o, más bien, una silla es la versión más pequeña de una litera. Este antiguo medio de transporte se ve poco en el Viejo Mundo, pero los dignatarios visitantes de Catai o de Arabia, donde siguen estando de moda, los usan en ocasiones. Igual que una silla, una litera va cerrada y cuenta con pértigas para que la lleven porteadores, pero los viajeros van tumbados en lugar de sentados.</p>\n<p>La mayoría de literas son para una persona y las llevan un par de porteadores. Los ejemplares más grandes pueden cargar con dos pasajeros y requieren una dotación de al menos cuatro porteadores. El número de criados que llevan una litera es un mensaje evidente sobre el estatus del pasajero. Hay rumores persistentes acerca de palanquines de Catai que son lo bastante grandes para para llevar toda la corte de un noble y que transportan una veintena de ogros, aunque es casi seguro que son exagerados.</p>\n<p>Las sillas y las literas no tienen ruedas, sino que las portean. Los porteadores siempre llevan el 100% del valor total de su Impedimenta.</p>"
+    },
+    "Large Litter": {
+      "name": "Litera grande",
+      "tokenName": "Litera grande",
+      "description": "<p>@UUID[JournalEntry.GHueUtHKzlhvsd8L.JournalEntryPage.lLe63oYqpVSctopI]{Conducir y Montar}</p>\n<p>Una litera, o palanquín, es una versión más grande de una silla Bordeleaux o, más bien, una silla es la versión más pequeña de una litera. Este antiguo medio de transporte se ve poco en el Viejo Mundo, pero los dignatarios visitantes de Catai o de Arabia, donde siguen estando de moda, los usan en ocasiones. Igual que una silla, una litera va cerrada y cuenta con pértigas para que la lleven porteadores, pero los viajeros van tumbados en lugar de sentados.</p>\n<p>La mayoría de literas son para una persona y las llevan un par de porteadores. Los ejemplares más grandes pueden cargar con dos pasajeros y requieren una dotación de al menos cuatro porteadores. El número de criados que llevan una litera es un mensaje evidente sobre el estatus del pasajero. Hay rumores persistentes acerca de palanquines de Catai que son lo bastante grandes para para llevar toda la corte de un noble y que transportan una veintena de ogros, aunque es casi seguro que son exagerados.</p>\n<p>Las sillas y las literas no tienen ruedas, sino que las portean. Los porteadores siempre llevan el 100% del valor total de su Impedimenta.</p>"
+    },
+    "Light Wagon": {
+      "name": "Carro ligero",
+      "tokenName": "Carro ligero",
+      "description": "<p>@UUID[JournalEntry.GHueUtHKzlhvsd8L.JournalEntryPage.lLe63oYqpVSctopI]{Conducir y Montar}</p>\n<p>Los carros (o carromatos) son vehículos grandes y abiertos que se construyen para transportar cualquier tipo de carga (incluidas personas), pero con alguna incomodidad. Dependiendo del tamaño, tiran de ellos dos o más caballos o bueyes. En la parte delantera hay un banco lo bastante ancho para tres personas, aunque sólo requieren un conductor. Algunos carros cuentan con lonas removibles, como carpas, para proteger la carga del mal tiempo y de las miradas indiscretas. Ciertos viajeros (en particular, los striganos) hacen uso de grandes carromatos llamados 'caravanas' con un techo fijo de madera. Estas caravanas suelen ser suntuosas por dentro y contienen todo lo que una familia de tamaño considerable podría necesitar.</p>"
+    },
+    "Medium Wagon": {
+      "name": "Carro mediano",
+      "tokenName": "Carro mediano",
+      "description": "<p>@UUID[JournalEntry.GHueUtHKzlhvsd8L.JournalEntryPage.lLe63oYqpVSctopI]{Conducir y Montar}</p>\n<p>Los carros (o carromatos) son vehículos grandes y abiertos que se construyen para transportar cualquier tipo de carga (incluidas personas), pero con alguna incomodidad. Dependiendo del tamaño, tiran de ellos dos o más caballos o bueyes. En la parte delantera hay un banco lo bastante ancho para tres personas, aunque sólo requieren un conductor. Algunos carros cuentan con lonas removibles, como carpas, para proteger la carga del mal tiempo y de las miradas indiscretas. Ciertos viajeros (en particular, los striganos) hacen uso de grandes carromatos llamados 'caravanas' con un techo fijo de madera. Estas caravanas suelen ser suntuosas por dentro y contienen todo lo que una familia de tamaño considerable podría necesitar.</p>"
+    },
+    "Heavy Wagon": {
+      "name": "Carro pesado",
+      "tokenName": "Carro pesado",
+      "description": "<p>@UUID[JournalEntry.GHueUtHKzlhvsd8L.JournalEntryPage.lLe63oYqpVSctopI]{Conducir y Montar}</p>\n<p>Los carros (o carromatos) son vehículos grandes y abiertos que se construyen para transportar cualquier tipo de carga (incluidas personas), pero con alguna incomodidad. Dependiendo del tamaño, tiran de ellos dos o más caballos o bueyes. En la parte delantera hay un banco lo bastante ancho para tres personas, aunque sólo requieren un conductor. Algunos carros cuentan con lonas removibles, como carpas, para proteger la carga del mal tiempo y de las miradas indiscretas. Ciertos viajeros (en particular, los striganos) hacen uso de grandes carromatos llamados 'caravanas' con un techo fijo de madera. Estas caravanas suelen ser suntuosas por dentro y contienen todo lo que una familia de tamaño considerable podría necesitar.</p>"
+    },
+    "Dog": {
+      "name": "Perro",
+      "tokenName": "Perro",
+      "species": "Perro",
+      "biography": "<section class=\"secret\" id=\"secret-CVnRstTnrrNdDJ5s\">\n    <p>@UUID[JournalEntry.GHueUtHKzlhvsd8L.JournalEntryPage.8GLdbAcRWwY522rP]{Monturas y vehículos}</p>\n    <p>Los halflings y muchos humanos de comunidades remotas, crían perros grandes para tirar de carretas de dos ruedas y de carruajes. Algunos halflings han intentado montar en perros, pero eso rara vez sale bien para el perro. Los halflings pueden ser bajitos, pero no suelen pesar poco.</p>\n</section>"
+    },
+    "Pony": {
+      "name": "Poni",
+      "tokenName": "Poni",
+      "species": "Poni",
+      "biography": "<section class=\"secret\" id=\"secret-jyxbqCS6RUVdR93m\">\n    <p>@UUID[JournalEntry.GHueUtHKzlhvsd8L.JournalEntryPage.8GLdbAcRWwY522rP]{Monturas y vehículos}</p>\n    <p>Los ponis son una pequeña raza de caballos de no más de 15 manos (alrededor de cinco pies) de altura en la cruz; los burros son primos duros, resistentes y obstinados de los caballos; las mulas son cruces estériles de caballos y burros. En todo caso, los mulos son aún más torpes que sus parientes, los burros, pero lo compensan siendo en apariencia incansables.</p>\n    <p>Los tres animales los utilizan como monturas las clases bajas rurales. Pueden ser enganchados a pequeñas carretas de dos ruedas, o cargados con mercancías y conducidos por una persona a pie. No es raro enganchar tiros de hasta veinte mulas a un carro mediano o grande.</p>\n</section>"
+    },
+    "Donkey": {
+      "name": "Burro",
+      "tokenName": "Burro",
+      "species": "Burro",
+      "biography": "<section class=\"secret\" id=\"secret-jyxbqCS6RUVdR93m\">\n    <p>@UUID[JournalEntry.GHueUtHKzlhvsd8L.JournalEntryPage.8GLdbAcRWwY522rP]{Monturas y vehículos}</p>\n    <p>Los ponis son una pequeña raza de caballos de no más de 15 manos (alrededor de cinco pies) de altura en la cruz; los burros son primos duros, resistentes y obstinados de los caballos; las mulas son cruces estériles de caballos y burros. En todo caso, los mulos son aún más torpes que sus parientes, los burros, pero lo compensan siendo en apariencia incansables.</p>\n    <p>Los tres animales los utilizan como monturas las clases bajas rurales. Pueden ser enganchados a pequeñas carretas de dos ruedas, o cargados con mercancías y conducidos por una persona a pie. No es raro enganchar tiros de hasta veinte mulas a un carro mediano o grande.</p>\n    <p>Los asnos y las mulas suelen tener el rasgo <em>Tozudo</em>, que aumenta su puntuación de V en +20 y requiere un Chequeo <strong>Enfrentado</strong> de <strong>Conducir</strong> o de <strong>Voluntad</strong> siempre que el jinete o el conductor necesiten controlar a la criatura. Si el Chequeo falla, el animal se para en seco y se niega a seguir adelante. Se le puede inducir a seguir adelante con un éxito en un Chequeo de <strong>Montar</strong>, Enfrentado a la <strong>Voluntad</strong> de la criatura, o un Chequeo Enfrentado de <strong>Carisma animal</strong> si alguien lo está guiando por la brida. En cualquier caso, no va más rápido que la mitad de la velocidad de Caminar.</p>\n</section>"
+    },
+    "Mule": {
+      "name": "Mula",
+      "tokenName": "Mula",
+      "species": "Mula",
+      "biography": "<section class=\"secret\" id=\"secret-jyxbqCS6RUVdR93m\">\n    <p>@UUID[JournalEntry.GHueUtHKzlhvsd8L.JournalEntryPage.8GLdbAcRWwY522rP]{Monturas y vehículos}</p>\n    <p>Los ponis son una pequeña raza de caballos de no más de 15 manos (alrededor de cinco pies) de altura en la cruz; los burros son primos duros, resistentes y obstinados de los caballos; las mulas son cruces estériles de caballos y burros. En todo caso, los mulos son aún más torpes que sus parientes, los burros, pero lo compensan siendo en apariencia incansables.</p>\n    <p>Los tres animales los utilizan como monturas las clases bajas rurales. Pueden ser enganchados a pequeñas carretas de dos ruedas, o cargados con mercancías y conducidos por una persona a pie. No es raro enganchar tiros de hasta veinte mulas a un carro mediano o grande.</p>\n    <p>Los asnos y las mulas suelen tener el rasgo <em>Tozudo</em>, que aumenta su puntuación de V en +20 y requiere un Chequeo <strong>Enfrentado</strong> de <strong>Conducir</strong> o de <strong>Voluntad</strong> siempre que el jinete o el conductor necesiten controlar a la criatura. Si el Chequeo falla, el animal se para en seco y se niega a seguir adelante. Se le puede inducir a seguir adelante con un éxito en un Chequeo de <strong>Montar</strong>, Enfrentado a la <strong>Voluntad</strong> de la criatura, o un Chequeo Enfrentado de <strong>Carisma animal</strong> si alguien lo está guiando por la brida. En cualquier caso, no va más rápido que la mitad de la velocidad de Caminar.</p>\n</section>"
+    },
+    "Draught Horse": {
+      "name": "Caballo de tiro",
+      "tokenName": "Caballo de tiro",
+      "species": "Caballo",
+      "biography": "<section class=\"secret\" id=\"secret-zAdKu0TanxPHwn5N\">\n    <p>@UUID[JournalEntry.GHueUtHKzlhvsd8L.JournalEntryPage.8GLdbAcRWwY522rP]{Monturas y vehículos}</p>\n    <p>Estos caballos de tamaño medio son populares entre los agricultores que pueden permitírselos y valoran su versatilidad. Tiran de arados o carretas (un par puede arrastrar todos los carros menos los más pesados) y son monturas bastante dóciles para ir a la ciudad en días de mercado.</p>\n</section>"
+    },
+    "Heavy Draught Horse": {
+      "name": "Caballo percherón",
+      "tokenName": "Caballo percherón",
+      "species": "Caballo",
+      "biography": "<section class=\"secret\" id=\"secret-6TGpHtiUV60MNa8U\">\n    <p>@UUID[JournalEntry.GHueUtHKzlhvsd8L.JournalEntryPage.8GLdbAcRWwY522rP]{Monturas y vehículos}</p>\n    <p>Son los caballos más grandes del Imperio y probablemente los más grandes del Viejo Mundo. Los caballos percherones grandes pueden pesar más de una tonelada y tirar de casi cualquier cosa. Pueden montarse, pero pocos están entrenados para aceptar un jinete. Aunque la mayoría de los nobles lo negarían, los caballos de tiro son el linaje original que se utilizó para crear los caballos de guerra pesados.</p>\n</section>"
+    },
+    "Ox": {
+      "name": "Buey",
+      "tokenName": "Buey",
+      "species": "Buey",
+      "biography": "<section class=\"secret\" id=\"secret-N8LpJSAIuCFFuEnP\">\n    <p>@UUID[JournalEntry.GHueUtHKzlhvsd8L.JournalEntryPage.8GLdbAcRWwY522rP]{Monturas y vehículos}</p>\n    <p>Los bueyes son bovinos lentos pero de un resistencia inmensa. Los granjeros los suelen usar para tirar de carros y carretas, y algunos comerciantes los prefieren para llevar carromatos pesados.</p>\n</section>"
+    },
+    "Riding Horse": {
+      "name": "Caballo de monta",
+      "tokenName": "Caballo de monta",
+      "species": "Caballo",
+      "biography": "<section class=\"secret\" id=\"secret-ErGVHIZwEhNiFwxw\">\n    <p>@UUID[JournalEntry.GHueUtHKzlhvsd8L.JournalEntryPage.8GLdbAcRWwY522rP]{Monturas y vehículos}</p>\n    <p>Este perfil representa el caballo de monta más común disponible en el Imperio. Los purasangres de Estalia y los árabes son más raros, más atractivos, mucho más caros y también tienen el rasgo Rápido. A menudo, un noble tendrá un 'palafrén' como caballo de monta diario y se reservará un caballo de guerra pesado para usarlo en combate.</p>\n</section>"
+    },
+    "Light Warhorse": {
+      "name": "Caballo de guerra ligero",
+      "tokenName": "Caballo de guerra ligero",
+      "species": "Caballo",
+      "biography": "<section class=\"secret\" id=\"secret-U3T8Pjhl3vP2hY4S\">\n    <p>@UUID[JournalEntry.GHueUtHKzlhvsd8L.JournalEntryPage.8GLdbAcRWwY522rP]{Monturas y vehículos}</p>\n    <p>Estos caballos los utilizan la caballería ligera y media, así como ciertos nobles que encuentran los caballos de monta normales demasiado mansos para su gusto. Estos animales están entrenados para la guerra, y los ejemplares más caros y adiestrados tendrán rasgos adicionales. A veces, los tradicionalistas los llaman 'corceles'.</p>\n</section>"
+    },
+    "Heavy Warhorse": {
+      "name": "Caballo de guerra pesado",
+      "tokenName": "Caballo de guerra pesado",
+      "species": "Caballo",
+      "biography": "<section class=\"secret\" id=\"secret-xIp5ElOCFEAf5F2N\">\n    <p>@UUID[JournalEntry.GHueUtHKzlhvsd8L.JournalEntryPage.8GLdbAcRWwY522rP]{Monturas y vehículos}</p>\n    <p>Los caballos de guerra más grandes, a veces llamados 'destreros', los montan los caballeros con armadura y otra caballería pesada. Rara vez se usan para viajar, porque no tiene sentido usar un animal tan caro y curtido en la batalla para tareas triviales. Aunque no son tan rápidos como sus homólogos más pequeños, están bien entrenados y su carga es casi imparable.</p>\n</section>"
+    },
+    "Johann Hindersson": {
+      "species": "Humano",
+      "status": "Bronce 5",
+      "gmnotes": "<p>@UUID[JournalEntry.t3btEsGyiZjofqZ8]{Road Wardens}</p>\n<p>Con un impresionante 6' 9' y 294 libras, y aunque carece de todo lo que podría describirse como un pensamiento inteligente pasando por su cabeza, Hindersson es una elección obvia para un peajero. Con una expresión mezquina, un garrote en la mano y una ballesta al hombro, pocos están dispuestos a desafiarlo cuando se enfrentan. Por desgracia, no es el más equipado para perseguir evasores de peaje y muestra poco interés en arreglar los huecos de los muros de su peaje.</p>\n<h4>Peaje desaparecido</h4>\n<p>Al viajar, los Personajes se encuentran con un Hindersson angustiado, que está desesperado por extorsionarlos por cada pfennig que llevan. Si los Personajes consiguen calmar al hombre, descubrirán que le han robado recientemente mientras dormía y que su señor viene pronto a cobrar. Hindersson ofrece una buena cifra si los Personajes están dispuestos a encontrar su perdida bolsa.</p>"
+    },
+    "Aleanora ‘Al’ Shortbottom": {
+      "name": "Aleanora ‘Al’ Culocorto",
+      "tokenName": "Aleanora ‘Al’ Culocorto",
+      "status": "Bronce 5",
+      "gmnotes": "<p>@UUID[JournalEntry.t3btEsGyiZjofqZ8.JournalEntryPage.Rk1hXBHuKmJnM6fS]{Guardas de Caminos}</p>\n<p>Aleanora Puertobajo al fin ha conseguido un puesto como 'guarda de caminos' en una ruta comercial haciendo lo que hacen todos los miembros de su familia que quieren 'ser legales': se ha cambiado el apellido a Fondocorto y luego ha descartado toda pretensión de 'ser legal'. Poco mejor que un bandido, Al saca todo lo que puede a los transeúntes por cualquier concepto que se puede imaginar.</p>\n<h4>Una salida</h4>\n<p>Hay una cosa que todos los halflings saben: nunca vayas en contra de tu familia. Esta regla vale el doble para los Puertobajo, lo que coloca a Aleanora en una posición muy difícil, ya que ella en realidad quiere ser legal. La gran mayoría de las sisas continuas que hace a los transeúntes ha ido a las arcas de la familia, por no hablar de las mercancías ilegales que pasan de manera regular por el peaje y a las que hace la vista gorda. Aleanora pagará bien (es dinero sucio, pero sigue siendo dinero) a cualquiera que la ayude a desbaratar el negocio de su familia de tal manera que se retiren de la zona, lo que le permitirá a la vez conservar el cargo.</p>\n<blockquote class=\"sidebar\">\n    <div class=\"journal-image float-right\">\n        <img src=\"modules/wfrp4e-eis/assets/signs-symbols/purple-hand-stamp.webp\" width=\"63\" height=\"60\">\n    </div>\n    <h3 style=\"text-align: center\"><em>La sombra proyectada: Buenos días</em></h3>\n    <p><em>Puedes usar a Culocorto en <strong>El Enemigo en las Sombras</strong> en cualquier lugar y momento en que los Personajes tengan que viajar por tierra, para introducir a los Jugadores nuevos al escenario y a la forma en que funcionan los viajes en muchas partes del Imperio. Extorsiona a los viajeros en busca de sus 'honorarios' con una sonrisa radiante, bromas amigables y jugueteando como quien no quiere la cosa (pero con intención) con su ballesta cargada.</em></p>\n</blockquote>"
+    },
+    "Charlotte-Samantha Maiers": {
+      "species": "Humano",
+      "status": "Plata 4",
+      "gmnotes": "<p>@UUID[JournalEntry.t3btEsGyiZjofqZ8.JournalEntryPage.Rk1hXBHuKmJnM6fS]{Guardas de Caminos}</p>\n<p>Procedente de una orgullosa familia de militares de Reikland, aunque mide poco más de 5 pies, Maiers era una elección obvia como jinete de vanguardia del Ejército Estatal del Emperador en tiempo de guerra. Cumplió con su deber de manera ejemplar en cada combate al que se le asignó y nunca puso objeción alguna, aunque lo deseaba con todas sus fuerzas. Fue, por tanto, una elección obvia también para los guardas de caminos en tiempo de paz, donde ha continuado cargando con el peso de su cometido mientras se mordía la lengua.</p>\n<h4>Venganza punzante</h4>\n<p>Pese a los años que lleva de servicio sin rechistar, Maiers tiene una lista de quejas más larga que La vida y los tiempos de Sigmar; sin embargo, sus lazos familiares le han impedido durante mucho tiempo llevar a cabo la venganza que cree que sus superiores merecen. Si encontrara a unos pocos pícaros afables, con el honor suficiente para ser dignos de confianza y dispuestos a mentir, engañar, robar e incluso matar cuando fuera necesario, podría al fin sacarse esa espina y deshacerse de su cuantiosa pensión, que no tiene necesidad ni intención de usar de otra manera…</p>"
+    },
+    "Heinrich Steele": {
+      "species": "Humano",
+      "status": "Oro 1",
+      "gmnotes": "<p>@UUID[JournalEntry.t3btEsGyiZjofqZ8]{Guardas de Caminos}</p>\n<p>Aunque nunca fue un hombre que destacara por su inteligencia, Steele compensó con creces sus deficiencias con muchas agallas y terquedad. Inflexible, inquebrantable y carente de humor, Steele nunca fue la primera opción para el ascenso, sino siempre la segunda. Cuando acusaron a compañeros suyos de corrupción, crimen y todos los vicios a los que se enfrentan los guardas de caminos, Steele siempre permaneció inmaculado. No es sorprendente, por tanto, que tenga pocos amigos entre los guardas de caminos, pero inspire miedo entre los enemigos.</p>\n<h4>Steele el Oxidado</h4>\n<p>No hay nada más valioso para los sirvientes del Caos que un hombre con una reputación intachable y una posición de autoridad significativa. Desafortunadamente para el Imperio, el capitán Steele es uno de esos hombres. Aunque esconde bien sus verdaderas lealtades, algunos de sus subordinados tienen sospechas. Así que recurren a los Personajes para sacar los trapos sucios que necesitan para deshacerse de su dominante jefe. Pero, ¿son sus intenciones para el bien del Imperio, o es sólo un plan dentro de otro?</p>"
+    },
+    "Anke Dorflinger": {
+      "species": "Humano",
+      "status": "Plata 3",
+      "gmnotes": "<p>@UUID[JournalEntry.UvLra86Mr3grVstE.JournalEntryPage.yeJPsx2kYucqODzN#cazarrecompensas]{Cazarrecompensas}</p>\n<p>Esta cazarrecompensas de inusual carisma ha descubierto que, a menudo en su oficio, una acertada sonrisa es más útil que los cuchillos, las redes y las ballestas. Esto no quiere decir luche mal, pero dice mucho de su inteligencia: tiende a ser más lista que de cuchillo fácil. Y es muy buena en su trabajo.</p>\n<h4>La trampa</h4>\n<p>Dorflinger se acerca a los Personajes en una casa de postas. Dice que está persiguiendo una presa: un forajido cuya cabeza tiene un precio escandaloso. Sin embargo, el bandido, al que llama 'El Mordedor', es bastante difícil de encontrar, pero por lo que se ve es propenso a morder el anzuelo. Dorflinger elige a un PJ que coincide con el tipo de objetivo que el Mordedor suele buscar, y ofrece dividir la recompensa si los PJs la ayudan. El cebo debe ir con ella a solas para tender la trampa, y el resto debe tenderle una emboscada en el camino, esperando la señal. Sin embargo, lo cierto es que el cebo es la verdadera presa de Dorflinger, y que se ha inventado todo lo demás. Si los PJs siguen su plan, pronto se encontrarán con que la astuta cazarrecompensas ha atado a un compañero y se lo ha llevado.</p>\n<blockquote class=\"sidebar\">\n    <div class=\"journal-image float-right\">\n        <img src=\"modules/wfrp4e-eis/assets/signs-symbols/purple-hand-stamp.webp\" width=\"63\" height=\"60\">\n    </div>\n    <h3 style=\"text-align: center\"><em>La sombra proyectada - La caza nunca termina</em></h3>\n    <p><em>La abrupta muerte de Adolphus Kuftsos, ya sea debido a las acciones de los personajes en @UUID[JournalEntry.tT80gcSmeK5oO5C2.JournalEntryPage.l2kZtajL8d3RlPqO]{Weissbruck} o a las garras de @UUID[Actor.IvvkdVTJzutEsrlX]{Gideon} en @UUID[JournalEntry.ro7SIltM899Ogrk8]{Bögenhafen}, elimina a este cazarrecompensas mucho antes de los acontecimientos principales de <strong>El Enemigo en las Sombras</strong>. Lady Emmanuelle Nacht, sin embargo, no es de las que dejan las cosas al azar. Puede usar a Dorflinger como una agente adicional que se activa cuando Kuftsos no informa a Nacht desde Bögenhafen. Dorflinger retoma el asunto de inmediato donde Kuftsos lo dejó, sobre todo si se descubre el cadáver destrozado de éste. Pronto hará difícil la vida de los Personajes y, al final, tratará de secuestrar o matar a 'Kastor'; sin embargo, la cazarrecompensas no tiene por qué seguir siendo una antagonista. Si el grupo necesita un poco más de fuerza de combate, después de seguirlos durante un tiempo, la astuta Dorflinger se da cuenta de que no están con la Mano Púrpura y puede revelarse de repente, probablemente por medio de un virote de su ballesta, en un momento apropiado para ayudar a los PJs en una dura pelea.</em></p>\n</blockquote>"
+    },
+    "Pandora Lostpocket": {
+      "name": "Pandora Bolsilloperdido",
+      "tokenName": "Pandora Bolsilloperdido",
+      "status": "Bronce 5",
+      "gmnotes": "<p>@UUID[JournalEntry.UvLra86Mr3grVstE.JournalEntryPage.yeJPsx2kYucqODzN#animadores]{Animadores}</p>\n<p>La historia de Pandora es como la de cualquier otro miembro de su 'familia': los Bolsilloperdido. Huérfana y sola, la pequeña Guisante aprendió a sobrevivir con ingenio... Pero las duras calles nunca agriaron su espíritu o empañaron su visión del mundo. Pasaba las tardes durmiendo en los tejados junto a las chimeneas, empapándose de calor y escuchando la música y la camaradería de la taberna de abajo. Pasaba días a escondidas en los teatros de la ópera y las ferias locales de cualquier ciudad en la que se encontrara, tras hacer dedo en una caravana o una reata de carga. Y, cuando al fin la atraparon en la parte de atrás del carromato de un circo ambulante, quedaron impresionados por el rápido ingenio y la risa fácil de la halfling. Guisante encontró un hogar tan extraño como su educación.</p>\n<h4>Una chica no es nadie</h4>\n<p>Mientras se hospeda en una casa de postas donde también se alojan los Personajes, un miembro de la familia que perdió hace tanto tiempo reconoce a Guisante. Theodoricus Adoquínespinoso, su tío abuelo (tercera generación) la identifica de inmediato como una pariente y describe con lágrimas en los ojos cómo la joven Guisante perdió a su familia cuando sus padres murieron en un motín en Altdorf. Todos en la posada lloran al final de la historia y aplauden el reencuentro de la joven con su rica familia... todos excepto la joven Guisante. Ella tiene un hogar y una familia, y ninguno de los dos tiene nada que ver con ese viejo estirado. Más tarde, esa misma noche, se acerca a los PJs y les ruega que la ayuden. Como sea.</p>\n<blockquote class=\"sidebar\">\n    <div class=\"journal-image float-right\">\n        <img src=\"modules/wfrp4e-eis/assets/signs-symbols/purple-hand-stamp.webp\" width=\"63\" height=\"60\">\n    </div>\n    <h3 style=\"text-align: center\"><em>La sombra proyectada - Espíritu brillante en un mundo oscuro</em></h3>\n    <p><em>Puedes usar a Pandora como un poco de color alternativo, o complementario, en la posada @UUID[JournalEntry.mbXVJGCGSm8m7ANd.JournalEntryPage.U1AyyYhJ5Oqyb6VP]{La Diligencia y los Caballos}, donde está deleitando a los otros PNJs con el violín o tal vez haciendo hábiles malabares lanzando cuchillos para el regocijo de los cocheros ebrios. Puede que incluso acompañe a los Personajes en la diligencia, ya que, </em>'seguro que no ocupo mucho espacio, ¿eh?' <em>y, por supuesto, va camino de @UUID[JournalEntry.ro7SIltM899Ogrk8]{Bögenhafen} para la feria.</em></p>\n    <p><em>Es posible utilizar a Guisante como una atracción en la @UUID[JournalEntry.MB5a0zBGJcZhEYUI]{Schaffenfest}, donde también puedes usarla para mostrar, si lo deseas, uno de los aspectos más oscuros del Viejo Mundo: el flagrante racismo en lo que a las especies se refiere. A pesar de ser ingeniosa y en general legítimamente encantadora, hay quienes entre la multitud admiradora dirán cosas muy hirientes sobre la 'enana parloteadora', refiriéndose a Guisante y pueden acusarla de robar bolsillos. Cuando las cosas se ponen feas, Guisante recurre a los Personajes para que la ayuden, especialmente si los conoció antes en </em>La Diligencia y los Caballos<em>. Después, paga generosas rondas de bebidas con mucho más dinero del que debería tener. </em>'Bueno, sí, le robé, pero sólo después de que se comportara como un idiota'<em>.</em></p>\n    <p><em>Si los Personajes se interesan por ella, podrían incluso incluirla en su investigación. No es muy útil en una pelea, pero es una persona que habla con fluidez y una distracción excepcional si los Personajes necesitan mantener a alguien 'ocupado' mientras saquean una o dos oficinas.</em></p>\n</blockquote>"
+    },
+    "Wolmar Rotte": {
+      "species": "Humano",
+      "status": "Bronce 5",
+      "gmnotes": "<p>@UUID[JournalEntry.UvLra86Mr3grVstE.JournalEntryPage.yeJPsx2kYucqODzN#jugadores]{Jugadores}</p>\n<p>Este charlatán es incorregible. Un sinvergüenza del más alto nivel. Un pillo verdadero y minucioso. Una vez, le vendió a un príncipe de los mercaderes un trozo de azúcar de roca manchado de azul, alegando que era 'un zafiro marino del lejano Ulthuan'. En otra ocasión, engañó a Trancas Quendalmanliye, dueño de un famoso casino de Marienburgo, para que le dejara usar sus propias cartas en una partida de los Dedos de Ranald... Ni que decir tiene que ya no se le permite entrar en la ciudad. Rotte es un hombre modesto, de mediana edad, y por lo general tiene el don de ocupar tan solo el espacio suficiente para conseguir lo que quiere y escapar sin consecuencias.</p>\n<h4>Podrido hasta la médula</h4>\n<p>Algunas personas nacen con suerte, bendecidas por Ranald. Otros, bueno, sacan la suya de fuerzas mucho más oscuras. Sin embargo, no siempre saben de dónde viene su fortuna y, para un estafador, ser engañado es con mucho la mayor vergüenza. Rotte no recuerda cuándo ocurrió, ni cómo empezó el camino, pero ahora lleva un demonio a la espalda con extrañas exigencias y hambriento de almas. El demonio quiere que se atienden sus demandas y, de vez en cuando, un alma para consumir. No le importa el alma de quién, siempre y cuando se pueda alimentar de ella... Y entonces, los Personajes entran en la guarida actual de Rotte haciendo preguntas. No costará mucho: una victoria, una derrota, un empate y una gota de sangre en el As de Martillos...</p>\n<blockquote class=\"sidebar\">\n    <div class=\"journal-image float-right\">\n        <img src=\"modules/wfrp4e-eis/assets/signs-symbols/purple-hand-stamp.webp\" width=\"63\" height=\"60\">\n    </div>\n    <h3 style=\"text-align: center\"><em>La sombra proyectada - Dedos manchados</em></h3>\n    <p><em>Se puede usar a Rotte como alternativa a @UUID[Actor.RXY98JwsYTfmOfGa]{Phillipe Descartes} en la posada @UUID[JournalEntry.mbXVJGCGSm8m7ANd.JournalEntryPage.U1AyyYhJ5Oqyb6VP]{La Diligencia y los Caballos}, sobre todo si el grupo ya está familiarizado con el jugador bretoniano. A diferencia de Descartes, Rotte no es un gran luchador. Sin embargo, es mucho más despiadado y más peligroso de lo que parece, ya que Wolmar es un agente del Caos. Aunque la Mano Púrpura aparecerá seguro de nuevo al final de la Campaña <strong>El Enemigo Interior</strong>, quizás habrás notado que no tiene presencia en @UUID[JournalEntry.ro7SIltM899Ogrk8]{Bögenhafen} (bueno, aparte del desdichado 'Kastor'). Puedes cambiar eso si añades a Rotte como agente principal de la secta en la ciudad, uno encargado de investigar la 'traición' del </em>magister impedimentae<em>.</em></p>\n    <p><em>En lugar de ello, puede ser un agente del @UUID[JournalEntry.ro7SIltM899Ogrk8.JournalEntryPage.6pjg22hcwtaCERBb]{Ojo Vigilante} o de otra secta, como @UUID[Compendium.wfrp4e-starter-set.journals.d8nvgs2H5MmtKhdM.JournalEntryPage.L5gV9pgaWXB3floP#el-agarron-cambiante]{El Agarrón Cambiente} o @UUID[Compendium.wfrp4e-starter-set.journals.d8nvgs2H5MmtKhdM.JournalEntryPage.L5gV9pgaWXB3floP#los-sin-rostro]{Los Sin Rostro}. Si ése es el caso, es posible que también quiera interrumpir el ritual (aunque no por motivos altruistas, cierto) y sin duda tratará de engañar a los Personajes para conseguir sus objetivos y deshacerse de ellos en el momento en que dejen de serle útiles.</em></p>\n</blockquote>"
+    },
+    "Maria Braund": {
+      "species": "Humano",
+      "status": "Bronce 2",
+      "gmnotes": "<p>@UUID[JournalEntry.UvLra86Mr3grVstE.JournalEntryPage.yeJPsx2kYucqODzN#salteadores]{Salteadores}</p>\n<p>La historia de esta forajida es tan antigua como el propio Imperio: un joven se alista en el Ejército Estatal; lucha; envejece mucho antes de llegar a ser un veterano; lo tratan de manera horrible a la vuelta y tiene problemas para encontrar trabajo; se convierte en salteador para poder llegar a fin de mes. En el caso de Braund, sin embargo, disfruta de verdad de su nueva vocación, pues ve en ella la aventura que se le prometió cuando aceptó por vez primera el salario del Emperador.</p>\n<h4>Una compañía incómoda</h4>\n<p>La infamia es el pan de cada día del salteador. Si las víctimas potenciales saben quién eres y de qué eres capaz, es mucho menos probable que se resistan. Sin embargo, y mientras huye, Braund asalta una diligencia que, por desgracia, lleva a su viejo sargento del Ejército Estatal. Ahora, el sargento Dieter Rundmann busca 'contratistas privados' para silenciar a Braund y que nadie descubra que uno de sus propios reclutas ha resultado ser una manzana podrida. Al mismo tiempo, Braund busca compañeros emprendedores que la ayuden a matar a su viejo sargento.</p>\n<blockquote class=\"sidebar\">\n    <div class=\"journal-image float-right\">\n        <img src=\"modules/wfrp4e-eis/assets/signs-symbols/purple-hand-stamp.webp\" width=\"63\" height=\"60\">\n    </div>\n    <h3 style=\"text-align: center\"><em>La sombra proyectada - Una buena noche para un robo</em></h3>\n    <p><em>Como está escrito, nada destacable sucede en <strong>El Enemigo en las Sombras</strong> durante los cuatro idílicos días en que el </em>Berebeli <em>viaja de @UUID[JournalEntry.tT80gcSmeK5oO5C2.JournalEntryPage.l2kZtajL8d3RlPqO]{Weissbruck} a @UUID[JournalEntry.ro7SIltM899Ogrk8]{Bögenhafen} por el @UUID[Compendium.wfrp4e-core.journals.ozE2DMCMK64eE5pD.JournalEntryPage.I0krpnI0RnVs5RwK]{Río Bögen}. En esta parte del viaje, puede que quieras presentar los Personajes a Braund, sobre todo si han eludido las maquinaciones de @UUID[Actor.echM0Sjy5xpt5KAQ]{Kuftsos} en Weissbruck. Una noche, los PJs oyen un estruendo de cascos y, de repente, de la niebla que cubre las orillas del Bögen, una figura fantasmagórica enmascarada y a caballo salta desde un alta orilla para aterrizar, de forma sorprendentemente elegante, caballo y todo, en medio del </em>Berebeli<em>. La salteadora se presenta desde detrás de una pistola amartillada y apuntada como</em> 'una especie de cobradora de peajes'<em> y procede a robar a los PJs y a la tripulación del Berebeli. Es muy educada, pregunta si se dirigen a la Schaffenfest y, si no hay problemas, saca sólo una pequeña suma de cada persona, antes de irse. Si los PJs se resisten, dispara (más para asustar y disuadir que para matar), agarra una o dos bolsas y huye, haciendo saltar con facilidad al caballo al río, y se aleja en dirección a Bögenhafen. Por desgracia, una de las bolsas que se lleva contiene la carta de la herencia y la de la declaración jurada... Si Braund las encuentra o se las lleva, las leerá, abrirá mucho los ojos y luego se las devolverá a 'Kastor' con el comentario de que los verá más adelante, cuando tengan los bolsillos llenos; también se dirige a la @UUID[JournalEntry.MB5a0zBGJcZhEYUI]{Schaffenfest}, y está feliz de esperar a una presa tan jugosa.</em></p>\n    <p><span style=\"font-style: normal;\">Sea como sea la huida de Braund, hay una posibilidad de que el caballo se lesione al saltar de la barcaza, lo que añade algo de humor a este personaje potencialmente recurrente.</span></p>\n</blockquote>"
+    },
+    "Eberhart von Durbheim": {
+      "species": "Humano",
+      "status": "Oro 3",
+      "gmnotes": "<p>@UUID[JournalEntry.UvLra86Mr3grVstE.JournalEntryPage.yeJPsx2kYucqODzN#nobles]{Nobles}</p>\n<p>Un joven alto con la cabeza rapada, un físico lobuno y un brillo salvaje en sus ojos, el 'Gran Baronet' se proclama heredero de la línea de los von Durbheim. Se dice que los von Durbheim (gobernantes originales de la provincia de Sölland, ahora disuelta) murieron en 1707 CI, pero el 'Gran Baronet' se aferra a su título. Por supuesto, es poco mejor que un vividor empobrecido vestido con galas que ya parecen trapos, pero en el Imperio la imagen es a menudo más importante que la realidad. Eberhart no pierde la oportunidad de recordar a todos quién es.</p>\n<h4>Las Líneas de Pfeildorf</h4>\n<p>Mientras se sienta a comer y beber en una posada, un juglar hace una interpretación de <em>Las líneas de Pfeildorf,</em> una balada que lamenta la pérdida de la provincia de Sölland y la de una condesa extranjera (@UUID[Compendium.wfrp4e-rnhd.actors.CcqiAghkzgp9u1In]{Emmanuelle von Liebwitz}) sentada en el trono. Todos en el bar escuchan en silencio, pero no todos miran con alegría. Al final, el juglar proclama que no es otro que el 'Gran Baronet' Eberhart von Durbheim, el heredero retornado del trono de Sölland. Afloran cuchillos, se tumban mesas y el bar explota en una pelea violenta. Eberhart exige que cada uno elija bando, y sugiere grandes recompensas para quienes se unan a él.</p>\n<blockquote class=\"sidebar\">\n    <div class=\"journal-image float-right\">\n        <img src=\"modules/wfrp4e-eis/assets/signs-symbols/purple-hand-stamp.webp\" width=\"63\" height=\"60\">\n    </div>\n    <h3 style=\"text-align: center\"><em>La sombra proyectada - Statu quo</em></h3>\n    <p><em>Se puede usar al llamativo von Durbheim para dar color de fondo adicional en @UUID[Compendium.wfrp4e-core.journals.ozE2DMCMK64eE5pD.JournalEntryPage.V6tkgQ9A2skppjyl]{Altdorf} o en la @UUID[JournalEntry.MB5a0zBGJcZhEYUI]{Schaffenfest}. Dondequiera que lo coloques, deleita a una multitud emocionada con historias de su intrépida misión en pos de 'recuperar el honor de su familia'. El verdadero propósito de su presencia, sin embargo, es mostrar claramente a los Jugadores lo que los nobles pueden hacer en el Imperio. En algún momento, uno o más de los espectadores (que, a todas luces, no provienen de la nobleza) se hartan del 'Gran Baronet' y se enfrentan a él. Von Durbheim mira al individuo por un momento, luego saca el florete y lo atraviesa en un solo movimiento fluido, matándolo en el acto. Hace un gesto a un guardia cercano, suelta un 'ocúpate de esto' y lanza un chelín al cuerpo antes de alejarse, bebiendo con desdén de un vaso de cerveza que coge de alguien de la multitud. Nadie lo detiene, nadie dice una palabra. El guardia se guarda el chelín y comienza a organizar con discreción el traslado del cuerpo al Jardín de Morr local.</em></p>\n</blockquote>"
+    },
+    "Rembrandt Haube": {
+      "species": "Humano",
+      "status": "Bronce 2",
+      "gmnotes": "<p>@UUID[JournalEntry.UvLra86Mr3grVstE.JournalEntryPage.yeJPsx2kYucqODzN#forajidos]{Forajidos}</p>\n<p>Lejos de ser la flecha más afilada del carcaj, Haube nunca ha entendido de verdad los ideales románticos del forajido. En algún momento, el concepto de 'robar al rico para dar al pobre' se invirtió, y nadie tuvo valor para decírselo. La nobleza local, cubierta de donaciones de riquezas robadas, curiosamente ha disminuido las leyes sobre el bandidaje en la región en la que Haube opera a una pequeña multa. El conflicto de intereses no se les escapa a los comerciantes y campesinos, pero sí que se le escapa a Haube.</p>\n<h4>Nuestras haciendas por un sheriff</h4>\n<p>Una banda de campesinos aborda a los Personajes en el camino. Les cuentan una historia extraña, pero innegable, acerca de un 'forajido' que roba a los pobres para dárselo a los ricos, y ruegan a los PJs que los ayuden. No quieren una revolución contra su señor, sólo quieren que alguien, cualquiera, haga respetar la ley. Poco saben los PJs que la ley del lugar ha cambiado y que matar a un forajido es ahora un delito…</p>\n<blockquote class=\"sidebar\">\n    <div class=\"journal-image float-right\">\n        <img src=\"modules/wfrp4e-eis/assets/signs-symbols/purple-hand-stamp.webp\" width=\"63\" height=\"60\">\n    </div>\n    <h3 style=\"text-align: center\"><em>La sombra proyectada - Compañeros de celda</em></h3>\n    <p><em>Por mala suerte, por estar en el lugar equivocado, o por tener una fe gravemente equivocada en el sistema de justicia del Imperio, los Personajes pueden verse en una celda del cuartel de la Guardia durante el transcurso de <strong>El Enemigo en las Sombras</strong>. Este es un excelente momento para presentar al corto de entendederas pero musculoso Haube, que siempre está dispuesto a escaparse de la cárcel para poder volver a robar a los pobres para dárselo a los ricos. Además, es posible que los amigos que tiene en las altas esferas hayan organizado una liberación subrepticia; un vigilante sobornado por aquí, una llave extraviada por allá, y Haube vuelve a llenar sus arcas, junto a los extraños nuevos amigos de los que se ha encariñado mientras estaba en el trullo.</em></p>\n    <p><em>Si los PJs convencen a Haube de que los nobles están en peligro inminente debido a la siniestra trama que han descubierto (lo cual, de alguna manera, es bastante cierto) es posible que éste los ayude en caso de que necesiten más brazos fuertes para enfrentarse a la </em>Ordo Septenarius<em>. De lo contrario, se muestra confuso de manera humorística, y es divertido de interpretar.</em></p>\n</blockquote>"
+    },
+    "Wilhelm Kind": {
+      "species": "Humano",
+      "status": "Bronce 1",
+      "gmnotes": "<p>@UUID[JournalEntry.UvLra86Mr3grVstE.JournalEntryPage.yeJPsx2kYucqODzN#cuatreros]{Cuatreros}</p>\n<p>Este bandolero confía en su amplia sonrisa para compensar el hecho de que está lejos de ser el cuchillo más afilado del cajón. Descubrió a edad temprana que, en última instancia, la confianza puede compensar una gran cantidad de carencias personales. Las amenazas hechas con firmeza y una historia emocionante para cubrir sus delitos se convirtieron en el pan de cada día para él. Donde la mayoría de cuatreros confía en mezclarse con el ambiente, Kind prefiere sobresalir y recalcar el hecho de que no posee nada.</p>\n<h4>La huida más lenta</h4>\n<p>Un terrateniente despiadado ha contratado a Kind para 'adquirir' el preciado toro semental de un rival. El robo inicial salió bien, pero todo ha sido un desastre desde entonces, ya que el reacio animal ha sido de todo menos cooperador. Sabiendo que los @UUID[JournalEntry.t3btEsGyiZjofqZ8]{guardas de caminos} ya le pisan los talones, el desesperado Kind ofrece a los Personajes un trato: distraer a los perseguidores el tiempo suficiente para que huya, y repartirá las ganancias con ellos. Por supuesto, Kind no tiene intención de cumplir su palabra y tratará de escabullirse de los PJs una vez que esté fuera del alcance de éstos.</p>\n<blockquote class=\"sidebar\">\n    <div class=\"journal-image float-right\">\n        <img src=\"modules/wfrp4e-eis/assets/signs-symbols/purple-hand-stamp.webp\" width=\"63\" height=\"60\">\n    </div>\n    <h3 style=\"text-align: center\"><em>La sombra proyectada - ¡Arre!</em></h3>\n    <p><em>Si quieres algún problema alternativo en el camino a @UUID[JournalEntry.ro7SIltM899Ogrk8]{Bögenhafen}, puedes disponer que los Personajes se topen con Kind, que lucha por llevar 'su' toro a la @UUID[JournalEntry.MB5a0zBGJcZhEYUI]{Schaffenfest}. Kind ofrece dividir una parte de sus ganancias con los PJs si ayudan. Por supuesto, eso se puede complicar cuando el indignado granjero cuyo animal ha robado Kind llegue a la feria antes que éste y discierna con facilidad las marcas distintivas. Los personajes tendrán que explicarse con rapidez para evitar que los acusen de cuatreros.</em></p>\n</blockquote>"
+    },
+    "Delberz Trötte": {
+      "species": "Humano",
+      "status": "Bronce 4",
+      "gmnotes": "<p>@UUID[JournalEntry.UvLra86Mr3grVstE.JournalEntryPage.yeJPsx2kYucqODzN#vendedores-ambulantes]{Vendedores ambulantes}</p>\n<p>Si hay una habilidad que es innegable que tenga Trötte, es la de cubrir mucho terreno en poco tiempo. Trötte, famoso por su regularidad, pero poco de fiar debido a su tendencia a exagerar la verdad, es muy conocido por los múltiples caminos de Reikland. Con una mula de confianza y alforjas repletas, Trötte está listo y dispuesto a suministrar cualquier cosa que se pueda necesitar... siempre y cuando no sea auténtica o del todo fiable.</p>\n<h4>La burbuja del Camino del Sur</h4>\n<p>Trötte, como tantos reiklandeses, ha caído en el error de pensar que es un poco más listo de lo que en verdad es. La promesa de entregar harina en un pueblo, un acuerdo para nuevos cuchillos en otro y un envío ya comprado y pagado de aceite para lámparas a un tercero ha dejado a Trötte en una situación muy difícil. En circunstancias normales, podría salir del apuro hablando, pero Delberz se involucra de manera regular en todo tipo de planes para obtener más dinero, incluido el transporte discreto de libros en extremo dudosos (es decir, blasfemos), uno de los cuales lleva en estos momento en las alforjas. Si los furiosos clientes descubren lo que lleva mientras buscan la mercancía prometida, bueno, es probable que acabe en la hoguera, por lo que necesita ayudantes que lo mantengan a salvo.</p>"
+    },
+    "Brokur Zindrisson": {
+      "species": "Enano",
+      "status": "Plata 1",
+      "gmnotes": "<p>@UUID[JournalEntry.UvLra86Mr3grVstE.JournalEntryPage.G9MK38M69rVeXrtu#artesanos]{Artesanos}</p>\n<p>Creen los elfos que las muchas frustraciones y fracasos de Karaz Ankor son culpa exclusiva de la naturaleza intrínseca de los enanos. Zindrisson tiene un gran talento, pero es propenso al mal humor, y se le podría describir con facilidad como un enano arquetípico, excepto porque es consciente de sus propias deficiencias y trata de arreglarlas con desesperación y de manera poco ortodoxa. Brokur aceptará encargos de herrería desafiantes que ningún enano 'respetable' consideraría; cuanto más inusuales, mejor. Siempre va en busca de materiales 'poco usuales' que le puedan ser útiles.</p>\n<h4>Yo no he pedido esto</h4>\n<p>Aunque, según las apariencias, parece un enano por completo honrado, Zindrisson está a la fuga. Deshonrado antes de nacer por un padre al que nunca conoció, Brokur, hijo de Zindri, es el heredero de un Agravio que lo impulsa una muerte segura, y quizá, hacia un legado de deshonra para sí. De todas formas, Zindrisson no se va a quedar sentado esperando a que los Contabilizadores lo arrastren, ni está preparado para afeitarse la cabeza, tomar las armas y malgastar la vida en una búsqueda inútil. Necesita conspiradores (agentes libres que tengan un don para el engaño) para fingir su muerte y liberarlo de los juramentos familiares.</p>\n<blockquote class=\"sidebar\">\n    <div class=\"journal-image float-right\">\n        <img src=\"modules/wfrp4e-eis/assets/signs-symbols/purple-hand-stamp.webp\" width=\"63\" height=\"60\">\n    </div>\n    <h3 style=\"text-align: center\"><em>La sombra proyectada - Flores de hierro</em></h3>\n    <p><em>Zindrisson es un encuentro útil y divertido, sobre todo porque los Personajes principiantes buscarán con frecuencia un herrero para hacerse con un arma decente a la primera oportunidad que tengan. Se le puede ubicar con facilidad en Altdorf o en la Schaffenfest, o en ambas, ya que en ocasiones viaja a grandes eventos. Al principio, parece el 'típico herrero enano', ya que lanza a los clientes una mirada aguda desde debajo de unas cejas grandes, tupidas y negras.</em></p>\n    <p><em>Los PJs perspicaces se darán cuenta con rapidez de que todas las mercancías del enano llevan el sello de una artesanía extraña y rara. Zindrisson vende intrincadas 'flores de hierro' que gustan sobre todo a los nobles. Muchas de sus piezas de herrería y armas llevan una aleación de un metal verde inusual. Algunas tienen adornos y grabados extraños. De hecho, está dispuesto a vender algunos de sus 'proyectos experimentales' a una fracción del coste normal, siempre y cuando los PJs prometan hablar bien de las armas y decirle a todo el mundo dónde las consiguieron.</em></p>\n</blockquote>"
+    },
+    "Pompai Ricolma": {
+      "species": "Humano",
+      "status": "Bronce 3",
+      "gmnotes": "<p>@UUID[JournalEntry.UvLra86Mr3grVstE.JournalEntryPage.G9MK38M69rVeXrtu#chalanes]{Chalanes}</p>\n<p>De triste fama en todo su país natal, Tilea, esta chalana se encuentra en el centro de los problemas sin importar dónde vaya, lo que significa que se mueve mucho. La mayoría, aunque no todos, de dichos problemas no son obra de ella, aunque eso no quiere decir que no intente sacar partido de cualquier cosa. Sin embargo, aunque no para de moverse, su reputación deja de empeorar: ese lunar pintado, su enorme peluca empolvad y su gracioso ingenio la siguen a todas partes.</p>\n<h4>Una medida de los hombres</h4>\n<p>Ricolma tiene un gran problema: se ha comprometido con un joven soltero noble, rico, atractivo e idóneo per completo, con el que cree que podria estar dispuesta a sentar cabeza... lo cual es un problema, porque el día de la boda que se le propone coincide con otras cuatro a las que está obligada a asistir, ya que también se casa en ellas. Para empeorar las cosas, ya ha utilizado las dotes para pagar deudas, así como para enviar dinero a otros puertos del Imperio para montarse 'nuevas vidas', por lo que no puede devolver el dinero. Además, su corazón romántico exige que cada boda tenga lugar. Tiene muchas pelucas y vestidos de repuesto, y las habilidades de maquillaje necesarias para convertir incluso al enano más verrugoso en una sem- blanza de su belleza. Ahora, todo lo que necesita es algo de ayuda para algún que otro reemplazo, drogar a sus muchos 'amores' con el fin de reducir su perspicacia y ayudarla a fingir diversas muertes igual de trágicas, pero del todo diferentes…</p>\n<blockquote class=\"sidebar\">\n    <div class=\"journal-image float-right\">\n        <img src=\"modules/wfrp4e-eis/assets/signs-symbols/purple-hand-stamp.webp\" width=\"63\" height=\"60\">\n    </div>\n    <h3 style=\"text-align: center\"><em>La sombra proyectada - Por aquí</em></h3>\n    <p><em>Ferias como la @UUID[JournalEntry.MB5a0zBGJcZhEYUI]{Schaffenfest} albergan de manera invariable algunos chalanes, y puedes usar a Ricolma para destacar diferentes partes de la feria a las que quieras dirigir la atención del grupo. Los Jugadores que no estén seguros de lo que harán los Personajes encontrarán en Ricolma una guía útil, ya que les señalará con alegría diversos puntos de interés mientras arrastra a los PJs de un tugurio a otro. Como si fuera una broma sin fin, no para de presentar a los PJs a 'su prometido' en diferentes establecimientos de la feria. Si empiezan a decir algo al respecto delante de un 'prometido', distraerá al novio de inmediato con un beso, o algo aún más directo, mientras da un pisotón al PJ o un codazo.</em></p>\n</blockquote>"
+    },
+    "Sonny Rags": {
+      "name": "Sonny 'el Trapos'",
+      "tokenName": "Sonny 'el Trapos'",
+      "species": "Humano",
+      "status": "Bronce 2",
+      "gmnotes": "<p>@UUID[JournalEntry.UvLra86Mr3grVstE.JournalEntryPage.G9MK38M69rVeXrtu#mendigos]{Mendigos}</p>\n<p>Si no supieras que hay una persona debajo de todos esos pliegues, cinturones, cuerdas y harapos, supondrías que Sonny es un montón de ropa sucia. Una vez que abre la boca y comienza a relatar su triste historia, desearías que fuera sólo un montón de ropa sucia... pero la de Sonny está bien ensayada: es lo bastante lamentable para mantener la atención y que sus socios puedan vaciar algunos bolsillos, pero lo bastante terrible para que la gente quiera seguir adelante con rapidez sin preocuparse de sus bolsillos.</p>\n<h4>De la pobreza a la riqueza</h4>\n<p>Sonny destaca por su ambición. Aunque la banda de huérfanos que tiene y él están en el puño del notorio señor del crimen Franz Pfeiffer, alias 'un dedo por tus pensamientos', Sonny cree que su banda podría ser grande de verdad... Sólo necesitan a alguien que tenga las pocas luces necesarias para enfrentarse al hombre de arriba. Para ello, los Personajes podrían notar que cosas importantes que les pertenecen desaparecen y aparecen en manos de ladrones, a veces vivos, a veces cortados en tiras, a los que pillan por toda la ciudad. Pfeiffer rastreará los asesinatos hasta los PJs, pero ¿recordarán que todo esto comenzó una noche, después de escuchar a un triste y solitario montón de trapos a la salida de un bar?</p>\n<blockquote class=\"sidebar\">\n    <div class=\"journal-image float-right\">\n        <img src=\"modules/wfrp4e-eis/assets/signs-symbols/purple-hand-stamp.webp\" width=\"63\" height=\"60\">\n    </div>\n    <h3 style=\"text-align: center\"><em>La sombra proyectada - El ojo inadvertido</em></h3>\n    <p><em>Los mendigos son tan comunes que si no dejas de mencionar que están ahí, pronto incluso los Personajes los ignorarán, lo cual los hará útiles no sólo para las organizaciones delictivas, sino también para las más oscuras. Sonny es un agente excelente, ya que puedes usarlo para cualquier número de sectas distintas, aunque trabaja especialmente bien como vigía de @UUID[JournalEntry.ro7SIltM899Ogrk8.JournalEntryPage.6pjg22hcwtaCERBb]{El Ojo Vigilante}. Haz que Sonny siga el rastro de los PJs mientras viajan por @UUID[JournalEntry.ro7SIltM899Ogrk8]{Bögenhafen}, e informa de sus acciones a cualquier grupo que represente, lo que podrá justificar tanto una ayuda inesperada como extraños obstáculos en momentos inconvenientes, cuando cualquier secta a la que el vagabundo informa ejerza su influencia. Aunque Sonny intenta que no lo detecten, los PJs perspicaces acabarán por darse cuenta de que siguen viendo gente que lleva los colores de cualquier grupo al que pertenezca Sonny, hablando con lo que parecen ser sólo montones de basura.</em></p>\n</blockquote>"
+    },
+    "Heinrich Marken": {
+      "species": "Humano",
+      "status": "Bronce 5",
+      "gmnotes": "<p>@UUID[JournalEntry.UvLra86Mr3grVstE.JournalEntryPage.G9MK38M69rVeXrtu#trileros]{Trileros}</p>\n<p>Ingenioso, con una cómica postura encorvada, cejas pobladas, manos inteligentes y una mirada de complicidad, Heinrich Marken 'el Gruñón' estaba destinado a convertirse en un genio del teatro. Hasta que perdió una suma equivocada en las cartas, se enemistó con el tipo incorrecto al huir y practicó toda una serie de habilidades desacertadas para sobrevivir... Ahora, el Gruñón, plagado de recuerdos de cómo podría haberse hecho rico, deleita con sus habilidades a los ciudadanos del Imperio. Su mirada los atrae, su ingenio los confunde, la mano es más rápida que la vista... Y aun así, siempre se van con una sonrisa en los labios.</p>\n<h4>¡Oh, hermano! ¿Dónde estás?</h4>\n<p>Los Marken han venido en busca del hermano desaparecido. No se detendrán ante nada hasta que el Gruñón pague por darle la espalda a la familia y a las 'deudas'. Ofrecen una suma decente por su paradero y mucho más por él en sí, porque es evidente que están desesperados por encontrarlo. ¿Por qué los Marken quieren con tanto ahínco a su rebelde hermano de vuelta, y qué harán los Personajes cuando Heinrich les ofrezca una manera peligrosa y menos pagada, pero mucho más divertida, de engañar a sus hermanos y enviarlos a freír espárragos?</p>\n<blockquote class=\"sidebar\">\n    <div class=\"journal-image float-right\">\n        <img src=\"modules/wfrp4e-eis/assets/signs-symbols/purple-hand-stamp.webp\" width=\"63\" height=\"60\">\n    </div>\n    <h3 style=\"text-align: center\"><em>La sombra proyectada - Nunca sería miembro</em></h3>\n    <p><em>Puedes usar al Gruñón sólo para añadir un toque divertido a la @UUID[JournalEntry.MB5a0zBGJcZhEYUI]{Schaffenfest}, pero su historia es mucho más profunda si quieres enredar a los Personajes en ella, ya que ya ha conocido a 'Kastor Lieberung' antes. La actuación de Marken no era originalmente en solitario: sus muchos hermanos y él vivían, jugaban y llevaban a cabo diversas y 'extrañas' estafas juntos. Sus hermanos se involucraron en un 'excitante grupo', que Heinrich pronto descubrió que era mucho más siniestro que su nombre: la Mano Púrpura. Marken huyó diciendo: 'Nunca pertenecería a una secta que me tuviera a mí como miembro', pero sabe mucho más sobre la secta del Caos que los Personajes, aunque no mucho sobre sus planes a largo plazo, ya que salió de ella rápidamente. Puedes usarlo para transmitir más acerca de en lo que los Personajes se han metido, ya que el perspicaz charlatán pronto se dará cuenta de que el que se parece no es Lieberung. Si el grupo parece ser de tipo decente, pronto se acercará a ellos para beber bastante y charlar tranquilamente.</em></p>\n</blockquote>"
+    },
+    "Alette Zimmermann": {
+      "species": "Humano",
+      "status": "Bronce 3",
+      "gmnotes": "<p>@UUID[JournalEntry.UvLra86Mr3grVstE.JournalEntryPage.G9MK38M69rVeXrtu#malhechores]{Malhechores}</p>\n<p>Cuando la gente de alto copete habla de quienes no lo son, con su tono más duro e intolerable, describe de manera invariable a Alette Zimmermann. Nunca se ha ganado un pfennig por medios honestos, carece de toda pizca de decoro o gracia, y ha pasado más tiempo dentro de una celda que fuera. Escupe flema de manera regular cuando habla, no para de parpadear como un búho a la luz del día y hace girar incansablemente un gastado chelín sobre los nudillos (con una habilidad notable). Zimmermann, sin embargo, es una superviviente nata, y se rige por el simple hecho de que nada es imposible para ella, ningún acto representa ir demasiado lejos y nadie, por muy aterrador que sea, está a salvo de la traición.</p>\n<h4>Vendida como una pardilla</h4>\n<p>Zimmermann lleva décadas diciendo que “ella no ha hecho nada”, pero esta vez dice la verdad. Sorprendida con las manos en la masa portando un icono de Stromfels, ha sido condenada a muerte por ahogamiento: un castigo tradicional por herejía contra el Culto de Manann. Sin embargo, los Personajes saben bien la verdad; mientras se escabullían en sus propios “asuntos”, la vieron robar el icono —junto con una selección de otros bienes— a otra persona. También saben que Zimmermann sabe mucho más de lo que aparenta, pues hay indicios de una conspiración que podría sumir la economía del Reik en el caos, arruinando las vidas de innumerables personas y, lo que es peor, ¡los intereses de los Personajes! Hora de preparar una fuga.</p>\n<blockquote class=\"sidebar\">\n    <div class=\"journal-image float-right\">\n        <img src=\"modules/wfrp4e-eis/assets/signs-symbols/purple-hand-stamp.webp\" width=\"63\" height=\"60\">\n    </div>\n    <h3 style=\"text-align: center\"><em>La sombra proyectada - Sombras en los dedos</em></h3>\n    <p><em>La reincidencia de Zimmermann y su voluntad de participar en cualquier plan la convierten en la compañera de celda perfecta si los Personajes terminan de alguna manera encarcelados, para lo que resultará ideal su gran habilidad en Forzar cerraduras. Cualquier interacción positiva con ella también la llevará a invitar a los PJs a conocer a su jefe, @UUID[Actor.sElqSPHULTbnUjf2]{Franz Baumann}, que quizá tenga algún trabajo o información útil para ellos.</em></p>\n    <p><em>Aunque la relación de los PJs con Baumann vaya bien en el curso normal de <strong>El Enemigo en las Sombras</strong>, el sacerdote ranaldano puede decidir que le interesa seguirles el rastro. Lo hace mediante Zimmermann, aunque si la presenta de manera abierta como una fuente de información 'adicional' útil sobre Bögenhafen y la envía con el grupo o si la obliga a seguirlos desde las sombras e informar con regularidad, depende mucho de cuánto hayan logrado impresionarlo. En función de los acontecimientos, los informes de Zimmermann pueden reportar algo de ayuda de los Dedos Torcidos cuando más se necesite. De hecho, y en tal caso, es posible que Alette acabe siendo una de las pocas personas de la población que sabe que los Personajes son inocentes de las cosas de las que los acusarán, y bien puede pronunciar algunas de las líneas de conclusión de <strong>El Enemigo en las Sombras</strong>, si detienen el ritual y deben huir:</em></p>\n    <p>‘Sé lo que habéis hecho. Sois unos héroes, todos vosotros. Pero no habrá nadie que me crea, excepto Baumann; y tendrá sus dudas, vaya que sí. Rezaré a Ranald y a Sigmar para que os cuiden.'</p>\n</blockquote>"
+    },
+    "Keiti Ouala": {
+      "species": "Humano",
+      "status": "Plata 5",
+      "gmnotes": "<p>@UUID[JournalEntry.UvLra86Mr3grVstE.JournalEntryPage.G9MK38M69rVeXrtu#mercaderes]{Mercaderes}</p>\n<p>Es la representante de un lejano príncipe de mercaderes de una tierra cuyo nombre real pocos reiklandeses podrían siquiera empezar a pronunciar, y ha visto más mundo de lo que la mayoría de los humanos pueden soñar que existe. Ouala tiene ojos para una sola cosa: los negocios. No escuchó el canto de los elfos desde las relucientes torres de Lothern ni fue testigo del inmenso esplendor de Copher porque la única canción que oye es el tintineo de las monedas. Sólo tiene ojos para las pieles y las especias que lleva.</p>\n<h4>Desde el reino de los cielos</h4>\n<p>Hace meses que Ouala lleva consigo una tablilla de piedra envuelta en seda y tela de saco que le vendieron en Lothern y que ha viajado por todo el Viejo Mundo. No tiene ni idea de por qué la compró ni de por qué la ha traído hasta aquí. Es pesada, no tiene nada de interesante en particular y está cubierta de arañazos indescifrables que se han desvanecido lejos de cualquier apariencia de belleza que pudieran haber tenido alguna vez. Y aun así, parece que no puede dejarla ir. No ha encontrado ni un solo cliente al que se la pueda ofrecer... hasta que ve a un Personaje, y la mujer siente una compulsión: es el destinado a comprar la tablilla y ella debe ser quien se la venda.</p>\n<blockquote class=\"sidebar\">\n    <div class=\"journal-image float-right\">\n        <img src=\"modules/wfrp4e-eis/assets/signs-symbols/purple-hand-stamp.webp\" width=\"63\" height=\"60\">\n    </div>\n    <h3 style=\"text-align: center\"><em>La sombra proyectada - La recompensa del mundo</em></h3>\n    <p><em>Usa a Ouala en la Schaffenfest para mostrar lo grande que es el Viejo Mundo y lo lejos que es posible viajar, pero también puede proporcionar una 'entrada' inusual para los Personajes más adelante en la aventura, si se desea. La fuerte voz de la mercader se impone al estruendo de la feria, llamando a todos a acudir y ver las mercancías que ha traído de allende los mares. Tiene un buen número de productos raros y de especias (pero no armas) para comerciar. Ouala dejará que los PJs que la impresionen prueben alguna de las especias inusuales que ofrece y pasará al regateo consabido mientras les ofrece una taza de un te marrón delicioso y fuerte al que llama 'ka-feh'. Está dispuesta a comerciar con los granos marrones tostados con los que hace el ka-feh, un producto que a los reiklandeses les encantaría, pero con el que no han tenido casi contacto ya que, como extranjera, le han dado a Ouala menos oportunidades de negocio. A medida que empiezan a tratar con más y más comerciantes, los PJs más espabilados quizá se den cuenta de que el ka-feh podría ser un elemento que les ayudaría a abrir puertas y consiguirles una cita con los Steinhäger (@UUID[Actor.Coxv92EfL6VmlpCS]{Franz} o Heinrich) o, posiblemente, una reunión con @UUID[Actor.7rE1jYAeMNKfrgcQ]{Friedrich Magirius}. Por fortuna, Ouala se quedará en la población varios días después de la Schaffenfest, para continuar sus tratos antes de seguir adelante.</em></p>\n</blockquote>"
+    },
+    "Konrad Brecht": {
+      "species": "Humano",
+      "status": "Bronce 5",
+      "gmnotes": "<p>@UUID[JournalEntry.UvLra86Mr3grVstE.JournalEntryPage.G9MK38M69rVeXrtu#pandilleros]{Pandilleros}</p>\n<p>En los garitos que frecuenta este chantajista notorio y aterrador lo conocen como 'Konrad la Maza'. Es un chantajista notorio y aterrador. Es un fanático de los buenos modales y de las amenazas en voz baja; pero, con una estatura de 5' 4'' y un fisico algo fofo, a primera vista no parece un buen candidato para la vida criminal. Sin embargo, el exterior y las expresiones del hombre hacen poco para ocultar la total crueldad que esconde. Sus ojos y su sonrisa recuerdan más a un tiburón que a un hombre de negocios, y mantiene el control gracias a estos recursos.</p>\n<h4>Un apetito desenfrenado</h4>\n<p>¿La panadera?, está cubierta de barro, querido. ¿El cantinero?, no puede dormir por la noche. Y el carnicero, bueno, chico, tiene esos tics y suele cerrar la tienda con llave.</p>\n<p>La gente murmura en las tabernas, diciendo que las cosas van mal; pero los rumores enmudecen cuando Konrad pasea por el lugar.</p>\n<p>Los chelines corren sin problemas y todas las bocas comen, tienen sustento, pero no preguntes por el alcalde: se dice que ha salido corriendo.</p>\n<p>Parece que Konrad ya no necesita tu dinero, querido, lo que quiere es que excaves pozos. Túneles grandes y profundos bajo tu casa, querido. ¿Y para qué...? ¿Quién sabe?</p>\n<blockquote class=\"sidebar\">\n    <div class=\"journal-image float-right\">\n        <img src=\"modules/wfrp4e-eis/assets/signs-symbols/purple-hand-stamp.webp\" width=\"63\" height=\"60\">\n    </div>\n    <h3 style=\"text-align: center\"><em>La sombra proyectada - Dedos con garras</em></h3>\n    <p><em>Los Dedos Torcidos los dirige por un sacerdote de Ranald, que sin duda trata de aferrarse a las directrices de su dios. @UUID[Actor.sElqSPHULTbnUjf2]{Baumann} está dispuesto a usar la violencia si es necesario, pero tratará de evitar 'molestias' con los Personajes, a ser posible. Si quieres un encuentro más amenazador en </em>Las Picas Cruzadas<em>, reemplaza a Baumann por Brecht. Aunque 'la Maza' no tiene por qué atacar a los PJs de inmediato, es probable que las condiciones que ponga para dejarlos marchar ilesos sean mucho más perturbadoras que las de Baumann.</em></p>\n</blockquote>"
+    },
+    "Reynald Verstand": {
+      "species": "Humano",
+      "status": "Plata 5",
+      "gmnotes": "<p>@UUID[JournalEntry.UvLra86Mr3grVstE.JournalEntryPage.G9MK38M69rVeXrtu#sirvientes]{Sirvientes}</p>\n<p>No es un secreto que los ricos del Imperio se aprovechan de los sirvientes y se lo hacen pasar mal a los subordinados. Nunca ha sido más cierto que en el caso de Reynald Verstand, el lacayo personal de la excéntrica dama Kirstin Gottlieb. Este es un hombre mayor, aunque mucho más joven de lo que su prematura cabellera gris y su cara arrugada harían creer, y pasa los días atendiendo cada capricho y necesidad de su ama. Esto ha llevado a Verstand a ser un hombre capaz y bien conectado, aunque sin demasiada paciencia.</p>\n<h4>El mayor miedo</h4>\n<p>Verstand está fuera de sí, bebiendo mucho y tirándose del poco cabello canoso que le queda. Ante cualquiera que le escuche, proclama en voz alta que se puede dar por muerto, que su ama nunca le perdonará el último fallo que ha cometido. Parece que su mayor temor se ha hecho realidad: mientras viajaba, el cachorro de leopardo de la dama Gottlieb (Tsarovich Tchaikatsky), ha desaparecido. Reynald no tiene ni idea de dónde ha ido la cría de leopardo, pero cuenta que hace poco se ha aficionado a las ratas, así que estará rondando por las alcantarillas, los callejones traseros y los muladares. Verstand dará cualquier cosa por el regreso de Tchaikatsky. Dada la larga lista de contactos que tiene y los trapos sucios que saben siempre unos de otros, podría ser una recompensa muy valiosa.</p>\n<blockquote class=\"sidebar\">\n    <div class=\"journal-image float-right\">\n        <img src=\"modules/wfrp4e-eis/assets/signs-symbols/purple-hand-stamp.webp\" width=\"63\" height=\"60\">\n    </div>\n    <h3 style=\"text-align: center\"><em>La sombra proyectada - Un hombre para todo</em></h3>\n    <p><em>Si tienes Jugadores relativamente nuevos en la partida, o incluso veteranos que empiezan a perder el hilo o se salen por la tangente de forma innecesaria, no hay mejor recurso que maese Verstand. Puedes presentarlo al grupo durante la @UUID[JournalEntry.MB5a0zBGJcZhEYUI]{Schaffenfest}, donde los Personajes se encuentran con él mientras intenta de manera desesperada trasegar una pinta de cerveza antes de correr a su siguiente encargo para su peculiar, exigente e impecable ama; tal vez incluso les hable del felino desaparecido, ver más arriba. Verstand es un hombre muy perceptivo y cruza de manera regular Bögenhafen a gran velocidad, notando mucho más de lo que parece. Ya sea por gratitud por los favores recibidos o por cualquier otra razón que se te ocurra, Verstand se fija en los PJs y comienza a ayudarlos, ofreciéndoles consejos sensatos, haciendo pequeñas consultas o presentaciones de extrema utilidad, según sea necesario. Las exigencias constantes de su ama significan que puedes decidir que desaparezca si crees que el grupo ha empezado a depender demasiado de él, pero también hace plausible que se presente para dar buenos consejos y valiosas sugerencias antes de salir corriendo para 'calmar al Dragón' una vez más.</em></p>\n</blockquote>"
+    },
+    "Albert Pförtner": {
+      "species": "Humano",
+      "status": "Plata 1",
+      "gmnotes": "<p>@UUID[JournalEntry.UvLra86Mr3grVstE.JournalEntryPage.G9MK38M69rVeXrtu#braceros]{Braceros}</p>\n<p>Amigo de muchos, socio de más, pero enemigo de nadie… que aún respire, Pförtner es un verdadero armario (como un ogro en miniatura) con una sonrisa fácil y un rostro cubierto de cicatrices que hablan de una larga historia de duras peleas. Este estibador es famoso en los muelles como alguien a quien no debes enfadar 'que hará lo que sea si pagas lo que es justo'. Pförtner tiene un 'arreglo' con la Guardia: no ven nada, siempre y cuando él se asegure de que no haya nada a lo que valga la pena echar un segundo vistazo. Ya se traduzca eso en contrabando, una paliza o lo que sea, Pförtner hace que todo esté tranquilo... por un precio.</p>\n<h4>¿Qué hay en la caja?</h4>\n<p>Hace poco, una cajita negra forrada de plomo se 'cayó de la parte trasera de una barcaza' y está en posesión de Pförtner. Sin embargo, no importa dónde la deje el hombre, incluido el lugar donde le pagan por llevarla, la cajita sigue encontrando el camino de vuelta a su casa: escondida bajo las escaleras, en el bolsillo de un abrigo, bajo la cama, etc. Y lo que es más, las muertes 'accidentales' rodean el lugar donde se hizo la entrega: ahogamientos, cráneos rotos, em- palamientos, toda la gama. Pförtner se está preocupando, sobre todo porque, al menos en lo que respecta a quien le paga, sigue 'fallando' la entrega. Necesita ayuda para deshacerse de esa cosa, especialmente antes de que el suave y errático traqueteo de su interior acabe por volverle loco.</p>\n<blockquote class=\"sidebar\">\n    <div class=\"journal-image float-right\">\n        <img src=\"modules/wfrp4e-eis/assets/signs-symbols/purple-hand-stamp.webp\" width=\"63\" height=\"60\">\n    </div>\n    <h3 style=\"text-align: center\"><em>La sombra proyectada - ¡Pon nombre a es cachas!</em></h3>\n    <p><em>Durante el segundo día de las investigaciones, y en otros puntos dependiendo de las acciones que realicen, los Personajes se enfrentarán a matones sin nombre en las calles de Bögenhafen. La mayoría son @UUID[JournalEntry.ro7SIltM899Ogrk8.JournalEntryPage.8vxbXHGPEkkvKC8Q]{empleados de Gurney Dumkopf}, al que contrató @UUID[Actor.LG5qATEIFPE9bezB]{Teugen} para asustar a los PJs. Si quieres 'ponerle cara' al enemigo, especialmente porque los PJs tienen entre ellos a guerreros hábiles o haya otras razones para creer que es poco probable que se sientan intimidados por matones 'al azar', Dumkopf pone a Pförtner a cargo de los brutos, encargados de 'animar' a los PJs a seguir adelante. Pförtner es muy agudo para ser un matón, es bueno en su trabajo y no sabe nada de la Ordo Septenarius, sólo que lo envía Dumkopf y eso es todo.</em></p>\n</blockquote>"
+    },
+    "The Farmyard Beasts": {
+      "name": "The Farmyard Beasts",
+      "tokenName": "The Farmyard Beasts"
+    },
+    "Annalisa Kessler": {
+      "name": "Annalisa Kessler",
+      "tokenName": "Annalisa Kessler"
+    },
+    "Wanda Weltschmertz": {
+      "name": "Wanda Weltschmertz",
+      "tokenName": "Wanda Weltschmertz"
+    },
+    "Bertoldo": {
+      "name": "Bertoldo",
+      "tokenName": "Bertoldo"
+    },
+    "Great Cat": {
+      "name": "Great Cat",
+      "tokenName": "Great Cat"
+    },
+    "'Granny' Haller": {
+      "name": "'Granny' Haller",
+      "tokenName": "'Granny' Haller"
+    },
+    "Rassarak": {
+      "name": "Rassarak",
+      "tokenName": "Rassark"
+    },
+    "Khornate Beastmen": {
+      "name": "Khornate Beastmen",
+      "tokenName": "Khornate Beastmen"
+    },
+    "Amadeus von Drakensberg": {
+      "name": "Amadeus von Drakensberg",
+      "tokenName": "Amadeus von Drakensberg"
+    },
+    "Sleeves": {
+      "name": "Sleeves",
+      "tokenName": "Sleeves"
+    },
+    "Harbull Furfoot": {
+      "name": "Harbull Furfoot",
+      "tokenName": "Harbull Furfoot"
+    },
+    "Johann 'Rowlocks' Dassbüt": {
+      "name": "Johann 'Rowlocks' Dassbüt",
+      "tokenName": "Johann 'Rowlocks' Dassbüt"
+    },
+    "Kasper Lauengram": {
+      "name": "Kasper Lauengram",
+      "tokenName": "Kasper Lauengram"
+    },
+    "Carnivorous Snapper": {
+      "name": "Carnivorous Snapper",
+      "tokenName": "Carnivorous Snapper"
+    },
+    "Bodyguards Aplenty": {
+      "name": "Bodyguards Aplenty",
+      "tokenName": "Bodyguards Aplenty"
+    },
+    "Malmir Giluviel": {
+      "name": "Malmir Giluviel",
+      "tokenName": "Malmir Giluviel"
+    },
+    "Bruno": {
+      "name": "Bruno",
+      "tokenName": "Bruno"
+    },
+    "Urzo": {
+      "name": "Urzo",
+      "tokenName": "Urzo"
+    },
+    "Benbow": {
+      "name": "Benbow",
+      "tokenName": "Benbow"
+    },
+    "Big Anders": {
+      "name": "Big Anders",
+      "tokenName": "Big Anders"
+    },
+    "Werner Murrmann": {
+      "name": "Werner Murrmann",
+      "tokenName": "Werner Murrmann"
+    },
+    "Wolfgang Hollseher": {
+      "name": "Wolfgang Hollseher",
+      "tokenName": "Wolfgang Hollseher"
+    },
+    "Kirsten Krank": {
+      "name": "Kirsten Krank",
+      "tokenName": "Kirsten Krank"
+    },
+    "The Twins": {
+      "name": "The Twins",
+      "tokenName": "The Twins"
+    },
+    "Ivan": {
+      "name": "Ivan",
+      "tokenName": "Ivan"
+    },
+    "Magda": {
+      "name": "Magda",
+      "tokenName": "Magda"
+    },
+    "Black Arrow": {
+      "name": "Black Arrow",
+      "tokenName": "Black Arrow"
+    },
+    "Little Anders": {
+      "name": "Little Anders",
+      "tokenName": "Little Anders"
+    },
+    "Emmaretta": {
+      "name": "Emmaretta",
+      "tokenName": "Emmaretta"
+    },
+    "Wolfgang Kellermann": {
+      "name": "Wolfgang Kellermann",
+      "tokenName": "Wolfgang Kellermann"
+    },
+    "Mikhail": {
+      "name": "Mikhail",
+      "tokenName": "Mikhail"
+    },
+    "Johann The Ghost": {
+      "name": "Johann The Ghost",
+      "tokenName": "Johann"
+    },
+    "Magnus Bugman": {
+      "name": "Magnus Bugman",
+      "tokenName": "Magnus Bugman"
+    },
+    "The Imperial Beast": {
+      "name": "The Imperial Beast",
+      "tokenName": "The Imperial Beast"
+    }
+  }
+}

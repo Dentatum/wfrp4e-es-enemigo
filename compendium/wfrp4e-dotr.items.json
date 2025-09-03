@@ -1,0 +1,865 @@
+{
+  "label": "Objetos (Muerte en el Reik)",
+  "folders": {
+    "Ammunition": "Munición",
+    "Careers": "Carreras",
+    "Criticals": "Críticos",
+    "Diseases": "Enfermedades",
+    "Herbs": "Hierbas",
+    "Modifications": "Modificaciones",
+    "Mutations": "Mutaciones",
+    "Prayers": "Milagros",
+    "Spells": "Hechizos",
+    "Talents": "Talentos",
+    "Traits": "Rasgos",
+    "Trappings": "Accesorios",
+    "Vehicle": "Vehículos",
+    "Weapons": "Armas"
+  },
+  "mapping": {
+    "gmdescription": "system.gmdescription.value",
+    "skills": "system.skills",
+    "talents": "system.talents",
+    "class": {
+      "path": "system.class.value",
+      "converter": "career_class"
+    },
+    "careergroup": {
+      "path": "system.careergroup.value",
+      "converter": "career_careergroup"
+    },
+    "trappings": "system.trappings",
+    "penalties": {
+      "path": "system.penalty.value",
+      "converter": "trappings_penalty"
+    },
+    "range": {
+      "path": "system.range.value",
+      "converter": "spells_duration_range_target"
+    },
+    "special": "system.special.value",
+    "effects": {
+      "path": "effects",
+      "converter": "effects"
+    },
+    "wounds": {
+      "path": "system.wounds.value",
+      "converter": "criticals_wounds"
+    },
+    "location": {
+      "path": "system.location.value",
+      "converter": "criticals_location"
+    },
+    "duration": "system.duration.value",
+    "contraction": "system.contraction.value",
+    "incubation": "system.incubation.value",
+    "incubation_duration": {
+      "path": "system.incubation.unit",
+      "converter": "disease_units"
+    },
+    "incubation_text": "system.incubation.text",
+    "diseases_duration": {
+      "path": "system.duration.unit",
+      "converter": "disease_units"
+    },
+    "symptoms": "system.symptoms.value",
+    "permanent": "system.permanent.value",
+    "spell_duration": {
+      "path": "system.duration.value",
+      "converter": "spells_duration_range_target"
+    },
+    "target": {
+      "path": "system.target.value",
+      "converter": "spells_duration_range_target"
+    },
+    "damage": {
+      "path": "system.damage.value",
+      "converter": "spells_damage"
+    },
+    "lore": {
+      "path": "system.lore.value",
+      "converter": "lore"
+    },
+    "overcast": "system.overcast.label",
+    "overcastvaluevalue": "system.overcast.valuePerOvercast.additional",
+    "overcastinitialvalue": "system.overcast.initial.additional",
+    "injury_location": {
+      "path": "system.location.value",
+      "converter": "injuries_location"
+    },
+    "penalty": "system.penalty.value",
+    "injury_duration": {
+      "path": "system.duration.value",
+      "converter": "injuries_duration"
+    },
+    "modifier": "system.modifier.value",
+    "roll": "system.rollable.skill",
+    "specification": {
+      "path": "system.specification.value",
+      "converter": "traits_specification"
+    },
+    "tests": "system.tests.value"
+  },
+  "entries": {
+    "Agurk": {
+      "gmdescription": "<p><strong>Localización: </strong>Llanuras</p>\n<p><strong>Estación: </strong>Otoño</p>\n<p><strong>Preparaciones: </strong>@UUID[Compendium.wfrp4e-dotr.journals.JhZ4qkEf569rEcsY.JournalEntryPage.uxIVUGe1gSkqbo8m#infusiones]{Infusión}, @UUID[Compendium.wfrp4e-dotr.journals.JhZ4qkEf569rEcsY.JournalEntryPage.uxIVUGe1gSkqbo8m#pociones]{Poción}</p>\n<p>Inhalar los vapores de una infusión de Agurk provoca temblores leves (<strong>Destreza –20</strong>) durante tres horas, a menos que el PJ supere un <strong>Chequeo Desafiante (+0) de Aguante</strong> o tenga Inmunidad al veneno.</p>\n<p>Por el contrario, un brebaje de Agurk es una toxina potencialmente letal. Esto inflige 2 estados de @Condition[Envenenado], que se resisten con un <strong>Chequeo Complicado (–10) de Aguante</strong>.</p>",
+      "description": "<h3>El Bálsamo Élfico</h3>\n<p>Aunque comúnmente se le llama Agurk, en el Moot denominamos a esta hierba <em>temblorosa</em>. También se la conoce como <em>Zitterwort</em> en el Imperio, <em>Trema</em> en Tilea y <em>Gysenblat</em> en Norsca. Los Elfos la llaman <em>Echryddeillen</em>. Crece en praderas abiertas donde la tierra drena bien pero no es demasiado arenosa. Para prepararla, hay que recoger las hojas, arrancar y desechar los tallos, y dejarlas secar junto al fuego durante al menos una semana. Esta hierba es útil para mejorar la circulación, y también para ayudar a un paciente a sudar un fuerte resfriado. Nunca debe usarse en caso de fiebre, pues puede hacer que la temperatura del paciente aumente. Para usar la hierba, añade las hojas a un recipiente con agua hirviendo, deja reposar uno o dos minutos hasta que el agua comience a tomar un poco de color, y después haz que el paciente inhale los vapores durante tres o cuatro minutos. Pasado este tiempo, el paciente debería empezar a temblar — ponlo cómodo y vigílalo durante tres o cuatro horas. Si el temblor no ha remitido para entonces, puedes administrar con seguridad un sedante suave. Desecha la infusión con cuidado, y nunca permitas que se beba — puede causar convulsiones fatales si se ingiere.</p>"
+    },
+    "Alfunas": {
+      "gmdescription": "<p><strong>Localización: </strong>Bosque de coníferas</p>\n<p><strong>Estación: </strong>Verano, Otoño</p>\n<p><strong>Preparaciones: </strong>@UUID[Compendium.wfrp4e-dotr.journals.JhZ4qkEf569rEcsY.JournalEntryPage.uxIVUGe1gSkqbo8m#cataplasmas]{Cataplasma}</p>\n<p>Las hojas carnosas de esta planta, trituradas hasta formar una pasta, reducen a la mitad el tiempo normal de curación de un hueso dislocado o roto si se aplica una dosis sobre la lesión cada día hasta que la recuperación sea completa.</p>",
+      "description": "<h3>Delicia de los Huesos</h3>\n<p><em>Alfunas</em> es el nombre élfico de esta planta, y se ha convertido en su denominación más común en todo el Imperio debido a que los Elfos Silvanos tienen prácticamente el monopolio de su suministro. En el Moot la llamamos “Hierbahueso”; los Bretonianos la llaman <em>Ossefeuille</em> y los tileanos <em>Ossoripa</em>; algunos eruditos la denominan <em>Folium Emendata</em>.</p>\n<p>Para que la pasta alcance toda su potencia, es aconsejable dejarla reposar en un tarro tapado en un lugar fresco y seco, como un sótano, durante al menos dos semanas. Sin embargo, no dejes que se seque demasiado: cuando la superficie de la pasta empiece a agrietarse, sella el tarro con cera o un tapón de corcho.</p>"
+    },
+    "Gesundheit": {
+      "gmdescription": "<p><strong>Localización: </strong>Bosque mixto</p>\n<p><strong>Estación: </strong>Invierno, Primavera</p>\n<p><strong>Preparaciones: </strong>@UUID[Compendium.wfrp4e-dotr.journals.JhZ4qkEf569rEcsY.JournalEntryPage.uxIVUGe1gSkqbo8m#cataplasmas]{Cataplasma}</p>\n<p>Una cataplasma de hojas de Gesundheit aplicada a una @UUID[Compendium.wfrp4e-core.items.kKccDTGzWzSXCBOb]{Herida Supurante} permite al paciente realizar un <strong>Chequeo Normal (+20) de Aguante</strong>, reduciendo en un día su duración por cada NE obtenido. Esta aplicación puede repetirse con una cataplasma fresca no más de una vez al día, hasta que la herida deje de supurar.</p>",
+      "description": "<h3>Un Tratamiento supurante</h3>\n<p>Gesundheit, como todo el mundo sabe, significa “buena salud” en Reikspiel, y un nombre tan sencillo me lleva a pensar que el conocimiento de esta planta es muy antiguo. Los Elfos la llaman <em>Leoleghas</em>, y en Bretonnia se la conoce como <em>Feuille de Blessure</em>. En el Moot, la llamamos “curatodo”.</p>\n<p>Es una hierba muy sencilla de usar: basta con machacar las hojas para liberar su savia y preparar una cataplasma. Hay quienes prefieren añadirle otras hierbas curativas, dependiendo de la naturaleza de la herida o del origen de la infección, pero nunca he encontrado esto necesario.</p>"
+    },
+    "Graveroot": {
+      "name": "Raíz de la tumba",
+      "gmdescription": "<p><strong>Localización: </strong>Claros de bosque, cementerios</p>\n<p><strong>Estación: </strong>Otoño, Invierno</p>\n<p><strong>Preparaciones: </strong>@UUID[Compendium.wfrp4e-dotr.journals.JhZ4qkEf569rEcsY.JournalEntryPage.uxIVUGe1gSkqbo8m#crudas]{Cruda}, @UUID[Compendium.wfrp4e-dotr.journals.JhZ4qkEf569rEcsY.JournalEntryPage.uxIVUGe1gSkqbo8m#cataplasmas]{Cataplasma}, @UUID[Compendium.wfrp4e-dotr.journals.JhZ4qkEf569rEcsY.JournalEntryPage.uxIVUGe1gSkqbo8m#pociones]{Pociones}</p>\n<p>Untada en un arma, la savia solidificada del tubérculo crudo de esta planta es venenosa para las criaturas con el Rasgo @UUID[Compendium.wfrp4e-core.items.PFTD9gDvRWW9uh5g]{Muerto viviente}, lo cual provoca 1 Estado de @Condition[Envenenado] a menos que la víctima con dicho Rasgo supere un Chequeo <b>Complicado (-10) de Aguante</b>.</p>\n<p>Una cataplasma de Raíz de la tumba, aplicada a una @UUID[Compendium.wfrp4e-core.items.kKccDTGzWzSXCBOb] causada por una criatura @UUID[Compendium.wfrp4e-core.items.PFTD9gDvRWW9uh5g]{no-muerta} con el Rasgo @UUID[Compendium.wfrp4e-core.items.V0c3qBU1CMm8bmsW]{Infectado}, otorga al paciente un bonificador de +20 a todos los Chequeos realizados ese día contra la Herida Supurante. No tiene efecto sobre Heridas Supurantes causadas por criaturas que no sean no-muertas.</p>\n<p>De manera un tanto extraña, una poción de Raíz de la tumba debidamente preparada provoca un aspecto cadavérico en quien lo consume, y la carne del bebedor se vuelve fría al tacto durante [[/r 1d10+2]] horas. Si existe algún propósito útil para tales brebajes, permanece desconocido para la mayoría.</p>",
+      "description": "<h3>Asuntos Funestos</h3>\n<p>También conocida como Grabwort, Dedo de Muerto, Azote de Fantasmas y Raíz de Morr, la Raíz de la tumba se siente atraída por lugares sombríos y resguardados con suelo ligeramente húmedo. Florece especialmente en los cementerios, lo cual, junto con sus conocidas propiedades mágicas, ha llevado a algunos a teorizar que de algún modo se alimenta de las energías mágicas de los cuerpos enterrados bajo ella. La raíz, cuando se seca y se ralla, puede emplearse en diversas preparaciones y conjuros relacionados con los no-muertos, y de hecho parece afectarlos como lo haría un veneno sobre una criatura viva. Una infusión de la raíz no parece tener ningún efecto particular en un paciente vivo, salvo provocar vómitos en concentraciones elevadas. Menos conocido es el hecho de que una cataplasma caliente hecha tanto con las hojas como con la raíz de esta planta acelera la curación de las heridas infectadas causadas por criaturas no-muertas.</p>"
+    },
+    "Juck": {
+      "gmdescription": "<p><strong>Localización: </strong>Bosque</p>\n<p><strong>Estación: </strong>Primavera</p>\n<p><strong>Preparaciones: </strong>@UUID[Compendium.wfrp4e-dotr.journals.JhZ4qkEf569rEcsY.JournalEntryPage.uxIVUGe1gSkqbo8m#crudas]{Cruda}, @UUID[Compendium.wfrp4e-dotr.journals.JhZ4qkEf569rEcsY.JournalEntryPage.uxIVUGe1gSkqbo8m#cataplasmas]{Cataplasma}</p>\n<p>Esta hierba se usa principalmente para gastar bromas, y es una de las favoritas de los niños del campo. [[/r 1d10]] minutos después de untar el jugo de sus hojas sobre la piel, la zona tratada empieza a picar horriblemente, y el PJ afectado sufre un penalizador de –20 a todos los Chequeos durante [[/r 2d10 + 40]] minutos debido a la distracción y a la terrible necesidad de rascarse. Puede realizarse un <strong>Chequeo Desafiante (+0) de Voluntad</strong> para ignorar el picor durante 10 minutos: cada NE reduce el penalizador en 10, anulándolo por completo con 2 o más NE.</p>\n<p>Un uso más útil del Juck, aunque menos común, es como tratamiento para la congelación. La aplicación de una cataplasma con Juck en las extremidades dañadas puede ayudar a acelerar la curación. Una dosis de Juck curará [[/r 1d10]] Heridas perdidas a causa de los efectos de la @UUID[Compendium.wfrp4e-core.journals.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#exposicion-a-la-intemperie]{Exposición} al frío. Este tratamiento puede repetirse cada día.</p>",
+      "description": "<h3>El juck va de perlas</h3>\n<p>También conocida como Savortiga, Klosaft, Hierba de la Picazón y por varios otros nombres con el mismo significado, esta planta es bien conocida por los niños que viven en zonas rurales, quienes la usan para toda clase de bromas. Crece en los bosques y florece antes de que los árboles desarrollen suficiente follaje como para bloquear la luz del sol en el suelo del bosque. La savia de esta planta también puede usarse para ayudar a devolver la sensibilidad a la piel en casos de entumecimiento causado por el frío o una lesión. En una ocasión, la empleé en una forma concentrada — hervida hasta alcanzar la consistencia de unas natillas calientes — como tratamiento para la congelación, y logré devolver la sensibilidad a un pie que, de otro modo, podría haber tenido que ser amputado. Debido al picor que provoca, a veces puede ser necesario administrar un sedante suave al paciente, especialmente si se usa Juck de forma repetida o sobre una zona amplia como una pierna entera.</p>"
+    },
+    "Mage-Leaf": {
+      "name": "Hoja de mago",
+      "gmdescription": "<p><strong>Localización: </strong>Colinas</p>\n<p><strong>Estación: </strong>Primavera</p>\n<p><strong>Preparaciones: </strong>@UUID[Compendium.wfrp4e-dotr.journals.JhZ4qkEf569rEcsY.JournalEntryPage.uxIVUGe1gSkqbo8m#crudas]{Cruda}</p>\n<p>La Hoja de mago se come cruda, mantiene su potencia durante una semana tras ser recogida. Como su nombre sugiere, es usada exclusivamente por lanzadores de conjuros. Una dosis otorga al hechicero un bono de +10 a su siguiente <strong>Chequeo de Lanzamiento de Conjuros</strong>, pero cada vez que se toma una dosis, tira un [[/r d10]]. Si el resultado es menor o igual al número de dosis ya tomadas ese día, la dosis no tiene efecto.</p>",
+      "description": "<h3>Beneficio del mago</h3>\n<p>Al principio dudé sobre si incluir esta hierba, ya que no tiene ningún valor medicinal conocido. Sin embargo, sus propiedades mágicas son lo suficientemente conocidas como para que pensara que al menos sería útil mencionar los distintos nombres por los que se conoce a esta planta, evitando así la impresión equivocada de que existen varias hierbas diferentes con propiedades similares. El nombre élfico de la Hoja de Hechicero es <em>Daionillyseiwyn</em>, que según me han dicho significa “la buena planta”. En Norsca se la conoce como <em>Troldblat</em>, en Bretonnia como <em>Feuille Sorceiere</em>, en Tilea como <em>Folimaggi</em> — una corrupción del Clásico <em>Folia Magii</em> — y en Albión como <em>Draodill</em>, que significa “la hoja de los druidas”.</p>"
+    },
+    "Schlafenkraut": {
+      "name": "Schlafenkraut (Col del sueño)",
+      "gmdescription": "<p><strong>Localización: </strong>Llanuras</p>\n<p><strong>Estación: </strong>Primavera</p>\n<p><strong>Preparaciones: </strong>@UUID[Compendium.wfrp4e-dotr.journals.JhZ4qkEf569rEcsY.JournalEntryPage.uxIVUGe1gSkqbo8m#infusiones]{Infusión}, @UUID[Compendium.wfrp4e-dotr.journals.JhZ4qkEf569rEcsY.JournalEntryPage.uxIVUGe1gSkqbo8m#pociones]{Poción}</p>\n<p>Una infusión de Schlafenkraut surte efecto tras [[/r 2d10 + 10]] minutos de ser bebida, provocando un sueño normal; durante las primeras cuatro horas de este sueño, las posibilidades de que el paciente despierte por ruidos se reducen a la mitad. Un paciente que sea despertado durante este tiempo debe superar un <strong>Chequeo Desafiante (+0) de Aguante</strong> o ganar tres estados de @Condition[Fatigado]. Pasadas las cuatro horas, el efecto de la hierba se disipa y el paciente duerme con normalidad.</p>\n<p>Un brebaje de Schlafenkraut actúa de forma muy similar, aunque sus efectos aparecen algo más rápido pero no suelen durar tanto. Un brebaje de Schlafenkraut provocará un sueño normal en [[/r 1d10]] minutos, pero las posibilidades de despertar se reducen a la mitad solo durante las dos primeras horas de sueño.</p>\n<p>Un PJ puede resistirse a quedarse dormido por efecto del Schlafenkraut si supera un <strong>Chequeo Desafiante (+0) de Frialdad</strong>. En caso de tener éxito, aún será necesario realizar el Chequeo de Aguante para evitar quedar Fatigado. El Rasgo @UUID[Compendium.wfrp4e-core.items.3wCtgMDNnu8MFmyk]{Inmunidad (Veneno)} hace que el Schlafenkraut sea completamente ineficaz.</p>",
+      "description": "<h3>Una Poción Reparadora</h3>\n<p>Conocida en el Moot como Hojaensueño, en Tilea como <em>Dormifolio</em>, y por los Elfos como <em>Paraudiel</em>, esta planta crece en llanuras abiertas y es especialmente abundante cuando se derriten las últimas nieves del invierno. También prospera en zonas pantanosas y junto a arroyos cuyas orillas no sean demasiado altas. Es un excelente sedante y somnífero, y puede combinarse con otras preparaciones sin temor a efectos adversos. Las hojas secas se infusionan en agua que haya hervido y se haya dejado reposar un minuto aproximadamente — si el agua está hirviendo al añadir las hojas, estas se escaldan y la infusión resultante será desagradablemente amarga y menos eficaz. Las hojas también pueden añadirse al té o al vino caliente; un poco de miel suavizará cualquier aspereza que aporten a su sabor.</p>"
+    },
+    "Slowmind": {
+      "name": "Mentelenta",
+      "gmdescription": "<p><strong>Localización: </strong>Marismas</p>\n<p><strong>Estación: </strong>Otoño</p>\n<p><strong>Preparaciones: </strong>@UUID[Compendium.wfrp4e-dotr.journals.JhZ4qkEf569rEcsY.JournalEntryPage.uxIVUGe1gSkqbo8m#infusiones]{Infusión}, @UUID[Compendium.wfrp4e-dotr.journals.JhZ4qkEf569rEcsY.JournalEntryPage.uxIVUGe1gSkqbo8m#cataplasmas]{Cataplasma}</p>\n<p>El Mentelenta es una toxina nerviosa muy suave. La infusión tiene un sabor amargo, y si se añade a una bebida, un PJ puede detectar que algo no está bien con un <strong>Chequeo Complicado (–10) de Percepción</strong>. Un PJ que beba una infusión de Mentelenta debe superar un <strong>Chequeo Desafiante (+0) de Aguante</strong> o sufrir un penalizador de –10 tanto a Inteligencia como a Voluntad durante [[/r 2d10 + 4]] horas. Solo puede administrarse una dosis a la vez: las dosis adicionales no tienen efecto. El Rasgo @UUID[Compendium.wfrp4e-core.items.3wCtgMDNnu8MFmyk]{Inmunidad (Veneno)} hace que este efecto del Mentelenta sea completamente ineficaz.</p>\n<p>Una cataplasma elaborada con esta planta tiene un efecto completamente diferente: aplicada sobre una herida reciente, cada dosis elimina inmediatamente un estado de @Condition[Fatigado]. Sin embargo, aplicar más de una dosis requerirá un <strong>Chequeo Desafiante (+0) de Aguante</strong> para evitar los mismos efectos negativos que provoca beber una infusión de Mentelenta, como se describe arriba.</p>",
+      "description": "<h3>Lenta-mente</h3>\n<p>Sé que hay quienes consideran esta planta como nada más que un veneno, pero la he encontrado útil en casos extremos de histeria nerviosa, cuando el paciente debe permanecer inmóvil para evitar autolesionarse, y también en aquellos en los que el dolor de una herida o infección hace imposible que el paciente caiga en un sueño reparador. Siempre que la dosis se controle estrictamente y se vigilen constantemente la temperatura y la respiración del paciente, creo que no existe un riesgo significativo. La raíz de esta planta, que crece en zonas pantanosas y suele encontrarse junto a los nenúfares, se deja primero en remojo en agua salada durante tres días y tres noches para eliminar las impurezas, luego se seca en una sartén frente al fuego durante dos días, o hasta que suene leñosa al golpearla con un tenedor. Después se ralla finamente — mezclada con un poco de nuez moscada si se dispone de ella —, se ata en una bolsa de tela y se cuelga en la chimenea para ahumarla durante dos semanas. El polvo resultante se hierve durante dos días en agua con un poco de vinagre, se cuela y se añade en pequeñas cantidades a un té dulce o a vino caliente.</p>"
+    },
+    "Speckled Rustwort": {
+      "name": "Hepática moteada",
+      "gmdescription": "<p><strong>Localización: </strong>Colinas</p>\n<p><strong>Estación: </strong>Primavera</p>\n<p><strong>Preparaciones: </strong>@UUID[Compendium.wfrp4e-dotr.journals.JhZ4qkEf569rEcsY.JournalEntryPage.uxIVUGe1gSkqbo8m#crudas]{Cruda}, @UUID[Compendium.wfrp4e-dotr.journals.JhZ4qkEf569rEcsY.JournalEntryPage.uxIVUGe1gSkqbo8m#pociones]{Poción}</p>\n<p>Esta hierba se ingiere para combatir los efectos de la @UUID[Compendium.wfrp4e-core.items.BC4QyBeYAiw8cRuM]{Plaga del empaquetador}. Si se toma una dosis de hepática moteada cada día, todos los Chequeos relacionados con la enfermedad obtienen un bono de +10.</p>\n<p>Un brebaje de hepática no proporciona esta protección, pero puede usarse para tratar un caso activo de Plaga del empaquetador. Cada dosis reduce la duración de la enfermedad en [[/r 1d10]] días. Sin embargo, tomar más de una dosis en un solo día provoca Náuseas durante las siguientes [[/r 1d10]] horas.</p>",
+      "description": "<h3>Un tratamiento para la plaga</h3>\n<p>Esta hierba es inusual entre las utilizadas para tratar plagas, ya que debe ingerirse; la mayoría se aplican sobre el sarpullido en forma de ungüento o cataplasma. Muchos han intentado hacer lo mismo con Hepática moteada, pero no tiene ningún efecto cuando se aplica externamente.</p>\n<p>Algunos encuentran el sabor de las hojas amargo, y es aceptable añadir una cucharada de miel a la dosis, especialmente en el caso de los niños. Sin embargo, evita excederte, ya que puede provocar estreñimiento.</p>"
+    },
+    "Spellwort": {
+      "name": "Hierba hechicera",
+      "gmdescription": "<p><strong>Localización: </strong>Bosque</p>\n<p><strong>Estación: </strong>Verano</p>\n<p><strong>Preparaciones: </strong>@UUID[Compendium.wfrp4e-dotr.journals.JhZ4qkEf569rEcsY.JournalEntryPage.uxIVUGe1gSkqbo8m#infusiones]{Infusión}, @UUID[Compendium.wfrp4e-dotr.journals.JhZ4qkEf569rEcsY.JournalEntryPage.uxIVUGe1gSkqbo8m#pociones]{Poción}</p>\n<p>La Hierba hechicera está emparentado con la @UUID[Compendium.wfrp4e-dotr.items.GYkqqFzrDLaBvKux]{Hoja de mago}, pero tiene un efecto ligeramente diferente. En lugar de incrementar la energía mágica, interfiere con ella. Un lanzador de conjuros que beba una infusión de Hierba hechicera sufre un penalizador de –10 a todos los Chequeos relacionados con la magia durante un número de horas igual a 10 menos su bonificador de Resistencia — pero obtiene un bono de +10 a todos los Chequeos realizados para resistir los efectos de la magia durante ese tiempo.</p>\n<p>Una poción de Hierba hechicera proporciona prácticamente el mismo inconveniente y beneficio que una infusión, pero sus efectos duran solo una hora. Sin embargo, durante esa hora, cualquiera que ingiera una poción de Hierba hechicera parecerá completamente mundano para la @UUID[Compendium.wfrp4e-core.items.OEjUvJKi0xmBwbS2]{Clarividencia}, y todo rastro de magia persistente sobre su persona será eliminado. No obstante, este efecto se pierde si el sujeto utiliza magia durante ese tiempo. Los Cazadores de Brujas de todo el Imperio han intentado suprimir el conocimiento de esta aplicación de la hierba, con poco éxito.</p>",
+      "description": "<h3>El Amigo del Cazador de Brujas</h3>\n<p>Hierba hechicera es el nombre por el que se conoce a esta planta en el Moot. Otros nombres incluyen <em>Unzauber</em>, <em>Castigo del mago</em>, <em>Feuille Contraire</em> y Amigo del Cazador de Brujas. Su aspecto es similar al de la Hoja de mago, y alguien sin la formación herbolaria adecuada podría confundirlas fácilmente. Preparadas en un té, las hojas secas pueden ayudar a un paciente a resistir cualquier tipo de dolencia de origen mágico. Conviene guardar las hojas secas de Hierba hechicera alejadas de ingredientes como la @UUID[Compendium.wfrp4e-dotr.items.tWLwV2bXuyr3sV4R]{Raíz de la tumba} y la @UUID[Compendium.wfrp4e-dotr.items.GYkqqFzrDLaBvKux]{Hoja de mago}, ya que he comprobado que sus propiedades mágicas a veces se ven disminuidas si permanecen demasiado tiempo cerca de la Hierba hechicera.</p>\n"
+    },
+    "Spiderleaf": {
+      "name": "Hoja de araña",
+      "gmdescription": "<p><strong>Localización: </strong>Bosques de coníferas</p>\n<p><strong>Estación: </strong>Otoño</p>\n<p><strong>Preparaciones: </strong>@UUID[Compendium.wfrp4e-dotr.journals.JhZ4qkEf569rEcsY.JournalEntryPage.uxIVUGe1gSkqbo8m#cataplasmas]{Cataplasma}, @UUID[Compendium.wfrp4e-dotr.journals.JhZ4qkEf569rEcsY.JournalEntryPage.uxIVUGe1gSkqbo8m#crudas]{Cruda}</p>\n<p>Si se extiende por una herida con un vendaje apretado, una cataplasma de Hoja de Araña elimina un Estado adicional de @Condition[Sangrando] por cada NE obtenido por el PJ que realizó el Chequeo de Sanar para aplicar el vendaje.</p>\n<p>En su forma cruda, la Hoja de Araña es algo menos efectiva. Con un Chequeo exitoso de Sanar para aplicar el vendaje, un manojo de Hoja de Araña elimina un único Estado de @Condition[Sangrando].</p>",
+      "description": "<h3>Hoja de Araña</h3>\n<p>Esta hierba recibe su nombre por la forma y disposición de sus hojas largas y estrechas, que parecen como si una araña hubiera sido ensartada en el tallo principal con las patas en el aire. En todo el Viejo Mundo se la conoce por el mismo nombre en la lengua local. Existen incluso algunos sanadores — en su mayoría humanos — en zonas remotas que envuelven las hojas en telarañas antes de aplicarlas sobre una herida, creyendo que cierta simpatía mágica entre la planta y las redes de una araña real hará que el tratamiento sea más eficaz. No parece ser así.</p>"
+    },
+    "Tarrabeth": {
+      "gmdescription": "<p><strong>Localización: </strong>Bosque mixto</p>\n<p><strong>Estación: </strong>Verano</p>\n<p><strong>Preparaciones: </strong>@UUID[Compendium.wfrp4e-dotr.journals.JhZ4qkEf569rEcsY.JournalEntryPage.uxIVUGe1gSkqbo8m#cataplasmas]{Cataplasma}</p>\n<p>Aplicada sobre una herida, una cataplasma de Tarrabeth sume al paciente en un profundo sueño que dura 24 horas. El Chequeo de Aguante realizado para @UUID[Compendium.wfrp4e-core.journals.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#healing]{recuperar Heridas} ese día es <strong>Muy Fácil (+60).</strong></p>\n<p>Aplicada a una hoja, o más comúnmente a la punta de una flecha, la cantidad de hierba no es suficiente para provocar el sueño profundo por el que se conoce a la Tarrabeth. Sin embargo, quienes resulten heridos por tal arma se verán presa de un gran cansancio, y deberán superar un <strong>Chequeo Desafiante (+0) de Aguante</strong> o sufrir un Estado @Condition[Fatigado]. Una sola dosis de Tarrabeth puede tratar un arma, o tres flechas o virotes.</p>",
+      "description": "<h3>Tarrabeth</h3>\n<p>Tarrabeth es un nombre élfico, y la hierba se encuentra principalmente en los bosques profundos donde habitan los Elfos Silvanos. Existen pocos otros nombres para esta hierba, aunque la he oído llamar Hierba del Emperador en algunas ciudades, a menudo por Humanos que la obtuvieron de manera poco honesta y emplean un nombre humano para evitar la ira de las autoridades. Para obtener el mejor efecto, las hojas deben hervirse hasta que se desintegren por completo; la mezcla se cuela, se hierve hasta alcanzar la consistencia del queso fundido y luego se deja enfriar.</p>"
+    },
+    "Trinkwort": {
+      "gmdescription": "<p><strong>Localización: </strong>Bosque</p>\n<p><strong>Estación: </strong>Otoño</p>\n<p><strong>Preparaciones: </strong>@UUID[Compendium.wfrp4e-dotr.journals.JhZ4qkEf569rEcsY.JournalEntryPage.uxIVUGe1gSkqbo8m#crudas]{Cruda}</p>\n<p>El Trinkwort es un tubérculo de sabor amargo que posee la extraña propiedad de neutralizar los efectos del alcohol. Un PJ que coma uno de estos obtiene un +20 a todos los Chequeos de <strong>Consumir Alcohol</strong> durante las siguientes 24 horas.</p>",
+      "description": "<h3>Trinkwort</h3>\n<p>Según la tradición de los Halflings, el conocimiento de esta planta nos fue entregado por la diosa Esmeralda en persona, después de que su primer esposo, Bibogenitus, llevara al Moot el conocimiento de la cerveza y la elaboración del vino. Nosotros la conocemos como Raíz Sobria, y los Elfos la llaman <em>Corrylliamid</em>. Se encuentra en lo más profundo del bosque, a menudo creciendo entre las raíces del árbol lornalim o junto a antiguos robles. La raíz se pela y se asa a fuego lento en un horno hasta que queda tan blanda como una chirivía bien cocida, y entonces se come.</p>"
+    },
+    "Valerian": {
+      "name": "Valeriana",
+      "gmdescription": "<p><strong>Localización: </strong>Bosque mixto</p>\n<p><strong>Estación: </strong>Primavera</p>\n<p><strong>Preparaciones: </strong>@UUID[Compendium.wfrp4e-dotr.journals.JhZ4qkEf569rEcsY.JournalEntryPage.uxIVUGe1gSkqbo8m#infusiones]{Infusión}</p>\n<p>Preparada como una infusión, una taza de té de Valeriana restaura 1 Herida al bebedor. La dosis puede repetirse una vez al día, pero la Valeriana no tiene efecto sobre Heridas Críticas.</p>",
+      "description": "<h3>Té Fuerte</h3>\n<p>La Valeriana se llama Té Fuerte en el Moot; esto confunde a algunos visitantes de fuera, pero cualquier Halfling sabe por el contexto de la conversación si se refiere a este o a otro tipo de té. Los Elfos la llaman <em>Taillegas</em> y los Bretonianos <em>Thé de Médecin</em>.</p>\n<p>Es importante secar las hojas al aire en un lugar fresco y seco. Antes de prepararlas, deben inspeccionarse cuidadosamente para detectar cualquier rastro de podredumbre floja, un hongo que se siente particularmente atraído por estas hojas. Incluso una leve infestación puede hacer que el té sea ineficaz; una gran cantidad puede volverlo venenoso.</p>"
+    },
+    "Vanera": {
+      "gmdescription": "<p><strong>Localización: </strong>Colinas</p>\n<p><strong>Estación: </strong>Primavera</p>\n<p><strong>Preparaciones: </strong>@UUID[Compendium.wfrp4e-dotr.journals.JhZ4qkEf569rEcsY.JournalEntryPage.uxIVUGe1gSkqbo8m#crudas]{Cruda}</p>\n<p>La Vanera es un estimulante que elimina la necesidad de descansar. Se utiliza principalmente en convalecencias, cuando el paciente no puede reposar por algún motivo. Durante [[/r 1d10]] horas después de tomar la dosis, el PJ se considera en reposo, aunque pueda realizar cualquier tipo de actividad. Si el PJ descansa, los beneficios del descanso se duplican. Cuando el efecto de la dosis se desvanece, el usuario sufre un fuerte dolor de cabeza, ganando un Estado @Condition[Fatigado] que dura una hora.</p>",
+      "description": "<h3>El Don de la Diosa</h3>\n<p>Algunos herbolarios del Imperio y de Tilea creen que el nombre de esta planta proviene de la diosa humana Verena. Yo no lo creo, ya que también es conocida por este nombre en Norsca y Kislev, donde Ulric es mucho más adorado que Verena. Crece en la ladera sur de las colinas calizas, donde hay abundante sol y no demasiado viento. Las hojas se recogen, se limpian, se dejan en remojo en agua salada durante dos semanas, y luego se hierven y se sirven como espinacas. Un poco de mantequilla y pimienta negra mejoran enormemente su sabor. Personalmente no la uso para convalecientes, porque el dolor de cabeza que aparece cuando se disipa su efecto a menudo anula los beneficios del efecto estimulante de la hierba. Sin embargo, la receto para quienes están de guardia, o deben buscar viajeros desaparecidos durante toda la noche, o cualquiera que necesite permanecer despierto cuando debería estar durmiendo y no le importe pagar el precio después.</p>"
+    },
+    "Vigwort": {
+      "gmdescription": "<p><strong>Localización: </strong>Llanuras</p>\n<p><strong>Estación: </strong>Verano</p>\n<p><strong>Preparaciones: </strong>@UUID[Compendium.wfrp4e-dotr.journals.JhZ4qkEf569rEcsY.JournalEntryPage.uxIVUGe1gSkqbo8m#infusiones]{Infusión}</p>\n<p>Es un estimulante suave, y una taza de té de Vigwort aumenta la Iniciativa de un PJ en +10 durante [[/r 1d10 +4]] minutos. Tras este tiempo, el PJ debe superar un <strong>Chequeo Normal (+20) de Aguante</strong> o ganar un Estado de @Condition[Fatigado] por cada nivel de fracaso. Aquellos con el Rasgo @UUID[Compendium.wfrp4e-core.items.3wCtgMDNnu8MFmyk]{Inmunidad (Veneno)} pueden beneficiarse del Vigwort, pero nunca quedan Fatigados por consumirlo.</p>",
+      "description": "<h3>Un favorito personal</h3>\n<p>También conocida como Inquieta, Hierba Saltarina y <em>Folia Vitae</em>, esta planta crece en zonas soleadas y abiertas, especialmente en aquellas que se dejan en barbecho tras el pasto del año anterior. La raíz se seca, se ralla y se deja en remojo en vinagre diluido durante diez días. Luego, la mezcla se hierve, se cuela y se deja reposar en una habitación fresca y oscura durante otros cuatro días. Endulzada con miel y añadida a un té caliente o vino especiado, esta preparación ofrece alivio temporal a pacientes que sufren dolores de cabeza, somnolencia o letargo, aunque solo debería usarse para resultados a corto plazo; cuando su efecto se desvanece, el paciente puede encontrarse incluso peor que al inicio.</p>"
+    },
+    "Barrakul": {
+      "gmdescription": "<p>La espada, que el DJ puede elegir que sea un Arma de Mano o un Zweihänder, dependiendo de las habilidades del grupo, está en perfectas condiciones. Su nombre, Barrakul — “Esperanza de las Montañas” — está inscrito en runas enanas a lo largo de su hoja. Sin duda es la creación de un Herrero Rúnico de gran habilidad. Al blandirse en combate, la hoja brilla un instante y deja de hacerlo al siguiente, quedando solo constante el resplandor rojo de sus runas. La armadura no-mágica es inútil contra esta espada — ignora los puntos de cualquier Armadura o Escudo no mágico. Posee la cualidad <em>Irrompible</em>, pero gana el defecto <em>Inofensiva</em> si se blande contra un Enano.</p>"
+    },
+    "Potion of Flight": {
+      "name": "Poción de vuelo",
+      "description": "<p>Al beberse, esta poción afecta al consumidor como el Hechizo de <a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"wfrp4e-core.items\" data-id=\"9wmmln3DunIqGXM2\">Vuelo</a>. El efecto dura 20 asaltos, menos el BR del bebedor.</p>"
+    },
+    "Ring of Protection against Undead": {
+      "name": "Anillo de protección contra muertos vivientes",
+      "description": "<p>El portador del Anillo de Protección contra Muertos Vivientes recibe la mitad del daño normal de todos los ataques de enemigos con el Rasgo de Criatura @UUID[Compendium.wfrp4e-core.items.PFTD9gDvRWW9uh5g]{Muerto viviente} que no posean también el Rasgo de Criatura @UUID[Compendium.wfrp4e-core.items.tNWrJUOArwfWXsPw]{Etéreo}, y obtiene un +10 a todos los chequeos de conjuros, Habilidades y Rasgos relacionados con dichas criaturas.</p>"
+    },
+    "Ring of Protection from Fire": {
+      "name": "Anillo de protección contra el fuego",
+      "description": "<p>+10 a todos los chequeos relacionados con el fuego, recibe la mitad del daño normal de todo tipo de fuego.</p>"
+    },
+    "Rotgut": {
+      "name": "Matarratas",
+      "gmdescription": "<p>El aguardiente de Jean Rousseaux contiene polvo de piedra bruja suspendido en una mezcla de alcohol y bayas de enebro fermentadas. Vende la mezcla por @Pay[6pb]{6pb} la botella. Incluso una pequeña cantidad causa dolorosos calambres estomacales durante cinco minutos (–30 a todos los Chequeos) a menos que el bebedor supere un <strong>Chequeo Desafiante (+0) de Aguante</strong>. Cualquier éxito asegura que no haya más efectos negativos, pero los PJs que fallen deben repetir el chequeo cada vez que beban matarratas, hasta tener éxito.</p>\n<p>Cada trago constituye una @Corruption[minor]{Exposición Menor a la Corrupción}. Una botella contiene 16 tragos.</p>"
+    },
+    "Wand of Jet": {
+      "name": "Varita de azabache",
+      "description": "<p>Reduce el NL de cualquier hechizo en 2, hasta un mínimo de 0.</p>"
+    },
+    "Wand of Onyx": {
+      "name": "Varita de ónice",
+      "description": "<p>Esta varita de mineral negro pulido actúa como un pozo de poder. Una vez al día, el portador de la varita, al lanzar un conjuro de hasta NL 5, puede considerar que dicho conjuro ha sido lanzado con @UUID[Compendium.wfrp4e-core.journals.YBVrpUHEjohB1H4f.JournalEntryPage.BU7yhLmMdEyvbfkR#lanzamiento-critico]{Poder Total}. Al hacerlo, tira [[/r 1d100]]. Si el resultado es menor o igual al NL del conjuro, la varita se hace añicos y se destruye, causando [[/r 1d10]] Heridas a cada PJ en un radio de 2 yardas.</p>"
+    },
+    "Initiate of the Mysteries": {
+      "name": "Iniciado en los Misterios",
+      "careergroup": "Guerrero de Tzeentch",
+      "description": "@UUID[Compendium.wfrp4e-dotr.journals.uHClvCto8icrUp9P.JournalEntryPage.m3m8NR3fUQjVyGOJ]{Guerrero de Tzeentch}",
+      "skills": [
+        "Atletismo",
+        "Carisma",
+        "Cotilleo",
+        "Consumir alcohol",
+        "Hablar idioma (Magia)",
+        "Cuerpo a cuerpo (Básica)",
+        "Percepción",
+        "Movimiento silencioso (Rural)"
+      ],
+      "talents": [
+        "Empuñar dos Armas",
+        "Escudero",
+        "Golpe poderoso",
+        "Etiqueta (Hombres bestia)",
+        "Corrupción intencionada"
+      ],
+      "trappings": [
+        "Arma de mano rudimentaria",
+        "Chaqueta de cuero",
+        "Símbolo religioso (Talismán de Tzeentch)"
+      ]
+    },
+    "Favoured of Tzeentch": {
+      "name": "Favorito de Tzeentch",
+      "careergroup": "Guerrero de Tzeentch",
+      "description": "@UUID[Compendium.wfrp4e-dotr.journals.uHClvCto8icrUp9P.JournalEntryPage.m3m8NR3fUQjVyGOJ]{Guerrero de Tzeentch}",
+      "skills": [
+        "Atletismo",
+        "Carisma",
+        "Cotilleo",
+        "Consumir alcohol",
+        "Hablar idioma (Magia)",
+        "Cuerpo a cuerpo (Básica)",
+        "Percepción",
+        "Movimiento silencioso (Rural)",
+        "Sobornar",
+        "Esquivar",
+        "Aguante",
+        "Intimidar",
+        "Intuición",
+        "Hablar idioma (Lengua oscura)"
+      ],
+      "talents": [
+        "Amenazador",
+        "Magia menor",
+        "Intrigante",
+        "Giro"
+      ],
+      "trappings": [
+        "Camisote de malla",
+        "Tomo de Conocimiento Prohibido"
+      ]
+    },
+    "Warrior of Tzeentch": {
+      "name": "Guerrero de Tzeentch",
+      "careergroup": "Guerrero de Tzeentch",
+      "description": "@UUID[Compendium.wfrp4e-dotr.journals.uHClvCto8icrUp9P.JournalEntryPage.m3m8NR3fUQjVyGOJ]{Guerrero de Tzeentch}",
+      "skills": [
+        "Atletismo",
+        "Carisma",
+        "Cotilleo",
+        "Consumir alcohol",
+        "Hablar idioma (Magia)",
+        "Cuerpo a cuerpo (Básica)",
+        "Percepción",
+        "Movimiento silencioso (Rural)",
+        "Sobornar",
+        "Esquivar",
+        "Aguante",
+        "Intimidar",
+        "Intuición",
+        "Hablar idioma (Lengua oscura)",
+        "Canalización",
+        "Mando",
+        "Cuerpo a cuerpo (Cualquiera)",
+        "Sabiduría académica (Cualquiera)"
+      ],
+      "talents": [
+        "Asalto furioso",
+        "Golpe letal",
+        "Hechicero de guerra",
+        "Saber arcano (Tzeentch)"
+      ],
+      "trappings": [
+        "Armadura completa y yelmo",
+        "Grimorio de magia negra",
+        "Ingredientes para lanzar 5 hechizos"
+      ]
+    },
+    "Chosen of Tzeentch": {
+      "name": "Elegido de Tzeentch",
+      "careergroup": "Guerrero de Tzeentch",
+      "description": "@UUID[Compendium.wfrp4e-dotr.journals.uHClvCto8icrUp9P.JournalEntryPage.m3m8NR3fUQjVyGOJ]{Guerrero de Tzeentch}",
+      "skills": [
+        "Atletismo",
+        "Carisma",
+        "Cotilleo",
+        "Consumir alcohol",
+        "Hablar idioma (Magia)",
+        "Cuerpo a cuerpo (Básica)",
+        "Percepción",
+        "Movimiento silencioso (Rural)",
+        "Sobornar",
+        "Esquivar",
+        "Aguante",
+        "Intimidar",
+        "Intuición",
+        "Hablar idioma (Lengua oscura)",
+        "Canalización",
+        "Mando",
+        "Cuerpo a cuerpo (Cualquiera)",
+        "Sabiduría académica (Cualquiera)",
+        "Frialdad",
+        "Sabiduría académica (Cualquiera)"
+      ],
+      "talents": [
+        "Dicción distintiva",
+        "Líder de guerra",
+        "Matador",
+        "Orador experto"
+      ],
+      "trappings": [
+        "Arma con un demonio atado",
+        "Cabezas cortadas de dos o más comandantes enemigos",
+        "Familiar demoníaco",
+        "Séquito de guerreros del Caos"
+      ]
+    },
+    "Cavity Worms": {
+      "name": "Gusanos de las cavidades",
+      "contraction": "Exposición al agua sucia o comida en mal estado; Tiradas según descripción.",
+      "symptoms": "Especial (ver descripción)",
+      "description": "<p>@UUID[JournalEntry.GRfHptMWT9wKuoML]{Enfermedades de transmisión acuática}</p>\n<p>El Gusano de las Cavidades es un parásito que infesta aguas sucias y alimentos en mal estado. Mide alrededor de una pulgada de largo y un cuarto de pulgada de ancho, con una piel moteada verde-marrón que forma un extraño dibujo de calavera cerca de la cabeza. Las madres cuentan historias sobre los Gusanos de las Cavidades para asustar a sus hijos y obligarles a mantener la boca limpia, por lo que la mayoría de los habitantes del Viejo Mundo los toman como simples cuentos preventivos. Cometen un grave error al hacerlo.</p>\n\n<h4>Efectos de los Gusanos de las Cavidades</h4>\n<p>Una vez ingerido, un Gusano de las Cavidades se abre paso en los tejidos blandos de la boca o la garganta. Segrega un fluido anestésico que adormece al instante la zona afectada. Cada día, la víctima puede realizar un <strong>Chequeo Desafiante (+0) de Percepción</strong> para notar el crecimiento del gusano. Si tiene éxito, se detecta su presencia. Un <em>doktor</em> u otro PJ con habilidad apropiada puede realizar un <strong>Chequeo Normal (+10) de Sanar</strong> para extraer el gusano; los PJs sin habilidad realizan un <strong>Chequeo de Destreza</strong> estándar. Los personajes que intenten tratarse a sí mismos necesitan un espejo y sufren un –10 a la tirada. Si el Chequeo falla, el afectado obtiene una condición de @Condition[Sangrando].</p>\n\n<p>Una vez instalado en la boca de la víctima, el Gusano de las Cavidades se alimenta del aliento: la esencia del espíritu. Mientras el parásito permanezca, el huésped sufre un –10 a todos los Chequeos.</p>\n\n<p>Después de una semana, el parásito comienza su ruta hacia el cerebro de la víctima. Cada día, el afectado puede realizar un <strong>Chequeo Normal (+20) de Percepción</strong> para notar un pequeño sangrado en la boca. Extraer el Gusano de las Cavidades en esta fase requiere un <strong>Chequeo Complicado (–10) de Cirugía</strong>.</p>\n\n<p>Si el Gusano de las Cavidades no se extrae en tres días más, ya no es posible retirarlo sin matar al huésped. Cuando el gusano penetra en el cerebro y se prepara para poner sus huevos, la víctima debe realizar un <strong>Chequeo de Resistencia</strong> cada día. Por cada fallo, tira [[/r 1d10]], suma el número de Niveles de Fracaso y consulta la tabla @Table[cavityworms]{Efectos de los Gusanos de las Cavidades}.</p>\n\n<p>Los huevos del Gusano de las Cavidades eclosionan [[/r 1d10]] días después de ser puestos, saliendo a borbotones por las fosas nasales de la víctima en busca de un nuevo huésped. Para aquellos que sobrevivan al proceso, todas las penalizaciones son permanentes y solo pueden revertirse por medios mágicos o milagrosos.</p>"
+    },
+    "Lice": {
+      "name": "Piojos",
+      "contraction": "Fracasar un Chequeo Medio (+20) de Aguante tras estar en contacto con una persona infectada.",
+      "symptoms": "Picores frecuentes, Vergüenza.",
+      "duration": "Hasta que se trate",
+      "description": "<p>Aunque es un mal muy común y no demasiado grave en el Viejo Mundo, las infestaciones de piojos pueden resultar bastante molestas. Estos pequeños insectos viven en y alrededor del cabello humano, causando picor e irritación en la piel de la cabeza y la parte superior del cuello. Si se lleva la misma ropa durante semanas seguidas, los piojos del cuerpo también pueden convertirse en un problema. Los tratamientos eficaces incluyen el uso de un peine muy fino para eliminar los piojos y sus huevos, afeitarse la cabeza o utilizar un jabón de sosa muy fuerte.</p>"
+    },
+    "Reikworms": {
+      "name": "Gusanos del Reik",
+      "contraction": "Exposición al agua sucia; Tiradas según descripción.",
+      "symptoms": "Especial (ver descripción)",
+      "description": "<p>@UUID[JournalEntry.GRfHptMWT9wKuoML]{Enfermedades de transmisión acuática}</p>\n<p>Cualquier masa de agua puede albergar al Gusano del Reik, y distintos sanadores tienen toda clase de métodos extraños que supuestamente los mantienen alejados, como hacer gárgaras seis veces antes de tragar (una superstición común en Ostermark), o no beber agua sin comprobar cuando Morrsleib es visible (Nordland).</p>\n<p>Cuando la diminuta larva del Gusano del Reik entra en el cuerpo, se abre paso profundamente en las entrañas de su huésped, donde se alimenta y crece. Pronto, el sistema inmunológico del huésped se debilita, reduciendo su resistencia a otras enfermedades.</p>\n<p>Tras tres meses, el gusano ha crecido hasta alcanzar unos 1,20 metros de longitud y está listo para iniciar la siguiente fase de su ciclo vital. El primer signo visible del parásito es una enorme ampolla que se forma en la superficie de la piel. Al cabo de una semana, la ampolla revienta, causando un dolor ardiente e intenso. Lo habitual es que los afectados sumerjan las heridas en agua fría para encontrar alivio. Si esto ocurre, el Gusano del Reik maduro emerge y escupe una nueva camada de crías en forma de un fluido amarillento y enfermizo, que pronto se dispersa en el agua, listo para infectar a nuevos huéspedes. Después de esto, el gusano muere.</p>\n<h4>Efectos de los Gusanos del Reik</h4>\n<p>Por cada 30 días completos de infección, el PJ sufre un penalizador de –5 a todos los Chequeos de Aguante para oponerse a enfermedades. Este penalizador se reduce en 1 punto por día después de la muerte del gusano.</p>\n<p>Para determinar dónde emerge el gusano, tira en la @Table[hitloc]{Localización de Golpe} como en un combate normal. Cuando la ampolla se forma, el paciente sufre un penalizador de –5% a todos los Chequeos de Agilidad debido a la irritación constante; además, si la ampolla está en una zona visible, el PJ también sufre un penalizador de –10 a los Chequeos de Empatía.</p>\n<p>Al séptimo día tras la aparición de la ampolla, el afectado debe realizar un Chequeo de Aguante cada hora. Al primer fallo — o en la última hora del día si supera todos los Chequeos — la ampolla revienta, causando 1 Herida y provocando una condición de @Condition[Aturdido] debido a la insoportable sensación de ardor resultante. Esto persiste hasta que la herida recibe atención médica, aunque puede aliviarse temporalmente si la ampolla se sumerge en agua.</p>\n<p>No se conoce tratamiento alguno para la infestación de Gusanos del Reik, salvo dejar que el ciclo siga su curso. Algunos médicos han intentado extirparlo de un paciente una vez que la ampolla se forma y la localización del parásito se hace evidente, pero este método suele hacer más daño que bien, y el paciente tarda más en recuperarse.</p>"
+    },
+    "The Gripe": {
+      "name": "Cólicos",
+      "contraction": "Exposición al agua sucia; Tirada según descripción.",
+      "symptoms": "Cólicos",
+      "description": "<p>@UUID[JournalEntry.GRfHptMWT9wKuoML]{Enfermedades de transmisión acuática}</p>\n<p>El paciente es presa de los intensos dolores abdominales que dan nombre a esta enfermedad. Estos aparecen sin patrón ni aviso, y pueden ir acompañados de Fiebre, Disentería y Vómitos.</p>\n<p>Casi todos los herbolarios y anciana rurales del Imperio aseguran tener una cura infalible; todas adoptan la forma de un caldo o té, y aunque los ingredientes varían, ninguno parece ser más efectivo que otro. El único tratamiento real para esta enfermedad son los líquidos para reponer los que se han perdido, y el tiempo.</p>"
+    },
+    "Beast Tongue": {
+      "name": "Lengua de la bestia",
+      "description": "<p>Puedes hablar y comprender la Lengua salvaje de los Hombres Bestia, incluso sin poseer la Habilidad correspondiente.</p>\n<p><strong>Saber:</strong> Ninguno.</p>"
+    },
+    "Eyes of the Beast": {
+      "name": "Ojos de la bestia",
+      "description": "<p>Tus ojos brillan con una luz verde profana, lo que te permite ver como si tuvieras el Rasgo @UUID[Compendium.wfrp4e-core.items.FmHDbCOy3pH8yKhm]{Visión nocturna}. Si ya posees @UUID[Compendium.wfrp4e-core.items.FmHDbCOy3pH8yKhm]{Visión nocturna}, el alcance de tu visión se duplica.</p>\n<p><strong>Saber:</strong> Ninguno</p>"
+    },
+    "Sign of the Beast": {
+      "name": "Señal de la bestia",
+      "description": "<p>Tu rostro cambia sutilmente, mostrando la marca de Tzeentch y los signos de la naturaleza bestial; los Hombres Bestia de Tzeentch te reconocen como amigo y aliado. Obtienes un +20 a todos los Chequeos de <strong>Empatía</strong> al tratar con dichas criaturas. Cualquier seguidor o criatura de Khorne o Slaanesh sufre @UUID[Compendium.wfrp4e-core.items.0VpT5yubw4UL7j6f]{Animosidad} hacia ti, mientras que los de Nurgle te consideran con @UUID[Compendium.wfrp4e-core.items.aE3pyW20Orvdjzj0]{Odio}.</p>\n<p><strong>Saber:</strong> Ninguno</p>"
+    },
+    "Bension of Tzeentch": {
+      "name": "Bendición de Tzeentch",
+      "description": "<p>Invocas el favor de Tzeentch y obtienes un bonificador temporal de +10 a una de las siguientes Características: HA, Resistencia, Agilidad o Voluntad.</p>\n<p><strong>Saber:</strong> Los objetivos de los hechizos del Saber de Tzeentch se ven desgarrados por la magia transformadora del Caos. Quienes quedan afectados por un hechizo del Saber de Tzeentch deben hacer un Chequeo <strong>Desafiante (+0)</strong> de <strong>Aguante</strong> o sufrir +1 Punto de Corrupción. Si pasan el Chequeo, obtienen +1 Punto de Fortuna, que pueden usar de forma normal. Así son los caprichos de Tzeentch.</p>"
+    },
+    "Enrage Beast": {
+      "name": "Bestia enfurecida",
+      "description": "<p>Tus ojos centellean con una luz malsana mientras inspiras miedo en un único animal común a 12 yardas (6 casillas). El animal objetivo tiene derecho a realizar un Chequeo de <strong>Voluntad</strong> para resistir este hechizo. Si falla el Chequeo, actúa de forma extraña. Tira [[/r 1d10]] en la tabla @UUID[Compendium.wfrp4e-dotr.tables.VQTQb4Qlapf7Upuz]{Enfurecer Bestia} para ver qué hace.</p>\n<p><strong>Saber:</strong> Los objetivos de los \nhechizos del Saber de Tzeentch se ven desgarrados por la magia \ntransformadora del Caos. Quienes quedan afectados por un hechizo del \nSaber de Tzeentch deben hacer un Chequeo <strong>Desafiante \n(+0)</strong> de <strong>Aguante</strong> o sufrir +1 \nPunto de Corrupción. Si pasan el Chequeo, obtienen +1 Punto de Fortuna, \nque pueden usar de forma normal. Así son los caprichos de \nTzeentch.</p>"
+    },
+    "Gift of the Beast": {
+      "name": "Don de la bestia",
+      "description": "<p>Invocas el favor de Tzeentch y obtienes una mutación temporal: consulta la tabla @Table[giftofthebeast]{Don de la bestia}.</p>\n<p><strong>Saber:</strong> Los objetivos de los \nhechizos del Saber de Tzeentch se ven desgarrados por la magia \ntransformadora del Caos. Quienes quedan afectados por un hechizo del \nSaber de Tzeentch deben hacer un Chequeo <strong>Desafiante \n(+0)</strong> de <strong>Aguante</strong> o sufrir +1 \nPunto de Corrupción. Si pasan el Chequeo, obtienen +1 Punto de Fortuna, \nque pueden usar de forma normal. Así son los caprichos de \nTzeentch.</p>"
+    },
+    "Slave to Chaos": {
+      "name": "Esclavo del Caos",
+      "description": "<p>Envías tu conciencia a otra criatura viviente, la cual puede intentar un Chequeo de <strong>Voluntad</strong> para resistir tu intrusión. Si falla el Chequeo, tomas el control de las acciones del sujeto durante la duración del hechizo. Si ordenas al sujeto actuar de manera suicida, el objetivo puede hacer otro Chequeo de <strong>Voluntad</strong> para romper el efecto. Mientras posees otro cuerpo, tu propio cuerpo permanece en un sueño profundo. Cuando el hechizo termina, el sujeto debe realizar un Chequeo <strong>Desafiante (–10) de Voluntad</strong> o ganar una mutación de la columna de Tzeentch de la tabla @Table[mutatephys]{Mutación física}.</p>\n<p><strong>Saber:</strong> Los objetivos de los \nhechizos del Saber de Tzeentch se ven desgarrados por la magia \ntransformadora del Caos. Quienes quedan afectados por un hechizo del \nSaber de Tzeentch deben hacer un Chequeo <strong>Desafiante \n(+0)</strong> de <strong>Aguante</strong> o sufrir +1 \nPunto de Corrupción. Si pasan el Chequeo, obtienen +1 Punto de Fortuna, \nque pueden usar de forma normal. Así son los caprichos de \nTzeentch.</p>"
+    },
+    "Bestial Rage": {
+      "name": "Furia bestial",
+      "description": "<p>Invocas la furia de la bestia, obteniendo temporalmente el Rasgo @UUID[Compendium.wfrp4e-core.items.fjd1u9VAgiYzhBRp]{Frenesí}.</p>\n<p><strong>Saber:</strong> Los objetivos de los \nhechizos del Saber de Tzeentch se ven desgarrados por la magia \ntransformadora del Caos. Quienes quedan afectados por un hechizo del \nSaber de Tzeentch deben hacer un Chequeo <strong>Desafiante \n(+0)</strong> de <strong>Aguante</strong> o sufrir +1 \nPunto de Corrupción. Si pasan el Chequeo, obtienen +1 Punto de Fortuna, \nque pueden usar de forma normal. Así son los caprichos de \nTzeentch.</p>"
+    },
+    "Subvert Strength": {
+      "name": "Subvertir fuerza",
+      "description": "<p>Tu mano brilla con extrañas motas azules. El próximo objeto inanimado no mágico que toques pierde su dureza, volviéndose blando y maleable. El acero se dobla; el cristal se pliega; la roca se convierte en masilla. Si lanzas este hechizo sobre un arma, ésta se dobla o incluso se rompe si se usa en combate. Una armadura afectada por este hechizo deja de ofrecer protección, perdiendo todos los puntos de armadura en la localización afectada (y si recibe un impacto, la armadura en esa zona queda destruida). Solo puedes afectar a un objeto de hasta dos yardas cúbicas. Puedes dar forma a este material como desees, aunque el DJ puede requerir un Chequeo de <strong>Oficio</strong> apropiado.</p>\n<p><strong>Saber:</strong> Los objetivos de los \nhechizos del Saber de Tzeentch se ven desgarrados por la magia \ntransformadora del Caos. Quienes quedan afectados por un hechizo del \nSaber de Tzeentch deben hacer un Chequeo <strong>Desafiante \n(+0)</strong> de <strong>Aguante</strong> o sufrir +1 \nPunto de Corrupción. Si pasan el Chequeo, obtienen +1 Punto de Fortuna, \nque pueden usar de forma normal. Así son los caprichos de \nTzeentch.</p>"
+    },
+    "Tremor": {
+      "name": "Temblor",
+      "description": "<p>Tu pie se transforma temporalmente en una gran pezuña envuelta en llamas púrpuras. El suelo tiembla cuando pisas; todas las criaturas en un radio igual a tu Bonificador de Voluntad en yardas (excepto tú) deben realizar un Chequeo de <strong>Agilidad</strong> o caer al suelo, adquiriendo el Estado @Condition[Tumbado].</p>\n<p><strong>Saber:</strong> Los objetivos de los \nhechizos del Saber de Tzeentch se ven desgarrados por la magia \ntransformadora del Caos. Quienes quedan afectados por un hechizo del \nSaber de Tzeentch deben hacer un Chequeo <strong>Desafiante \n(+0)</strong> de <strong>Aguante</strong> o sufrir +1 \nPunto de Corrupción. Si pasan el Chequeo, obtienen +1 Punto de Fortuna, \nque pueden usar de forma normal. Así son los caprichos de \nTzeentch.</p>"
+    },
+    "Transformation of the Beast": {
+      "name": "Transformación de la Bestia",
+      "description": "<p>Canalizas el poder de Tzeentch y tu cuerpo se transforma en el de un @UUID[Compendium.wfrp4e-core.actors.R37OtN5gmPWCYOP3]{Gor}. Obtienes los siguientes beneficios temporales:</p>\n<p><strong>Características</strong>: usa tus propias características o las de un Gor, la que sea mejor.</p>\n<p><strong>Rasgos</strong>: obtienes @UUID[Compendium.wfrp4e-core.items.VUJUZVN3VYhOaPjj]{Armadura 1}, @UUID[Compendium.wfrp4e-core.items.fjd1u9VAgiYzhBRp]{Frenesí} y @UUID[Compendium.wfrp4e-core.items.BqPZn6q3VHn9HUrW]{Cuernos +6}.</p>\n<p><strong>Habilidades</strong>: hablas la Lengua Bestial pero pierdes la capacidad de hablar inteligiblemente en cualquier otro idioma.</p>\n<p><strong>Saber:</strong> Los objetivos de los \nhechizos del Saber de Tzeentch se ven desgarrados por la magia \ntransformadora del Caos. Quienes quedan afectados por un hechizo del \nSaber de Tzeentch deben hacer un Chequeo <strong>Desafiante \n(+0)</strong> de <strong>Aguante</strong> o sufrir +1 \nPunto de Corrupción. Si pasan el Chequeo, obtienen +1 Punto de Fortuna, \nque pueden usar de forma normal. Así son los caprichos de \nTzeentch.</p>"
+    },
+    "Climb": {
+      "name": "Trepar",
+      "description": "<p>Tus uñas de manos y pies se convierten en pequeñas garras, no lo bastante largas como para servir como armas, pero suficientes para facilitar mucho la escalada. Cuando estés descalzo y sin guantes, obtienes el Talento @UUID[Compendium.wfrp4e-core.items.MGEPI4jNhymNIRVz]{Trepador de paredes} mientras dure el hechizo.</p>\n<p><strong>Saber:</strong> Los objetivos de los \nhechizos del Saber de Tzeentch se ven desgarrados por la magia \ntransformadora del Caos. Quienes quedan afectados por un hechizo del \nSaber de Tzeentch deben hacer un Chequeo <strong>Desafiante \n(+0)</strong> de <strong>Aguante</strong> o sufrir +1 \nPunto de Corrupción. Si pasan el Chequeo, obtienen +1 Punto de Fortuna, \nque pueden usar de forma normal. Así son los caprichos de \nTzeentch.</p>"
+    },
+    "Zone of Sanctuary": {
+      "name": "Zona de santuario",
+      "description": "<p>Apelas al justo poder de Sigmar para juzgar a los malvados y mantenerlos alejados de tu presencia. Los PJs dentro del área de efecto del Milagro ganan un bonificador de +20 para resistir Miedo y Terror. Ninguna criatura Muerto viviente o Demoníaca puede entrar en la zona, ni atacar a aquellos que estén dentro de ella. Dichas criaturas que se encuentren dentro del Alcance de este Milagro cuando se invoque deben intentar abandonarlo. Este Milagro se centra en el PJ que lo invoque, el cual, durante su duración, no podrá Moverse ni realizar ninguna Acción que no sea condenar con vigor a los malvados en nombre de Sigmar.</p>"
+    },
+    "Carapace": {
+      "name": "Caparazón",
+      "description": "<p>+1 Punto de Armadura en dos @Table[hitloc]{Ubicaciones} al azar. Esta mutación sólo puede ocultarse con ropa</p>"
+    },
+    "Rotting Flesh": {
+      "name": "Carne en descomposición",
+      "description": "<p>Cualquiera que vea el rostro o el cuerpo descubierto de un guardia debe realizar un Chequeo de Miedo o quedarse paralizado en el lugar. Además, todos apestan a podredumbre y suciedad: el hedor obliga a cualquiera que se encuentre a 2 yardas a superar un Chequeo <strong>Desafiante (+0) de Aguante</strong>, o luchar con una penalización de  -10 a HA.</p>"
+    },
+    "Aquatic": {
+      "name": "Acuático",
+      "description": "</p>La criatura puede respirar y moverse bajo el agua a su valor normal de Movimiento. No puede moverse en tierra.</p>"
+    },
+    "Blood Drain": {
+      "name": "Drenar sangre",
+      "description": "<p>Si la sanguijuela logra un golpe que cause Heridas, se adhiere a su víctima, infligiendo 1 Estado de @Condition[Sangrando] hasta que muera o se sacie. Para ver si se ha saciado, tira [[/r 1d10]] cada Asalto: con un resultado de 9 o 10 se desprende, de lo contrario sigue alimentándose. El fuego o algunos irritantes (sal, ácido, etc.) harán que suelte su presa e intente huir. Arrancarla a la fuerza inflige 1 Estado de @Condition[Sangrando].</p>"
+    },
+    "Hallucinogen": {
+      "name": "Alucinógeno",
+      "description": "<p>La criatura exhala un almizcle alucinógeno. Las víctimas que se encuentren a 2 yardas (o más, a discreción del DJ, si la víctima está a favor del viento) deben superar un <strong>Chequeo Normal (+20) de Voluntad</strong> o sucumbir, obteniendo un Estado de @Condition[Aturdido] por cada nivel de fracaso.</p>"
+    },
+    "Creeping": {
+      "name": "Arrastrarse",
+      "description": "<p>Esta criatura es implacable, pero lenta. No puede realizar acciones de Correr</p>"
+    },
+    "Capricious": {
+      "name": "Caprichoso",
+      "description": "<p>El temperamento de la criatura oscila de un extremo a otro. Cuando cualquier criatura realice un Chequeo de <strong>Empatía</strong> al tratar con ella, tira en la siguiente tabla:</p>\n<table style=\"width: 77.0354%; height: 95px;\" border=\"1\">\n    <tbody>\n        <tr style=\"height: 16px;\">\n            <td style=\"width: 14.1285%; text-align: center; height: 15px;\">\n                <p><strong>[[/r 1d10]]</strong></p>\n            </td>\n            <td style=\"width: 84.5762%; text-align: center; height: 15px;\">\n                <p><strong>Resultado</strong></p>\n            </td>\n        </tr>\n        <tr style=\"height: 16px;\">\n            <td style=\"width: 14.1285%; height: 16px;\">\n                <p>1</p>\n            </td>\n            <td style=\"width: 84.5762%; height: 16px;\">\n                <p>Resta 2 al NE</p>\n            </td>\n        </tr>\n        <tr style=\"height: 16px;\">\n            <td style=\"width: 14.1285%; height: 16px;\">\n                <p>2-3</p>\n            </td>\n            <td style=\"width: 84.5762%; height: 16px;\">\n                <p>Resta 1 al NE</p>\n            </td>\n        </tr>\n        <tr style=\"height: 16px;\">\n            <td style=\"width: 14.1285%; height: 16px;\">\n                <p>4-7</p>\n            </td>\n            <td style=\"width: 84.5762%; height: 16px;\">\n                <p>Usa el NE indicado</p>\n            </td>\n        </tr>\n        <tr style=\"height: 16px;\">\n            <td style=\"width: 14.1285%; height: 16px;\">\n                <p>8-9</p>\n            </td>\n            <td style=\"width: 84.5762%; height: 16px;\">\n                <p>Suma 1 al NE</p>\n            </td>\n        </tr>\n        <tr style=\"height: 16px;\">\n            <td style=\"width: 14.1285%; height: 16px;\">\n                <p>10</p>\n            </td>\n            <td style=\"width: 84.5762%; height: 16px;\">\n                <p>Suma 2 al NE</p>\n            </td>\n        </tr>\n    </tbody>\n</table>"
+    },
+    "Engulf": {
+      "name": "Engullir",
+      "description": "<p>Si la criatura tiene el tamaño suficiente, cualquier ataque con éxito que realice engulle a la víctima, incluso si no causa Daño, infligiendo un Estado de @Condition[Enmarañado] con una Fuerza igual a la de la criatura. Al comienzo de cada Asalto, las víctimas engullidas obtienen un Estado adicional de @Condition[Enmarañado] y pierden automáticamente 1 Herida, pues potentes enzimas comienzan la digestión. Si la criatura no tiene el tamaño suficiente para engullir por completo a una víctima, aún puede ser lo bastante grande como para inmovilizar una localización alcanzada. La criatura no puede realizar más ataques contra las víctimas totalmente engullidas, aunque todavía puede atacar a otras si se encuentran lo bastante cerca.</p>"
+    },
+    "Invisible": {
+      "name": "Invisible",
+      "description": "<p>Un PJ con el Talento @UUID[Compendium.wfrp4e-core.items.OEjUvJKi0xmBwbS2]{Clarividencia} puede ver al fantasma como un remolino tenue, parecido al humo, en el aire, y puede atacarlo sin penalizadores para impactar. Los ataques de otros PJs sufren un penalizador de –40 para impactar, reducido a –30 si un PJ con Clarividencia está dirigiendo los ataques.</p>"
+    },
+    "Attach and Feed": {
+      "name": "Pegarse y alimentarse",
+      "description": "<p>Si la criatura realiza un ataque de Mordisco con éxito, queda aferrada a la víctima, sujetándola con una fuerza sorprendente. A continuación extrae sangre, causando la pérdida automática de 1 Herida cada Asalto que permanezca adherida. Las víctimas reducidas a cero Heridas obtienen el Estado @Condition[Inconsciente], ya que se desmayan por la pérdida de sangre.</p>\n<p>La criatura solo se desprenderá cuando esté saciada, lo que ocurre tras haber extraído un número de Heridas igual a su BR; entonces se retira para digerir la comida.</p>\n<p>La criatura puede ser arrancada con un <strong>Chequeo Enfrentado de Fuerza</strong>, pero hacerlo inflige 1 Herida a la víctima. Si la criatura posee el Rasgo apropiado, cualquier cosa a la que tema hará que se suelte de inmediato.</p>"
+    },
+    "Analgesic Saliva": {
+      "name": "Saliva analgésica",
+      "description": "<p>El mordisco de la criatura no hace daño, lo que le permite adherirse sin ser detectado. Este efecto se desvanece tras 10 – BR Asaltos tras ser separada de la criatura.</p>"
+    },
+    "Anticoagulant Saliva": {
+      "name": "Saliva anticoagulante",
+      "description": "<p>La víctima del mordisco de la criatura gana un Estado @Condition[Sangrando].</p>"
+    },
+    "Ballista": {
+      "name": "Balista",
+      "skill": "A distancia (De Ingeniería)",
+      "description": "<p>Las balistas son enormes ballestas que disparan virotes con punta de hierro del tamaño de postes de valla. Pueden atravesar a una persona o criatura como a un pollo, o abrir un agujero limpio en el casco de un barco. Normalmente las balistas están montadas sobre pivotes, lo que les permite un amplio arco de giro.</p>"
+    },
+    "Cannon (Medium)": {
+      "name": "Cañón (Mediano)",
+      "skill": "A distancia (De Ingeniería)",
+      "description": "<p>Los cañones son difíciles de conseguir, peligrosos de usar y aterradores para cualquiera que mire por sus cañones. Los más grandes están restringidos a fortalezas, pero las armas pequeñas y medianas pueden montarse en barcos. La Patrulla fluvial suele mirar con recelo a los navíos armados con cañones que no estén claramente vinculados a alguna fuerza militar, y los aventureros que posean cañones tendrán que esforzarse mucho para demostrar que no son piratas.</p>\n<p>Los cañones pueden cargarse con tres tipos diferentes de munición:</p>\n<p>@UUID[Compendium.wfrp4e-dotr.items.i2ypssXrNcphXgDr]{Bala}</p>\n<p>@UUID[Compendium.wfrp4e-dotr.items.Cz7jdAngs0CLwDJ9]{Munición encadenada}</p>\n<p>@UUID[Compendium.wfrp4e-dotr.items.QlTA200PdF52ZDJL]{Metralla}</p>\n<p>Los cañones pueden montarse en la proa de un barco, en la popa, o en uno o ambos costados. A diferencia de una @UUID[Compendium.wfrp4e-dotr.items.pzvq6nN3KquVqZki]{balista}, un cañón no puede girar y solo puede disparar directamente hacia adelante, hacia atrás o de costado, dependiendo de su ubicación.</p>"
+    },
+    "Cannon (Small)": {
+      "name": "Cañón (Pequeño)",
+      "skill": "A distancia (De Ingeniería)",
+      "description": "<p>Los cañones son difíciles de conseguir, peligrosos de usar y aterradores para cualquiera que mire por sus cañones. Los más grandes están restringidos a fortalezas, pero las armas pequeñas y medianas pueden montarse en barcos. La Patrulla fluvial suele mirar con recelo a los navíos armados con cañones que no estén claramente vinculados a alguna fuerza militar, y los aventureros que posean cañones tendrán que esforzarse mucho para demostrar que no son piratas.</p>\n<p>Los cañones pueden cargarse con tres tipos diferentes de munición:</p>\n<p>@UUID[Compendium.wfrp4e-dotr.items.i2ypssXrNcphXgDr]{Bala}</p>\n<p>@UUID[Compendium.wfrp4e-dotr.items.Cz7jdAngs0CLwDJ9]{Munición encadenada}</p>\n<p>@UUID[Compendium.wfrp4e-dotr.items.QlTA200PdF52ZDJL]{Metralla}</p>\n<p>Los cañones pueden montarse en la proa de un barco, en la popa, o en uno o ambos costados. A diferencia de una @UUID[Compendium.wfrp4e-dotr.items.pzvq6nN3KquVqZki]{balista}, un cañón no puede girar y solo puede disparar directamente hacia adelante, hacia atrás o de costado, dependiendo de su ubicación.</p>"
+    },
+    "Catapult (Medium)": {
+      "name": "Catapulta (Mediana)",
+      "skill": "A distancia (De Ingeniería)",
+      "description": "<p>Las catapultas son armas de fuego indirecto que lanzan rocas, bombas normales o incendiarias en una amplia parábola, haciéndolos caer sobre las cabezas de los objetivos. Son sencillas de construir pero difíciles de apuntar, especialmente contra un objetivo en movimiento. No son fáciles de manejar, requiriendo entre 2 y 3 acciones para reorientarlas, dependiendo de su tamaño.</p>"
+    },
+    "Catapult (Small)": {
+      "name": "Catapulta (Pequeña)",
+      "skill": "A distancia (De Ingeniería)",
+      "description": "<p>Las catapultas son armas de fuego indirecto que lanzan rocas, bombas normales o incendiarias en una amplia parábola, haciéndolos caer sobre las cabezas de los objetivos. Son sencillas de construir pero difíciles de apuntar, especialmente contra un objetivo en movimiento. No son fáciles de manejar, requiriendo entre 2 y 3 acciones para reorientarlas, dependiendo de su tamaño.</p>"
+    },
+    "Mortar": {
+      "name": "Mortero",
+      "skill": "A distancia (De Ingeniería)",
+      "description": "<p>Un mortero es el equivalente en pólvora negra a una catapulta, disparando una pesada bala o una bomba en una gran parábola. En el campo de batalla, se utilizan principalmente en asedios, lanzando explosivos por encima de los muros del castillo para causar estragos en el patio interior. Rara vez se ven en barcos, salvo aquellos empleados como baterías de asedio flotantes por las armadas de las naciones más ricas del Viejo Mundo. Al igual que con los cañones, la posesión de un mortero es suficiente para despertar profundas sospechas por parte de las autoridades.</p>\n<p>Al igual que las @UUID[Compendium.wfrp4e-dotr.items.Cglbo7THNwrPHnuD]{Catapultas}, los morteros requieren 3 acciones para reorientarse, lo que los hace incómodos de apuntar con precisión.</p>"
+    },
+    "Swivel Gun": {
+      "name": "Cañón giratorio",
+      "skill": "A distancia (De Ingeniería)",
+      "description": "<p>Un cañón giratorio es similar a un trabuco, pero más grande. Debido a su peso, normalmente se monta sobre un pivote o trípode, aunque se sabe que algunos mercenarios Ogros lo sostienen con las manos.</p>"
+    },
+    "Volley Gun": {
+      "name": "Avispero",
+      "skill": "A distancia (De Ingeniería)",
+      "description": "<p>El avispero es similar a un mosquete de repetición, pero con todos los cañones dispuestos para disparar a la vez. Normalmente cuenta con siete cañones: uno en el centro y seis más agrupados a su alrededor en forma hexagonal. Aunque letal para quienes se encuentren frente a él, un avispero también puede ser peligroso para un usuario inexperto. Cada vez que se dispara, el usuario debe realizar un Chequeo <strong>Normal (+20) de Aguante</strong>, sufriendo 1 Herida por cada nivel de Fracaso, ya que el arma golpea violentamente contra el hombro. En un Fracaso Asombroso, el usuario recibe un Golpe Crítico en el hombro: utiliza la @Table[critarm]{Tabla de Heridas Críticas en el Brazo}, ajustando los detalles según sea necesario para reflejar un impacto en el hombro.</p>"
+    },
+    "Hull": {
+      "name": "Casco",
+      "description": "<p>El barco queda agujereado y empieza a hacer aguas. Se hundirá en un número de minutos igual a la Resistencia del barco (ver @UUID[Compendium.wfrp4e-dotr.journals.WR8ZAD6yw9lYgzeY.JournalEntryPage.8RsPoCyE5UELCb1s#agujereado]{Agujereado}). El agua puede arruinar la carga, si la hubiera.</p>"
+    },
+    "Oars": {
+      "name": "Remos",
+      "description": "<p>Los remos se astillan, y los remeros sufren un impacto de Daño +5 por las astillas voladoras. Hasta que los remos sean reemplazados, el barco solo podrá ir a la deriva. Opcionalmente, un Golpe Crítico a los remos solo destruye uno, según la dirección desde la que llegó el ataque. Tras un par de turnos para improvisar un soporte —un Chequeo <strong>Complicado (–10) de Oficio (Construcción de barcos o Carpintería)</strong>—, el remo que queda puede fijarse a la parte trasera del barco y usarse para cinglar a la mitad de la velocidad normal. Navegar de esta forma requiere un Chequeo <strong>Desafiante (+0) de Manejo de embarcaciones</strong>.</p>"
+    },
+    "Rigging": {
+      "name": "Aparejos",
+      "description": "<p>La vela cae, arrastrando cabos y aparejos con ella. Todo el personal en cubierta debe realizar un Chequeo de <strong>Iniciativa</strong> o sufrir un impacto de Daño +5 y adquirir el Estado @Condition[Enmarañado]. Hasta que el aparejo sea reparado, el barco solo podrá ir a la deriva.</p>"
+    },
+    "Steering": {
+      "name": "Timón",
+      "description": "<p>El timón se astilla, y el timonel sufre un impacto de Daño +5 por las astillas voladoras. Hasta que el timón sea reparado, todos los Chequeos para manejar el barco son <strong>Muy Difíciles (–30)</strong>.</p>"
+    },
+    "Superstructure": {
+      "name": "Superestructura",
+      "description": "<p>La cabina, si la hay, resulta alcanzada, y todos los PJs en su interior deben realizar un Chequeo de <strong>Iniciativa</strong> o sufrir un impacto de Daño +5 por las astillas voladoras. El barco no se ve afectado de otro modo.</p>"
+    },
+    "Armour Plating (Bronze)": {
+      "name": "Blindaje (Bronce)",
+      "description": "<p>Una fina plancha de bronce o hierro añade 1–2 Puntos de Armadura al casco de un barco, pero aumenta su peso y requiere un mantenimiento regular, que implica sacar completamente el barco del agua y raspar el casco.</p>\n<p><strong>Bronce</strong>: 1 PA; debe rasparse al menos una vez cada tres meses o la oxidación alcanza un punto en el que la superficie se llena de hoyos y maleza fluvial, aumentando la resistencia y reduciendo la maniobrabilidad (Movimiento −1, Chequeos de <strong>Manejo de embarcaciones</strong> −10). Esto no afecta al valor de armadura.</p>\n<blockquote class=\"foundry-note\">\n    <p>Esto representa 10 pies de longitud de blindaje. Modifica el precio y la carga de este objeto según el número de tramos de 10 pies utilizados.</p>\n</blockquote>"
+    },
+    "Armour Plating (Iron)": {
+      "name": "Blindaje (Hierro)",
+      "description": "<p>Una fina plancha de bronce o hierro añade 1–2 Puntos de \nArmadura al casco de un barco, pero aumenta su peso y requiere un \nmantenimiento regular, que implica sacar completamente el barco del agua\n y raspar el casco.</p>\n<p><strong>Hierro:</strong> 2 PA; debe rasparse al menos una vez al mes o brotarán manchas de óxido, aumentando la resistencia y reduciendo la maniobrabilidad (Movimiento –1, Chequeos de <strong>Manejo de embarcaciones</strong> –10). Si se falla, las planchas de hierro se oxidan y pierden todo su valor de armadura.</p>\n<blockquote class=\"foundry-note\">\n    <p>Esto representa 10 pies de longitud de blindaje. Modifica el precio y la carga de este objeto según el número de tramos de 10 pies utilizados.</p>\n</blockquote>"
+    },
+    "Racing Hull": {
+      "name": "Casco de carreras",
+      "description": "<p>Los nobles adinerados son adictos a las competiciones y a las apuestas, como todo el mundo sabe. En un esfuerzo por superar a sus rivales, algunos ricos propietarios de barcos han invertido sumas inmensas en investigación y artesanía, en busca de la forma de casco perfecta para la velocidad. Un casco de carreras es tan liso como el cristal y está ingeniosamente diseñado para reducir la resistencia al mínimo, permitiendo que el barco viaje hasta el doble de su Velocidad de Movimiento normal.</p>\n<p>Sin embargo, un barco con un casco de carreras es difícil de controlar y requiere un Chequeo <strong>Complicado (−10) de Manejo de embarcaciones</strong> cada hora. En un Fallo Marginal (−1 NE) o Fallo Normal, el Movimiento no puede superar la tasa normal; en un Fallo Impresionante (−4 NE), el Movimiento se reduce a la mitad; y en un Fallo Asombroso (−6 NE o menos), el casco se daña y el barco no puede superar la mitad del Movimiento normal hasta que sea reparado a un coste igual a la mitad del precio del casco, como se ha indicado.</p>\n<p>Las @UUID[Compendium.wfrp4e-dotr.journals.WR8ZAD6yw9lYgzeY.JournalEntryPage.qpdadmEFPBzFcklt]{reparaciones} normales de un casco de carreras cuestan el doble de la tarifa habitual, y requieren una artesanía más refinada: todos los Chequeos relevantes son un grado más difíciles de lo normal.</p>\n<blockquote class=\"foundry-note\">\n    <p>La Carga y el Precio reflejan 10 pies de longitud. Modifica este objeto según el barco al que se le aplique.</p>\n</blockquote>"
+    },
+    "Smoothing": {
+      "name": "Pulido",
+      "description": "<p>Menos radical que un casco de carreras es el proceso de alisar el casco con arena y rocas abrasivas, para eliminar cualquier impureza que pueda causar resistencia innecesaria. El alisado inicial de un casco lleva al menos una semana en un astillero y otorga al barco Movimiento +1.</p>\n<p>@UUID[Compendium.wfrp4e-dotr.journals.WR8ZAD6yw9lYgzeY.JournalEntryPage.qpdadmEFPBzFcklt]{Reparar} un casco pulido cuesta un 50% más de lo normal; las reparaciones más baratas hacen perder todos los beneficios del pulido.</p>\n<blockquote class=\"foundry-note\">\n    <p>La Carga y el Precio reflejan 10 pies de longitud. Modifica este objeto según el barco al que se le aplique.</p>\n</blockquote>"
+    },
+    "Water Brakes (Fishing Skiff)": {
+      "name": "Frenos de agua (Esquife pesquero)",
+      "description": "<p>Este mecanismo consiste en dos amplias compuertas de madera que pueden desplegarse desde los costados del barco. Al remontar el río, abrir los frenos aumenta la resistencia y reduce el Movimiento en 1–2 puntos, dependiendo de si se abren a la mitad o completamente. Al descender río abajo, atrapan la corriente e incrementan el Movimiento en una cantidad similar.</p>"
+    },
+    "Water Brakes (Large Barge)": {
+      "name": "Frenos de agua (Barcaza grande)",
+      "description": "<p>Este mecanismo consiste en dos amplias compuertas de madera que\n pueden desplegarse desde los costados del barco. Al remontar el río, \nabrir los frenos aumenta la resistencia y reduce el Movimiento en 1–2 \npuntos, dependiendo de si se abren a la mitad o completamente. Al \ndescender río abajo, atrapan la corriente e incrementan el Movimiento en\n una cantidad similar.</p>"
+    },
+    "Water Brakes (Row Boat)": {
+      "name": "Frenos de agua (Bote de remos)",
+      "description": "<p>Este mecanismo consiste en dos amplias compuertas de madera que\n pueden desplegarse desde los costados del barco. Al remontar el río, \nabrir los frenos aumenta la resistencia y reduce el Movimiento en 1–2 \npuntos, dependiendo de si se abren a la mitad o completamente. Al \ndescender río abajo, atrapan la corriente e incrementan el Movimiento en\n una cantidad similar.</p>"
+    },
+    "Water Brakes (Typical Barge or Patrol Boat)": {
+      "name": "Frenos de agua (Barcaza típica o patrullera)",
+      "description": "<p>Este mecanismo consiste en dos amplias compuertas de madera que\n pueden desplegarse desde los costados del barco. Al remontar el río, \nabrir los frenos aumenta la resistencia y reduce el Movimiento en 1–2 \npuntos, dependiendo de si se abren a la mitad o completamente. Al \ndescender río abajo, atrapan la corriente e incrementan el Movimiento en\n una cantidad similar.</p>"
+    },
+    "Broad Rudder (Fishing Skiff)": {
+      "name": "Timón ancho (Esquife pesquero)",
+      "description": "<p>Un timón más grande mejora la dirección, pero requiere un timonel más fuerte debido al aumento de la resistencia del agua. Cada Chequeo de <strong>Manejo de embarcaciones</strong> debe ir acompañado también de un Chequeo de <strong>Fuerza</strong>; si el Chequeo de <strong>Fuerza</strong> tiene éxito, sus NE pueden sumarse a los del Chequeo de Manejo de embarcaciones. No hay penalización por un fallo normal en este Chequeo adicional de <strong>Fuerza</strong>. Sin embargo, un Fracaso Asombroso o una Pifia provoca un giro repentino del timón que lanza al desafortunado PJ de cabeza al agua.</p>"
+    },
+    "Broad Rudder (Large Barge)": {
+      "name": "Timón ancho (Barcaza grande)",
+      "description": "<p>Un timón más grande mejora la dirección, pero requiere un timonel más fuerte debido al aumento de la resistencia del agua. Cada Chequeo de <strong>Manejo de embarcaciones</strong> debe ir acompañado también de un Chequeo de <strong>Fuerza</strong>; si el Chequeo de <strong>Fuerza</strong> tiene éxito, sus NE pueden sumarse a los del Chequeo de Manejo de embarcaciones. No hay penalización por un fallo normal en este Chequeo adicional de <strong>Fuerza</strong>. Sin embargo, un Fracaso Asombroso o una Pifia provoca un giro repentino del timón que lanza al desafortunado PJ de cabeza al agua.</p>"
+    },
+    "Broad Rudder (Row Boat)": {
+      "name": "Timón ancho (Bote de remos)",
+      "description": "<p>Un timón más grande mejora la dirección, pero requiere un timonel más fuerte debido al aumento de la resistencia del agua. Cada Chequeo de <strong>Manejo de embarcaciones</strong> debe ir acompañado también de un Chequeo de <strong>Fuerza</strong>; si el Chequeo de <strong>Fuerza</strong> tiene éxito, sus NE pueden sumarse a los del Chequeo de Manejo de embarcaciones. No hay penalización por un fallo normal en este Chequeo adicional de <strong>Fuerza</strong>. Sin embargo, un Fracaso Asombroso o una Pifia provoca un giro repentino del timón que lanza al desafortunado PJ de cabeza al agua.</p>"
+    },
+    "Broad Rudder (Typical Barge or Patrol Boat)": {
+      "name": "Timón ancho (Barcaza típica o patrullera)",
+      "description": "<p>Un timón más grande mejora la dirección, pero requiere un timonel más fuerte debido al aumento de la resistencia del agua. Cada Chequeo de <strong>Manejo de embarcaciones</strong> debe ir acompañado también de un Chequeo de <strong>Fuerza</strong>; si el Chequeo de <strong>Fuerza</strong> tiene éxito, sus NE pueden sumarse a los del Chequeo de Manejo de embarcaciones. No hay penalización por un fallo normal en este Chequeo adicional de <strong>Fuerza</strong>. Sin embargo, un Fracaso Asombroso o una Pifia provoca un giro repentino del timón que lanza al desafortunado PJ de cabeza al agua.</p>"
+    },
+    "Fore-and-Aft Rudder (Fishing Skiff)": {
+      "name": "Timón de proa y popa (Esquife pesquero)",
+      "description": "<p>Para lograr la máxima maniobrabilidad, puede añadirse un segundo timón en la proa del barco. Esto reduce el Movimiento del barco en –1, pero si hay un tripulante entrenado en cada timón, todos los Chequeos de <strong>Manejo de embarcaciones</strong> relacionados con la dirección reciben un bonificador de +20.</p>"
+    },
+    "Fore-and-Aft Rudder (Large Barge)": {
+      "name": "Timón de proa y popa (Barcaza grande)",
+      "description": "<p>Para lograr la máxima maniobrabilidad, puede añadirse un segundo timón en la proa del barco. Esto reduce el Movimiento del barco en –1, pero si hay un tripulante entrenado en cada timón, todos los Chequeos de <strong>Manejo de embarcaciones</strong> relacionados con la dirección reciben un bonificador de +20.</p>"
+    },
+    "Fore-and-Aft Rudder (Row Boat)": {
+      "name": "Timón de proa y popa (Bote de remos)",
+      "description": "<p>Para lograr la máxima maniobrabilidad, puede añadirse un segundo timón en la proa del barco. Esto reduce el Movimiento del barco en –1, pero si hay un tripulante entrenado en cada timón, todos los Chequeos de <strong>Manejo de embarcaciones</strong> relacionados con la dirección reciben un bonificador de +20.</p>"
+    },
+    "Fore-and-Aft Rudder (Typical Barge or Patrol Boat)": {
+      "name": "Timón de proa y popa (Barcaza típica o patrullera)",
+      "description": "<p>Para lograr la máxima maniobrabilidad, puede añadirse un segundo timón en la proa del barco. Esto reduce el Movimiento del barco en –1, pero si hay un tripulante entrenado en cada timón, todos los Chequeos de <strong>Manejo de embarcaciones</strong> relacionados con la dirección reciben un bonificador de +20.</p>"
+    },
+    "Raised Gunwales (Fishing Skiff)": {
+      "name": "Bordas elevadas (Esquife pesquero)",
+      "description": "<p>El casco se eleva hasta aproximadamente la altura de la cintura de un Humano. Además de bloquear las olas altas que podrían barrer la cubierta e incluso inundar el barco, las bordas ofrecen @UUID[Compendium.wfrp4e-core.journals.NS3YGlJQxwTggjRX.JournalEntryPage.wmA76Q2zJJ9HrkvA#dificultad-del-combate]{cobertura intermedia} a cualquiera que se agache en la cubierta; los ataques a distancia contra ellos son Difíciles (-20).</p>"
+    },
+    "Raised Gunwales (Large Barge)": {
+      "name": "Bordas elevadas (Barcaza grande)",
+      "description": "<p>El casco se eleva hasta aproximadamente la altura de la cintura de un Humano. Además de bloquear las olas altas que podrían barrer la cubierta e incluso inundar el barco, las bordas ofrecen @UUID[Compendium.wfrp4e-core.journals.NS3YGlJQxwTggjRX.JournalEntryPage.wmA76Q2zJJ9HrkvA#dificultad-del-combate]{cobertura intermedia} a cualquiera que se agache en la cubierta; los ataques a distancia contra ellos son Difíciles (-20).</p>"
+    },
+    "Raised Gunwales (Row Boat)": {
+      "name": "Bordas elevadas (Bote de remos)",
+      "description": "<p>El casco se eleva hasta aproximadamente la altura de la cintura de un Humano. Además de bloquear las olas altas que podrían barrer la cubierta e incluso inundar el barco, las bordas ofrecen @UUID[Compendium.wfrp4e-core.journals.NS3YGlJQxwTggjRX.JournalEntryPage.wmA76Q2zJJ9HrkvA#dificultad-del-combate]{cobertura intermedia} a cualquiera que se agache en la cubierta; los ataques a distancia contra ellos son Difíciles (-20).</p>"
+    },
+    "Raised Gunwales (Typical Barge or Patrol Boat)": {
+      "name": "Bordas elevadas (Barcaza típica o patrullera)",
+      "description": "<p>El casco se eleva hasta aproximadamente la altura de la cintura de un Humano. Además de bloquear las olas altas que podrían barrer la cubierta e incluso inundar el barco, las bordas ofrecen @UUID[Compendium.wfrp4e-core.journals.NS3YGlJQxwTggjRX.JournalEntryPage.wmA76Q2zJJ9HrkvA#dificultad-del-combate]{cobertura intermedia} a cualquiera que se agache en la cubierta; los ataques a distancia contra ellos son Difíciles (-20).</p>"
+    },
+    "Luxury Cabin": {
+      "name": "Camarote de lujo",
+      "description": "<p>A los ricos del Imperio les gusta viajar con comodidad, y el tipo de camarote que se encuentra en una barcaza noble es muy diferente a la de un navío mercante o de pasajeros. Por el coste indicado, y ocupando el espacio de dos camarotes normales, un viajero puede recorrer los ríos con comodidad y estilo. A tu discreción, cualquier Chequeo de <strong>Empatía</strong> realizado por el propietario de un camarote de lujo obtiene un +10, siempre que se realice dentro del camarote.</p>"
+    },
+    "Stripped (Fishing Skiff)": {
+      "name": "Minimizado (Esquife pesquero)",
+      "description": "<p>Un barco puede ser despojado de todos sus camarotes y superestructuras, ya sea para aligerarlo o maximizar el espacio de carga. Minimizar un barco estándar cuesta la cantidad indicada; construir un barco minimizado cuesta el 75% del precio normal. El peso se reduce como se indica arriba, y el espacio de carga aumenta en un 75% sobre la capacidad normal.</p>"
+    },
+    "Stripped (Large Barge)": {
+      "name": "Minimizado (Barcaza grande)",
+      "description": "<p>Un barco puede ser despojado de todos sus camarotes y \nsuperestructuras, ya sea para aligerarlo o maximizar el espacio de \ncarga. Minimizar un barco estándar cuesta la cantidad indicada; \nconstruir un barco minimizado cuesta el 75% del precio normal. El peso \nse reduce como se indica arriba, y el espacio de carga aumenta en un 75%\n sobre la capacidad normal.</p>"
+    },
+    "Stripped (Row Boat)": {
+      "name": "Minimizado (Bote de remos)",
+      "description": "<p>Un barco puede ser despojado de todos sus camarotes y \nsuperestructuras, ya sea para aligerarlo o maximizar el espacio de \ncarga. Minimizar un barco estándar cuesta la cantidad indicada; \nconstruir un barco minimizado cuesta el 75% del precio normal. El peso \nse reduce como se indica arriba, y el espacio de carga aumenta en un 75%\n sobre la capacidad normal.</p>"
+    },
+    "Stripped (Typical Barge or Patrol Boat)": {
+      "name": "Minimizado (Barcaza típica o patrullera)",
+      "description": "<p>Un barco puede ser despojado de todos sus camarotes y \nsuperestructuras, ya sea para aligerarlo o maximizar el espacio de \ncarga. Minimizar un barco estándar cuesta la cantidad indicada; \nconstruir un barco minimizado cuesta el 75% del precio normal. El peso \nse reduce como se indica arriba, y el espacio de carga aumenta en un 75%\n sobre la capacidad normal.</p>"
+    },
+    "Armoured Walls (Fishing Skiff)": {
+      "name": "Paredes blindadas (Esquife pesquero)",
+      "description": "<p>Las paredes de cualquier camarote u otra superestructura están reforzadas con planchas de hierro. Cualquier PJ o PNJ tras un muro blindado cuenta como si estuviera en @UUID[Compendium.wfrp4e-core.journals.NS3YGlJQxwTggjRX.JournalEntryPage.wmA76Q2zJJ9HrkvA#dificultad-del-combate]{cobertura dura}, y los ataques a distancia contra ellos son Muy Difíciles (-30).</p>"
+    },
+    "Armoured Walls (Large Barge)": {
+      "name": "Paredes blindadas (Barcaza grande)",
+      "description": "<p>Las paredes de cualquier camarote u otra superestructura están reforzadas con planchas de hierro. Cualquier PJ o PNJ tras un muro blindado cuenta como si estuviera en @UUID[Compendium.wfrp4e-core.journals.NS3YGlJQxwTggjRX.JournalEntryPage.wmA76Q2zJJ9HrkvA#dificultad-del-combate]{cobertura dura}, y los ataques a distancia contra ellos son Muy Difíciles (-30).</p>"
+    },
+    "Armoured Walls (Row Boat)": {
+      "name": "Paredes blindadas (Bote de remos)",
+      "description": "<p>Las paredes de cualquier camarote u otra superestructura están reforzadas con planchas de hierro. Cualquier PJ o PNJ tras un muro blindado cuenta como si estuviera en @UUID[Compendium.wfrp4e-core.journals.NS3YGlJQxwTggjRX.JournalEntryPage.wmA76Q2zJJ9HrkvA#dificultad-del-combate]{cobertura dura}, y los ataques a distancia contra ellos son Muy Difíciles (-30).</p>"
+    },
+    "Armoured Walls (Typical Barge or Patrol Boat)": {
+      "name": "Paredes blindadas (Barcaza típica o patrullera)",
+      "description": "<p>Las paredes de cualquier camarote u otra superestructura están reforzadas con planchas de hierro. Cualquier PJ o PNJ tras un muro blindado cuenta como si estuviera en @UUID[Compendium.wfrp4e-core.journals.NS3YGlJQxwTggjRX.JournalEntryPage.wmA76Q2zJJ9HrkvA#dificultad-del-combate]{cobertura dura}, y los ataques a distancia contra ellos son Muy Difíciles (-30).</p>"
+    },
+    "Gun Ports (Large)": {
+      "name": "Troneras (Grandes)",
+      "description": "<p>Abiertos en las @UUID[Compendium.wfrp4e-dotr.items.CrXHlfit3BGhcMzf]{Bordas elevadas (esquife pesquero)} de un barco o en las paredes de una superestructura, las troneras de artillería son escotillas cerrables que permiten disparar un arma de proyectiles desde detrás de una cobertura. Las troneras grandes pueden albergar cañones, balistas y otras armas servidas por la tripulación, mientras que las pequeñas están pensadas para armas de un solo usuario, como arcabuces, arcos y ballestas.</p>\n<p>Abrir o cerrar una tronera de artillería cuenta como una sola acción.</p>\n"
+    },
+    "Gun Ports (Small)": {
+      "name": "Troneras (Pequeñas)",
+      "description": "<p>Abiertos en las @UUID[Compendium.wfrp4e-dotr.items.CrXHlfit3BGhcMzf]{Bordas elevadas (esquife pesquero)} de un barco o en las paredes de una superestructura, las troneras de artillería son escotillas cerrables que permiten disparar un arma de proyectiles desde detrás de una cobertura. Las troneras grandes pueden albergar cañones, balistas y otras armas servidas por la tripulación, mientras que las pequeñas están pensadas para armas de un solo usuario, como arcabuces, arcos y ballestas.</p>\n<p>Abrir o cerrar una tronera de artillería cuenta como una sola acción.</p>\n"
+    },
+    "Racing Rig (Fishing Skiff)": {
+      "name": "Aparejo de competición (Esquife pesquero)",
+      "description": "<p>Además de desarrollar cascos de carreras, los ricos propietarios de barcos del Imperio —o más bien, los talentosos constructores navales a su servicio— han ideado un sistema de velas y aparejos diseñado para la velocidad, a costa de cierta solidez. Un aparejo de carreras otorga al barco +10% de Movimiento adicional sobre la cantidad indicada en la @Table[wind]{tabla de viento}, pero solo con viento de popa o a la cuadra. Con viento de proa, la penalización al Movimiento se reduce en –5%.</p>\n<p>Un aparejo de carreras incluye un @UUID[Compendium.wfrp4e-dotr.items.50lomqxMkIIx5jZm]{Foque volador}, y las ventajas de ambos no se acumulan.</p>\n<p>Sin embargo, esta velocidad tiene un precio. El complejo aparejo de carreras requiere una tripulación experta, lo que impone una penalización de –10 a todos los Chequeos de <strong>Manejo de embarcaciones</strong>. Además, cualquier impacto en el aparejo causa el doble de Daño normal.</p>"
+    },
+    "Racing Rig (Large Barge)": {
+      "name": "Aparejo de competición (Barcaza grande)",
+      "description": "<p>Además de desarrollar cascos de carreras, los ricos propietarios de barcos del Imperio —o más bien, los talentosos constructores navales a su servicio— han ideado un sistema de velas y aparejos diseñado para la velocidad, a costa de cierta solidez. Un aparejo de carreras otorga al barco +10% de Movimiento adicional sobre la cantidad indicada en la @Table[wind]{tabla de viento}, pero solo con viento de popa o a la cuadra. Con viento de proa, la penalización al Movimiento se reduce en –5%.</p>\n<p>Un aparejo de carreras incluye un @UUID[Compendium.wfrp4e-dotr.items.50lomqxMkIIx5jZm]{Foque volador}, y las ventajas de ambos no se acumulan.</p>\n<p>Sin embargo, esta velocidad tiene un precio. El complejo aparejo de carreras requiere una tripulación experta, lo que impone una penalización de –10 a todos los Chequeos de <strong>Manejo de embarcaciones</strong>. Además, cualquier impacto en el aparejo causa el doble de Daño normal.</p>"
+    },
+    "Racing Rig (Row Boat)": {
+      "name": "Aparejo de competición (Bote de remos)",
+      "description": "<p>Además de desarrollar cascos de carreras, los ricos propietarios de barcos del Imperio —o más bien, los talentosos constructores navales a su servicio— han ideado un sistema de velas y aparejos diseñado para la velocidad, a costa de cierta solidez. Un aparejo de carreras otorga al barco +10% de Movimiento adicional sobre la cantidad indicada en la @Table[wind]{tabla de viento}, pero solo con viento de popa o a la cuadra. Con viento de proa, la penalización al Movimiento se reduce en –5%.</p>\n<p>Un aparejo de carreras incluye un @UUID[Compendium.wfrp4e-dotr.items.50lomqxMkIIx5jZm]{Foque volador}, y las ventajas de ambos no se acumulan.</p>\n<p>Sin embargo, esta velocidad tiene un precio. El complejo aparejo de carreras requiere una tripulación experta, lo que impone una penalización de –10 a todos los Chequeos de <strong>Manejo de embarcaciones</strong>. Además, cualquier impacto en el aparejo causa el doble de Daño normal.</p>"
+    },
+    "Racing Rig (Typical Barge or Patrol Boat)": {
+      "name": "Aparejo de competición (Barcaza típica o patrullera)",
+      "description": "<p>Además de desarrollar cascos de carreras, los ricos propietarios de barcos del Imperio —o más bien, los talentosos constructores navales a su servicio— han ideado un sistema de velas y aparejos diseñado para la velocidad, a costa de cierta solidez. Un aparejo de carreras otorga al barco +10% de Movimiento adicional sobre la cantidad indicada en la @Table[wind]{tabla de viento}, pero solo con viento de popa o a la cuadra. Con viento de proa, la penalización al Movimiento se reduce en –5%.</p>\n<p>Un aparejo de carreras incluye un @UUID[Compendium.wfrp4e-dotr.items.50lomqxMkIIx5jZm]{Foque volador}, y las ventajas de ambos no se acumulan.</p>\n<p>Sin embargo, esta velocidad tiene un precio. El complejo aparejo de carreras requiere una tripulación experta, lo que impone una penalización de –10 a todos los Chequeos de <strong>Manejo de embarcaciones</strong>. Además, cualquier impacto en el aparejo causa el doble de Daño normal.</p>"
+    },
+    "Flying Jib (Fishing Skiff)": {
+      "name": "Foque volador (Esquife pesquero)",
+      "description": "<p>Un foque volador es una vela de proa adicional que requiere añadir un bauprés al barco; esto aumenta la eslora en un 10%. Desplegado con viento de popa, el foque volador otorga al barco un +5% de Movimiento adicional sobre la cantidad indicada en la @Table[wind]{tabla de viento}. No tiene efecto con vientos a la cuadra y duplica la penalización al Movimiento con viento de proa.</p>"
+    },
+    "Flying Jib (Large Barge)": {
+      "name": "Foque volador (Barcaza grande)",
+      "description": "<p>Un foque volador es una vela de proa adicional que requiere \nañadir un bauprés al barco; esto aumenta la eslora en un 10%. Desplegado\n con viento de popa, el foque volador otorga al barco un +5% de \nMovimiento adicional sobre la cantidad indicada en la @Table[wind]{tabla\n de viento}. No tiene efecto con vientos a la cuadra y duplica la \npenalización al Movimiento con viento de proa.</p>"
+    },
+    "Flying Jib (Row Boat)": {
+      "name": "Foque volador (Bote de remos)",
+      "description": "<p>Un foque volador es una vela de proa adicional que requiere \nañadir un bauprés al barco; esto aumenta la eslora en un 10%. Desplegado\n con viento de popa, el foque volador otorga al barco un +5% de \nMovimiento adicional sobre la cantidad indicada en la @Table[wind]{tabla\n de viento}. No tiene efecto con vientos a la cuadra y duplica la \npenalización al Movimiento con viento de proa.</p>"
+    },
+    "Flying Jib (Typical Barge or Patrol Boat)": {
+      "name": "Foque volador (Barcaza típica o patrullera)",
+      "description": "<p>Un foque volador es una vela de proa adicional que requiere \nañadir un bauprés al barco; esto aumenta la eslora en un 10%. Desplegado\n con viento de popa, el foque volador otorga al barco un +5% de \nMovimiento adicional sobre la cantidad indicada en la @Table[wind]{tabla\n de viento}. No tiene efecto con vientos a la cuadra y duplica la \npenalización al Movimiento con viento de proa.</p>"
+    },
+    "Spoons": {
+      "name": "Cucharones",
+      "description": "<p>Los remos estándar tienen palas largas y estrechas, adecuadas para la mayoría de propósitos. Los «cucharones», como su nombre sugiere, tienen una pala más corta, ancha y curvada que puede ejercer más presión sobre el agua, pero requieren fuerza para manejarlos adecuadamente. Al usar remos de cuchara, un remero puede realizar un Chequeo de <strong>Fuerza</strong> cuando se requiera velocidad y, si tiene éxito, puede añadir su Bonificador de Fuerza en yardas al Movimiento del barco durante ese asalto.</p>"
+    },
+    "Closed Rowlock": {
+      "name": "Escálamos cerrados",
+      "description": "<p>Es un tipo de soporte que sujeta el remo en una embarcación. La mayoría son topes de madera en forma de C integrados en la borda o piezas de hierro en forma de U que giran con el movimiento del remo. En cualquier caso, un remo puede salirse de su escálamo si se falla un Chequeo de <strong>Remar</strong>, requiriendo una acción para volver a colocarlo antes de reanudar el avance. Los escálamos cerrados resuelven este problema. El remo puede pasarse a través de un orificio en la borda o sujetarse a un escálamo estándar con correas de cuero, pero en cualquier caso físicamente no puede salirse.</p>"
+    },
+    "Ram (Large River Boat)": {
+      "name": "Espolón (Barcaza grande)",
+      "description": "<p>Un espolón metálico puede instalarse en la proa de un barco, asegurando que, en cualquier colisión frontal, la otra embarcación reciba todo el daño. También otorga al barco 5 PA en la parte frontal. La Patrulla fluvial y otras autoridades interpretan la posesión de un espolón como prueba de la intención de embestir y hundir otros navíos, por lo que cualquiera que tenga un espolón en su barco haría bien en poder presentar una carta de autorización de un noble local u otra autoridad, a menos que quiera que le tomen por pirata.</p>"
+    },
+    "Ram (Medium River Boat)": {
+      "name": "Ram (Barcaza típica o patrullera)",
+      "description": "<p>Un espolón metálico puede instalarse en la proa de un barco, asegurando que, en cualquier colisión frontal, la otra embarcación reciba todo el daño. También otorga al barco 5 PA en la parte frontal. La Patrulla fluvial y otras autoridades interpretan la posesión de un espolón como prueba de la intención de embestir y hundir otros navíos, por lo que cualquiera que tenga un espolón en su barco haría bien en poder presentar una carta de autorización de un noble local u otra autoridad, a menos que quiera que le tomen por pirata.</p>"
+    },
+    "Ram (Small River Boat)": {
+      "name": "Ram (Bote de remos o esquife pesquero)",
+      "description": "<p>Un espolón metálico puede instalarse en la proa de un barco, asegurando que, en cualquier colisión frontal, la otra embarcación reciba todo el daño. También otorga al barco 5 PA en la parte frontal. La Patrulla fluvial y otras autoridades interpretan la posesión de un espolón como prueba de la intención de embestir y hundir otros navíos, por lo que cualquiera que tenga un espolón en su barco haría bien en poder presentar una carta de autorización de un noble local u otra autoridad, a menos que quiera que le tomen por pirata.</p>"
+    },
+    "Musket Rests": {
+      "name": "Horquillas para mosquetes",
+      "description": "<p>Postes en forma de horquilla instalados a lo largo de la borda de un barco sostienen el cañón de un arma de pólvora larga, como un trabuco, un rifle de Hochland, un mosquete de repetición o un avispero. Esto facilita apuntar con el arma (+10 a impactar), pero requiere una acción para colocarla en el soporte después de recargar.</p>\n<blockquote class=\"foundry-note\">\n    <p>En el libro se clasifican como Armas, pero dado que no actúan como armas en sí mismas, aquí se clasifican como Superestructura.</p>\n</blockquote>"
+    },
+    "Magical": {
+      "name": "Mágica",
+      "description": "<p>Por un precio, algunos Hechiceros pueden encantar un barco de modo que sople un viento constante en sus velas, o que el agua fluya constantemente bajo su casco, aumentando su valor de Movimiento hasta en 3 puntos y/o haciéndolo inmune al clima y a otros factores que normalmente dificultan el Movimiento. Estos encantamientos suelen ser temporales y tremendamente caros, quedando a tu criterio decidir si los PJs pueden tener acceso a ellos en algún momento.</p>\n<p>En ocasiones muy raras, normalmente ligadas a la trama principal de una aventura, un grupo de PJs podría recibir prestado un barco mágico de parte de un gobernante Elfo o Enano, o tal vez del líder de uno de los Colegios de Magia —pero nunca se les venderá ni entregará uno de manera definitiva.</p>\n<p>Dicho esto, puede ser divertido que los Jugadores experimenten con conjuros y vean cómo pueden usarlos para mejorar el rendimiento, la solidez y otras características de su embarcación, y esto debería fomentarse, especialmente entre aventuras. El éxito puede traer pequeños beneficios temporales, y el fracaso debería ser tan entretenido como frustrante.</p>"
+    },
+    "Steam": {
+      "name": "Vapor",
+      "description": "<p>El Gremio de Ingenieros Enanos y la Escuela Imperial de Ingenieros han estado desarrollando motores de vapor, y uno de ellos podría adaptarse para impulsar un barco. Por supuesto, un motor de vapor es grande y pesado, y ocupará una cantidad considerable de espacio que de otro modo podría dedicarse a la carga y/o a los pasajeros: aproximadamente la mitad de la capacidad de carga de un barco parece un cálculo adecuado. Esto incluye almacenamiento suficiente para mantener el barco en funcionamiento durante una semana con carbón, o durante dos días con leña.</p>\n<p>Un barco impulsado por un motor de vapor puede mantener su velocidad de Movimiento estándar mientras dure el combustible, independientemente de la dirección del viento. Requiere ser atendido por un ingeniero cualificado, realizando Chequeos de <strong>Oficio (Ingeniero)</strong> en lugar de Chequeos de <strong>Manejo de embarcaciones</strong>. Sin embargo, los motores de vapor pueden ser poco fiables y, a pesar de su tamaño y volumen, sus mecanismos se averían fácilmente. Siempre que se obtenga un doble en un Chequeo fallido de <strong>Oficio (Ingeniero)</strong>, o el resultado sea un Fracaso Asombroso, o el barco reciba un Impacto Crítico en el Casco, tira en la tabla @Table[steam-engine].</p>"
+    },
+    "Ball (Cannon)": {
+      "name": "Bala (Cañón)"
+    },
+    "Chain Shot (Cannon)": {
+      "name": "Munición encadenada (Cañón)"
+    },
+    "Grapeshot (Cannon)": {
+      "name": "Metralla (Cañón)"
+    },
+    "Ammo": {
+      "name": "Munición",
+      "description": "<p>Representa la munición estándar del arma de un vehículo.</p>"
+    },
+    "Wilful Corruption": {
+      "name": "Corrupción intencionada",
+      "description": "<p>Los favoritos de Tzeentch son maestros de la magia, y obtienen una pequeña medida de comprensión y control sobre los horribles dones que les concede su patrón. Cuando ganes una mutación, tira cualquier dado dos veces y escoge el resultado que prefieras.</p>"
+    },
+    "Club": {
+      "name": "Garrote"
+    },
+    "Dwarven Engineers’ Guild Ring": {
+      "name": "Anillo del Gremio Enano de Ingenieros",
+      "description": "<p>Los anillos de oro con sellos grabados los lucen los nobles y los funcionarios de los gremios, quienes los utilizan para imprimir signos heráldicos o marcas en lacre.</p>"
+    },
+    "Gold Earring": {
+      "name": "Pendiente de oro",
+      "description": "<p>Los precios varían según la calidad de la artesanía, el tipo de metal y el valor de las gemas. Por regla general, los anillos comunes sin piedras preciosas cuestas 10 monedas de su tipo de metal (o sea, oro, plata o cobre) mientras que los collares cuestan 20 monedas del mismo tipo de metal.</p>"
+    },
+    "Gold Ring": {
+      "name": "Anillo de oro",
+      "description": "<p>Los anillos de oro con sellos grabados los lucen los nobles y los funcionarios de los gremios, quienes los utilizan para imprimir signos heráldicos o marcas en lacre.</p>"
+    },
+    "Hand Axe": {
+      "name": "Hacha de mano"
+    },
+    "Iron Pot": {
+      "name": "Olla de hierro"
+    },
+    "Carpenter's Tools": {
+      "name": "Herramientas de carpintero",
+      "description": "<p><strong>Boticario</strong>: Las herramientas incluyen un almirez con su mano, cucharillas, frascos, y una balanza con sus pesos. Los talleres también incluyen mecheros de aceite y estantes llenos de ingredientes.</p>\n<p> </p>\n<p><strong>Artesano</strong>: el abanico potencial de herramientas utilizadas por los Artesanos es enorme. Los grupos de ejemplos incluyen:</p>\n<ul>\n    <li><strong>Carpintero</strong>: martillo y clavos, sierra, vara de medir, tiza y plomadas. Los talleres también incluyen tornos, cepillos de carpintero, sargentos y una buena cantidad de madera.</li>\n</ul>\n<ul>\n    <li><strong>Grabador</strong>: gubias, sacabocados, cera, ácido, martillo y cinceles. Los talleres también incluyen troqueles y prensas.</li>\n</ul>\n<ul>\n    <li><strong>Herrero</strong>: martillo, pinzas, perforadoras, estampadoras, brocas y barrenas. Los talleres también incluyen un yunque, una fragua, un bloque de estampación, martillos pilones y lingotes de metal.</li>\n</ul>\n<p> </p>\n<p><strong>Otros tipos de artesanos</strong>: Albañil, Alfarero, Armero, Calígrafo, Calafate, Cantero, Cartógrafo, Cerero, Cervecero, Cocinero, Curtidor, Embalsamador, Fabricante de arcos, Fabricante de armaduras, Fabricante de armas, Guarnicionero, Joyero, Orfebre, Pintor, Sastre, Soplador de vidrio, Tallador, Tallista, Tejedor, Tonelero, Vinatero y Zapatero.</p>\n<p> </p>\n<p><strong>Artista</strong>: pinceles y pintura, martillo y cinceles, limas y escofinas y espátulas. Los talleres también incluyen caballetes o pedestales y materiales en forma de tela, pergamino, vitela, madera, arcilla o piedra sin tallar.</p>\n<p><strong>Ingeniero</strong>: reloj de arena, vara de medir, mecha, escuadra y cartabón. Los talleres también incluyen poleas, sogas y mesas de dibujo.</p>\n<p><strong>Herbolario</strong>: mortero y mano de mortero, cuchillitos, tijeras de podar y guantes. Los talleres también incluyen tendederos para secar, filtros, embudos, cuencos y frascos.</p>\n<p><strong>Navegante</strong>: cuadrante, astrolabio, cartas de navegación y compases, reloj de arena y escandallo.</p>\n<p><strong>Físico</strong>: agujas y sutura, vendas, escalpelo, vinagre, fórceps y un espéculo. Los talleres también incluyen dibujos de anatomía, accesorios surtidos y una mesa de operaciones.</p>"
+    },
+    "Carpenter's Tools or Stonemason's Tools": {
+      "name": "Herramientas de cantero o carpintero",
+      "description": "<p><strong>Boticario</strong>: Las herramientas incluyen un almirez con su mano, cucharillas, frascos, y una balanza con sus pesos. Los talleres también incluyen mecheros de aceite y estantes llenos de ingredientes.</p>\n<p> </p>\n<p><strong>Artesano</strong>: el abanico potencial de herramientas utilizadas por los Artesanos es enorme. Los grupos de ejemplos incluyen:</p>\n<ul>\n    <li><strong>Carpintero</strong>: martillo y clavos, sierra, vara de medir, tiza y plomadas. Los talleres también incluyen tornos, cepillos de carpintero, sargentos y una buena cantidad de madera.</li>\n</ul>\n<ul>\n    <li><strong>Grabador</strong>: gubias, sacabocados, cera, ácido, martillo y cinceles. Los talleres también incluyen troqueles y prensas.</li>\n</ul>\n<ul>\n    <li><strong>Herrero</strong>: martillo, pinzas, perforadoras, estampadoras, brocas y barrenas. Los talleres también incluyen un yunque, una fragua, un bloque de estampación, martillos pilones y lingotes de metal.</li>\n</ul>\n<p> </p>\n<p><strong>Otros tipos de artesanos</strong>: Albañil, Alfarero, Armero, Calígrafo, Calafate, Cantero, Cartógrafo, Cerero, Cervecero, Cocinero, Curtidor, Embalsamador, Fabricante de arcos, Fabricante de armaduras, Fabricante de armas, Guarnicionero, Joyero, Orfebre, Pintor, Sastre, Soplador de vidrio, Tallador, Tallista, Tejedor, Tonelero, Vinatero y Zapatero.</p>\n<p> </p>\n<p><strong>Artista</strong>: pinceles y pintura, martillo y cinceles, limas y escofinas y espátulas. Los talleres también incluyen caballetes o pedestales y materiales en forma de tela, pergamino, vitela, madera, arcilla o piedra sin tallar.</p>\n<p><strong>Ingeniero</strong>: reloj de arena, vara de medir, mecha, escuadra y cartabón. Los talleres también incluyen poleas, sogas y mesas de dibujo.</p>\n<p><strong>Herbolario</strong>: mortero y mano de mortero, cuchillitos, tijeras de podar y guantes. Los talleres también incluyen tendederos para secar, filtros, embudos, cuencos y frascos.</p>\n<p><strong>Navegante</strong>: cuadrante, astrolabio, cartas de navegación y compases, reloj de arena y escandallo.</p>\n<p><strong>Físico</strong>: agujas y sutura, vendas, escalpelo, vinagre, fórceps y un espéculo. Los talleres también incluyen dibujos de anatomía, accesorios surtidos y una mesa de operaciones.</p>"
+    },
+    "Stonemason's Tools": {
+      "name": "Herramientas de cantero",
+      "description": "<p><strong>Boticario</strong>: Las herramientas \nincluyen un almirez con su mano, cucharillas, frascos, y una balanza con\n sus pesos. Los talleres también incluyen mecheros de aceite y estantes \nllenos de ingredientes.</p>\n<p> </p>\n<p><strong>Artesano</strong>:\n el abanico potencial de herramientas utilizadas por los Artesanos es \nenorme. Los grupos de ejemplos incluyen:</p>\n<ul>\n    \n<li><strong>Carpintero</strong>: martillo y clavos, \nsierra, vara de medir, tiza y plomadas. Los talleres también incluyen \ntornos, cepillos de carpintero, sargentos y una buena cantidad de \nmadera.</li>\n</ul>\n<ul>\n    \n<li><strong>Grabador</strong>: gubias, sacabocados, \ncera, ácido, martillo y cinceles. Los talleres también incluyen \ntroqueles y prensas.</li>\n</ul>\n<ul>\n    \n<li><strong>Herrero</strong>: martillo, pinzas, \nperforadoras, estampadoras, brocas y barrenas. Los talleres también \nincluyen un yunque, una fragua, un bloque de estampación, martillos \npilones y lingotes de metal.</li>\n</ul>\n<p> </p>\n<p><strong>Otros\n tipos de artesanos</strong>: Albañil, Alfarero, Armero, \nCalígrafo, Calafate, Cantero, Cartógrafo, Cerero, Cervecero, Cocinero, \nCurtidor, Embalsamador, Fabricante de arcos, Fabricante de armaduras, \nFabricante de armas, Guarnicionero, Joyero, Orfebre, Pintor, Sastre, \nSoplador de vidrio, Tallador, Tallista, Tejedor, Tonelero, Vinatero y \nZapatero.</p>\n<p> </p>\n<p><strong>Artista</strong>:\n pinceles y pintura, martillo y cinceles, limas y escofinas y espátulas.\n Los talleres también incluyen caballetes o pedestales y materiales en \nforma de tela, pergamino, vitela, madera, arcilla o piedra sin \ntallar.</p>\n<p><strong>Ingeniero</strong>: \nreloj de arena, vara de medir, mecha, escuadra y cartabón. Los talleres \ntambién incluyen poleas, sogas y mesas de dibujo.</p>\n<p><strong>Herbolario</strong>:\n mortero y mano de mortero, cuchillitos, tijeras de podar y guantes. Los\n talleres también incluyen tendederos para secar, filtros, embudos, \ncuencos y frascos.</p>\n<p><strong>Navegante</strong>:\n cuadrante, astrolabio, cartas de navegación y compases, reloj de arena y\n escandallo.</p>\n<p><strong>Físico</strong>: \nagujas y sutura, vendas, escalpelo, vinagre, fórceps y un espéculo. Los \ntalleres también incluyen dibujos de anatomía, accesorios surtidos y una\n mesa de operaciones.</p>"
+    },
+    "Others at GM’s discretion.": {
+      "name": "El resto a discreción del DJ"
+    },
+    "Purple Hand Tattoo": {
+      "name": "Tatuaje de mano púrpura"
+    },
+    "Reels of Coloured Ribbon": {
+      "name": "Rollos de cinta de colores"
+    },
+    "Sharpened Tibia": {
+      "name": "Tibia afilada"
+    },
+    "Small Knives and Forks": {
+      "name": "Cuchillos y tenedores pequeños"
+    },
+    "Some Purple Item of Clothing": {
+      "name": "Una prenda de vestir púrpura"
+    },
+    "Traveling Case": {
+      "name": "Maleta de viaje"
+    },
+    "Vial of Red Liquid": {
+      "name": "Vial de líquido rojo"
+    },
+    "Channelling (Tzeentch)": {
+      "name": "Canalización (Tzeentch)"
+    },
+    "Lore (Dwarfs)": {
+      "name": "Sabiduría académica (Enanos)"
+    },
+    "Lore (Engineer)": {
+      "name": "Sabiduría académica (Ingeniería)"
+    },
+    "Lore (Riverways)": {
+      "name": "Sabiduría académica (Vías fluviales)",
+      "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.F0RPpWALOBy2zdyc caption=false]{Lore}</p>"
+    },
+    "Sail": {
+      "name": "Navegar",
+      "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.DLrOPZtVMLgSyxaj caption=false]{Navegar}</p>"
+    },
+    "Secret Signs (Purple Hand)": {
+      "name": "Lengua secreta (Mano Púrpura)",
+      "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.X2FppoPGuEwJKssM caption=false]{Secret Signs}</p>"
+    },
+    "Arcane Magic (Tzeentch)": {
+      "name": "Magia arcana (Tzeentch)",
+      "description": "<p>Puedes, o bien estudiar uno de los ocho Saberes arcanos de la Magia (Bestias, Cielos, Fuego, Luz, Metal, Muerte, Sombra y Vida) o practicar un Saber menos conocido como Adivinación o Nigromancia. Ahora puedes memorizar hechizos de tu Saber elegido al siguiente coste en PX.</p>\n<div>\n    <table title=\"\" border=\"1\">\n        <tbody><tr>\n                <td>\n                    <p>Nº de hechizos actualmente conocidos</p>\n                </td>\n                <td>\n                    <p>Coste en PX de un nuevo hechizo</p>\n                </td>\n</tr><tr>\n                <td>\n                    <p>Hasta tu Bonificador por Inteligencia × 1 </p>\n                </td>\n                <td>\n                    <p>100 PX</p>\n                </td>\n</tr><tr>\n                <td>\n                    <p>Hasta tu Bonificador por Inteligencia × 2</p>\n                </td>\n                <td>\n                    <p>200 PX</p>\n                </td>\n</tr><tr>\n                <td>\n                    <p>Hasta tu Bonificador por Inteligencia × 3</p>\n                </td>\n                <td>\n                    <p>300 PX</p>\n                </td>\n</tr><tr>\n                <td>\n                    <p>Hasta tu Bonificador por Inteligencia × 4</p>\n                </td>\n                <td>\n                    <p>400 PX</p>\n                </td>\n</tr></tbody>\n    </table>\n</div>\n<p>...y así sucesivamente.</p>\n<p>Por lo tanto, si tu Bonificador por Inteligencia es 4, el primer hechizo y los siguientes 4 te costarán 100 PX, los segundos 4 te costarán 200 PX, etc. Las reglas completas para aprender nuevos hechizos se proporcionan en @UUID[Compendium.wfrp4e-core.journals.JournalEntry.YBVrpUHEjohB1H4f]{Magia}. En circunstanciLo normales, no puedes aprender más de un talento de Magia arcana (Saber). Además, cuando tienes el Talento Magia arcana, no puedes aprender los Talentos @UUID[Compendium.wfrp4e-core.items.Item.QyjWtSdnVMT04l5Y]{Bendecir} ni @UUID[Compendium.wfrp4e-core.items.Item.voV0C2ar1bKpcpnH]{Invocar}. Puedes borrar de la memoria este Talento por 100 PX, pero si lo haces perderás de inmediato todos tus hechizos.</p>"
+    },
+    "Craftsman (Apothecary)": {
+      "name": "Artesano (Boticario)",
+      "tests": "Oficio (Boticario)",
+      "description": "<p>Tienes un auténtico talento creativo. Suma la Habilidad de Oficio asociada a cualquier Carrera en la que entras. Si dicha Habilidad de Oficio ya está en tu Carrera, en lugar de ello puedes comprarla a razón de 5 PX menos por Avance.</p>"
+    },
+    "Craftsman (Engineer)": {
+      "name": "Artesano (Ingeniero)",
+      "tests": "Oficio (Ingeniero)",
+      "description": "<p>Tienes un auténtico talento creativo. Suma la Habilidad de Oficio asociada a cualquier Carrera en la que entras. Si dicha Habilidad de Oficio ya está en tu Carrera, en lugar de ello puedes comprarla a razón de 5 PX menos por Avance.</p>"
+    },
+    "Etiquette (Guilder)": {
+      "name": "Etiqueta (Gremial)",
+      "tests": "Carisma y Cotilleo (Gremial)",
+      "description": "<p>Podrás mezclarte socialmente con el grupo elegido mientras vayas vestido de la forma adecuada y actúes con propiedad. Los grupos sociales de ejemplo para este Talento son: delincuentes, sectarios, agremiados, nobles, eruditos, sirvientes y soldados. Si no tienes el Talento, quienes sí lo tienen notarán tu incomodidad en un entorno poco familiar. Esto afecta principalmente a la interpretación del personaje, pero si el DJ lo decide puede suponer una bonificación a los Chequeos de Empatía.</p>"
+    },
+    "Etiquette (Scholar)": {
+      "name": "Etiqueta (Eruditos)",
+      "tests": "Carisma y Cotilleo (Eruditos)",
+      "description": "<p>Podrás mezclarte socialmente con el grupo elegido mientras vayas vestido de la forma adecuada y actúes con propiedad. Los grupos sociales de ejemplo para este Talento son: delincuentes, sectarios, agremiados, nobles, eruditos, sirvientes y soldados. Si no tienes el Talento, quienes sí lo tienen notarán tu incomodidad en un entorno poco familiar. Esto afecta principalmente a la interpretación del personaje, pero si el DJ lo decide puede suponer una bonificación a los Chequeos de Empatía.</p>"
+    },
+    "Language (Khazali)": {
+      "name": "Hablar idioma (Khazalid)"
+    },
+    "Master Tradesman (Apothecary)": {
+      "name": "Artesano maestro (Boticario)",
+      "tests": "Cualquier Chequeo Prolongado de Oficio",
+      "description": "<p>Eres excepcionalmente hábil en tu Oficio. Reduces en tantos puntos como tu nivel de Artesano maestro el NE requerido de cualquier Chequeo Prolongado utilizando tu Habilidad de Oficio.</p>"
+    },
+    "Master Tradesman (Engineering)": {
+      "name": "Artesano maestro (Ingeniero)",
+      "tests": "Cualquier Chequeo Prolongado de Oficio",
+      "description": "<p>Eres excepcionalmente hábil en tu Oficio. Reduces en tantos puntos como tu nivel de Artesano maestro el NE requerido de cualquier Chequeo Prolongado utilizando tu Habilidad de Oficio.</p>"
+    },
+    "Fearless (Wreckers)": {
+      "name": "Intrépido (Raqueros)",
+      "tests": "Frialdad para oponerse al Intimidar, Miedo y Terror de Raqueros",
+      "description": "<p>Eres, o bien lo suficientemente valiente o lo suficientemente insensato como para que el miedo a ciertos enemigos se haya convertido en un recuerdo lejano. Mediante un único Chequeo <strong>Normal (+20)</strong> de <strong>Frialdad</strong>, puedes ignorar cualquier efecto de Intimidar, Miedo o Terror por parte del enemigo especificado cuando te encuentras con él. Los enemigos típicos incluyen hombres bestia, pieles verdes, forajidos, vampiros, vigilantes y brujas.</p>"
+    },
+    "Resistance (Disease)": {
+      "name": "Resistencia (Enfermedad)",
+      "tests": "Todos los utilizados para resistirse a Enfermedades",
+      "description": "<p>Tu recia constitución te permite sobrevivir con más facilidad a una amenaza específica. Puedes tener éxito automáticamente en el primer Chequeo para resistir la amenaza específica, como por ejemplo Magia, Veneno, Enfermedad o Mutación en cada sesión de juego. Si el NE es importante, utiliza tu Bonificador por Resistencia como NE para el Chequeo.</p>"
+    },
+    "Armour (Fur)": {
+      "name": "Armadura (Pelaje)",
+      "description": "<p>La criatura está protegida por armadura o por una piel gruesa. Dispone de tantos puntos de Armadura como la cifra entre paréntesis en todas las Ubicaciones de impacto.</p>"
+    },
+    "Paralysing Venom": {
+      "name": "Veneno paralizante",
+      "specification": "Dificultad -10",
+      "description": "<p>El Necrófago ha sido encantado no solo para ligarlo a la torre, sino también para dotar a su mordisco de un efecto único. En lugar de causar el Estado @Condition[Envenenado], aquellos afectados por el veneno del Necrófago obtienen el Estado @Condition[Inconsciente]. Este dura [[/r 1d10]] horas menos el BR de la víctima, con un mínimo de 1 hora. A diferencia del Estado @Condition[Inconsciente] normal, la mordedura del Necrófago deja a sus víctimas inmóviles, aunque conscientes de su entorno y de lo que exactamente se les está haciendo.</p>"
+    },
+    "Unstable*": {
+      "name": "Inestable*",
+      "description": "<p><em>*No es Inestable mientras esté dentro de la torre</em></p>\n<p>El cuerpo de la criatura se mantiene tan solo debido a una magia repugnante que es inherentemente inestable en el mundo material.</p>\n<p>Cada vez que acaba un Asalto Trabada con un cualesquiera oponentes que tienen mayor Ventaja, la criatura se ve obligada a retroceder y la magia que la mantiene unida se debilita. Pierde tantas Heridas como la diferencia entre su Ventaja y la Ventaja mayor de entre quienes se enfrentan con ella. Así, si la criatura tenía 1 Ventaja y su oponente 3, la criatura perdería 2 Heridas. Si la criatura llega a 0 Heridas, la magia que la mantiene unida se desmorona y ‘muere’.</p>"
+    }
+  }
+}

@@ -1,0 +1,801 @@
+{
+  "label": "Actores (Muerte en el Reik)",
+  "mapping": {
+    "species": "system.details.species.value",
+    "hit": "system.details.hitLocationTable.value",
+    "wounds": "flags.autoCalcWounds",
+    "status": "system.details.status.value",
+    "notes": "system.details.biography.value",
+    "gmnotes": "system.details.gmnotes.value",
+    "description": "system.details.description.value",
+    "biography": "system.details.biography.value",
+    "gender": {
+      "path": "system.details.gender.value",
+      "converter": "bestiary_gender"
+    },
+    "effects": {
+      "path": "effects",
+      "converter": "effects"
+    }
+  },
+  "folders": {
+    "A River Bestiary": "Bestiario del río",
+    "Adventure": "Aventura",
+    "Appendix": "Apéndices",
+    "Chapter 1: Bögenhafen To Altdorf": "Capítulo 1: De Bögenhafen a Altdorf",
+    "Chapter 2: Altdorf to Kemperbad": "Capítulo 2: De Altdorf a Kemperbad",
+    "Chapter 3: Kemperbad to Black Peaks": "Capítulo 3: De Kemperbad a los Picos Negros",
+    "Chapter 4: Grissenwald to the Barren Hills": "Capítulo 4: De Grissenwald a los Cerros Yermos",
+    "Chapter 6: Wittgendorf": "Capítulo 6: Wittgendorf",
+    "Chapter 7: Castle Wittgenstein": "Capítulo 7: Castillo Wittgenstein",
+    "Chapter 8: A Stop Along the Way": "Capítulo 8: Un alto en el camino",
+    "Companion": "Compendio",
+    "Deleted Scenes": "Escenas descartadas",
+    "Fellow Travellers": "Compañeros de viaje",
+    "River Navigation": "Navegación fluvial",
+    "Riverfolk": "Ribereños",
+    "The Emperor Luitpold": "El emperador Luitpold",
+    "The Imperial River Patrol": "La patrulla fluvial imperial",
+    "Vengeance of the Gravelord": "Venganza del Señor de la Tumba",
+    "Wreckers, Smugglers & Pirates": "Raqueros, piratas y contrabandistas"
+  },
+  "entries": {
+    "River Patrol Captain": {
+      "name": "Capitán de la patrulla fluvial",
+      "tokenName": "Capitán de la patrulla fluvial",
+      "species": "Humano",
+      "status": "Plata 4",
+      "gmnotes": "<p>Una patrullera fluvial tiene una tripulación de [[/r 2+D10]] @UUID[Actor.Az8G5vd6t6lQk1hU]{guardas fluviales}, que incluye a un Capitán. Suelen ser individuos que se toman muy en serio sus deberes, aunque tienden a tratar con justicia a otros ribereños.</p>"
+    },
+    "Elvyra Kleinestun": {
+      "tokenName": "Elvyra",
+      "species": "Humano",
+      "status": "Plata 3",
+      "gmnotes": "<p>Casi en los cuarenta, con cabello castaño claro y ojos azul oscuro, Elvyra tiene una personalidad encantadora y extrovertida. Bajo su locuaz fachada se esconde una mente aguda con un gran entusiasmo por las drogas, hierbas y otros procesos médicos.</p>\n<p>Puede hablar de su oficio durante todo el día y gran parte de la noche, y siempre se alegra de conocer a cualquiera con intereses similares. Sin embargo, tiende a considerar a los médicos como ratones de biblioteca engreídos con poco conocimiento práctico, y a los seguidores de Verena como idiotas melosos con más fe que inteligencia; por lo tanto, cualquier PJ de ese tipo debe demostrar que realmente está interesado, y preferiblemente que tiene conocimientos, antes de que ella les coja simpatía.</p>\n<p>Elvyra ha vivido en @UUID[JournalEntry.49qp95QA3aWDRmWS.JournalEntryPage.sDCpxwZ4AINph6av]{Weissbruck} durante los últimos dos años. Originaria de Altdorf, se mudó poco después de decidir que había más dinero en estafar a la gente que en fabricar y vender medicinas auténticas —aunque todavía ofrece genuinos remedios a sus vecinos y a cualquiera que le caiga bien. Los PJs probablemente la hayan conocido en Bögenhafen.</p>"
+    },
+    "Liza Sauber": {
+      "tokenName": "Liza",
+      "species": "Humano",
+      "status": "Bronce 1",
+      "gmnotes": "<p>Liza viste una túnica sencilla y va descalza. Tiene gran cariño por @UUID[Actor.kyAFKxInnAxoqJfL]{Elvyra}, y hará todo lo que pueda para ayudarla.</p>"
+    },
+    "Winged Mutant": {
+      "name": "Mutante alado",
+      "tokenName": "Mutante alado",
+      "species": "Varía",
+      "biography": "<section class=\"secret\" id=\"secret-IdDQSrYbm04q5HzK\">\n    <h3>Los asaltantes del barco</h3>\n    <p>Con razón o sin ella, la población de mutantes del Imperio es rechazada por la sociedad. Mientras que algunos simplemente buscan ocultarse, muchos recurren a la violencia — ya sea para sobrevivir o para castigar a la sociedad que los abandonó.</p>\n</section>"
+    },
+    "Beak-Face Mutant": {
+      "name": "Mutante con pico",
+      "tokenName": "Mutante con pico",
+      "species": "Varía",
+      "biography": "<section class=\"secret\" id=\"secret-IdDQSrYbm04q5HzK\">\n    <h3>Los asaltantes del barco</h3>\n    <p>Con razón o sin ella, la población de mutantes del Imperio es rechazada por la sociedad. Mientras que algunos simplemente buscan ocultarse, muchos recurren a la violencia — ya sea para sobrevivir o para castigar a la sociedad que los abandonó.</p>\n</section>"
+    },
+    "Furry Mutant": {
+      "name": "Mutante peludo",
+      "tokenName": "Mutante peludo",
+      "species": "Varía",
+      "biography": "<section class=\"secret\" id=\"secret-IdDQSrYbm04q5HzK\">\n    <h3>Los asaltantes del barco</h3>\n    <p>Con razón o sin ella, la población de mutantes del Imperio es rechazada por la sociedad. Mientras que algunos simplemente buscan ocultarse, muchos recurren a la violencia — ya sea para sobrevivir o para castigar a la sociedad que los abandonó.</p>\n</section>"
+    },
+    "Tentacled Mutant": {
+      "name": "Mutante tentaculado",
+      "tokenName": "Mutante tentaculado",
+      "species": "Varía",
+      "biography": "<section class=\"secret\" id=\"secret-IdDQSrYbm04q5HzK\">\n    <h3>Los asaltantes del barco</h3>\n    <p>Con razón o sin ella, la población de mutantes del Imperio es rechazada por la sociedad. Mientras que algunos simplemente buscan ocultarse, muchos recurren a la violencia — ya sea para sobrevivir o para castigar a la sociedad que los abandonó.</p>\n</section>"
+    },
+    "Renate Hausier": {
+      "tokenName": "Renate",
+      "species": "Humano",
+      "status": "Bronce 1",
+      "gmnotes": "<p>Independiente y autosuficiente, Renate suele ser confundida con una strigana. Prefiere la ropa de colores vivos y con estampados recargados, y suele llevar un pañuelo rojo sobre su cabello negro como el ala de un cuervo, con dos grandes aros de oro colgando de sus orejas. Renate es naturalmente cautelosa (los PJs pueden tener otra palabra para describirla), y siente una sana aversión al peligro. Siempre intentará encontrar alguna salida no violenta, como fanfarronear, esconderse o huir. Le encanta viajar y conocer distintos lugares, y fue esto, más que cualquier amor por la aventura, lo que la motivó a llevar la vida errante de una vendedora ambulante. Si los aventureros la invitan a unirse a ellos, lo hará de buen grado, pues se da cuenta de que está más segura con ellos que por su cuenta.</p>\n"
+    },
+    "Purple Hand Cultist": {
+      "name": "Sectario de la Mano Púrpura",
+      "tokenName": "???",
+      "species": "Humano",
+      "biography": "<section class=\"secret\" id=\"secret-8Qf89e4zroWHmtNo\">\n    <p>Todos los sectarios de la Mano Púrpura llevan alguna prenda de ropa de color púrpura: una túnica, una capa, un cinturón o cualquier otra cosa. Tras tres o cuatro encuentros con sectarios, comienza a realizar en secreto <strong>Chequeos de Inteligencia Desafiantes (+0)</strong> para que los aventureros detecten este patrón púrpura. Además, cada sectario tiene un pequeño tatuaje púrpura de una mano abierta en alguna parte de su cuerpo. Aunque los sectarios tienen una variedad de ocupaciones que les proporcionan coartadas adecuadas, todos comparten una serie de Habilidades en común, que se listan más abajo. Además, poseen las Habilidades no relacionadas con el combate que sean coherentes con su tapadera y con la situación en la que se encuentren.</p>\n</section>"
+    },
+    "Kidnappers": {
+      "name": "Secuestradores",
+      "tokenName": "Secuestrador",
+      "species": "Humano",
+      "status": "Bronce 3"
+    },
+    "River Patrol Crew": {
+      "name": "Tripulante de la patrulla fluvial",
+      "tokenName": "Tripulante de la patrulla fluvial",
+      "species": "Humano",
+      "status": "Plata 1",
+      "gmnotes": "<p>Una patrullera fluvial tiene una tripulación de [[/r 2+D10]] guardas fluviales, que incluye a un @UUID[Actor.xsp8SRHEsbicn702]{Capitán}. Suelen ser individuos que se toman muy en serio sus deberes, aunque tienden a tratar con justicia a otros ribereños.</p>"
+    },
+    "Aynjulls Isembeard": {
+      "name": "Aynjulls Isembarba",
+      "tokenName": "Aynjulls",
+      "species": "Enano",
+      "status": "Plata 4",
+      "gmnotes": "<p>Aynjulls suele vestir una chaqueta de cuero manchada de aceite, unos calzones rojo brillante y unas grandes botas tachonadas. Orgullosa a ultranza de su reputación por su trabajo rápido y fiable, puede mostrarse como un personaje algo brusco y hosco. La continua desaparición de su plantilla la ha afectado hasta el punto de estar dispuesta a intentar cualquier cosa — ¡incluso pedir ayuda a un Elfo!</p>"
+    },
+    "Ernst Heidlemann": {
+      "species": "Humano",
+      "status": "Bronce 3",
+      "gmnotes": "<p>Ernst es un individuo delgado y desgarbado, con cara de comadreja, cabello castaño claro y tez pálida. Se hace pasar por un médico recién titulado al servicio de @UUID[Actor.wXB3Bam0z0kp45Ht]{Lady Etelka}, y mantiene este engaño negándose a tratar a nadie más que a ella. Ernst es callado y reservado, habla rara vez, pero suele mostrarse grosero con aquellos que no le son útiles. Es cruel y calculador y, durante la misión, contratará matones para enfrentarse a cualquier oposición, reservando sus poderes hasta que pueda emplearlos con la máxima eficacia.</p>\n<p><strong>Enfermedad debilitante</strong>: Ernst padece una dolencia que consume su cuerpo poco a poco. Sus amos le han provisto de un remedio para contrarrestar este mal, y lleva siempre consigo los viales. Sin ellos, pierde 1 punto de Resistencia cada 12 horas, muriendo cuando su Resistencia llegue a cero.</p>"
+    },
+    "Etelka Herzen": {
+      "species": "Humano",
+      "status": "Oro 1",
+      "gmnotes": "<p>En apariencia, Etelka es una noble de trato afable pero reservado, de complexión media, con el pelo rubio hasta los hombros y ojos azules. Bajo esa fachada, es implacable en la persecución de sus objetivos y actúa con dureza ante cualquier intromisión. Para ocultar su identidad, solo utiliza la magia cuando es poco probable que haya testigos (o supervivientes). Si se ve confrontada, suele esperar uno o dos Asaltos antes de decidirse a lanzar conjuros. La presencia de Etelka es inconfundible, pues su corrupción rezuma lentamente hacia el exterior. Su piel desprende un olor muy penetrante, que disimula con perfumes intensos. La fragancia a veces permanece hasta 15 minutos después de que se haya marchado, y cualquiera que entre en un lugar que ella haya abandonado recientemente no dejará de percatarse.</p>"
+    },
+    "Shadow The Cat": {
+      "name": "Sombra, el gato",
+      "tokenName": "Sombra",
+      "species": "Gato",
+      "biography": "<section class=\"secret\" id=\"secret-qu8WsVQgIHL1tMFW\">\n    <p>La gata negra de @UUID[Actor.wXB3Bam0z0kp45Ht]{Etelka}, Sombra, la acompaña allá donde vaya. Aunque Sombra parece inteligente, con una mirada desconcertantemente perspicaz en los ojos, no deja de ser una gata negra común.</p>\n</section>"
+    },
+    "Dwarf Engineer": {
+      "name": "Ingeniero enano",
+      "tokenName": "Ingeniero",
+      "species": "Enano",
+      "status": "Plata 2",
+      "gmnotes": "<p>Quedan seis Ingenieros cuando los aventureros conocen por primera vez a @UUID[Actor.aGPAXAzBh5AnTWFl]{Aynjulls}: Thingrim, Belegol, Kardak, Gudrun, Guzul y Minak. Todos están asustados y confundidos por las misteriosas muertes de sus compañeros, aunque intentan no dejarlo ver.</p>"
+    },
+    "Ghoul Champion": {
+      "name": "Necrófago campeón",
+      "tokenName": "Necrófago campeón",
+      "species": "Muerto viviente",
+      "biography": "<section class=\"secret\" id=\"secret-RhcC6ezsP5kBBW6Y\">\n    <p>Una de las últimas creaciones del Hechicero Dagmar, esta desdichada criatura ha custodiado durante siglos el hogar de su creador ya fallecido. Conservado por la magia más corrupta y por la ocasional rata temeraria, el Necrófago tiene hambre de algo más sustancioso.</p>\n</section>",
+      "items": {
+        "Iron Key": {
+          "name": "Llave de hierro",
+          "description": "<p>Llave de hierro de 15 cm de longitud, con una sección transversal en forma de estrella de 5 puntas, colgada de un cordel de cuero alrededor de su cuello.</p>"
+        }
+      }
+    },
+    "Zombie": {
+      "name": "Zombi",
+      "tokenName": "Zombi",
+      "species": "Muerto viviente",
+      "items": {
+        "Iron Key": {
+          "name": "Llave de hierro",
+          "description": "<p>Llave de hierro de 15 cm de longitud, con una sección transversal en forma de estrella de 6 puntas, colgada de un cordel de cuero alrededor de su cuello.</p>"
+        }
+      }
+    },
+    "Adalia Eisen": {
+      "name": "Adalia Eisen",
+      "tokenName": "Adalia"
+    },
+    "Agrin Losburg": {
+      "name": "Agrin Losburg",
+      "tokenName": "Agrin"
+    },
+    "Alex Eisen": {
+      "name": "Alex Eisen",
+      "tokenName": "Alex"
+    },
+    "Amoeba": {
+      "name": "Amoeba",
+      "tokenName": "Amoeba"
+    },
+    "Armchair General": {
+      "name": "Armchair General",
+      "tokenName": "Armchair General"
+    },
+    "Astrit": {
+      "name": "Astrit",
+      "tokenName": "Astrit"
+    },
+    "August Hauser": {
+      "name": "August Hauser",
+      "tokenName": "August"
+    },
+    "Avaloi Winesong": {
+      "name": "Avaloi Winesong",
+      "tokenName": "Avaloi"
+    },
+    "Bathilda Fischer": {
+      "name": "Bathilda Fischer",
+      "tokenName": "Bathilda"
+    },
+    "Beastman – Gor": {
+      "name": "Beastman – Gor",
+      "tokenName": "Gor"
+    },
+    "Bella Hornwhistler": {
+      "name": "Bella Hornwhistler",
+      "tokenName": "Bella"
+    },
+    "Bernhardt Dampfer": {
+      "name": "Bernhardt Dampfer",
+      "tokenName": "Bernhardt"
+    },
+    "Big Eared Mutant": {
+      "name": "Big Eared Mutant",
+      "tokenName": "Big Eared Mutant"
+    },
+    "Birdfolk": {
+      "name": "Birdfolk",
+      "tokenName": "Birdfolk"
+    },
+    "Boris Landsmaan": {
+      "name": "Boris Landsmaan",
+      "tokenName": "Boris"
+    },
+    "Brother Martin": {
+      "name": "Brother Martin",
+      "tokenName": "Brother Martin"
+    },
+    "Brother Rolf": {
+      "name": "Brother Rolf",
+      "tokenName": "Brother Rolf"
+    },
+    "Brunhilde Gratten": {
+      "name": "Brunhilde Gratten",
+      "tokenName": "Brunhilde"
+    },
+    "Brutagh The Mutant": {
+      "name": "Brutagh The Mutant",
+      "tokenName": "Brutagh"
+    },
+    "Cannibal": {
+      "name": "Cannibal",
+      "tokenName": "Cannibal"
+    },
+    "Carlo": {
+      "name": "Carlo",
+      "tokenName": "Carlo"
+    },
+    "Castle Servant": {
+      "name": "Castle Servant",
+      "tokenName": "Castle Servant"
+    },
+    "Chaotic Corpse": {
+      "name": "Chaotic Corpse",
+      "tokenName": "Chaotic Corpse"
+    },
+    "Chaotic Organ": {
+      "name": "Chaotic Organ",
+      "tokenName": "Chaotic Organ"
+    },
+    "Corrobreth The Priest": {
+      "name": "Corrobreth The Priest",
+      "tokenName": "Corrobreth"
+    },
+    "Crakatz": {
+      "name": "Crakatz",
+      "tokenName": "Crakatz"
+    },
+    "Crot Scaback": {
+      "name": "Crot Scaback",
+      "tokenName": "Crot"
+    },
+    "Dederick Ritter": {
+      "name": "Dederick Ritter",
+      "tokenName": "Dederick"
+    },
+    "Dumpling Hayfoot": {
+      "name": "Dumpling Hayfoot",
+      "tokenName": "Dumpling"
+    },
+    "Durak Dimholt": {
+      "name": "Durak Dimholt",
+      "tokenName": "Durak"
+    },
+    "Dwarf Gambler": {
+      "name": "Dwarf Gambler",
+      "tokenName": "Dwarf Gambler"
+    },
+    "Dwarf Miner": {
+      "name": "Dwarf Miner",
+      "tokenName": "Dwarf Miner"
+    },
+    "Eberhardt Kleingeld": {
+      "name": "Eberhardt Kleingeld",
+      "tokenName": "Purser Eberhardt"
+    },
+    "Edgar ‘The Pike’ Ebrecht": {
+      "name": "Edgar ‘The Pike’ Ebrecht",
+      "tokenName": "Edgar"
+    },
+    "Elderly Duchess": {
+      "name": "Elderly Duchess",
+      "tokenName": "Elderly Duchess"
+    },
+    "Elias Answell": {
+      "name": "Elias Answell",
+      "tokenName": "Elias"
+    },
+    "Ella Greendale": {
+      "name": "Ella Greendale",
+      "tokenName": "First Pilot Ella"
+    },
+    "Emaciated Mutant": {
+      "name": "Emaciated Mutant",
+      "tokenName": "Emaciated Mutant"
+    },
+    "Emelia Luneburg": {
+      "name": "Emelia Luneburg",
+      "tokenName": "Emelia"
+    },
+    "Eusapia Balacañon": {
+      "name": "Eusapia Balacañon",
+      "tokenName": "Eusapia"
+    },
+    "Experienced Broker": {
+      "name": "Experienced Broker",
+      "tokenName": "Broker"
+    },
+    "Father Marcus": {
+      "name": "Father Marcus",
+      "tokenName": "Father Marcus"
+    },
+    "Fishing Skiff": {
+      "name": "Fishing Skiff",
+      "tokenName": "Fishing Skiff"
+    },
+    "Frida Bismarck": {
+      "name": "Frida Bismarck",
+      "tokenName": "Frida"
+    },
+    "Fritz Carhingar": {
+      "name": "Fritz Carhingar",
+      "tokenName": "Fritz"
+    },
+    "Fritz Carhingar (Alternative)": {
+      "name": "Fritz Carhingar (Alternative)",
+      "tokenName": "Fritz"
+    },
+    "Frontier Commander": {
+      "name": "Frontier Commander",
+      "tokenName": "Frontier Commander"
+    },
+    "Furio": {
+      "name": "Furio",
+      "tokenName": "Furio"
+    },
+    "Georg Hegel": {
+      "name": "Georg Hegel",
+      "tokenName": "Georg"
+    },
+    "Gertrud Schützenberger": {
+      "name": "Gertrud Schützenberger",
+      "tokenName": "Gertrud"
+    },
+    "Giant Bat (Wittgenstein)": {
+      "name": "Giant Bat (Wittgenstein)",
+      "tokenName": "Giant Bat"
+    },
+    "Giant Leech": {
+      "name": "Giant Leech",
+      "tokenName": "Giant Eel"
+    },
+    "Giant Rat (Wittgenstein)": {
+      "name": "Giant Rat (Wittgenstein)",
+      "tokenName": "Giant Rat"
+    },
+    "Goat Mutant": {
+      "name": "Goat Mutant",
+      "tokenName": "Goat Mutant"
+    },
+    "Goblin of the Twisted Maw": {
+      "name": "Goblin of the Twisted Maw",
+      "tokenName": "Goblin"
+    },
+    "Gorim Greathammer": {
+      "name": "Gorim Greathammer",
+      "tokenName": "Gorim"
+    },
+    "Graf Orlok": {
+      "name": "Graf Orlok",
+      "tokenName": "Graf Orlock"
+    },
+    "Great Wolf": {
+      "name": "Great Wolf",
+      "tokenName": "Great Wolf"
+    },
+    "Green Furred Mutant": {
+      "name": "Green Furred Mutant",
+      "tokenName": "Green Furred Mutant"
+    },
+    "Grissenwald Villager": {
+      "name": "Grissenwald Villager",
+      "tokenName": "Grissenwald Villager"
+    },
+    "Grugor Lustig": {
+      "name": "Grugor Lustig",
+      "tokenName": "Grugor"
+    },
+    "Grundar (Castle Wittgenstein)": {
+      "name": "Grundar (Castle Wittgenstein)",
+      "tokenName": "Grundar"
+    },
+    "Guard Sergeant": {
+      "name": "Guard Sergeant",
+      "tokenName": "Guard Sergeant"
+    },
+    "Gurda": {
+      "name": "Gurda",
+      "tokenName": "Gurda"
+    },
+    "Gutbag Stoat Throttler": {
+      "name": "Gutbag Stoat Throttler",
+      "tokenName": "Gutbag"
+    },
+    "Hannes (Fellow Travellers)": {
+      "name": "Hannes (Fellow Travellers)",
+      "tokenName": "Hannes"
+    },
+    "Hans (Fellow Travellers)": {
+      "name": "Hans (Fellow Travellers)",
+      "tokenName": "Hans"
+    },
+    "Hans Sauber": {
+      "name": "Hans Sauber",
+      "tokenName": "Bosun Hans"
+    },
+    "Hans Vollrat": {
+      "name": "Hans Vollrat",
+      "tokenName": "Hans"
+    },
+    "Hans-Peter Schiller": {
+      "name": "Hans-Peter Schiller",
+      "tokenName": "Hans-Peter"
+    },
+    "Hanse": {
+      "name": "Hanse",
+      "tokenName": "Hanse"
+    },
+    "Harold": {
+      "name": "Harold",
+      "tokenName": "Harold"
+    },
+    "Heironymous Blitzen": {
+      "name": "Heironymous Blitzen",
+      "tokenName": "Heironymous"
+    },
+    "Herbert Marcuse": {
+      "name": "Herbert Marcuse",
+      "tokenName": "Herbert"
+    },
+    "Hilda Eysenck": {
+      "name": "Hilda Eysenck",
+      "tokenName": "Hilda"
+    },
+    "Hilma Bootschlecht": {
+      "name": "Hilma Bootschlecht",
+      "tokenName": "Hilma"
+    },
+    "Ingrid von Wittgenstein": {
+      "name": "Ingrid von Wittgenstein",
+      "tokenName": "Ingrid"
+    },
+    "Jean Rousseaux": {
+      "name": "Jean Rousseaux",
+      "tokenName": "Jean"
+    },
+    "Johanna Schnee": {
+      "name": "Johanna Schnee",
+      "tokenName": "Johanna"
+    },
+    "Josef Quartjin": {
+      "name": "Josef Quartjin",
+      "tokenName": "Josef"
+    },
+    "Karl Dampfer": {
+      "name": "Karl Dampfer",
+      "tokenName": "Karl"
+    },
+    "Kitchen Staff": {
+      "name": "Kitchen Staff",
+      "tokenName": "Kitchen Staff"
+    },
+    "Klaus": {
+      "name": "Klaus",
+      "tokenName": "Klaus"
+    },
+    "Klaus Jager": {
+      "name": "Klaus Jager",
+      "tokenName": "Klaus"
+    },
+    "Kratz, Sergeant Of The Guard": {
+      "name": "Kratz, Sergeant Of The Guard",
+      "tokenName": "Kratz"
+    },
+    "Krazold Ironhand": {
+      "name": "Krazold Ironhand",
+      "tokenName": "Krazold"
+    },
+    "Kurt Kutzmann": {
+      "name": "Kurt Kutzmann",
+      "tokenName": "Kurt"
+    },
+    "Kurt von Wittgenstein": {
+      "name": "Kurt von Wittgenstein",
+      "tokenName": "Kurt"
+    },
+    "Lady Margritte von Wittgenstein": {
+      "name": "Lady Margritte von Wittgenstein",
+      "tokenName": "Margritte"
+    },
+    "Large Barge": {
+      "name": "Large Barge",
+      "tokenName": "Large Barge"
+    },
+    "Lashworm": {
+      "name": "Lashworm",
+      "tokenName": "Lashworm"
+    },
+    "Lesser Daemon Of Slaanesh": {
+      "name": "Lesser Daemon Of Slaanesh",
+      "tokenName": "Daemonette"
+    },
+    "Ludwig von Wittgenstein": {
+      "name": "Ludwig von Wittgenstein",
+      "tokenName": "Ludwig"
+    },
+    "Luigi Belladonna": {
+      "name": "Luigi Belladonna",
+      "tokenName": "Luigi"
+    },
+    "Matthias Blucher": {
+      "name": "Matthias Blucher",
+      "tokenName": "Matthias"
+    },
+    "Maw": {
+      "name": "Maw",
+      "tokenName": "Maw"
+    },
+    "Max Wagner": {
+      "name": "Max Wagner",
+      "tokenName": "Max"
+    },
+    "Maximillian Schnippmesser": {
+      "name": "Maximillian Schnippmesser",
+      "tokenName": "Maximillian"
+    },
+    "Maximillian ‘Max’ Berryhill": {
+      "name": "Maximillian ‘Max’ Berryhill",
+      "tokenName": "Chief Cook Max"
+    },
+    "Mia Answell": {
+      "name": "Mia Answell",
+      "tokenName": "Mia"
+    },
+    "Monstrous Leech": {
+      "name": "Monstrous Leech",
+      "tokenName": "Monstrous Leech"
+    },
+    "Mutant Bees": {
+      "name": "Mutant Bees",
+      "tokenName": "Mutant Bees"
+    },
+    "Mutant Cat": {
+      "name": "Mutant Cat",
+      "tokenName": "Mutant Cat"
+    },
+    "Naiad": {
+      "name": "Naiad",
+      "tokenName": "Naiad"
+    },
+    "Oarsmen": {
+      "name": "Oarsmen",
+      "tokenName": "Oarsmen"
+    },
+    "Organ Tentacles": {
+      "name": "Organ Tentacles",
+      "tokenName": "Organ Tentacles"
+    },
+    "Otto Boormann": {
+      "name": "Otto Boormann",
+      "tokenName": "Otto"
+    },
+    "Otto Gerber": {
+      "name": "Otto Gerber",
+      "tokenName": "Otto"
+    },
+    "Outlaw": {
+      "name": "Outlaw",
+      "tokenName": "Outlaw"
+    },
+    "Patrol Boat": {
+      "name": "Patrol Boat",
+      "tokenName": "Patrol Boat"
+    },
+    "Pig Headed Mutant": {
+      "name": "Pig Headed Mutant",
+      "tokenName": "Pig Headed Mutant"
+    },
+    "Quick-witted Dealmaker": {
+      "name": "Quick-witted Dealmaker",
+      "tokenName": "Dealmaker"
+    },
+    "Rat Swarm (Castle Wittgenstein)": {
+      "name": "Rat Swarm (Castle Wittgenstein)",
+      "tokenName": "Rat Swarm"
+    },
+    "Regina Willendorf": {
+      "name": "Regina Willendorf",
+      "tokenName": "Captain Regina"
+    },
+    "Reginhard Vieth": {
+      "name": "Reginhard Vieth",
+      "tokenName": "Reginhard"
+    },
+    "Reik Eel": {
+      "name": "Reik Eel",
+      "tokenName": "Reik Eel"
+    },
+    "Reiner Dampfer": {
+      "name": "Reiner Dampfer",
+      "tokenName": "Reiner"
+    },
+    "Reiner Petersen": {
+      "name": "Reiner Petersen",
+      "tokenName": "Second Pilot Reiner"
+    },
+    "River Troll": {
+      "name": "River Troll",
+      "tokenName": "River Troll"
+    },
+    "Roland ‘The Horse’ Bruckesel": {
+      "name": "Roland ‘The Horse’ Bruckesel",
+      "tokenName": "Roland"
+    },
+    "Row Boat": {
+      "name": "Row Boat",
+      "tokenName": "Row Boat"
+    },
+    "Ruairi Roddy": {
+      "name": "Ruairi Roddy",
+      "tokenName": "Ruairi"
+    },
+    "Sailing Crew": {
+      "name": "Sailing Crew",
+      "tokenName": "Sailing Crew"
+    },
+    "Self Made, Obnoxious Trader": {
+      "name": "Self Made, Obnoxious Trader",
+      "tokenName": "Obnoxious Trader"
+    },
+    "Sentry": {
+      "name": "Sentry",
+      "tokenName": "Sentry"
+    },
+    "Shif Doppler": {
+      "name": "Shif Doppler",
+      "tokenName": "Shif"
+    },
+    "Sigfrida Junker": {
+      "name": "Sigfrida Junker",
+      "tokenName": "Sigfrida"
+    },
+    "Sigismund von der Bahr": {
+      "name": "Sigismund von der Bahr",
+      "tokenName": "Sigismund"
+    },
+    "Sigrid Sommerfeld": {
+      "name": "Sigrid Sommerfeld",
+      "tokenName": "Sigrid"
+    },
+    "Sigrund Dopplewasser": {
+      "name": "Sigrund Dopplewasser",
+      "tokenName": "Sigrund"
+    },
+    "Simone L’escalier": {
+      "name": "Simone L’escalier",
+      "tokenName": "Simone"
+    },
+    "Skaven Warrior": {
+      "name": "Skaven Warrior",
+      "tokenName": "Skaven Warrior"
+    },
+    "Skeleton": {
+      "name": "Skeleton",
+      "tokenName": "Skeleton"
+    },
+    "Skeleton (Castle Wittgenstein)": {
+      "name": "Skeleton (Castle Wittgenstein)",
+      "tokenName": "Skeleton"
+    },
+    "Skysoarer": {
+      "name": "Skysoarer",
+      "tokenName": "Skysoarer"
+    },
+    "Slagdarg": {
+      "name": "Slagdarg",
+      "tokenName": "Slagdarg"
+    },
+    "Slurd The Butler": {
+      "name": "Slurd The Butler",
+      "tokenName": "Slurd"
+    },
+    "Sofia Fischer": {
+      "name": "Sofia Fischer",
+      "tokenName": "Sofia"
+    },
+    "Sophie van Haagen": {
+      "name": "Sophie van Haagen",
+      "tokenName": "Sophie"
+    },
+    "Stefan": {
+      "name": "Stefan",
+      "tokenName": "Stefan"
+    },
+    "Stewards": {
+      "name": "Stewards",
+      "tokenName": "Stewards"
+    },
+    "Stirpike": {
+      "name": "Stirpike",
+      "tokenName": "Stirpike"
+    },
+    "Sven Stoutbeard": {
+      "name": "Sven Stoutbeard",
+      "tokenName": "Sven"
+    },
+    "The Beggars Of Wittgendorf": {
+      "name": "The Beggars Of Wittgendorf",
+      "tokenName": "Beggar"
+    },
+    "The Carrion": {
+      "name": "The Carrion",
+      "tokenName": "Carrion"
+    },
+    "The Thing In The Pit": {
+      "name": "The Thing In The Pit",
+      "tokenName": "The Thing in the Pit"
+    },
+    "The Wittgenstein Monster": {
+      "name": "The Wittgenstein Monster",
+      "tokenName": "The Wittgenstein Monster"
+    },
+    "Thierry Ostend": {
+      "name": "Thierry Ostend",
+      "tokenName": "Thierry"
+    },
+    "Three Eyed Mutant": {
+      "name": "Three Eyed Mutant",
+      "tokenName": "Three Eyed Mutant"
+    },
+    "Typical Barge": {
+      "name": "Typical Barge",
+      "tokenName": "Typical Barge"
+    },
+    "Ulfhednar The Destroyer": {
+      "name": "Ulfhednar The Destroyer",
+      "tokenName": "Ulfhednar"
+    },
+    "Unseen Ghost": {
+      "name": "Unseen Ghost",
+      "tokenName": "Unseen Ghost"
+    },
+    "Uwe Wasserhund": {
+      "name": "Uwe Wasserhund",
+      "tokenName": "Uwe"
+    },
+    "Vine": {
+      "name": "Vine",
+      "tokenName": "Vine"
+    },
+    "Vorster the Elder": {
+      "name": "Vorster the Elder",
+      "tokenName": "Vorster"
+    },
+    "Watch Recruit": {
+      "name": "Watch Recruit",
+      "tokenName": "Watch Recruit"
+    },
+    "Watch Sergeant": {
+      "name": "Watch Sergeant",
+      "tokenName": "Watch Sergeant"
+    },
+    "Young Blood": {
+      "name": "Young Blood",
+      "tokenName": "Young Blood"
+    },
+    "‘Wet’ Wilgryn Augenlos": {
+      "name": "‘Wet’ Wilgryn Augenlos",
+      "tokenName": "Wilgryn"
+    }
+  }
+}

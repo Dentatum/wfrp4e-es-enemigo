@@ -1,0 +1,176 @@
+{
+  "label": "Escenas (Enemigo en las sombras)",
+  "folders": {
+    "Bögenhafen": "Bögenhafen",
+    "Companion": "Compendio",
+    "Enemy In Shadows": "El enemigo en las sombras"
+  },
+  "mapping": {
+    "image": "background.src"
+  },
+  "entries": {
+    "Bögenhafen": {
+      "name": "Bögenhafen",
+	  "image": "modules/wfrp4e-castellano-2/images/eis/scenes/bogenhafen.webp"
+    },
+    "Bögenhafen Sewers": {
+      "name": "Alcantarillas de Bögenhafen",
+      "notes": {
+        "Goblin Entry Point": "Punto de acceso del goblin",
+        "Door to the Crossed Pikes": "Puerta a Las Picas Cruzadas",
+        "Entry Manhole": "Tapa de registro",
+        "Gottri's Corpse": "Cadáver de Gottri",
+        "Discharge Pipes": "Desagües",
+        "Open System": "Sistema abierto",
+        "Hidden Temple": "Templo oculto"
+      }
+    },
+    "Hidden Temple": {
+      "name": "Templo oculto",
+      "drawings": {
+        "Temple": "Templo",
+        "Walkway": "Pasarela",
+        "Channel": "Canal"
+      }
+    },
+    "Steinhäger Offices": {
+      "name": "Oficinas Steinhäger",
+	  "image": "modules/wfrp4e-castellano-2/images/eis/scenes/steinhager-offices-unlabeled.webp",
+      "drawings": {
+        "Kaufmannstrasse": "Kaufmannstrasse",
+        "Kurz Strasse": "Kurz Strasse",
+        "Trefferstrasse": "Trefferstrasse",
+        "Courtyard": "Patio",
+        "Heinrich's Room": "Habitación de Heinrich",
+        "Albrecht's Room": "Habitación de Albrecht",
+        "Safe": "Caja fuerte",
+        "Franz's Room": "Habitación de Franz",
+        "Doorkeeper": "Portero",
+        "Reception 1": "Sala de reuniones 1",
+        "Reception 2": "Sala de reuniones 2",
+        "Clerks Rooms": "Habitaciones de los oficinistas",
+        "Chief Clerk's Room": "Habitación del jefe de oficina",
+        "Store": "Trastero"
+      }
+    },
+    "Teugen Houshold": {
+      "name": "Finca de los Teugen",
+	  "image": "modules/wfrp4e-castellano-2/images/eis/scenes/teugen-household-unlabeled.webp",
+      "drawings": {
+        "Hedge": "Seto",
+        "Pond": "Estanque",
+        "Gazebo": "Cenador",
+        "Garden": "Jardín"
+      }
+    },
+    "The Crossed Pikes": {
+      "name": "Las Picas Cruzadas",
+	  "image": "modules/wfrp4e-castellano-2/images/eis/scenes/crossed-pikes-unlabeled.webp"
+    },
+    "The Golden Trout": {
+      "name": "La Trucha Dorada",
+	  "image": "modules/wfrp4e-castellano-2/images/eis/scenes/golden-trout-unlabeled.webp"
+    },
+    "Warehouse 13": {
+      "name": "Almacén 13",
+	  "image": "modules/wfrp4e-castellano-2/images/eis/scenes/warehouse13-unlabeled.webp",
+      "drawings": {
+        "Loading Area": "Zona de carga",
+        "Store Rooms": "Salas de almacenaje"
+      }
+    },
+    "Black Arrow Keep": {
+      "name": "Castillo Flecha Negra",
+	  "image": "modules/wfrp4e-castellano-2/images/eis/scenes/black-arrow-keep.webp",
+      "drawings": {
+        "Upper Tower Exterior": "Exterior de la torre superior",
+        "Upper Tower Interior": "Interior de la torre superior",
+        "Fourth Floor": "Cuarta planta",
+        "Third Floor": "Tercera planta",
+        "First Floor": "Primera planta",
+        "Second Floor": "Segunda planta",
+        "Ground Floor": "Planta baja"
+      },
+      "notes": {
+        "10. The Battlement Patrols": "10. Las platrullas de las almenas"
+      }
+    },
+    "Pandemonium Carnival": {
+      "name": "Feria del Pandemonio",
+      "drawings": {
+        "Urzo's Cage": "Jaula de Urzo",
+        "Rassarak's Cage": "Jaula de Rassarak",
+        "Khornate Beastmen": "Hombres-bestia khornitas",
+        "The Twins & Imperial Beast": "Los Gemelos y La Bestia Imperial",
+        "Farmyard Beasts": "Bestias de Granja",
+        "Baggage Cart": "Carro del equipaje",
+        "Wolfgang's Cart": "Carro de Wolfgang",
+        "Sleeping Caravan": "Caravana dormitorio"
+      }
+    },
+    "The Berebeli": {
+      "name": "El Berebeli",
+	  "image": "modules/wfrp4e-castellano-2/images/eis/scenes/berebeli-unlabeled.webp"
+    },
+    "The Crossed Lances": {
+      "name": "Las Lanzas Cruzadas",
+	  "image": "modules/wfrp4e-castellano-2/images/eis/scenes/crossed-lances.webp",
+      "drawings": {
+        "1. Bar Room": " ",
+        "2. Snug": " ",
+        "3. Kellermann's Office": " ",
+        "4. Cellar Access": " ",
+        "5. Stables": " ",
+        "6. Smithy": " ",
+        "7. Brew House": " ",
+        "8. Courtyard": " ",
+        "9. Coach House": " ",
+        "10. Entrance Hall": " ",
+        "11. Kitchen": " ",
+        "12. Count's Room": " ",
+        "13. Men at Arms": " ",
+        "14. Dormitory": " ",
+        "15. Character's Room": " ",
+        "16. Hay Loft": " ",
+        "17. Servants Quarters": " "
+      }
+    },
+    "Altdorf": {
+      "name": "Altdorf",
+      "drawings": {
+        "1. Königsplatz": "1. Königsplatz",
+        "2. Emperor's Palace": "2. Palacio del Emperador",
+        "3. Holy Temple of Sigmar": "3. Sagrado Templo de Sigmar",
+        "4. Lower Class Area": "4. Zona baja",
+        "5. Mercantile Area": "5. Zona mercantil",
+        "6. Docks": "6. Muelles",
+        "7. University of Altdorf & The Colleges of Magic": "7. Universidad de Altdorf y Colegios de Magia"
+      }
+    },
+    "Altdorf to Bögenhafen": {
+      "name": "De Altdorf a Bögenhafen",
+	  "image": "modules/wfrp4e-castellano-2/images/eis/scenes/altdorf-to-bogenhafen.webp"
+    },
+    "Duchy of Saponatheim": {
+      "name": "Ducado de Saponatheim",
+	  "image": "modules/wfrp4e-castellano-2/images/eis/scenes/saponatheim-duchy-unlabeled.webp"
+    },
+    "The Coach and Horses": {
+      "name": "La Diligencia y los Caballos",
+	  "image": "modules/wfrp4e-castellano-2/images/eis/scenes/the-coach-and-horses-unlabeled.webp",
+      "notes": {
+        "5. Coach House": "5. Cochera",
+        "5. Stables": "5. Establos"
+      }
+    },
+    "Weissbruck": {
+      "name": "Weissbruck",
+      "drawings": {
+        "The Berebelli": "El Berebeli",
+        "Black Gold Inn": "El Oro Negro",
+        "The Happy Man": "El Hombre Feliz",
+        "Trumpet Inn": "Posada de la Trompeta"
+      }
+    }
+  }
+}

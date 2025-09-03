@@ -1,0 +1,184 @@
+{
+  "label": "Escenas (Muerte en el Reik)",
+  "folders": {
+    "Castle Wittgenstein": "Castillo Wittgenstein",
+    "Companion": "Compendio",
+    "Death on the Reik": "Muerte en el Reik"
+  },
+  "mapping": {
+    "image": "background.src"
+  },
+  "entries": {
+    "Castle Dungeons": {
+      "name": "Calabozos del Castillo",
+      "drawings": {
+        "To The Temple": "Hacia el templo",
+        "To The Great Hall": "Hacia el gran salón"
+      }
+    },
+    "Castle Wittgenstein": {
+      "name": "Castillo Wittgenstein",
+	  "image": "modules/wfrp4e-castellano-2/images/dotr/scenes/wittgenstein-castle-unlabeled.webp",
+      "notes": {
+        "5a. Ruins": "5a. Ruinas",
+        "5b. Ruins": "5b. Ruinas",
+        "5c. Ruins": "5c. Ruinas"
+      }
+    },
+    "Elvyra's House": {
+      "name": "Casa de Elvyra",
+      "drawings": {
+        "Parlour": "Salón",
+        "Kitchen/Storeroom": "Cocina/Almacén",
+        "Cellar": "Sótano",
+        "Bedrooms": "Dormitorios"
+      }
+    },
+    "Emperor Luitpold": {
+      "name": "Emperador Luitpold",
+	  "image": "modules/wfrp4e-castellano-2/images/dotr/scenes/emperor_luitpold_layout_big.webp"
+    },
+    "Etelka's Tower": {
+      "name": "Torre de Etelka",
+      "drawings": {
+        "Up To Mirrors": "Hacia los espejos",
+        "Down to Ground Floor": "Hacia la planta baja"
+      }
+    },
+    "Grissenwald": {
+      "name": "Grissenwald",
+	  "image": "modules/wfrp4e-castellano-2/images/dotr/scenes/grissenwald-map.webp"
+    },
+    "Grissenwald Farmhouse": {
+      "name": "Grissenwald - Granja"
+    },
+    "Grissenwald Surrounds": {
+      "name": "Grissenwald - Alrededores"
+    },
+    "On The Trail of the Red Crown": {
+      "name": "Tras el rastro de la Corona Roja",
+	  "image": "modules/wfrp4e-castellano-2/images/dotr/scenes/trail-of-the-red-crown.webp"
+    },
+    "Temple of Sigmar": {
+      "name": "Templo de Sigmar",
+      "drawings": {
+        "Altar": "Altar",
+        "Mechanism for lowering & raising the altar": "Mecanismo para subir y bajar el altar",
+        "Tunnel Network": "Red de túneles",
+        "Sealed Niche": "Nicho sellado",
+        "Books containing the clues": "Libros que contienen las pistas"
+      },
+      "notes": {
+        "Temple": "Templo",
+        "Priest's Room": "Cuarto del sacerdote",
+        "Room of Records": "Archivo",
+        "Kitchen": "Cocina",
+        "Stores": "Despensa",
+        "Receiving Room": "Sala de recepción",
+        "Graveyard and Mausoleum": "Mausoleo y cementerio",
+        "Crypts": "Criptas",
+        "Foyer": "Vestíbulo"
+      }
+    },
+    "The Devil's Bowl": {
+      "name": "El Cuenco del Diablo",
+      "drawings": {
+        "Cave": "Cueva",
+        "Lake": "Lago",
+        "Crater Rim": "Borde del cráter",
+        "Waterfall": "Cascada",
+        "Ancient Skeletons": "Esqueletos antiguos",
+        "Rockfall": "Desprendimiento",
+        "Grave": "Tumba",
+        "Stream": "Arroyo"
+      }
+    },
+    "The Old Mine": {
+      "name": "La vieja mina",
+      "drawings": {
+        "Spoil Heaps": "Montones de escombros",
+        "Buggy": "Vagoneta",
+        "Tracks": "Vías",
+        "Rock Fall": "Desprendimiento"
+      }
+    },
+    "The Physician's House": {
+      "name": "La casa del físico",
+	  "image": "modules/wfrp4e-castellano-2/images/dotr/scenes/the-physicians-house-unlabeled.webp",
+      "notes": {
+        "The Hallway": "Pasillo",
+        "Dining Room": "Comedor",
+        "Kitchens": "Cocina",
+        "Surgery": "Consulta",
+        "Study": "Estudio",
+        "Cellar": "Bodega",
+        "Bedroom": "Habitación",
+        "Yard": "Patio",
+        "Brew House": "Destilería"
+      }
+    },
+    "The Red Barn": {
+      "name": "El granero rojo"
+    },
+    "The Signal Tower": {
+      "name": "La torre de señales",
+      "drawings": {
+        "Iron Shutter": "Portilla de hierro",
+        "Ladder Up": "Escalera que sube",
+        "Signal Mirror": "Espejo de señales",
+        "Stone Hearth": "Hogar de piedra",
+        "Dwarf Scaffolding": "Andamios de los Enanos",
+        "Trapdoor": "Trampilla"
+      },
+      "notes": {
+        "The Signal Tower": "La torre de señales",
+        "Entrance Hall": "Recibidor",
+        "Alchemist's Laboratory": "Laboratorio del alquimista",
+        "Secret Accessway": "Acceso secreto",
+        "Library": "Biblioteca",
+        "Study": "Estudio",
+        "Inner Corridor": "Pasillo interior",
+        "Secret Library": "Biblioteca secreta"
+      }
+    },
+    "Typical River Lock & Lock Keeper's House": {
+      "name": "Típica esclusa fluvial y Casa del guardia",
+      "drawings": {
+        "First Floor": "Primera planta",
+        "Ground Floor": "Planta baja",
+        "Lock Gate": "Esclusa",
+        "River": "Río",
+        "Office": "Oficina",
+        "Living Room": "Salón",
+        "Strong Room": "Caja fuerte",
+        "Kitchen": "Cocina",
+        "Stores": "Almacenes",
+        "Bedroom": "Dormitorio",
+        "Yard": "Patio"
+      }
+    },
+    "Under The Castle": {
+      "name": "Debajo del Castillo",
+      "drawings": {
+        "Half a mile": "Media milla",
+        "Undergound tunnel From the Dark Woods": "Túnel subterráneo hacia el bosque",
+        "The River Reik": "Río Reik"
+      }
+    },
+    "Unterbaum and Surrounds": {
+      "name": "Unterbaum y alrededores"
+    },
+    "Wittgendorf Village": {
+      "name": "Aldea de Wittgendorf",
+      "notes": {
+        "Wharf": "Embarcadero",
+        "Ferry House": "Caseta del ferry",
+        "The Physicians' House": "Casa del físico",
+        "The Mill": "Molino",
+        "The Shooting Star Inn": "Posada La Estrella Fugaz",
+        "The Shop": "Tienda",
+        "The Temple of Sigmar": "Templo de Sigmar"
+      }
+    }
+  }
+}

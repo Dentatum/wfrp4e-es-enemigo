@@ -1,0 +1,174 @@
+{
+  "label": "Tablas (Muerte en el Reik)",
+  "mapping": {
+    "tablenames": {
+      "path": "results",
+      "converter": "tablenames"
+    }
+  },
+  "entries": {
+    "Castle Room Contents": {
+      "name": "Contenido de las estancias del castillo",
+      "results": {
+        "1-5": "Armas/Armaduras (rotas u oxidadas)",
+        "6-10": "Barril – cerveza, harina, brandi, aceite, sal, etc.",
+        "11-15": "Ropa de cama – trapos, sábanas, mantas, catres, etc.",
+        "16-20": "Caja – vajilla, cubertería, cazuelas, ollas, sartenes, herramientas, etc.",
+        "21-25": "Escoba",
+        "26-30": "Cubo – agua, leche, arena, ácido, etc.",
+        "31-35": "Velas/Lámparas",
+        "36-40": "Silla, sillón, sofá, taburete, etc.",
+        "41-45": "Orinal",
+        "46-50": "Baúl de la ropa",
+        "51-55": "Porta-antorchas",
+        "56-60": "Leña/Yesca",
+        "61-65": "Instrumento musical – tambores, gaitas, etc.",
+        "66-70": "Cuadro – escenas históricas, vistas del castillo, retratos, paisajes, etc.",
+        "71-75": "Sacos – harina, grano, etc.",
+        "76-80": "Estanterías – libros, adornos, etc.",
+        "81-85": "Estatua",
+        "86-90": "Mesa – comedor, escritorio, mesita, de trabajo, manchada de sangre, rota, etc.",
+        "91-95": "Tapicería – ver Cuadro",
+        "96-100": "Armario – con ropa, zapatos, ropa interior, etc."
+      }
+    },
+    "Cavity Worms Effect": {
+      "name": "Efecto de los Gusanos de las cavidades",
+      "results": {
+        "1-2": "-[[1d10]] Iniciativa",
+        "3-4": "-[[1d10]] Inteligencia",
+        "5-6": "-[[1d10]] Voluntad",
+        "7-8": "-[[1d10]] Empatía",
+        "9-9": "Obtiene el Rasgo Asustadizo",
+        "10-10": "Obtiene el Rasgo Bobo",
+        "11-12": "Obtiene el Rasgo Bestial",
+        "13-13": "Muere"
+      }
+    },
+    "Enrage Beast": {
+      "name": "Enfurecer bestia",
+      "results": {
+        "1-2": "El animal sufre un número de Estados @Condition[Quebrantado] igual al NE en el Chequeo de Lanzamiento",
+        "3-4": "El animal sufre el Estado @Condition[Inconsciente]",
+        "5-6": "El animal entra en @UUID[Compendium.wfrp4e-core.items.yRhhOlt18COq4e1q]{Furia} y ataca a la criatura más cercana.",
+        "7-8": "El animal suelta una descarga de flatulencias. Todos los personajes a 4 yardas o menos deben superar un Chequeo de <b>Resistencia</b> o sufrir un -10 a todos los Chequeos mientras permanezcan en el área afectada. La nube se dispersa en [[1d5]] Asaltos. Tira otra vez en el siguiente Asalto.",
+        "9-10": "La pobre bestia se asusta tanto que su corazón explota dentro de su pecho, y muere."
+      }
+    },
+    "Gift of the Beast": {
+      "name": "Don de la bestia",
+      "results": {
+        "1-1": "<b>Patas de animal</b><br /><b>Effect</b>: @UUID[Compendium.wfrp4e-core.items.op4GKikIQee7JMXw]{+1 Movimiento}",
+        "2-2": "<b>Cabeza con pico</b><br /><b>Effect</b>: @UUID[Compendium.wfrp4e-core.items.pLW9SVX0TVTYPiPv]{Mordisco +3}",
+        "3-3": "<b>Garras</b><br /><b>Effect</b>: @UUID[Compendium.wfrp4e-core.items.AtpAudHA4ybXVlWM]{Garras +3}",
+        "4-4": "<b>Pelaje</b><br /><b>Effect</b>: @UUID[Compendium.wfrp4e-core.items.VUJUZVN3VYhOaPjj]{Armadura 1}",
+        "5-5": "<b>Cuernos</b><br /><b>Effect</b>: @UUID[Compendium.wfrp4e-core.items.BqPZn6q3VHn9HUrW]{Cuernos +4}",
+        "6-6": "<b>Cola</b><br /><b>Effect</b>: @UUID[Compendium.wfrp4e-core.items.UnJ25lL8aUzem5JO]{Coletazo +3}",
+        "7-7": "<b>Pies palmeados</b><br /><b>Effect</b>: @UUID[Compendium.wfrp4e-core.items.sJ3yX1kvzu2hgNq5]{Anfibio}",
+        "8-8": "<b>Alas</b><br /><b>Effect</b>: @UUID[Compendium.wfrp4e-core.items.EO05HX7jql0g605A]{Vuelo 60}",
+        "9-10": "<b>Tira dos veces</b>@Table[giftofthebeast]{Don de la bestia}"
+      }
+    },
+    "Hit Location - Rowing Boat": {
+      "name": "Ubicación de impacto - Barco a remos",
+      "results": {
+        "1-30": "Tripulación",
+        "31-50": "Tripulación",
+        "51-60": "Remos",
+        "61-80": "Casco",
+        "81-90": "Casco",
+        "91-100": "Casco"
+      }
+    },
+    "Hit Location - Sailing Boat": {
+      "name": "Ubicación de impacto - Barco de vela",
+      "results": {
+        "1-30": "Tripulación",
+        "31-50": "Aparejos",
+        "51-60": "Timón",
+        "61-80": "Casco",
+        "81-90": "Superestructura",
+        "91-100": "Superestructura"
+      }
+    },
+    "Poisoned Wind": {
+      "name": "Viento envenenado",
+      "results": {
+        "1-4": "-10 a la Iniciativa durante la siguiente hora",
+        "5-5": "La víctima alucina con millones de arañas pequeñas, y solo puede sacudirse, gritar y rascarse durante [[1d10]] Asaltos",
+        "6-6": "La víctima cree que la roca más cercana es un trozo de Piedra Bruja animado y hostil, y debe atacarlo durante [[1d10]] Asaltos",
+        "7-7": "La víctima debe correr durante [[1d10]] Asaltos",
+        "8-8": "La víctima cree que es un pájaro, arroja sus armas y equipo e intenta volar durante [[1d10]] Asaltos",
+        "9-10": "La víctima sufre paranoia aguda y ataca al Personaje más cercano durante [[1d10]] Asaltos"
+      }
+    },
+    "Steam Engine Malfunctions": {
+      "name": "Averías de las máquinas de vapor",
+      "results": {
+        "1-40": "<p><strong>Tirones</strong>: El motor da una sacudida y pierde fuelle. Durante los siguientes [[1d10]] asaltos, el barco va a la deriva río abajo a un 25% de su velocidad normal.</p>",
+        "41-60": "<p><strong>Fuga de vapor</strong>: Un chorro de vapor sale disparado de la caldera. Quien esté atendiendo el motor debe superar un Chequeo de Iniciativa o sufrir [[{1d10 - 5, 1}kh]] Heridas (mínimo 1), independientemente de la armadura.</p>",
+        "61-80": "<p><strong>Pérdida de presión</strong>: El motor deja de funcionar. El barco deriva río abajo a un 25% de su velocidad normal hasta que se supere un <strong>Chequeo Desafiante (+0) de Oficio (Ingeniería)</strong> para volver a ponerlo en marcha. Una vez reiniciado, tardará 5 − NE asaltos en acumular suficiente presión para propulsar el barco.</p>",
+        "81-90": "<p><strong>Fuego apagado</strong>: De algún modo ha entrado agua en la cámara de combustión, apagando el fuego e impidiendo que el motor funcione. Se tardan [[2d4]] asaltos en retirar las brasas empapadas y sustituirlas por combustible seco; después debe superarse un <strong>Chequeo de Oficio (Ingeniería)</strong> para reiniciar el motor. Una vez reiniciado, tardará 5 − NE asaltos en acumular suficiente presión de vapor para propulsar el barco.</p>",
+        "91-95": "<p><strong>Rotura del tanque</strong>: Una placa importante en el mecanismo del motor salta, liberando todo el vapor. El motor no puede repararse hasta que se enfríe, lo que requiere retirar las brasas (véase arriba) y esperar [[20 + d10]] minutos. Después debe superarse un <strong>Chequeo Difícil (−10) de Oficio (Ingeniería)</strong> para reparar el motor, y otro <strong>Chequeo Desafiante (+0)</strong> para reiniciarlo. Una vez reiniciado, tardará 5 − NE asaltos en acumular suficiente presión de vapor para propulsar el barco.</p>",
+        "96-100": "<p><strong>Explosión</strong>: La caldera estalla, destruyendo el motor y causando Golpes Críticos tanto al @UUID[Compendium.wfrp4e-dotr.items.zaGFH3FVJGcFTRfM]{casco} como a la @UUID[Compendium.wfrp4e-dotr.items.6QkWKBguXzpwd9Ac]{superestructura}. Cualquiera que esté en el mismo compartimento que el motor sufre 12 puntos de Daño por Explosión e Impacto.</p>"
+      }
+    },
+    "Trade Rumour": {
+      "name": "Rumores comerciales",
+      "results": {
+        "1-5": "¡Vaya boda que tienen planeada, eh? La flor y nata más estirada de \nReikland asistirá, pero dicen que la feliz pareja ni siquiera se ha \nvisto antes. ¡Los nobles son raros, ¿verdad?!",
+        "6-10": "Dicen que un noble anda con serios problemas por culpa de un rival: \napareció un día con una declaración jurada de nacimiento real y hasta \nuna docena de testigos. Probablemente no salga nada de ahí, pero me \ncuentan que las tropas ya están entrenando por si acaso...",
+        "11-15": "Parece que hubo un incendio en un granero. Fanegas y fanegas \nreducidas a cenizas. Se avecina una temporada de hambre por esa zona...",
+        "16-20": "¿Has oído? Acaban de encargar un nuevo templo a Sigmar. Un montón de \ndinero imperial para eso, aunque dicen que a los lugareños no les hace \nmucha gracia...",
+        "21-25": "La Peste Azul se llevó rebaños enteros de ganado la pasada estación. Los pastores apenas ahora empiezan a recuperarse.",
+        "26-30": "¿Has oído? Un Halfling de la zona va a organizar un concurso de comer\n tartas. ¡Va a ser un desmadre, sobre todo para los panaderos!",
+        "31-35": "Parece que algún fanático está convenciendo a los lugareños de donar \nhasta el último trozo de metal al Gremio de Ingenieros. Afirma que \nMorrslieb va a caer y que el Imperio necesitará un cañón enorme para \ndevolverlo al cielo. ¡Extraño, pero los vecinos ya no tienen ni una \nsartén para cocinar!",
+        "36-40": "¿Te has enterado? ¡Un mago se ha mudado río arriba! Dicen que viene \nde un colegio de Altdorf. Tipo raro, pero con oro. Está pagando a medio \npueblo para construir una torre enorme. Tiene sentido, ¿no? Los magos \ntienen que tener una torre.",
+        "41-45": "Dicen que hay bandidos sueltos, robando todo animal que no esté \natado. A las “toridades” les da igual un comino. Los lugareños están \nindignados... o lo estarían, si tuvieran armas...",
+        "46-50": "Ya sabes, cuentan que estos bosques están embrujados... ¡No te rías! \nNo hay ni un guardabosques trabajando como debiera, y ni siquiera los \ncazadores furtivos se atreven con los ciervos de allí.",
+        "51-55": "Una gente muy rara se está asentando por ahí. Nombres extraños, \ngustos extraños. ¡Dicen que bailan desnudos bajo Morrslieb! Aun así, \nreparten suficientes Coronas como para que la gente mire a otro lado. \nAunque un buen Cazador de Brujas les pondría en vereda...",
+        "56-60": "¿Oíste lo del Elfo de por ahí? Dicen que vino de Ulthuan, buscando \nviejos huesos élficos o ruinas, y que paga bien a cualquiera con \nespaldas fuertes para cavar. No entiendo qué espera encontrar aquí. \n¡Esto es el Imperio, no un bosque élfico!",
+        "61-65": "¿Has oído que un Cazador de Brujas anda por la zona? Incendió medio \npueblo intentando levantar una pira para quemar a una cabra que predecía\n el futuro, pero resultó que la cabra se equivocó y, claro, todo quedó \nen nada.",
+        "66-70": "Dicen que se avecina hambruna. Malas cosechas y una plaga de ratas \nenormes en los almacenes... Tuvieron que llamar a una cuadrilla de \ncazarratas de tres pueblos distintos. ¡Debían de ser ratas bien \ngrandes, eh!",
+        "71-75": "Un supuesto “artista” ha montado un “retiro” río arriba. Va a exponer\n sus obras y ha invitado a medio Reikland. Pero dicen que el arte tiene \nun efecto raro en quienes lo contemplan... menos mal que yo solo tengo \nun ojo, ¿eh?",
+        "76-80": "Una banda de Enanos recién bajados de las montañas se ha instalado \npor aquí. Parece que se metieron en una pelea en la taberna la primera \nnoche y ahora le deben a la dueña algún tipo de deuda de vida. En fin, \nle están remodelando toda la posada como disculpa. ¡Va a quedar de lujo \ncuando terminen!",
+        "81-85": "¡Se avecinan problemas! He oído que han avistado Hombres Bestia, pero la \nmilicia fue disuelta el año pasado por la mala cosecha. ¡Mal asunto, \ndigo yo!",
+        "86-90": "¿Has oído que la guardia local ha contratado a un Ogro? Lo sé, lo sé.\n Apenas logran mantenerlo alimentado, y un criminal decente ya no puede \nganarse la vida por miedo a ser devorado...",
+        "91-95": "Una herrera enana se ha mudado, sin idea de por qué eligió este lugar.\n No ha parado de forjar desde entonces, y vende todo lo que hace por \ncuatro perras. Algunos dicen que sus ollas están malditas, ¡pero yo \ntengo una y solo gotea un poco!",
+        "96-100": "¿Has oído? Un grupo de segundones y desheredados anda preparándose \npara un viaje a los Reinos Fronterizos. Dicen que están cargando sus \ncarros hasta arriba de mercancías."
+      }
+    },
+    "Waterborne Diseases": {
+      "name": "Enfermedades de transmisión acuática",
+      "results": {
+        "1-40": "@UUID[Compendium.wfrp4e-core.items.txeLd7R13qxSvmsr]{Diarrea galopante}",
+        "41-60": "@UUID[Compendium.wfrp4e-dotr.items.fUYD3itr7AlZwQDI]{Cólicos}",
+        "61-70": "<b>@UUID[Compendium.wfrp4e-core.items.1hQuVFZt9QnnbWzg]{Infección leve}</b>: Vuelve a tirar si el Personaje no tiene heridas",
+        "71-75": "<b>@UUID[Compendium.wfrp4e-core.items.kKccDTGzWzSXCBOb]{Herida supurante}</b>: Vuelve a tirar si el Personaje no tiene heridas",
+        "76-80": "@UUID[Compendium.wfrp4e-dotr.items.PIqixe4OQgrVQpFc]{Gusanos de las cavidades}",
+        "81-90": "@UUID[Compendium.wfrp4e-dotr.items.0JMqXbCFSYGvBLnE]{Gusanos del Reik}",
+        "91-100": "@UUID[Compendium.wfrp4e-core.items.herUmN51D9TiL2Vn]{Disentería}"
+      }
+    },
+    "Wind Table": {
+      "name": "Tabla de viento",
+      "results": {
+        "1-3": "<b>Calma - Viento en popa</b>: El barco se ve arrastrado río abajo al 25% de su movimiento normal; Los Chequeos de <b>Manejo de embarcaciones</b> se realizan con una penalización de -10.",
+        "4-7": "<b>Calma - Viento a la cuadra</b>: El barco se ve arrastrado río abajo al 25% de su movimiento normal; Los Chequeos de <b>Manejo de embarcaciones</b> se realizan con una penalización de -10.",
+        "8-10": "<b>Calma - Viento de proa</b>: El barco se ve arrastrado río abajo al 25% de su movimiento normal; Los Chequeos de <b>Manejo de embarcaciones</b> se realizan con una penalización de -10.",
+        "11-13": "<b>Flojo - Viento en popa</b>: Velocidad de movimiento: +5%",
+        "14-17": "<b>Flojo - Viento a la cuadra</b>: Sin modificadores",
+        "18-20": "<b>Flojo - Viento de proa</b>: Velocidad de movimiento: -5%",
+        "21-23": "<b>Vigoroso - Viento en popa</b>: Velocidad de movimiento: +10%",
+        "24-27": "<b>Vigoroso - Viento a la cuadra</b>: Velocidad de movimiento: +5%<br/>El aumento indicado sólo puede conseguirse virando, lo que requiere superar un Chequeo de <b>Manejo de embarcaciones</b>.",
+        "28-30": "<b>Vigoroso - Viento de proa</b>: Velocidad de movimiento: -10%",
+        "31-33": "<b>Fuerte - Viento en popa</b>: Velocidad de movimiento: +20%",
+        "34-37": "<b>Fuerte - Viento a la cuadra</b>: Velocidad de movimiento: +10%<br/>El aumento indicado sólo puede conseguirse virando, lo que requiere superar un Chequeo de <b>Manejo de embarcaciones</b>.",
+        "38-40": "<b>Fuerte - Viento de proa</b>: Velocidad de movimiento: -20%",
+        "41-43": "<b>Muy fuerte - Viento en popa</b>: Velocidad de movimiento: +25%",
+        "44-47": "<b>Muy fuerte - Viento a la cuadra</b>: Se requiere un Chequeo con éxito de <b>Manejo de embarcaciones</b> para arriar la vela antes de que la embarcación vuelque. Si fracasa, la vela y aparejos se partirán y el barco comenzará a hundirse. Se puede hacer un Chequeo de <b>Manejo de embarcaciones</b> cada Asalto para enderezar el barco, con un -5 acumulativo por cada Chequeo fallido. La embarcación se hunde en un número de Asaltos igual a su BR a menos que se enderece en ese periodo.",
+        "48-50": "<b>Muy fuerte - Viento de proa</b>: Velocidad de movimiento: -25%<br/>Se requiere superar un Chequeo de <b>Manejo de embarcaciones</b> para evitar daños en la vela y los aparejos. Si se fracasa, trata el resultado como un Crítico en los aparejos. El barco queda fuera de control a un 25% de su movimiento normal, modificado según la fuerza y dirección del viento. Los Chequeos de <b>Manejo de embarcaciones</b> para controlar el barco se hacen con -20."
+      }
+    }
+  }
+}

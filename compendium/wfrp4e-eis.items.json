@@ -1,0 +1,2413 @@
+{
+  "label": "Objetos (Enemigo en las sombras)",
+  "folders": {
+    "Trappingcs": "Accesorios",
+    "Lore of Tzeentch": "Saber de Tzeentch",
+    "Mutations": "Mutaciones",
+    "Careers": "Carreras",
+    "Traits": "Rasgos",
+    "Undivided": "Caos Absoluto",
+    "Talents": "Talentos",
+    "Diseases": "Enfermedades",
+    "Spells": "Hechizos"
+  },
+  "mapping": {
+    "gmdescription": "system.gmdescription.value",
+    "skills": "system.skills",
+    "talents": "system.talents",
+    "class": {
+      "path": "system.class.value",
+      "converter": "career_class"
+    },
+    "careergroup": {
+      "path": "system.careergroup.value",
+      "converter": "career_careergroup"
+    },
+    "trappings": "system.trappings",
+    "penalties": {
+      "path": "system.penalty.value",
+      "converter": "trappings_penalty"
+    },
+    "range": {
+      "path": "system.range.value",
+      "converter": "spells_duration_range_target"
+    },
+    "special": "system.special.value",
+    "effects": {
+      "path": "effects",
+      "converter": "effects"
+    },
+    "wounds": {
+      "path": "system.wounds.value",
+      "converter": "criticals_wounds"
+    },
+    "location": {
+      "path": "system.location.value",
+      "converter": "criticals_location"
+    },
+    "duration": "system.duration.value",
+    "contraction": "system.contraction.value",
+    "incubation": "system.incubation.value",
+    "incubation_duration": {
+      "path": "system.incubation.unit",
+      "converter": "disease_units"
+    },
+    "incubation_text": "system.incubation.text",
+    "diseases_duration": {
+      "path": "system.duration.unit",
+      "converter": "disease_units"
+    },
+    "symptoms": "system.symptoms.value",
+    "permanent": "system.permanent.value",
+    "spell_duration": {
+      "path": "system.duration.value",
+      "converter": "spells_duration_range_target"
+    },
+    "target": {
+      "path": "system.target.value",
+      "converter": "spells_duration_range_target"
+    },
+    "damage": {
+      "path": "system.damage.value",
+      "converter": "spells_damage"
+    },
+    "lore": {
+      "path": "system.lore.value",
+      "converter": "lore"
+    },
+    "overcast": "system.overcast.label",
+    "overcastvaluevalue": "system.overcast.valuePerOvercast.additional",
+    "overcastinitialvalue": "system.overcast.initial.additional",
+    "injury_location": {
+      "path": "system.location.value",
+      "converter": "injuries_location"
+    },
+    "penalty": "system.penalty.value",
+    "injury_duration": {
+      "path": "system.duration.value",
+      "converter": "injuries_duration"
+    },
+    "modifier": "system.modifier.value",
+    "roll": "system.rollable.skill",
+    "specification": {
+      "path": "system.specification.value",
+      "converter": "traits_specification"
+    },
+    "tests": "system.tests.value"
+  },
+  "entries": {
+    "Demonic Mien (Undivided)": {
+      "name": "Aspecto demoníaco (Absoluto)",
+      "lore": "Absoluto",
+      "description": "<p>Canalizas el poder transformador del Caos en tu propia y sacrificas de manera temporal tu forma mortal en el altar de la voluntad del dios al que adoras. Tu cuerpo se deforma y adopta aspectos de un demonio leal a tu dios patrón. Tira en la tabla de @Table[demonic-mien]{Aspecto demoníaco} y aplica el rasgo correspondiente durante el tiempo que dura el hechizo. Por cada <strong>+2 NE</strong> puedes extender la duración y volver a tirar en la tabla. Si sacas el rasgo @UUID[Compendium.wfrp4e-core.items.v3uzEthcq0JRar0J]{Demoníaco} y quedas reducido a 0 Heridas, los reinos del Caos absorben tu alma, tal y como se describe en las reglas de los rasgos de criatura.</p>"
+    },
+    "Demonic Mien (Tzeentch)": {
+      "name": "Aspecto demoníaco (Tzeentch)",
+      "description": "<p>Canalizas el poder transformador del Caos en tu propia y \nsacrificas de manera temporal tu forma mortal en el altar de la voluntad\n del dios al que adoras. Tu cuerpo se deforma y adopta aspectos de un \ndemonio leal a tu dios patrón. Tira en la tabla de \n@Table[demonic-mien]{Aspecto demoníaco} y aplica el rasgo \ncorrespondiente durante el tiempo que dura el hechizo. Por cada \n<strong>+2 NE</strong> puedes extender la duración y volver a\n tirar en la tabla. Si sacas el rasgo \n@UUID[Compendium.wfrp4e-core.items.v3uzEthcq0JRar0J]{Demoníaco} y quedas\n reducido a 0 Heridas, los reinos del Caos absorben tu alma, tal y como \nse describe en las reglas de los rasgos de criatura.</p>\n<p><strong>Saber:</strong>\n Los objetivos de los hechizos del Saber de Tzeentch se ven desgarrados \npor la magia transformadora del Caos. Quienes quedan afectados por un \nhechizo del Saber de Tzeentch deben hacer un Chequeo \n<strong>Desafiante (+0)</strong> de \n<strong>Aguante</strong> o sufrir +1 Punto de Corrupción. Si\n pasan el Chequeo, obtienen +1 Punto de Fortuna, que pueden usar de \nforma normal. Así son los caprichos de Tzeentch.</p>"
+    },
+    "Joyous Aspect (Undivided)": {
+      "name": "Aspecto gozoso (Absoluto)",
+      "lore": "Absoluto",
+      "description": "<p>El hechicero otorga al objetivo (puede que él mismo) una \nmembrana corrompida de <em>Ulgu</em> infundido con \n<em>Dhar</em> que lo cubre con un aura de ocultación. \nMientras el hechizo está en funcionamiento, el objetivo aparece sin \ndefecto o mancha. Las cicatrices, deformidades y (lo más importante), \nlas mutaciones son indetectables, salvo por medios divinos.</p>\n<p>Si bien las deformidades obvias quedan ocultas, los objetivos \npueden parecer extraños o extravagantes, infundidos con demasiada \ncantidad de un atractivo antinatural. Un Chequeo <strong>Difícil \n(-20)</strong> de <strong>Percepción</strong> revela \nque algo anda mal, aunque no el qué. Para los Personajes con el Talento \n@UUID[Compendium.wfrp4e-core.items.OEjUvJKi0xmBwbS2]{Clarividencia}, el \nChequeo es <strong>Desafiante (+0)</strong> y, si tienen \néxito, se darán cuenta de que hay un hechizo activo, pero no lo que \nesconde.</p>"
+    },
+    "Joyous Aspect (Tzeentch)": {
+      "name": "Aspecto gozoso (Tzeentch)",
+      "description": "<p>El hechicero otorga al objetivo (puede que él mismo) una membrana corrompida de <em>Ulgu</em> infundido con <em>Dhar</em> que lo cubre con un aura de ocultación. Mientras el hechizo está en funcionamiento, el objetivo aparece sin defecto o mancha. Las cicatrices, deformidades y (lo más importante), las mutaciones son indetectables, salvo por medios divinos.</p>\n<p>Si bien las deformidades obvias quedan ocultas, los objetivos pueden parecer extraños o extravagantes, infundidos con demasiada cantidad de un atractivo antinatural. Un Chequeo <strong>Difícil (-20)</strong> de <strong>Percepción</strong> revela que algo anda mal, aunque no el qué. Para los Personajes con el Talento @UUID[Compendium.wfrp4e-core.items.OEjUvJKi0xmBwbS2]{Clarividencia}, el Chequeo es <strong>Desafiante (+0)</strong> y, si tienen éxito, se darán cuenta de que hay un hechizo activo, pero no lo que esconde.</p>\n<p><strong>Saber:</strong> Los objetivos de los hechizos del Saber de Tzeentch se ven desgarrados por la magia transformadora del Caos. Quienes quedan afectados por un hechizo del Saber de Tzeentch deben hacer un Chequeo <strong>Desafiante (+0)</strong> de <strong>Aguante</strong> o sufrir +1 Punto de Corrupción. Si pasan el Chequeo, obtienen +1 Punto de Fortuna, que pueden usar de forma normal. Así son los caprichos de Tzeentch.</p>"
+    },
+    "Rend Aethyr (Undivided)": {
+      "name": "Desgarrar el Aethyr (Absoluto)",
+      "lore": "Absoluto",
+      "description": "<p>Tus palabras sucias y profanas desgarran el tejido de la realidad y abren un agujero en el mundo a través del cual los sirvientes de los Dioses Oscuros son libres de manifestarse. Aparece un maltrecho portal hacia el Aethyr.</p>\n<p>Al final de cada Asalto, un demonio menor cruza el portal desde los Reinos del Caos. No controlas a estos demonios, pero es probable que te defiendan y ataquen a enemigos, si ésa es la voluntad de tu impío amo. Los demonios convocados dependen de del Saber del Caos que tengas: @UUID[Compendium.wfrp4e-core.actors.8gG2Wim6wAlJWRax]{Diablillas de Slaanesh}, Portadores de plaga de Nurgle, @UUID[Compendium.wfrp4e-eis.actors.iDy8SDTwJSlCzZMl]{Horrores de Tzeentch}, @UUID[Compendium.wfrp4e-core.actors.KZkuwdOYmE3nwB2n]{Desangradores de Khorne} y, para los hechiceros del Caos absoluto, @UUID[Compendium.wfrp4e-eis.actors.piVHq2Y1a9PhHlZJ]{Furias del Caos}. Mientras el hechizo esté en funcionamiento, cualquier demonio que invoque éste será inmune al Estado @UUID[Compendium.wfrp4e-core.items.D0ImWEIMSDgElsnl]{Inestable}.</p>\n<p>Por cada +5 NE de Prolongación, puedes aumentar la cantidad de llegada de los demonios en +1.</p>\n<p>Los seres vivos deben hacer un Chequeo <strong>Normal (+20)</strong> de <strong>Aguante</strong> al final de cada Asalto en el que ven el desgarro o sufren +1 Corrupción. Cualquier criatura viva que sea lo bastante ingenua o desafortunada para entrar en la grieta cae en los Reinos del Caos y muere de inmediato, a menos que se gaste un Punto de Destino. En ese caso, se ve escupida de vuelta a la realidad, tal vez salvada por algún poder para un propósito que aún no se ha cumplido.</p>\n<p>Si pifias el lanzamiento de este hechizo, los demonios que cruzan desde los Reinos del Caos pertenecen a un dios rival, y es posible que sean hostiles de inmediato al invocador.</p>"
+    },
+    "Rend Aethyr (Tzeentch)": {
+      "name": "Desgarrar el Aethyr (Tzeentch)",
+      "description": "<p>Tus palabras sucias y profanas desgarran el tejido de la realidad y abren un agujero en el mundo a través del cual los sirvientes de los Dioses Oscuros son libres de manifestarse. Aparece un maltrecho portal hacia el Aethyr.</p>\n<p>Al final de cada Asalto, un demonio menor cruza el portal desde los Reinos del Caos. No controlas a estos demonios, pero es probable que te defiendan y ataquen a enemigos, si ésa es la voluntad de tu impío amo. Los demonios convocados dependen de del Saber del Caos que tengas: @UUID[Compendium.wfrp4e-core.actors.8gG2Wim6wAlJWRax]{Diablillas de Slaanesh}, Portadores de plaga de Nurgle, @UUID[Compendium.wfrp4e-eis.actors.iDy8SDTwJSlCzZMl]{Horrores de Tzeentch}, @UUID[Compendium.wfrp4e-core.actors.KZkuwdOYmE3nwB2n]{Desangradores de Khorne} y, para los hechiceros del Caos absoluto, @UUID[Compendium.wfrp4e-eis.actors.piVHq2Y1a9PhHlZJ]{Furias del Caos}. Mientras el hechizo esté en funcionamiento, cualquier demonio que invoque éste será inmune al Estado @UUID[Compendium.wfrp4e-core.items.D0ImWEIMSDgElsnl]{Inestable}.</p>\n<p>Por cada +5 NE de Prolongación, puedes aumentar la cantidad de llegada de los demonios en +1.</p>\n<p>Los seres vivos deben hacer un Chequeo <strong>Normal (+20)</strong> de <strong>Aguante</strong> al final de cada Asalto en el que ven el desgarro o sufren +1 Corrupción. Cualquier criatura viva que sea lo bastante ingenua o desafortunada para entrar en la grieta cae en los Reinos del Caos y muere de inmediato, a menos que se gaste un Punto de Destino. En ese caso, se ve escupida de vuelta a la realidad, tal vez salvada por algún poder para un propósito que aún no se ha cumplido.</p>\n<p>Si pifias el lanzamiento de este hechizo, los demonios que cruzan desde los Reinos del Caos pertenecen a un dios rival, y es posible que sean hostiles de inmediato al invocador.</p>\n<p><strong>Saber:</strong> Los objetivos de los hechizos del Saber de Tzeentch se ven desgarrados por la magia transformadora del Caos. Quienes quedan afectados por un hechizo del Saber de Tzeentch deben hacer un Chequeo <strong>Desafiante (+0)</strong> de <strong>Aguante</strong> o sufrir +1 Punto de Corrupción. Si pasan el Chequeo, obtienen +1 Punto de Fortuna, que pueden usar de forma normal. Así son los caprichos de Tzeentch.</p>"
+    },
+    "Slave to Darkness (Undivided)": {
+      "name": "Esclavo de la oscuridad (Absoluto)",
+      "lore": "Absoluto",
+      "description": "<p>Imploras a tu patrón que se lleve el alma del objetivo y la \nsustituya por algo terrible. Haz un Chequeo \n<strong>Enfrentado</strong> de \n<strong>Voluntad</strong>, que debes ganar por \n<strong>2 NE</strong> o más. Si lo superas, se envía al alma\n entre gritos a los Reinos del Caos y un demonio posee el cuerpo. A \nmenos que el objetivo gaste un Punto de Destino, el control del \nPersonaje pasa a manos del DJ. Si no ganas el Chequeo Enfrentado por al \nmenos <strong>2 NE</strong>, en su lugar sufres una \n@Table[majormis]{Disfunción mayor} y el hechizo falla. Si pifias en el \nChequeo, el dios te castiga por tu arrogancia. Te arrancan el alma del \ncuerpo, para nunca volver a menos que gastes un Punto de Destino para \nresistirte, aunque tu patrón no estará contento si rechazas \nflagrantemente su autoridad de esa manera.</p>\n<p>Dados \nlos riesgos y limitaciones inherentes a este hechizo, se suele lanzar \nsobre víctimas que han sido 'preparadas' para su sacrificio y las han \natado, drogado o tranquilizado de alguna manera.</p>"
+    },
+    "Slave to Darkness (Tzeentch)": {
+      "name": "Esclavo de la oscuridad (Tzeentch)",
+      "description": "<p>Imploras a tu patrón que se lleve el alma del objetivo y la sustituya por algo terrible. Haz un Chequeo <strong>Enfrentado</strong> de <strong>Voluntad</strong>, que debes ganar por <strong>2 NE</strong> o más. Si lo superas, se envía al alma entre gritos a los Reinos del Caos y un demonio posee el cuerpo. A menos que el objetivo gaste un Punto de Destino, el control del Personaje pasa a manos del DJ. Si no ganas el Chequeo Enfrentado por al menos <strong>2 NE</strong>, en su lugar sufres una @Table[majormis]{Disfunción mayor} y el hechizo falla. Si pifias en el Chequeo, el dios te castiga por tu arrogancia. Te arrancan el alma del cuerpo, para nunca volver a menos que gastes un Punto de Destino para resistirte, aunque tu patrón no estará contento si rechazas flagrantemente su autoridad de esa manera.</p>\n<p>Dados los riesgos y limitaciones inherentes a este hechizo, se suele lanzar sobre víctimas que han sido 'preparadas' para su sacrificio y las han atado, drogado o tranquilizado de alguna manera.</p>\n<p><strong>Saber:</strong> Los objetivos de los hechizos del Saber de Tzeentch se ven desgarrados por la magia transformadora del Caos. Quienes quedan afectados por un hechizo del Saber de Tzeentch deben hacer un Chequeo <strong>Desafiante (+0)</strong> de <strong>Aguante</strong> o sufrir +1 Punto de Corrupción. Si pasan el Chequeo, obtienen +1 Punto de Fortuna, que pueden usar de forma normal. Así son los caprichos de Tzeentch.</p>"
+    },
+    "Blast of Corruption (Undivided)": {
+      "name": "Estallido de corrupción (Absoluto)",
+      "lore": "Absoluto",
+      "description": "<p>Canalizas magia profana en un estallido de corrupción. Esto funciona como un proyectil mágico con Daño +5 que tiene como objetivo quienes estén en el AdE. Todos los afectados por el hechizo deben superar un Chequeo <strong>Desafiante (+0)</strong> de <strong>Aguante</strong>, o sufrir +1 Corrupción.</p>"
+    },
+    "Blast of Corruption (Tzeentch)": {
+      "name": "Estallido de corrupción (Tzeentch)",
+      "description": "<p>Canalizas magia profana en un estallido de corrupción. Esto \nfunciona como un proyectil mágico con Daño +5 que tiene como objetivo \nquienes estén en el AdE. Todos los afectados por el hechizo deben \nsuperar un Chequeo <strong>Desafiante (+0)</strong> de \n<strong>Aguante</strong>, o sufrir +1 Corrupción.</p>\n<p><strong>Saber:</strong>\n Los objetivos de los hechizos del Saber de Tzeentch se ven desgarrados \npor la magia transformadora del Caos. Quienes quedan afectados por un \nhechizo del Saber de Tzeentch deben hacer un Chequeo \n<strong>Desafiante (+0)</strong> de \n<strong>Aguante</strong> o sufrir +1 Punto de Corrupción. Si\n pasan el Chequeo, obtienen +1 Punto de Fortuna, que pueden usar de \nforma normal. Así son los caprichos de Tzeentch.</p>"
+    },
+    "Foul Messenger (Undivided)": {
+      "name": "Mensajero repugnante (Absoluto)",
+      "lore": "Absoluto",
+      "description": "<p>Conjuras un enjambre de demonios menores vinculados a tu \nvoluntad. La forma de los demonios varía en función del dios. Los \ndemonios llevan un mensaje corto (de unas 25 palabras) al objetivo. \nViajan casi al instante, y son invisibles (e inaudibles) para cualquiera\n sin el Talento \n@UUID[Compendium.wfrp4e-core.items.OEjUvJKi0xmBwbS2]{Clarividencia}, \nincluso mientras entregan el mensaje. Cualquiera con el Talento puede \nhacer un Chequeo <strong>Difícil (-20)</strong> de \n<strong>Percepción</strong> para ver al enjambre y escuchar \nel mensaje. Por cada <strong>+2 NE</strong>, puedes doblar \nla longitud del mensaje.</p>"
+    },
+    "Foul Messenger (Tzeentch)": {
+      "name": "Mensajero repugnante (Tzeentch)",
+      "description": "<p>Conjuras un enjambre de demonios menores vinculados a tu voluntad. La forma de los demonios varía en función del dios. Los demonios llevan un mensaje corto (de unas 25 palabras) al objetivo. Viajan casi al instante, y son invisibles (e inaudibles) para cualquiera sin el Talento @UUID[Compendium.wfrp4e-core.items.OEjUvJKi0xmBwbS2]{Clarividencia}, incluso mientras entregan el mensaje. Cualquiera con el Talento puede hacer un Chequeo <strong>Difícil (-20)</strong> de <strong>Percepción</strong> para ver al enjambre y escuchar el mensaje. Por cada <strong>+2 NE</strong>, puedes doblar la longitud del mensaje.</p>\n<p><strong>Saber:</strong> Los objetivos de los hechizos del Saber de Tzeentch se ven desgarrados por la magia transformadora del Caos. Quienes quedan afectados por un hechizo del Saber de Tzeentch deben hacer un Chequeo <strong>Desafiante (+0)</strong> de <strong>Aguante</strong> o sufrir +1 Punto de Corrupción. Si pasan el Chequeo, obtienen +1 Punto de Fortuna, que pueden usar de forma normal. Así son los caprichos de Tzeentch.</p>"
+    },
+    "Obsession (Undivided)": {
+      "name": "Obsesión (Absoluto)",
+      "lore": "Absoluto",
+      "description": "<p>Debes disponer de un objeto querido o preciado que pertenezca \nal objetivo. Tejes magia infundida con la materia prima del Caos en el \nobjeto que, a su vez, afecta al objetivo, que se obsesiona con algo; la \nnaturaleza precisa de la obsesi&oacute;n depende del individuo en \ncuesti&oacute;n y del Saber que tengas. Por ejemplo, cuando se lanza\n con el Saber de Nurgle, Obsesi&oacute;n puede hacer que un objetivo\n herido hace poco se obsesione con la posibilidad de arrancarse las \ncostras. El Saber de Slaanesh puede comportar que un epic&uacute;reo\n o un gourmet coman en exceso.</p>\n<p>El objetivo debe \npasar un Chequeo <strong>Normal (+20)</strong> de \n<strong>Aguante</strong> cada hora o sucumbir a la \nobsesi&oacute;n. Al fracasar, los futuros Chequeos se convierten en \n<strong>Desafiantes (+0)</strong>. Los fracasos \nsubsiguientes suponen que los Chequeos son cada vez m&aacute;s \ndif&iacute;ciles, hasta que se convierten en <strong>Muy \ndif&iacute;ciles (-30)</strong>. Si el objetivo pifia alguna \nvez uno de estos Chequeos (falla sacando un doble), se obsesiona del \ntodo. No puede hacer nada excepto someterse a dicha obsesi&oacute;n,\n sin importar el coste o las implicaciones, durante tantas horas como \n1d10 &ndash; su bonificador por Voluntad (m&iacute;nimo 1 hora).\n Al final de la duraci&oacute;n del hechizo, adem&aacute;s de \ncualquier otra implicaci&oacute;n f&iacute;sica, social o \nfinanciera, el objetivo deber&aacute; superar un Chequeo \n<strong>Desafiante (+0)</strong> de \n<strong>Aguante</strong> o sufrir +1 Punto de \nCorrupci&oacute;n.</p>\n<p>Un objetivo s&oacute;lo\n puede verse afectado por este hechizo una vez por cada Saber con el que\n se lanza. Cualquier intento futuro sobre el mismo objetivo con este \nhechizo no tendr&aacute; efecto alguno.</p>"
+    },
+    "Obsession (Tzeentch)": {
+      "name": "Obsesión (Tzeentch)",
+      "description": "<p>Debes disponer de un objeto querido o preciado que pertenezca al objetivo. Tejes magia infundida con la materia prima del Caos en el objeto que, a su vez, afecta al objetivo, que se obsesiona con algo; la naturaleza precisa de la obsesi&oacute;n depende del individuo en cuesti&oacute;n y del Saber que tengas. Por ejemplo, cuando se lanza con el Saber de Nurgle, Obsesi&oacute;n puede hacer que un objetivo herido hace poco se obsesione con la posibilidad de arrancarse las costras. El Saber de Slaanesh puede comportar que un epic&uacute;reo o un gourmet coman en exceso.</p>\n<p>El objetivo debe pasar un Chequeo <strong>Normal (+20)</strong> de <strong>Aguante</strong> cada hora o sucumbir a la obsesi&oacute;n. Al fracasar, los futuros Chequeos se convierten en <strong>Desafiantes (+0)</strong>. Los fracasos subsiguientes suponen que los Chequeos son cada vez m&aacute;s dif&iacute;ciles, hasta que se convierten en <strong>Muy dif&iacute;ciles (-30)</strong>. Si el objetivo pifia alguna vez uno de estos Chequeos (falla sacando un doble), se obsesiona del todo. No puede hacer nada excepto someterse a dicha obsesi&oacute;n, sin importar el coste o las implicaciones, durante tantas horas como 1d10 &ndash; su bonificador por Voluntad (m&iacute;nimo 1 hora). Al final de la duraci&oacute;n del hechizo, adem&aacute;s de cualquier otra implicaci&oacute;n f&iacute;sica, social o financiera, el objetivo deber&aacute; superar un Chequeo <strong>Desafiante (+0)</strong> de <strong>Aguante</strong> o sufrir +1 Punto de Corrupci&oacute;n.</p>\n<p>Un objetivo s&oacute;lo puede verse afectado por este hechizo una vez por cada Saber con el que se lanza. Cualquier intento futuro sobre el mismo objetivo con este hechizo no tendr&aacute; efecto alguno.</p>\n<p><strong>Saber:</strong> Los objetivos de los hechizos del Saber de Tzeentch se ven desgarrados por la magia transformadora del Caos. Quienes quedan afectados por un hechizo del Saber de Tzeentch deben hacer un Chequeo <strong>Desafiante (+0)</strong> de <strong>Aguante</strong> o sufrir +1 Punto de Corrupci&oacute;n. Si pasan el Chequeo, obtienen +1 Punto de Fortuna, que pueden usar de forma normal. As&iacute; son los caprichos de Tzeentch.</p>"
+    },
+    "Power of Chaos (Undivided)": {
+      "name": "Poder del Caos (Absoluto)",
+      "lore": "Absoluto",
+      "description": "<p>Llamas a los dioses oscuros del Caos para que te ayuden \nabriendo una peque&ntilde;a rotura en el Aethyr. Cualquier hechizo \nque se lance dentro del &aacute;rea de efecto ver&aacute; su NE \nreducido a la mitad. Cualquiera que est&eacute; en el interior del \nAdE deber&aacute; hacer un Chequeo <strong>Normal \n(+20)</strong> de <strong>Aguante</strong> al final de\n cada Asalto o sufrir +1 Punto de Corrupci&oacute;n. Cualquiera que \nlance un hechizo dentro del AdE har&aacute; el Chequeo a dificultad \n<strong>Normal (+20)</strong>.</p>"
+    },
+    "Power of Chaos (Tzeentch)": {
+      "name": "Poder del Caos (Tzeentch)",
+      "description": "<p>Llamas a los dioses oscuros del Caos para que te ayuden abriendo una peque&ntilde;a rotura en el Aethyr. Cualquier hechizo que se lance dentro del &aacute;rea de efecto ver&aacute; su NE reducido a la mitad. Cualquiera que est&eacute; en el interior del AdE deber&aacute; hacer un Chequeo <strong>Normal (+20)</strong> de <strong>Aguante</strong> al final de cada Asalto o sufrir +1 Punto de Corrupci&oacute;n. Cualquiera que lance un hechizo dentro del AdE har&aacute; el Chequeo a dificultad <strong>Normal (+20)</strong>.</p>\n<p><strong>Saber:</strong> Los objetivos de los hechizos del Saber de Tzeentch se ven desgarrados por la magia transformadora del Caos. Quienes quedan afectados por un hechizo del Saber de Tzeentch deben hacer un Chequeo <strong>Desafiante (+0)</strong> de <strong>Aguante</strong> o sufrir +1 Punto de Corrupci&oacute;n. Si pasan el Chequeo, obtienen +1 Punto de Fortuna, que pueden usar de forma normal. As&iacute; son los caprichos de Tzeentch.</p>"
+    },
+    "Bolt of Corruption (Undivided)": {
+      "name": "Rayo de corrupción (Absoluto)",
+      "lore": "Absoluto",
+      "description": "<p>Canalizas magia oscura en forma de un dañino rayo de poder \ncorrosivo. Esto equivale a un proyectil mágico con un Daño de 6. Los \nobjetivos que se vean alcanzados por el hechizo deben hacer un Chequeo \n<strong>Desafiante (+0)</strong> de \n<strong>Aguante</strong> o sufrir 1 Corrupción.</p>"
+    },
+    "Bolt of Corruption (Tzeentch)": {
+      "name": "Rayo de corrupción (Tzeentch)",
+      "description": "<p>Canalizas magia oscura en forma de un dañino rayo de poder corrosivo. Esto equivale a un proyectil mágico con un Daño de 6. Los objetivos que se vean alcanzados por el hechizo deben hacer un Chequeo <strong>Desafiante (+0)</strong> de <strong>Aguante</strong> o sufrir 1 Corrupción.</p>\n<p><strong>Saber:</strong> Los objetivos de los hechizos del Saber de Tzeentch se ven desgarrados por la magia transformadora del Caos. Quienes quedan afectados por un hechizo del Saber de Tzeentch deben hacer un Chequeo <strong>Desafiante (+0)</strong> de <strong>Aguante</strong> o sufrir +1 Punto de Corrupción. Si pasan el Chequeo, obtienen +1 Punto de Fortuna, que pueden usar de forma normal. Así son los caprichos de Tzeentch.</p>"
+    },
+    "Tzeentch's Golden Aura": {
+      "name": "Aura dorada de Tzeentch",
+      "description": "<p>Es uno de los hechizos más sencillos y prácticos del arsenal de un hechicero de Tzeentch. Un vórtice de fuego amarillo se invoca desde el Aethyr y envuelve el cuerpo del lanzador para protegerlo de los golpes y proyectiles que se aproximan. Mientras el hechizo está activo, el lanzador se beneficia del Rasgo de criatura @UUID[Compendium.wfrp4e-core.items.Bvd2aZ0gQUXHfCTh]{Custodiado 9} o más.</p>\n<p><strong>Saber:</strong> Los objetivos de los hechizos del Saber de Tzeentch se ven desgarrados por la magia transformadora del Caos. Quienes quedan afectados por un hechizo del Saber de Tzeentch deben hacer un Chequeo <strong>Desafiante (+0)</strong> de <strong>Aguante</strong> o sufrir +1 Punto de Corrupción. Si pasan el Chequeo, obtienen +1 Punto de Fortuna, que pueden usar de forma normal. Así son los caprichos de Tzeentch.</p>"
+    },
+    "Boon of Tzeentch": {
+      "name": "Bendición de Tzeentch",
+      "description": "<p>Las palabras que pronuncias (imbuidas con el laberíntico presagio de El Que Cambia las Cosas) te retuercen la mente y te dan acceso a nuevos conocimientos arcanos. Elige un hechizo de cualquier Saber (para asegurar una partida rápida, el DJ puede imponer un límite de tiempo de nueve segundos). Mientras Bendición de Tzeentch esté activo, podrás lanzar el nuevo hechizo como si lo hubieras memorizado, pero no podrás grabarlo en un grimorio, pergamino o similar. Si canalizas para lanzar el nuevo hechizo, puedes usar tanto la <strong>Canalización (</strong><em><strong>Dhar</strong></em><strong>)</strong> como la habilidad de <strong>Canalización</strong> apropiada al Saber que del hechizo en cuestión, si la tienes.</p>\n<p>Si sufres una Disfunción al canalizar o lanzar este nuevo hechizo, Bendición de Tzeentch se marcha indignado de tu cabeza y también se borra del grimorio si se te ha permitido escribirlo ahí.</p>\n<p><strong>Saber:</strong> Los objetivos de los hechizos del Saber de Tzeentch se ven desgarrados por la magia transformadora del Caos. Quienes quedan afectados por un hechizo del Saber de Tzeentch deben hacer un Chequeo <strong>Desafiante (+0)</strong> de <strong>Aguante</strong> o sufrir +1 Punto de Corrupción. Si pasan el Chequeo, obtienen +1 Punto de Fortuna, que pueden usar de forma normal. Así son los caprichos de Tzeentch.</p>"
+    },
+    "Blue Fire of Tzeentch": {
+      "name": "Fuego Azul de Tzeentch",
+      "description": "<p>Conjuras con palabras una bola retorcida de fuego azul corrosivo que envuelve al enemigo. El Fuego azul de Tzeentch es un <em>proyectil mágico</em>. Cualquiera que esté del objetivo en un radio de tantas yardas como tu bonificador por Iniciativa sufrirá +3 Daño y 1 Estado de @Condition[Ardiendo].</p>\n<p>Si un Personaje de tamaño pequeño o grande queda reducido a 0 Heridas por este hechizo, o mientras sufre un Estado de @Condition[Ardiendo] por Fuego azul de Tzeentch, tira [[/r 1d10]]. Con un resultado de 9, dos @UUID[Compendium.wfrp4e-eis.actors.cLOGeMqUty61nYB9]{Horrores Azules} se abren paso por la carne del Personaje (que no para de aullar) y lo matan en el proceso.</p>\n<p><strong>Saber:</strong> Los objetivos de los hechizos del Saber de Tzeentch se ven desgarrados por la magia transformadora del Caos. Quienes quedan afectados por un hechizo del Saber de Tzeentch deben hacer un Chequeo <strong>Desafiante (+0)</strong> de <strong>Aguante</strong> o sufrir +1 Punto de Corrupción. Si pasan el Chequeo, obtienen +1 Punto de Fortuna, que pueden usar de forma normal. Así son los caprichos de Tzeentch.</p>"
+    },
+    "Mindfire": {
+      "name": "Fuego mental",
+      "description": "<p>El aire que te rodea los dedos se deforma y convierte en un rayo de energía mágica brillante y brumosa que puedes lanzar contra el objetivo. Cualquiera que se vea afectado por Fuego mental debe superar un Chequeo <strong>Desafiante (+0)</strong> de <strong>Frialdad</strong> o sufrir 1 Punto de Corrupción. Por cada <strong>+2 NE,</strong> puedes hacer que un objetivo sufra 1 Punto de Corrupción adicional si falla el Chequeo de <strong>Frialdad</strong>. Si se produce una mutación como resultado de este hechizo, el objetivo tira en el acto en la Tabla de @Table[mutatemental]{Mutaciones mentales} y sufre 1 Estado de @Condition[Ardiendo] a medida que este fuego antinatural le surge de cada orificio de la cabeza.</p>\n<p><strong>Saber:</strong> Los objetivos de los hechizos del Saber de Tzeentch se ven desgarrados por la magia transformadora del Caos. Quienes quedan afectados por un hechizo del Saber de Tzeentch deben hacer un Chequeo <strong>Desafiante (+0)</strong> de <strong>Aguante</strong> o sufrir +1 Punto de Corrupción. Si pasan el Chequeo, obtienen +1 Punto de Fortuna, que pueden usar de forma normal. Así son los caprichos de Tzeentch.</p>"
+    },
+    "Pink Fire of Tzeentch": {
+      "name": "Fuego Rosa de Tzeentch",
+      "description": "<p>Extiendes los dedos y de la punta de éstos surgen rayos arqueados de fuego rosáceo y arremolinado que hacen gritar de angustia a la propia realidad. Fuego Rosa de Tzeentch es un <em>proyectil mágico</em>. Los objetivos afectados sufren +6 Heridas y +1 Estado @Condition[Ardiendo].</p>\n<p>Si un Personaje de tamaño pequeño o grande queda reducido a 0 Heridas por este hechizo, o mientras sufre el Estado @Condition[Ardiendo] causado por Fuego rosa de Tzeentch, tira [[/r 1d10]]. Con un resultado de 9, un @UUID[Compendium.wfrp4e-eis.actors.iDy8SDTwJSlCzZMl]{Horror Rosa} se abre paso por el cuerpo retorcido del objetivo y lo mata.</p>\n<p><strong>Saber:</strong> Los objetivos de los hechizos del Saber de Tzeentch se ven desgarrados por la magia transformadora del Caos. Quienes quedan afectados por un hechizo del Saber de Tzeentch deben hacer un Chequeo <strong>Desafiante (+0)</strong> de <strong>Aguante</strong> o sufrir +1 Punto de Corrupción. Si pasan el Chequeo, obtienen +1 Punto de Fortuna, que pueden usar de forma normal. Así son los caprichos de Tzeentch.</p>\n<p></p>"
+    },
+    "The Purple Hand": {
+      "name": "La Mano Púrpura",
+      "description": "<p>Este hechizo es una pequeña maldición que usan los hechiceros de la Mano Púrpura para intimidar y engatusar a los otros conspiradores truculentos. De todos los códigos no verbales que utiliza dicha secta, el significado de esta maldición es claro: enmiéndate en el acto o afronta el castigo.</p>\n<p>Para lanzar el hechizo, el hechicero debe primero conseguir una pequeña cantidad de materia del objetivo: un pelo suelto o una uña cortada sirven. Si la consigue y lanza el hechizo con éxito, las palmas de las manos del objetivo se vuelven de un color púrpura intenso. Los efectos del hechizo duran una hora por cada NE que ha obtenido el lanzador durante el lanzamiento.</p>\n<p><strong>Saber:</strong> Los objetivos de los hechizos del Saber de Tzeentch se ven desgarrados por la magia transformadora del Caos. Quienes quedan afectados por un hechizo del Saber de Tzeentch deben hacer un Chequeo <strong>Desafiante (+0)</strong> de <strong>Aguante</strong> o sufrir +1 Punto de Corrupción. Si pasan el Chequeo, obtienen +1 Punto de Fortuna, que pueden usar de forma normal. Así son los caprichos de Tzeentch.</p>"
+    },
+    "Master of Fortune": {
+      "name": "Maestro de la Fortuna",
+      "description": "<p>Los hechiceros de Tzeentch negocian a menudo con su amo para saber qué posibilidades les depara el destino. Escudriñar de esta manera es peligroso, ya que Tzeentch es un dios caprichoso, aunque se trate de su sirvientes favoritos. Una vez que el hechizo se lanza, no se puede conjurar de nuevo hasta que se llegue al término de la duración.</p>\n<p>Determina el resultado del Chequeo de <strong>Hablar idioma (Magia)</strong> necesario para lanzar el hechizo. Por cada <strong>NE</strong> positivo, el lanzador se beneficia de un Punto de Fortuna que puede utilizar de la manera habitual mientras dure el hechizo; pero si falla, por cada <strong>NE</strong> negativo, el lanzador sufre 1 un Punto de Corrupción, ya que recibe una serie vertiginosa de ecos del futuro.</p>\n<p><strong>Saber:</strong> Los objetivos de los hechizos del Saber de Tzeentch se ven desgarrados por la magia transformadora del Caos. Quienes quedan afectados por un hechizo del Saber de Tzeentch deben hacer un Chequeo <strong>Desafiante (+0)</strong> de <strong>Aguante</strong> o sufrir +1 Punto de Corrupción. Si pasan el Chequeo, obtienen +1 Punto de Fortuna, que pueden usar de forma normal. Así son los caprichos de Tzeentch.</p>"
+    },
+    "Curse of Tzeentch": {
+      "name": "Maldición de Tzeentch",
+      "description": "<p>El Saber de Tzeentch afirma que todos los hechizos derivan de la voluntad del dios y, por lo tanto, le pertenecen. Mediante esta maldición, un hechicero de Tzeentch puede hacer que otro hechicero olvide un hechizo que antes dominaba y pierda la habilidad de lanzarlo.</p>\n<p>Si se lanza con éxito la maldición, el lanzador debe hacer un Chequeo Enfrentado de <strong>Voluntad</strong> contra el objetivo. Si el primero gana, el segundo pierde el acceso a un hechizo seleccionado al azar. Los efectos del hechizo duran un día por cada nivel de éxito que ha obtenido el lanzador durante el Chequeo Enfrentado.</p>\n<p><strong>Saber:</strong> Los objetivos de los hechizos del Saber de Tzeentch se ven desgarrados por la magia transformadora del Caos. Quienes quedan afectados por un hechizo del Saber de Tzeentch deben hacer un Chequeo <strong>Desafiante (+0)</strong> de <strong>Aguante</strong> o sufrir +1 Punto de Corrupción. Si pasan el Chequeo, obtienen +1 Punto de Fortuna, que pueden usar de forma normal. Así son los caprichos de Tzeentch.</p>"
+    },
+    "Word of Tzeentch": {
+      "name": "Palabra de Tzeentch",
+      "description": "<p>Mientras formas con la lengua los retorcidos patrones de sonido de este blasfemo hechizo, dos voces parecen hablar desde tu garganta, en una armonía impía y antinatural entre sí. Las palabras tienen un significado adicional para los afectados por el hechizo, aunque los objetivos nunca recuerdan lo que se dijo. Se quedan con una inquietante sensación de presentimiento, como si hubieran olvidado algo muy importante sobre su futuro.</p>\n<p>Todo objetivo vivo que se vea afectado por el hechizo deberá hacer un Chequeo <strong>Enfrentado</strong> de <strong>Inteligencia</strong> contra ti. Si pierde, sufre 1 Estado de @Condition[Aturdido], +1 Estado adicional de @Condition[Aturdido] por cada <strong>NE</strong> por el que ha perdido. Si saca una Pifia, sufre el Estado @Condition[Inconsciente] y +1 Corrupción.</p>\n<p>Una vez desaparezcan todos los Estados, los objetivos afectados deberán pasar un Chequeo <strong>Normal (+20)</strong> de <strong>Aguante</strong> o sufrirán +1 Corrupción. Con una Pifia, sufren de inmediato 1 @Table[expandedmutatemental]{Mutación mental} y no pueden tener una Ambición a corto plazo durante [[/r 1d10]] semanas.</p>\n<p><strong>Saber:</strong> Los objetivos de los hechizos del Saber de Tzeentch se ven desgarrados por la magia transformadora del Caos. Quienes quedan afectados por un hechizo del Saber de Tzeentch deben hacer un Chequeo <strong>Desafiante (+0)</strong> de <strong>Aguante</strong> o sufrir +1 Punto de Corrupción. Si pasan el Chequeo, obtienen +1 Punto de Fortuna, que pueden usar de forma normal. Así son los caprichos de Tzeentch.</p>"
+    },
+    "Bolt of Change": {
+      "name": "Rayo de cambio",
+      "description": "<p>Un rayo pulsante de energía del Caos centelleante desgarra el aire. Rayo de Cambio es un <em>proyectil mágico</em>, y los objetivos sufren +7 Daño. Además, éstos deben hacer un Chequeo <strong>Desafiante (+0)</strong> de <strong>Aguante</strong>. Un objetivo que falla sufre +1 Punto de Corrupción. Con una pifia, el objetivo tira de inmediato para determinar una Mutación (@Table[expandedmutatemental]{Mental} o @Table[expandedmutatephys]{Physical}) y obtiene el Talento @UUID[Compendium.wfrp4e-core.items.hiU7vhBOVpVI8c7C]{Magia del Caos (Tzeentch)}. El Personaje que se ve afectado por este hechizo tiene la posibilidad de resistir la mutación gastando un Punto de Resolución.</p>\n<p><strong>Saber:</strong> Los objetivos de los hechizos del Saber de Tzeentch se ven desgarrados por la magia transformadora del Caos. Quienes quedan afectados por un hechizo del Saber de Tzeentch deben hacer un Chequeo <strong>Desafiante (+0)</strong> de <strong>Aguante</strong> o sufrir +1 Punto de Corrupción. Si pasan el Chequeo, obtienen +1 Punto de Fortuna, que pueden usar de forma normal. Así son los caprichos de Tzeentch.</p>\n<p></p>"
+    },
+    "Sense the Skein": {
+      "name": "Sentir la madeja",
+      "description": "<p>Tus ojos brillan de color rosa y azul mientras pronuncias palabras de poder prohibidas. El velo que todo lo tapa desaparece, y ves el destino interconectado de todas las cosas durante unos fugaces momentos. Puedes elegir un objetivo al que puedes ver con claridad, y el DJ deberá revelarte de éste la Motivación, la Ambición a corto plazo y la Ambición a largo plazo.</p>\n<p><strong>Saber:</strong> Los objetivos de los hechizos del Saber de Tzeentch se ven desgarrados por la magia transformadora del Caos. Quienes quedan afectados por un hechizo del Saber de Tzeentch deben hacer un Chequeo <strong>Desafiante (+0)</strong> de <strong>Aguante</strong> o sufrir +1 Punto de Corrupción. Si pasan el Chequeo, obtienen +1 Punto de Fortuna, que pueden usar de forma normal. Así son los caprichos de Tzeentch.</p>"
+    },
+    "The Flickering Flames of Fickle Fate": {
+      "name": "Las Titilantes llamas del voluble destino",
+      "description": "<p>Conjuras un torrente de fuego mágico que escupe, cruje y arde sin combustible material. El fuego no tiene propiedades físicas y no quema, daña ni emite calor. Todas las criaturas vivas y los demonios que ven el fuego pueden repetir una vez cada Chequeo, como si hubieran gastado un Punto de Fortuna, aunque lo hayan pasado. Cada vez que lo hacen, deben realizar a continuación un Chequeo <strong>Desafiante (+0)</strong> de <strong>Aguante</strong> o sufrir +1 Punto de Corrupción. Los Personajes que llevan la @UUID[Compendium.wfrp4e-eis.items.CHqfy42NcbhTWM32]{Marca de Tzeentch} son inmunes a esta Corrupción. El Chequeo para resistirse a sufrir la Corrupción no se puede repetir usando el efecto de este hechizo.</p>\n<p><strong>Saber:</strong> Los objetivos de los hechizos del Saber de Tzeentch se ven desgarrados por la magia transformadora del Caos. Quienes quedan afectados por un hechizo del Saber de Tzeentch deben hacer un Chequeo <strong>Desafiante (+0)</strong> de <strong>Aguante</strong> o sufrir +1 Punto de Corrupción. Si pasan el Chequeo, obtienen +1 Punto de Fortuna, que pueden usar de forma normal. Así son los caprichos de Tzeentch.</p>"
+    },
+    "Tzeentch's Firestorm": {
+      "name": "Tormenta de fuego de Tzeentch",
+      "description": "<p>Estalla una tormenta arremolinada de fuego arcano púrpura que ha convocado tu salmo profano. Tormenta de Fuego de Tzeentch es un <em>proyectil mágico</em>. Quienes resultan impactados sufren +9 Daño y +1 Estado de @Condition[Ardiendo].</p>\n<p>Si un Personaje de tamaño pequeño o grande queda reducido a 0 heridas por este hechizo o mientras sufre el Estado @Condition[Ardiendo] causado por Tormenta de Fuego de Tzeentch, tira [[/r 1d10]]. Con un resultado de 9, dos @UUID[Compendium.wfrp4e-eis.actors.iDy8SDTwJSlCzZMl]{Horrores rosas} se abren paso por el cuerpo del objetivo, que arde debido a la magia, y matan al pobre desafortunado.</p>\n<p><strong>Saber:</strong> Los objetivos de los hechizos del Saber de Tzeentch se ven desgarrados por la magia transformadora del Caos. Quienes quedan afectados por un hechizo del Saber de Tzeentch deben hacer un Chequeo <strong>Desafiante (+0)</strong> de <strong>Aguante</strong> o sufrir +1 Punto de Corrupción. Si pasan el Chequeo, obtienen +1 Punto de Fortuna, que pueden usar de forma normal. Así son los caprichos de Tzeentch.</p>"
+    },
+    "Transformation of Tzeentch": {
+      "name": "Transformación de Tzeentch",
+      "description": "<p>Cuando das la orden, lazos de fuego aethyríco surgen del suelo y envuelven al objetivo en un capullo de energía mágica. Los afectados sufren el Estado @Condition[Tumbado] y quedan indefensos durante el tiempo que dura el hechizo. Cuando Transformación de Tzeentch termina, el objetivo debe realizar un Chequeo <strong>Desafiante (+0)</strong> de <strong>Aguante</strong>, enfrentado a tu Habilidad de <strong>Hablar idioma (Magia)</strong>. Si pierde, sufre +1 Punto de Corrupción, +1 Punto adicional por cada NE por el que ha perdido.</p>\n<p><strong>Saber:</strong> Los objetivos de los hechizos del Saber de Tzeentch se ven desgarrados por la magia transformadora del Caos. Quienes quedan afectados por un hechizo del Saber de Tzeentch deben hacer un Chequeo <strong>Desafiante (+0)</strong> de <strong>Aguante</strong> o sufrir +1 Punto de Corrupción. Si pasan el Chequeo, obtienen +1 Punto de Fortuna, que pueden usar de forma normal. Así son los caprichos de Tzeentch.</p>"
+    },
+    "Mark of Tzeentch": {
+      "name": "Marca de Tzeentch",
+      "description": "<p>El Señor del Cambio ha señalado a esta criatura con una marca física que proclama que es una pieza importante en el gran juego. Esta criatura obtiene [[/r 1d10/3]] mutaciones (redondea hacia arriba), que se alternan entre mentales y físicas. Esta criatura obtiene el Talento @UUID[Compendium.wfrp4e-core.items.sYbgpSnRqSZWgwFP]{Etiqueta (Seguidores de Tzeentch)} y está sujeta a Animosidad hacia los seguidores declarados de Nurgle. La criatura está a su vez sujeta a la Animosidad de los seguidores de Nurgle si la Marca de Tzeentch es visible. Además, tiene la opción de adquirir los Talentos siguientes como si fueran avances de Carrera: @UUID[Compendium.wfrp4e-core.items.1IZWRr7BYOIcqPlQ]{Afinidad con el Aethyr}, @UUID[Compendium.wfrp4e-core.items.qdMbxW09FUoYBzmB]{¡Brujo!}, @UUID[Compendium.wfrp4e-core.items.OEjUvJKi0xmBwbS2]{Clarividencia}, @UUID[Compendium.wfrp4e-core.items.BYChSVfMG004eflQ]{Dicción instintiva}, @UUID[Compendium.wfrp4e-core.items.F2EiuAc6IpaGd4J7]{Hechicero de guerra}, @UUID[Compendium.wfrp4e-core.items.3O9clK7LGyuLTHPW]{Magia arcana (cualquiera)}, @UUID[Compendium.wfrp4e-core.items.hiU7vhBOVpVI8c7C]{Magia del Caos (Tzeentch)}, @UUID[Compendium.wfrp4e-core.items.mdPGZsn2396dEpOf]{Magia menor}, @UUID[Compendium.wfrp4e-core.items.9sMAf0xmehjEmUao]{Manos rápidas} y @UUID[Compendium.wfrp4e-core.items.6w30u0VPsAicrqb5]{Sentir magia} a los costes normales de PX.</p>",
+      "effects": [
+        {
+          "name": "Marca de Tzeentch",
+          "scriptData": [
+            {
+              "label": "Marca de Tzeentch"
+            }
+          ]
+        }
+      ]
+    },
+    "Split": {
+      "name": "División",
+      "description": "<p>Si la criatura sufre una herida crítica, o pierde todas las Heridas, se parte por la mitad y la reemplazan por dos @UUID[Compendium.wfrp4e-eis.actors.cLOGeMqUty61nYB9]{Horrores Azules}, ambos sin heridas.</p>"
+    },
+    "Tzeentch's Fire": {
+      "name": "Fuego de Tzeentch",
+      "description": "<p>La criatura está envuelta en fuego de Tzeentch , que le sale con frecuencia de la punta de los dedos, la boca o los ardientes ojos. Todas las criaturas del mismo tipo (por ejemplo, todos los Horrores Rosas o todos los Horrores Azules) que haya alrededor juntan su poder. Se elige a un Horror para que sea el foco (lanzador), y puede lanzar 1 hechizo de Tzeentch durante el Asalto. Los Horrores Rosas lanzan el hechizo @UUID[Compendium.wfrp4e-eis.items.sklbZU3K8ogeu3mC]{Fuego rosa de Tzeentch}; otras criaturas lanzan el hechizo @UUID[Compendium.wfrp4e-eis.items.wY6JAt76eArBroYC]{Fuego azul de Tzeentch}. Cada criatura adicional que sea del mismo tipo y tenga Fuego de Tzeentch añadirá +1 NE, hasta un máximo de +9 NE.</p>"
+    },
+    "Shapeshifter": {
+      "name": "Cambiaformas",
+      "description": "<p>Esta criatura puede cambiar a voluntad entre su forma normal y la de la criatura indicada. La transformación dura un Asalto completo, durante el cual no son posibles ni Movimientos ni Acciones. Cuando la luna Mannslieb está llena, la criatura debe hacer un Chequeo <strong>Normal (+20)</strong> de <strong>Voluntad</strong> al atardecer para evitar transformarse de manera espontánea. Las criaturas que obtienen este Rasgo, al principio tienen una mayor dificultad en este Chequeo, a discreción del DJ. Cuando se transforma, la criatura conserva los atributos mentales (<strong>I</strong>, <strong>V</strong> y <strong>Em</strong>), pero el resto de su perfil pasa a ser el de la criatura en la que se convierte.</p>"
+    },
+    "Absorb": {
+      "name": "Absorber",
+      "description": "<p>Al final del Asalto, si la criatura tiene una Ventaja mayor que todos los oponentes enzarzados en combate, absorberá a un oponente de igual o menor tamaño. Una víctima absorbida sufre un número de Estados de @Condition[Enmarañado] igual al <strong>Bonificador por Fuerza</strong> de la criatura y cuenta como si estuviera @UUID[Compendium.wfrp4e-core.journals.NS3YGlJQxwTggjRX.JournalEntryPage.wmA76Q2zJJ9HrkvA#presa]{Apresado}. Una víctima absorbida pierde el Bonificador por Fuerza de la criatura en Heridas al final de cada Asalto; los puntos de Armadura o el Bonificador por Resistencia no reducen esta pérdida. La criatura se ‘cura’ el mismo número de Heridas. Si una víctima absorbida muere, la criatura se retira para digerir el cadáver suspendido durante los próximos días. Cualquier ataque que acierte a la criatura inflige una cantidad igual de daño a la víctima absorbida.</p>"
+    },
+    "Amorphous": {
+      "name": "Amorfo",
+      "description": "<p>La criatura es una masa amorfa. Reduce a la mitad las Heridas sufridas por daño que no sea por fuego, frío o magia. No le afectan las Heridas críticas y sólo se puede destruir al ser reducida a 0 Heridas por frío extremo, fuego o magia. Si llega 0 Heridas por otros medios, se quedará en estado de latencia durante [[/r 1d10]] Asaltos y luego regenerará +1 Herida. Las criaturas amorfas huyen espantadas de las fuentes extremas de calor o de frío.</p>"
+    },
+    "Blighted": {
+      "name": "Apestado",
+      "specification": "Enfermedad",
+      "description": "<p>La criatura es portadora de la enfermedad indicada y puede transmitirla con tocar a alguien. De ser tocada, la víctima debe comprobar si contrae la enfermedad, pero el Chequeo es 2 pasos más complicado de lo normal. Si la enfermedad se contrae, la incubación cambia a ‘instantánea’.</p>"
+    },
+    "Fleshthief": {
+      "name": "Ladrón de cuerpos",
+      "description": "<p>La criatura, que debe tener el Rasgo @UUID[Compendium.wfrp4e-core.items.v3uzEthcq0JRar0J]{Demoníaco}, puede ponerse el cuerpo de cualquier humano al que mate como si fuera un traje. Además, puede personificar a la perfección al individuo cuyo cuerpo lleva y es capaz de imitar voces y gestos con una habilidad extraordinaria. Preparar el cuerpo cuesta [[/r 1d10]] Asaltos, después de los cuales puede ‘ponerse’ o ‘quitarse’ a voluntad, lo que le cuesta 1 Asalto. Una vez preparado, el cuerpo sólo se pudre en caso de que la criatura muera, pero se le puede dañar por medios normales. Si la criatura lo desea, puede liberarse de un traje de carne desgastado de una manera horrible, lo que le concede el rasgo @UUID[Compendium.wfrp4e-core.items.kJNAY1YRaCy9IgmT]{Terror} 1 durante 1 Asalto, pero también destroza el ‘traje’, lo que significa que no lo podrá volver a usar.</p>\n<p>Quienes conocían a la persona de verdad pueden hacer un Chequeo <strong>Fútil (-40)</strong> de <strong>Intuición</strong> para detectar que algo no va bien, aunque no sabrán exactamente qué.</p>"
+    },
+    "Mindless": {
+      "name": "Sin cerebro",
+      "description": "<p>La criatura carece de cerebro y vive sólo por instinto básico o compulsión mágica. No tiene características como <strong>Iniciativa</strong>, <strong>Inteligencia</strong>, <strong>Voluntad</strong> o <strong>Empatía</strong> y nunca necesita hacer Chequeos por ellas. Para calcular las Heridas, utiliza su Bonificador por Fuerza siempre que se requiera el Bonificador por Voluntad. Como no tiene la característica de Iniciativa, su turno siempre es al final de cada Asalto.</p>",
+      "effects": [
+        {
+          "name": "Sin cerebro",
+          "scriptData": [
+            {
+              "label": "Sin cerebro"
+            }
+          ]
+        }
+      ]
+    },
+    "Dog": {
+      "name": "Perro",
+      "description": "<p>@UUID[Actor.iaVpUaCKx1qEYkq1]{Perro}</p>\n<p>Capacidad de carga: 8</p>"
+    },
+    "Donkey or Mule": {
+      "name": "Burro o Mula",
+      "description": "<p>@UUID[Actor.lOO8BfzQfP7omFe0]{Burro} o @UUID[Actor.jd77heDEL6v768Nd]{Mula}</p>\n<p>Capacidad de carga: 14</p>"
+    },
+    "Draught Horse": {
+      "name": "Caballo de tiro",
+      "description": "<p>@UUID[Actor.guaFC5d5WK8ExDhk]{Caballo de tiro}</p>\n<p>Capacidad de carga: 20</p>"
+    },
+    "Heavy Draught Horse": {
+      "name": "Caballo percherón",
+      "description": "<p>@UUID[Actor.PZiW5RRL0sqmGjaL]{Caballo percherón}</p>\n<p>Capacidad de carga: 30</p>"
+    },
+    "Heavy Warhorse": {
+      "name": "Caballo de guerra pesado",
+      "description": "<p>@UUID[Actor.NJxgxApkhZixXYEj]{Caballo de guerra pesado} (Destrero)</p>\n<p>Capacidad de carga: 20</p>",
+      "gmdescription": "<p>Este precio puede duplicarse o triplicarse en tiempos de tensión o de guerra, en que nadie quiere desprenderse del material militar.</p>"
+    },
+    "Light Warhorse": {
+      "name": "Caballo de guerra ligero",
+      "description": "<p>@UUID[Compendium.wfrp4e-eis.actors.QhEFgUrPzF2NNWoS]{Caballo de guerra ligero} (Corcel)</p>\n<p>Capacidad de carga: 18</p>",
+      "gmdescription": "<p>Este precio puede duplicarse o triplicarse en tiempos de \ntensión o de guerra, en que nadie quiere desprenderse del material \nmilitar.</p>"
+    },
+    "Ox": {
+      "name": "Buey",
+      "description": "<p>@UUID[Actor.l7G0hmzl6VMnAXtL]{Buey}</p>\n<p>Capacidad de carga: 30</p>"
+    },
+    "Pony": {
+      "name": "Poni",
+      "description": "<p>@UUID[Actor.12ARFrc7Dokxc72q]{Pony}</p>\n<p>Capacidad de carga: 14</p>"
+    },
+    "Riding Horse": {
+      "name": "Caballo de monta",
+      "description": "<p>@UUID[Actor.4DTXl9hXbWlfLa5J]{Riding Horse} (Palafrén)</p>\n<p>Capacidad de carga: 16</p>"
+    },
+    "Ring of Opsianon": {
+      "name": "Anillo de Opsianon",
+      "description": "<p>Gideon lleva un anillo de oro engastado con una piedra de obsidiana negra facetada.</p>",
+      "gmdescription": "<p>Supuestamente, el anillo se forjó hace casi trescientos años, varias décadas antes de que se fundaran las Escuelas de la Magia. Su creador, Kurtis Krammovic, quería ocultar la naturaleza mágica de la joya a quienes que no simpatizaban con los brujos en aquellos tiempos oscuros. La Gran Astromántica –Filonia Perls de la Orden Azul– lo adquirió en Marienburgo en 2498 IC, en una subasta exclusiva de artefactos mágicos. Teugen se lo robó a ésta hace cinco años. Gideon decía que lo necesitaba para estabilizar su forma física cuando no estaba en una piel robada. Además, necesitaba el anillo para llevar a cabo el ritual que ‘salvaría el alma de Teugen’. Perls, una hechicera de la corte que les lee el futuro a nobles importantes en Altdorf, lo quiere de vuelta y ofrece una recompensa de @Credit[10co mode=split]{10co} por la devolución.</p>\n<h3>Rules</h3>\n<p>Cualquier demonio que lleve el anillo puede ignorar el Rasgo de criatura @UUID[Compendium.wfrp4e-core.items.D0ImWEIMSDgElsnl]{Inestable} y es imposible detectarlo mediante @UUID[Compendium.wfrp4e-core.items.OEjUvJKi0xmBwbS2]{Clarividencia}. Además, como la magia de los demonios no se puede detectar con Clarividencia hasta que se lanza, otros Personajes no pueden disipar sus hechizos.</p>\n<p>En vez de lo anterior, los mortales que llevan el anillo ganan todos los efectos del Hechizo @UUID[Compendium.wfrp4e-core.items.T9cEYAUhqBiTxrp2]{Aura mundana}.</p>\n<p>Por desgracia, como el anillo ha estado muchos años impregnado de las energías Demoníacas de Gideon, es peligroso. Por cada mes en que un mortal lo lleve puesto, deberá realizar un Chequeo para resistir una @Corruption[minor]{Exposición menor a la Corrupción}. Esta mácula sólo se puede eliminar mediante raros rituales y hechizos de la Orden de la Luz.</p>"
+    },
+    "Multiple Legs": {
+      "name": "Piernas múltiples",
+      "description": "<p>+1 Movimiento. No puedes ocultar esta mutación.</p>",
+      "effects": [
+        {
+          "name": "Piernas múltiples",
+          "scriptData": [
+            {
+              "label": "Piernas múltiples"
+            }
+          ]
+        }
+      ]
+    },
+    "Patchy Feathers": {
+      "name": "Plumas irregulares",
+      "description": "<p>Tira dos veces en la @Table[hitloc] para ver dónde</p>",
+      "effects": [
+        {
+          "name": "Plumas irregulares",
+          "scriptData": [
+            {
+              "label": "Plumas irregulares"
+            }
+          ]
+        }
+      ]
+    },
+    "Emaciated": {
+      "name": "Demacrado",
+      "description": "<p>-10 a Fuerza, +5 a Agilidad</p>",
+      "effects": [
+        {
+          "name": "Demacrado",
+          "scriptData": [
+            {
+              "label": "Demacrado"
+            }
+          ]
+        }
+      ]
+    },
+    "Webbed Feet": {
+      "name": "Pies palmeados",
+      "description": "<p>Obtienes el Rasgo @UUID[Compendium.wfrp4e-core.items.sJ3yX1kvzu2hgNq5]{Anfibio}. Sólo puedes ocultar esta mutación con ropa.</p>",
+      "effects": [
+        {
+          "name": "Pies palmeados",
+          "scriptData": [
+            {
+              "label": "Pies palmeados"
+            }
+          ]
+        }
+      ]
+    },
+    "Furred Skin": {
+      "name": "Piel peluda",
+      "descrption": "<p>Ya no sufres más los efectos de la Exposición a los climas fríos. Los efectos de la Exposición a climas cálidos se doblan. No puedes ocultar esta mutación.</p>",
+      "effects": [
+        {
+          "name": "Piel peluda",
+          "scriptData": [
+            {
+              "label": "Piel peluda"
+            }
+          ]
+        }
+      ]
+    },
+    "Suffused with Magic": {
+      "name": "Impregnado de magia",
+      "description": "<p>Todos los hechizos que se lanzan en un radio de tantas yardas como tu Bonificador por Voluntad obtienen +1 NE a lanzar. Esta bonificación sólo se podrá utilizar una vez por lanzamiento, sin importar cuántos personajes con este Talento se encuentren en las inmediaciones.</p>",
+      "effects": [
+        {
+          "name": "Impregnado de magia",
+          "scriptData": []
+        },
+        {
+          "name": "Impregnado de magia",
+          "scriptData": []
+        }
+      ]
+    },
+    "Rat Head": {
+      "name": "Cabeza de Rata",
+      "description": "<p>Gana los Rasgos de criatura @UUID[Compendium.wfrp4e-core.items.pLW9SVX0TVTYPiPv]{Mordisco +4} y @UUID[Compendium.wfrp4e-core.items.V0c3qBU1CMm8bmsW]{Infectado}. No puedes ocultar esta mutación.</p>",
+      "effects": [
+        {
+          "name": "Cabeza de Rata",
+          "scriptData": [
+            {
+              "label": "Cabeza de Rata"
+            }
+          ]
+        }
+      ]
+    },
+    "Mindless Wandering": {
+      "name": "Vacías divagaciones",
+      "description": "<p>Obtienes el Rasgo @UUID[Compendium.wfrp4e-core.items.9GNpAqgsKzxZKJpp]{Bobo} cuando estás solo. -10 a Inteligencia, +10 a Voluntad.</p>",
+      "effects": [
+        {
+          "name": "Vacías divagaciones",
+          "scriptData": [
+            {
+              "label": "Vacías divagaciones"
+            }
+          ]
+        }
+      ]
+    },
+    "Burning Skin": {
+      "name": "Piel ardiente",
+      "description": "<p>Las criaturas y objetos que toques deben hacer un <strong>Chequeo</strong> de <strong>Atletismo</strong> o sufrir 1 Estado @Condition[Ardiendo]. No puedes ocultar esta mutación.</p>",
+      "effects": [
+        {
+          "name": "Piel ardiente",
+          "scriptData": [
+            {
+              "label": "Piel ardiente"
+            }
+          ]
+        }
+      ]
+    },
+    "Wolf Head": {
+      "name": "Cabeza de Lobo",
+      "description": "<p>+1 Punto de Armadura a la cabeza. Gana el Rasgo @UUID[Compendium.wfrp4e-core.items.pLW9SVX0TVTYPiPv]{Mordisco +6}. Gana el Talento @UUID[Compendium.wfrp4e-core.items.9h82z72XGo9tfgQS]{Sentidos desarrollados (Olfato)}. No puedes ocultar esta mutación.</p>",
+      "effects": [
+        {
+          "name": "Cabeza de Lobo",
+          "scriptData": [
+            {
+              "label": "Cabeza de Lobo"
+            }
+          ]
+        }
+      ]
+    },
+    "Cloud of Flies": {
+      "name": "Nube de moscas",
+      "description": "<p>Obtienes el rasgo @UUID[Compendium.wfrp4e-core.items.MVI0lXcg6vvtooAF]{Molesto}. No puedes ocultar esta mutación.</p>",
+      "effects": [
+        {
+          "name": "Nube de moscas",
+          "scriptData": [
+            {
+              "label": "Nube de moscas"
+            }
+          ]
+        }
+      ]
+    },
+    "Long Legs": {
+      "name": "Piernas largas",
+      "description": "<p>+2 a Movimiento. No puedes ocultar esta mutación.</p>",
+      "effects": [
+        {
+          "name": "Piernas largas",
+          "scriptData": [
+            {
+              "label": "Piernas largas"
+            }
+          ]
+        }
+      ]
+    },
+    "Disciple of Change": {
+      "name": "Discípulo del cambio",
+      "description": "<p>Cuando sufres una mutación, tira dos veces y elige uno de los dos resultados.</p>"
+    },
+    "Extra Mouth": {
+      "name": "Boca adicional",
+      "description": "<p>Tira en la tabla de @Table[hitloc]{Ubicación} para ver dónde. Sólo puedes ocultar esta mutación con ropa.</p>",
+      "effects": [
+        {
+          "name": "Boca adicional",
+          "scriptData": [
+            {
+              "label": "Boca adicional"
+            }
+          ]
+        }
+      ]
+    },
+    "Beyond Pain": {
+      "name": "Más allá del dolor",
+      "description": "<p>Obtienes el Rasgo @UUID[Compendium.wfrp4e-core.items.wMwSRDmgiF2IdCJr]{Sin dolor}</p>",
+      "effects": [
+        {
+          "name": "Más allá del dolor",
+          "scriptData": [
+            {
+              "label": "Más allá del dolor"
+            }
+          ]
+        }
+      ]
+    },
+    "Beaked Face": {
+      "name": "Cabeza con pico",
+      "description": "<p>Gana el Rasgo @UUID[Compendium.wfrp4e-core.items.pLW9SVX0TVTYPiPv]{Mordisco +3}. No puedes ocultar esta mutación.</p>",
+      "effects": [
+        {
+          "name": "Cabeza con pico",
+          "scriptData": [
+            {
+              "label": "Cabeza con pico"
+            }
+          ]
+        }
+      ]
+    },
+    "One Eye": {
+      "name": "Un solo ojo",
+      "description": "<p>-20 a HP. Sólo puedes ocultar esta mutación con ropa.</p>",
+      "effects": [
+        {
+          "name": "Un solo ojo",
+          "scriptData": [
+            {
+              "label": "Un solo ojo"
+            }
+          ]
+        }
+      ]
+    },
+    "Long Neck": {
+      "name": "Cuello largo",
+      "description": "<p>La mitad de los impactos al cuerpo son a la cabeza. No puedes ocultar esta mutación.</p>",
+      "effects": [
+        {
+          "name": "Cuello largo",
+          "scriptData": [
+            {
+              "label": "Cuello largo"
+            }
+          ]
+        }
+      ]
+    },
+    "Unusual Skin": {
+      "name": "Piel inusual",
+      "description": "<p>Color o textura extrañas: anaranjada, rayada, manchada, verrugosa, etc. No puedes ocultar esta mutación.</p>",
+      "effects": [
+        {
+          "name": "Piel inusual",
+          "scriptData": [
+            {
+              "label": "Piel inusual"
+            }
+          ]
+        }
+      ]
+    },
+    "Tzeentch's Blessing": {
+      "name": "Bendición de Tzeentch",
+      "description": "<p>Tzeentch, el Dios del Caos de la Magia, te ha regalado un parásito mental vermiforme. Cuando adquieres este Talento, un solo Hechizo se libera en tu cabeza, donde se aloja, y te susurra a veces mientras duermes. El hechizo puede ser elegido de cualquier saber de la Magia Cromática.</p>\n<p>Después podrás adquirir un hechizo de Magia Cromática más a razón de 100 PX por cada hechizo que hayas memorizado del Saber de Tzeentch.</p>",
+      "effects": [
+        {
+          "name": "Bendición de Tzeentch",
+          "scriptData": []
+        }
+      ]
+    },
+    "Short Legs": {
+      "name": "Piernas cortas",
+      "description": "<p>-1 a Movimiento. No puedes ocultar esta mutación.</p>",
+      "effects": [
+        {
+          "name": "Piernas cortas",
+          "scriptData": [
+            {
+              "label": "Piernas cortas"
+            }
+          ]
+        }
+      ]
+    },
+    "Monstrous Paranoia": {
+      "name": "Paranoia monstruosa",
+      "description": "<p>Obtienes el Rasgo @UUID[Compendium.wfrp4e-core.items.IPKRMGry6WotuS1G]{Asustadizo}</p>",
+      "effects": [
+        {
+          "name": "Paranoia monstruosa",
+          "scriptData": [
+            {
+              "label": "Paranoia monstruosa"
+            }
+          ]
+        }
+      ]
+    },
+    "Ravenous Hunger": {
+      "name": "Hambre voraz",
+      "description": "<p>Obtienes el Rasgo @UUID[Compendium.wfrp4e-core.items.xneBqGOs1QS7kfUr]{Hambriento}</p>",
+      "effects": [
+        {
+          "name": "Hambre voraz",
+          "scriptData": [
+            {
+              "label": "Hambre voraz"
+            }
+          ]
+        }
+      ]
+    },
+    "Pointed Head": {
+      "name": "Cabeza puntiaguda",
+      "description": "<p>Obtienes el Rasgo @UUID[Compendium.wfrp4e-core.items.9GNpAqgsKzxZKJpp]{Bobo}. No puedes llevar casco. No puedes ocultar esta mutación.</p>",
+      "effects": [
+        {
+          "name": "Cabeza puntiaguda",
+          "scriptData": [
+            {
+              "label": "Cabeza puntiaguda"
+            }
+          ]
+        }
+      ]
+    },
+    "Chosen of Tzeentch": {
+      "name": "Elegido de Tzeentch",
+      "skills": [
+        "Animar (Narración)",
+        "Cuerpo a cuerpo (Básica)",
+        "Intimidar",
+        "Mando"
+      ],
+      "talents": [
+        "Discípulo del cambio",
+        "Disfraz",
+        "Orador maestro",
+        "Magia Arcana (Demonología)"
+      ],
+      "trappings": [
+        "Célula de sectarios",
+        "Daga de sacrificio",
+        "Objeto mágico"
+      ],
+      "description": "<p>@UUID[Compendium.wfrp4e-eis.journals.IZVgB7zmTm4rK2yJ.JournalEntryPage.okL3l1pH269uRycI]{Magus sectario de Tzeentch}</p>",
+      "careergroup": "Magus sectario de Tzeentch"
+    },
+    "Cult Magus": {
+      "name": "Magus de la secta",
+      "skills": [
+        "Aguante",
+        "Carisma",
+        "Esquivar",
+        "Frialdad",
+        "Investigar",
+        "Prestidigitación"
+      ],
+      "talents": [
+        "Doble vida",
+        "Magia del Caos (Tzeentch)",
+        "Orador experto",
+        "Orador"
+      ],
+      "trappings": [
+        "Grimorio del Caos",
+        "Planos",
+        "Vestiduras de ritual de buena calidad"
+      ],
+      "description": "<p>@UUID[Compendium.wfrp4e-eis.journals.IZVgB7zmTm4rK2yJ.JournalEntryPage.okL3l1pH269uRycI]{Magus sectario de Tzeentch}</p>",
+      "careergroup": "Magus sectario de Tzeentch"
+    },
+    "Cult Acolyte": {
+      "name": "Acólito de la secta",
+      "skills": [
+        "Animar (Actuar)",
+        "Canalización (Dhar)",
+        "Hablar idioma (Magia)",
+        "Intuición",
+        "Lengua secreta (Sectario)",
+        "Movimiento silencioso (Urbano)",
+        "Percepción",
+        "Sabiduría académica (Tzeentch)"
+      ],
+      "talents": [
+        "Bendición de Tzeentch",
+        "Identidad secreta",
+        "Magia menor",
+        "Sentir magia",
+        "Sin importancia"
+      ],
+      "trappings": [
+        "Insignia de la secta",
+        "Tatuaje secreto",
+        "Vestiduras de ritual"
+      ],
+      "description": "<p>@UUID[Compendium.wfrp4e-eis.journals.IZVgB7zmTm4rK2yJ.JournalEntryPage.okL3l1pH269uRycI]{Magus sectario de Tzeentch}</p>",
+      "careergroup": "Magus sectario de Tzeentch"
+    },
+    "Master Magus": {
+      "name": "Magus maestro",
+      "skills": [
+        "Hablar idioma (Lengua oscura)",
+        "Sabiduría académica (Cualquiera)"
+      ],
+      "talents": [
+        "Aterrador",
+        "Celo ferviente",
+        "Presencia imponente",
+        "Sabio (Tzeentch)"
+      ],
+      "trappings": [
+        "Destino terrible",
+        "Secta del caos"
+      ],
+      "description": "<p>@UUID[Compendium.wfrp4e-eis.journals.IZVgB7zmTm4rK2yJ.JournalEntryPage.okL3l1pH269uRycI]{Magus sectario de Tzeentch}</p>",
+      "careergroup": "Magus sectario de Tzeentch"
+    },
+    "Spiked Skin": {
+      "name": "Piel con púas",
+      "description": "<p>No puedes llevar armadura. +1 Punto de Armadura en todas las ubicaciones. Obtienes 1 Ataque gratuito (Rasgo @UUID[Compendium.wfrp4e-core.items.AtpAudHA4ybXVlWM]{Arma +4}) cuando Cargas. No puedes ocultar esta mutación.</p>",
+      "effects": [
+        {
+          "name": "Piel con púas",
+          "scriptData": [
+            {
+              "label": "Piel con púas"
+            }
+          ]
+        }
+      ]
+    },
+    "Extra Leg Joints": {
+      "name": "Articulaciones adicionales en las piernas",
+      "description": "<p>+5 a Agilidad. No puedes ocultar esta mutación.</p>",
+      "effects": [
+        {
+          "name": "Articulaciones adicionales en las piernas",
+          "scriptData": [
+            {
+              "label": "Articulaciones adicionales en las piernas"
+            }
+          ]
+        }
+      ]
+    },
+    "Headless": {
+      "name": "Acefalia",
+      "description": "<p>Obtienes el Rasgo @UUID[Compendium.wfrp4e-core.items.pTorrE0l3VybAbtn]{Miedo 2}. Los impactos en la cabeza cuentan como fallos. No puedes ocultar esta mutación.</p>",
+      "effects": [
+        {
+          "name": "Acefalia",
+          "scriptData": [
+            {
+              "label": "Acefalia"
+            }
+          ]
+        }
+      ]
+    },
+    "Shifting Colours": {
+      "name": "Colores cambiantes",
+      "description": "<p>Obtienes el Rasgo @UUID[Compendium.wfrp4e-core.items.MVI0lXcg6vvtooAF]{Molesto}. No puedes ocultar esta mutación.</p>",
+      "effects": [
+        {
+          "name": "Colores cambiantes",
+          "scriptData": [
+            {
+              "label": "Colores cambiantes"
+            }
+          ]
+        }
+      ]
+    },
+    "Blank Face": {
+      "name": "Cara sin facciones",
+      "description": "<p>Obtienes el Rasgo @UUID[Compendium.wfrp4e-core.items.pTorrE0l3VybAbtn]{Miedo 2}. Esta mutación sólo se puede ocultar con ropa.</p>",
+      "effects": [
+        {
+          "name": "Cara sin facciones",
+          "scriptData": [
+            {
+              "label": "Cara sin facciones"
+            }
+          ]
+        }
+      ]
+    },
+    "Pin Head": {
+      "name": "Microcefalia",
+      "description": "<p>Obtienes el Rasgo @UUID[Compendium.wfrp4e-core.items.9GNpAqgsKzxZKJpp]{Bobo}. No puedes ocultar esta mutación.</p>",
+      "effects": [
+        {
+          "name": "Microcefalia",
+          "scriptData": [
+            {
+              "label": "Microcefalia"
+            }
+          ]
+        }
+      ]
+    },
+    "Whiskered Snout": {
+      "name": "Hocico bigotudo",
+      "description": "<p>+10 a Rastrear. Sólo puedes ocultar esta mutación con ropa.</p>",
+      "effects": [
+        {
+          "name": "Hocico bigotudo",
+          "scriptData": [
+            {
+              "label": "Hocico bigotudo"
+            }
+          ]
+        }
+      ]
+    },
+    "Thorny Scales": {
+      "name": "Escamas espinosas",
+      "description": "<p>+1 Punto de Armadura en todas las ubicaciones. Sólo puedes ocultar esta mutación con ropa.</p>",
+      "effects": [
+        {
+          "name": "Escamas espinosas",
+          "scriptData": [
+            {
+              "label": "Escamas espinosas"
+            }
+          ]
+        }
+      ]
+    },
+    "Fantasist": {
+      "name": "Soñador",
+      "description": "<p>-5 a Iniciativa, -5 a Voluntad.</p>",
+      "effects": [
+        {
+          "name": "Soñador",
+          "scriptData": [
+            {
+              "label": "Soñador"
+            }
+          ]
+        }
+      ]
+    },
+    "Deafening Cry": {
+      "name": "Grito ensordecedor",
+      "description": "<p>Ganas el Rasgo @UUID[Compendium.wfrp4e-core.items.MVI0lXcg6vvtooAF]{Molesto}</p>",
+      "effects": [
+        {
+          "name": "Grito ensordecedor",
+          "scriptData": [
+            {
+              "label": "Grito ensordecedor"
+            }
+          ]
+        }
+      ]
+    },
+    "Carapace": {
+      "name": "Caparazón",
+      "description": "<p>+1 Punto de Armadura en dos @Table[hitloc]{Ubicaciones} al azar.</p>",
+      "effects": [
+        {
+          "name": "Caparazón",
+          "scriptData": [
+            {
+              "label": "Caparazón"
+            }
+          ]
+        }
+      ]
+    },
+    "Blasphemous Soul": {
+      "name": "Alma blasfema",
+      "description": "<p>Obtienes el Rasgo @UUID[Compendium.wfrp4e-core.items.aE3pyW20Orvdjzj0]{Odio} (Religión)</p>",
+      "effects": [
+        {
+          "name": "Alma blasfema",
+          "scriptData": [
+            {
+              "label": "Alma blasfema"
+            }
+          ]
+        }
+      ]
+    },
+    "Giant Spider Head": {
+      "name": "Cabeza de araña gigante",
+      "description": "<p>Gana los Rasgos de criatura @UUID[Compendium.wfrp4e-core.items.pLW9SVX0TVTYPiPv]{Mordisco +3} y @UUID[Compendium.wfrp4e-core.items.gFkRm9wS65qe18Xv]{Veneno (Normal)}. No puedes ocultar esta mutación.</p>",
+      "effects": [
+        {
+          "name": "Cabeza de araña gigante",
+          "scriptData": [
+            {
+              "label": "Cabeza de araña gigante"
+            }
+          ]
+        }
+      ]
+    },
+    "Thrill Seeker": {
+      "name": "Buscador de emociones",
+      "description": "<p>+10 a Voluntad, -10 a Iniciativa</p>",
+      "effects": [
+        {
+          "name": "Buscador de emociones",
+          "scriptData": [
+            {
+              "label": "Buscador de emociones"
+            }
+          ]
+        }
+      ]
+    },
+    "Long Arms": {
+      "name": "Brazos largos",
+      "description": "<p>Si tu oponente y tú tenéis armas del mismo Alcance, tu arma cuenta como más larga. Sólo puedes ocultar esta mutación con ropa.</p>",
+      "effects": [
+        {
+          "name": "Brazos largos",
+          "scriptData": [
+            {
+              "label": "Brazos largos"
+            }
+          ]
+        }
+      ]
+    },
+    "Pneumonia": {
+      "name": "Neumonía",
+      "description": "<p>Se trata de una acumulación de líquido en los pulmones debido a otras enfermedades que causan inflamación, fiebre y a veces incluso la muerte. La neumonía se conoce coloquialmente como el 'Traqueteo de Morr', llamado así por el escalofriante ruido entrecortado que se produce cuando el infectado intenta respirar profundamente.</p>\n<p>Un Personaje con neumonía debe tener éxito en un Chequeo <strong>Desafiante (+0)</strong> de <strong>Aguante</strong> todos los días en que hace un esfuerzo, ya se trate de viajes, combate o cualquier otra actividad física. Un fallo hace que el síntoma de Fiebre se vuelva grave. Mientras que el síntoma @Symptom[Fiebre (grave)] está activo, se tiene que hacer el mismo Chequeo todos los días, de lo contrario la enfermedad también desarrolla el síntoma @Symptom[Plaga].</p>",
+      "contraction": "Ver Resfriado común",
+      "incubation": "Instantánea",
+      "symptoms": "Tos y estornudos, Fiebre, Malestar",
+      "effects": [
+        {
+          "name": "Fiebre",
+          "scriptData": [
+            {
+              "label": "Fiebre"
+            }
+          ]
+        },
+        {
+          "name": "Tos y estornudos",
+          "scriptData": [
+            {
+              "label": "Toses y estornudos"
+            }
+          ]
+        },
+        {
+          "name": "Malestar",
+          "scriptData": [
+            {
+              "label": "Malestar",
+              "script": "\n                    if (game.user.isUniqueGM)\n                    {\n                        let fatigued = args.actor.hasCondition(\"fatigued\")\n                        if (!fatigued)\n                        {\n                            args.actor.addCondition(\"fatigued\")\n                            ui.notifications.notify(\"Fatiga añadida a \" + args.actor.name + \" que no puede ser quitada hasta que el síntoma Malestar se haya ido.\")\n                        }\n                    }\n                    "
+            }
+          ]
+        }
+      ]
+    },
+    "Crested Head": {
+      "name": "Cabeza con cresta",
+      "description": "<p>Obtienes el Talento @UUID[Compendium.wfrp4e-core.items.6l3jvIAvrKxt0lA9]{Atractivo} cuando tratas con mutantes y hombres bestia. No puedes ocultar esta mutación.</p>",
+      "effects": [
+        {
+          "name": "Cabeza con cresta",
+          "scriptData": [
+            {
+              "label": "Cabeza con cresta"
+            }
+          ]
+        }
+      ]
+    },
+    "Multiple Arms": {
+      "name": "Brazos múltiples",
+      "description": "<p>Obtienes 1 Ataque gratuito.</p>",
+      "effects": [
+        {
+          "name": "Brazos múltiples",
+          "scriptData": [
+            {
+              "label": "Brazos múltiples"
+            }
+          ]
+        }
+      ]
+    },
+    "Blasted Mind": {
+      "name": "Mente marchita",
+      "description": "<p>Obtienes el Rasgo @UUID[Compendium.wfrp4e-core.items.IAWyzDfC286a9MPz]{Inmunidad a la Psicología} durante [[/r 1d10]] Asaltos cada vez que vayas a sufrir 1 Estado de @Condition[Quebrantado]. Después sufres [[/r 1d10]] Estados de Quebrantado.</p>",
+      "effects": [
+        {
+          "name": "Mente marchita",
+          "scriptData": [
+            {
+              "label": "Mente marchita"
+            }
+          ]
+        }
+      ]
+    },
+    "Dog Head": {
+      "name": "Cabeza de Perro",
+      "description": "<p>Gana el Rasgo @UUID[Compendium.wfrp4e-core.items.pLW9SVX0TVTYPiPv]{Mordisco +5}. No puedes ocultar esta mutación.</p>",
+      "effects": [
+        {
+          "name": "Cabeza de Perro",
+          "scriptData": [
+            {
+              "label": "Cabeza de Perro"
+            }
+          ]
+        }
+      ]
+    },
+    "Elastic Arms": {
+      "name": "Brazos elásticos",
+      "description": "<p>Puedes contar cualquier arma Cuerpo a cuerpo como si tuviera un Alcance de hasta 2 pasos más.</p>",
+      "effects": [
+        {
+          "name": "Brazos elásticos",
+          "scriptData": [
+            {
+              "label": "Brazos elásticos"
+            }
+          ]
+        }
+      ]
+    },
+    "Rearranged Face": {
+      "name": "Cara reorganizada",
+      "description": "<p>Gana el Rasgo @UUID[Compendium.wfrp4e-core.items.pTorrE0l3VybAbtn]{Miedo 1}. Los personajes que intentan determinar si estás mintiendo sufren un -20 a la Intuición. Sólo puedes ocultar esta mutación con ropa.</p>",
+      "effects": [
+        {
+          "name": "Cara reorganizada",
+          "scriptData": [
+            {
+              "label": "Cara reorganizada"
+            }
+          ]
+        }
+      ]
+    },
+    "Snake Head": {
+      "name": "Cabeza de serpiente",
+      "description": "<p>+1 Punto de Armadura en la cabeza. Obtienes los Rasgos de criatura @UUID[Compendium.wfrp4e-core.items.pLW9SVX0TVTYPiPv]{Mordisco +3} y @UUID[Compendium.wfrp4e-core.items.gFkRm9wS65qe18Xv]{Veneno (Normal)}. No puedes ocultar esta mutación.</p>",
+      "effects": [
+        {
+          "name": "Cabeza de serpiente",
+          "scriptData": [
+            {
+              "label": "Cabeza de serpiente"
+            }
+          ]
+        }
+      ]
+    },
+    "Distended Digits": {
+      "name": "Dedos distendidos",
+      "description": "+10 a Destreza. No puedes ocultar esta mutación.",
+      "effects": [
+        {
+          "name": "Dedos distendidos",
+          "scriptData": [
+            {
+              "label": "Dedos distendidos"
+            }
+          ]
+        }
+      ]
+    },
+    "Bear Head": {
+      "name": "Cabeza de Oso",
+      "description": "<p>+1 Armadura a la cabeza; Obtiene el Rasgo @UUID[Compendium.wfrp4e-core.items.pLW9SVX0TVTYPiPv]{Mordisco +9}. No puedes ocultar esta mutación.</p>",
+      "effects": [
+        {
+          "name": "Cabeza de Oso",
+          "scriptData": [
+            {
+              "label": "Cabeza de Oso"
+            }
+          ]
+        }
+      ]
+    },
+    "Fleshy Tentacle": {
+      "name": "Tentáculo carnoso",
+      "description": "<p>Obtienes el rasgo @UUID[Compendium.wfrp4e-core.items.4xF7M6ylIiGntekh]{Tentáculo 1}. Sólo puedes ocultar esta mutación con ropa.</p>",
+      "effects": [
+        {
+          "name": "Tentáculo carnoso",
+          "scriptData": [
+            {
+              "label": "Tentáculo carnoso"
+            }
+          ]
+        }
+      ]
+    },
+    "Foul Odour": {
+      "name": "Olor nauseabundo",
+      "description": "<p>Obtienes el Rasgo @UUID[Compendium.wfrp4e-core.items.MVI0lXcg6vvtooAF]{Molesto}</p>",
+      "effects": [
+        {
+          "name": "Olor nauseabundo",
+          "scriptData": [
+            {
+              "label": "Olor nauseabundo"
+            }
+          ]
+        }
+      ]
+    },
+    "Panicked Urgency": {
+      "name": "Pánico de urgencia",
+      "description": "<p>-10 a Voluntad, +10 a Agilidad</p>",
+      "effects": [
+        {
+          "name": "Pánico de urgencia",
+          "scriptData": [
+            {
+              "label": "Pánico de urgencia"
+            }
+          ]
+        }
+      ]
+    },
+    "Bird's Feet": {
+      "name": "Patas de pájaro",
+      "description": "<p>Obtienes el Rasgo @UUID[Compendium.wfrp4e-core.items.rOV2s6PQBBrhpMOv]{Arbóreo}. No puedes ocultar esta mutación.</p>",
+      "effects": [
+        {
+          "name": "Patas de pájaro",
+          "scriptData": [
+            {
+              "label": "Patas de pájaro"
+            }
+          ]
+        }
+      ]
+    },
+    "Common Cold": {
+      "name": "Resfriado común",
+      "description": "<p>Estacional, como el enrojecimiento de las hojas en otoño, el resfriado común es, sin embargo, una plaga constante del Viejo Mundo. Lo que comienza con toses y estornudos débiles puede convertirse en algo serio en cuestión de días, si no se atiende. Cada anciano del Imperio tiene sus propios remedios caseros y sus propios cuidados contra la enfermedad, así como recuerdos de su empeoramiento y de haberse llevado a amigos y seres queridos al abrazo de Morr.</p>\n<p>Los personajes que sufran un resfriado común debido a la Exposición a la lluvia o nieve y ya lo tengan, verán su duración incrementada [[/r 1d10]] días adicionales. Si un personaje supera los 14 días de duración, el resfriado común pasa a ser @UUID[Compendium.wfrp4e-eis.items.K74AhzejwTdzTc1w]{Neumonía}.</p>",
+      "contraction": "Si fracasas un Chequeo Desafiante (+0) de Aguante cuando te expones a los elementos, o cuando una persona infectada estornuda o tose en tus alrededores.",
+      "symptoms": "Tos y estornudos, Malestar",
+      "effects": [
+        {
+          "name": "Tos y estornudos",
+          "scriptData": [
+            {
+              "label": "Toses y estornudos"
+            }
+          ]
+        },
+        {
+          "name": "Malestar",
+          "scriptData": [
+            {
+              "label": "Malestar",
+              "script": "\n                    if (game.user.isUniqueGM)\n                    {\n                        let fatigued = args.actor.hasCondition(\"fatigued\")\n                        if (!fatigued)\n                        {\n                            args.actor.addCondition(\"fatigued\")\n                            ui.notifications.notify(\"Fatiga añadida a \" + args.actor.name + \" que no puede ser quitada hasta que el síntoma Malestar se haya ido.\")\n                        }\n                    }\n                    "
+            }
+          ]
+        }
+      ]
+    },
+    "Animalistic Legs": {
+      "name": "Patas de animal",
+      "description": "<p>+1 Movimiento. Esta mutación sólo se puede ocultar con ropa. Chequeo <strong>Complicado (-10)</strong> de <strong>Atletismo</strong> para caminar con paso normal.</p>",
+      "effects": [
+        {
+          "name": "Patas de animal",
+          "scriptData": [
+            {
+              "label": "Patas de animal"
+            }
+          ]
+        }
+      ]
+    },
+    "Skull Face": {
+      "name": "Cara de calavera",
+      "description": "<p>Obtienes el Rasgo @UUID[Compendium.wfrp4e-core.items.pTorrE0l3VybAbtn]{Miedo 2}. Esta mutación sólo se puede ocultar con ropa.</p>",
+      "effects": [
+        {
+          "name": "Cara de calavera",
+          "scriptData": [
+            {
+              "label": "Cara de calavera"
+            }
+          ]
+        }
+      ]
+    },
+    "Weeping Pus": {
+      "name": "Pus supurante",
+      "description": "<p>Tira dos veces en la @Table[hitloc] para ver dónde</p>",
+      "effects": [
+        {
+          "name": "Pus supurante",
+          "scriptData": [
+            {
+              "label": "Pus supurante"
+            }
+          ]
+        }
+      ]
+    },
+    "Fitful Hatred": {
+      "name": "Odio intermitente",
+      "description": "<p>Obtienes el Rasgo @UUID[Compendium.wfrp4e-core.items.aE3pyW20Orvdjzj0]{Odio} (Objetivo); Tira en la @Table[fixations]{Tabla de fijaciones} una vez al día para determinar el objetivo.</p>",
+      "effects": [
+        {
+          "name": "Odio intermitente",
+          "scriptData": [
+            {
+              "label": "Odio intermitente"
+            }
+          ]
+        }
+      ]
+    },
+    "Two Heads": {
+      "name": "Bicefalia",
+      "description": "<p>Obtienes el talento @UUID[Compendium.wfrp4e-core.items.IFKWu98qmWpaSfUi]{Ambidiestro}. No puedes ocultar esta mutación.</p>",
+      "effects": [
+        {
+          "name": "Bicefalia",
+          "scriptData": [
+            {
+              "label": "Bicefalia"
+            }
+          ]
+        }
+      ]
+    },
+    "Evil Eye": {
+      "name": "Mal de ojo",
+      "description": "<p>Puedes lanzar el hechizo @UUID[Compendium.wfrp4e-core.items.CnydL8p3PVAuF98w]{Mal de ojo} sin Chequeo, gastando un Punto de Fortuna. Al hacerlo, sufres una @Table[minormis]{Disfunción mágica menor}. Esta mutación no puede ocultarse.</p>",
+      "effects": [
+        {
+          "name": "Mal de ojo",
+          "scriptData": [
+            {
+              "label": "Mal de ojo"
+            }
+          ]
+        }
+      ]
+    },
+    "Bestial Face (Dog)": {
+      "name": "Cabeza de bestia (Perro)",
+      "description": "<p>Sientes un impulso irresistible de caer de rodillas y aullar. Mientras tu mandíbula se fuerza hasta su máxima apertura, empiezas a atragantarte sin control cuando un hocico cubierto de un espeso pelaje se abre paso a través de tu rostro. Tu nariz humana, tus labios y tus dientes se desprenden, nada más que vestigios de tu antigua existencia, sustituidos por el rostro gruñón de un perro.</p>\n<p>-20 a Empatía y -10 a Inteligencia. Obtienes el Talento @UUID[Compendium.wfrp4e-core.items.9h82z72XGo9tfgQS]{Sentidos desarrollados (Olfato)}.</p>",
+      "effects": [
+        {
+          "name": "Cabeza de bestia (Perro)",
+          "scriptData": [
+            {
+              "label": "Cabeza de bestia (Perro)"
+            }
+          ]
+        }
+      ]
+    },
+    "Bull Head": {
+      "name": "Cabeza de Toro",
+      "description": "<p>+1 Punto de Armadura a la cabeza. Obtiene el Rasgo @UUID[Compendium.wfrp4e-core.items.BqPZn6q3VHn9HUrW]{Cuernos}. No puedes ocultar esta mutación.</p>",
+      "effects": [
+        {
+          "name": "Cabeza de Toro",
+          "scriptData": [
+            {
+              "label": "Cabeza de Toro"
+            }
+          ]
+        }
+      ]
+    },
+    "Animalistic Psyche": {
+      "name": "Psique animal",
+      "description": "<p>Obtienes el Rasgo @UUID[Compendium.wfrp4e-core.items.AGcJl5rHjkyIQBPP]{Bestial} durante [[/r 1d10]] horas si fracasas un Chequeo derivado de Voluntad.</p>",
+      "effects": [
+        {
+          "name": "Psique animal",
+          "scriptData": [
+            {
+              "label": "Psique animal"
+            }
+          ]
+        }
+      ]
+    },
+    "Eagle Head": {
+      "name": "Cabeza de Águila",
+      "description": "<p>Obtiene el Rasgo @UUID[Compendium.wfrp4e-core.items.pLW9SVX0TVTYPiPv]{Mordisco +4}. No puedes ocultar esta mutación.</p>",
+      "effects": [
+        {
+          "name": "Cabeza de Águila",
+          "scriptData": [
+            {
+              "label": "Cabeza de Águila"
+            }
+          ]
+        }
+      ]
+    },
+    "Glorious Corruption": {
+      "name": "Corrupción gloriosa",
+      "description": "<p>Sufres un Estado de @Condition[Fatigado] por cada semana que pasas sin obtener un Punto de Corrupción o cuando no seas responsable de que otro Personaje gane Corrupción. Pierdes todos los Estados de @Condition[Fatigado] si ocurre cualquiera de las dos situaciones.</p>",
+      "effects": [
+        {
+          "name": "Corrupción gloriosa",
+          "scriptData": [
+            {
+              "label": "Corrupción gloriosa"
+            }
+          ]
+        }
+      ]
+    },
+    "Tail": {
+      "name": "Cola",
+      "description": "<p>Obtienes el Rasgo @UUID[Compendium.wfrp4e-core.items.UnJ25lL8aUzem5JO]{Coletazo +3}. Sólo puedes ocultar esta mutación con ropa.</p>",
+      "effects": [
+        {
+          "name": "Cola",
+          "scriptData": [
+            {
+              "label": "Cola"
+            }
+          ]
+        }
+      ]
+    },
+    "Warp Frenzy": {
+      "name": "Frenesí mutante",
+      "description": "<p>Obtienes el Rasgo @UUID[Compendium.wfrp4e-core.items.yRhhOlt18COq4e1q]{Furia}. Mientras estás en Furia, obtienes de manera temporal otra mutación física aleatoria.</p>",
+      "effects": [
+        {
+          "name": "Frenesí mutante",
+          "scriptData": [
+            {
+              "label": "Frenesí mutante"
+            }
+          ]
+        }
+      ]
+    },
+    "Iron Skin": {
+      "name": "Piel férrea",
+      "description": "<p>+2 Puntos de Armadura en todas las localizaciones. -10 a Agilidad.</p>",
+      "effects": [
+        {
+          "name": "Piel férrea",
+          "scriptData": [
+            {
+              "label": "Piel férrea"
+            }
+          ]
+        }
+      ]
+    },
+    "Beacon of Corruption": {
+      "name": "Faro de corrupción",
+      "description": "<p>Siempre que te sometes a Psicología, obtienes el Rasgo @UUID[Compendium.wfrp4e-core.items.xsGbDFqK2qh7lsIj]{Corrupción (Menor)}</p>",
+      "effects": [
+        {
+          "name": "Faro de corrupción",
+          "scriptData": [
+            {
+              "label": "Faro de corrupción"
+            }
+          ]
+        }
+      ]
+    },
+    "Corpulent": {
+      "name": "Corpulento",
+      "description": "<p>-1 al Movimiento, +5 a Fuerza, +5 a Resistencia.</p>",
+      "effects": [
+        {
+          "name": "Corpulento",
+          "scriptData": [
+            {
+              "label": "Corpulento"
+            }
+          ]
+        }
+      ]
+    },
+    "Lolling Tongue": {
+      "name": "Lengua colgante",
+      "description": "-10 a los Chequeos de Hablar idioma cuando hablas. No puedes ocultar esta mutación.",
+      "effects": [
+        {
+          "name": "Lengua colgante",
+          "scriptData": [
+            {
+              "label": "Lengua colgante"
+            }
+          ]
+        }
+      ]
+    },
+    "Acid Blood": {
+      "name": "Sangre ácida",
+      "description": "<p>Gana el Rasgo @UUID[Compendium.wfrp4e-core.items.M5QSWOYt2Rbv2yxW]{Sangre corrosiva}</p>",
+      "effects": [
+        {
+          "name": "Sangre ácida",
+          "scriptData": [
+            {
+              "label": "Sangre ácida"
+            }
+          ]
+        }
+      ]
+    },
+    "Transparent Skin": {
+      "name": "Piel transparente",
+      "description": "<p>Obtienes el Rasgo @UUID[Compendium.wfrp4e-core.items.pTorrE0l3VybAbtn]{Miedo 2}. No puedes ocultar esta mutación.</p>",
+      "effects": [
+        {
+          "name": "Piel transparente",
+          "scriptData": [
+            {
+              "label": "Piel transparente"
+            }
+          ]
+        }
+      ]
+    },
+    "Gills": {
+      "name": "Branquias",
+      "description": "<p>Puedes respirar bajo el agua. Sólo puedes ocultar esta mutación con ropa.</p>",
+      "effects": [
+        {
+          "name": "Branquias",
+          "scriptData": [
+            {
+              "label": "Branquias"
+            }
+          ]
+        }
+      ]
+    },
+    "Beweaponed Extremities": {
+      "name": "Extremidades armadas",
+      "description": "<p>Se te reduce la Destreza a 0 permanentemente. No te pueden desarmar.</p>",
+      "effects": [
+        {
+          "name": "Extremidades armadas",
+          "scriptData": [
+            {
+              "label": "Extremidades armadas"
+            }
+          ]
+        }
+      ]
+    },
+    "Breathe Fire": {
+      "name": "Respirar fuego",
+      "description": "<p>Ganas el Rasgo @UUID[Compendium.wfrp4e-core.items.uqGxFOEqeurwkAO3]{Aliento 5}</p>",
+      "effects": [
+        {
+          "name": "Respirar fuego",
+          "scriptData": [
+            {
+              "label": "Respirar fuego"
+            }
+          ]
+        }
+      ]
+    },
+    "Glowing Skin": {
+      "name": "Piel brillante",
+      "description": "<p>Luz efectiva como la de una vela. No puedes ocultar esta mutación.</p>",
+      "effects": [
+        {
+          "name": "Piel brillante",
+          "scriptData": [
+            {
+              "label": "Piel brillante"
+            }
+          ]
+        }
+      ]
+    },
+    "Aethyric Leak": {
+      "name": "Fuga aethírica",
+      "description": "<p>Gana el Talento @UUID[Compendium.wfrp4e-core.items.qdMbxW09FUoYBzmB]{¡Brujo!}. -5 a Empatía, -5 a Inteligencia.</p>",
+      "effects": [
+        {
+          "name": "Fuga aethírica",
+          "scriptData": [
+            {
+              "label": "Fuga aethírica"
+            }
+          ]
+        }
+      ]
+    },
+    "Purple Brain Fever": {
+      "name": "Fiebre cerebral púrpura",
+      "description": "<p>Es una enfermedad temible que hace que la cabeza se hinche hasta un tamaño espantoso y cursa con fiebre y de delirios. La cara se vuelve de un color ciruela espantoso, los ojos sobresalen de las órbitas y la lengua se hincha hasta que la boca ya no puede contenerla. La víctima suele morir al cabo de una semana.</p>",
+      "contraction": "Si fallas un Chequeo Normal (+20) de Aguante cuando tienes contacto físico con un individuo infectado (a un ritmo de 1 Chequeo por hora de exposición).",
+      "symptoms": "Convulsiones, Decaimiento, Delirio, Fiebre (alta), Hinchazón (cara y cabeza), Persistente (Desafiante).",
+      "effects": [
+        {
+          "name": "Decaimiento",
+          "scriptData": [
+            {
+              "label": "Decaimiento",
+              "script": "\n                        let difficulty = \"\"\n                        if (this.effect.name.includes(\"Moderado\"))\n                            difficulty = \"easy\"\n                        else if (this.effect.name.includes(\"Grave\"))\n                            difficulty = \"average\"\n                        else\n                            difficulty = \"veasy\"\n    \n                        if (this.actor.isOwner)\n                        {\n                            args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {context : {failure : args.actor.name + \" muere por el Decaimiento\"}, fields: {difficulty}, skipTargets: true, appendTitle : \" - Decaimiento\"}).then(setupData => {\n                                args.actor.basicTest(setupData).then(test => \n                                    {\n                                        if (test.failed)\n                                            args.actor.addCondition(\"dead\")\n                                    })\n                                })\n                        }"
+            }
+          ]
+        },
+        {
+          "name": "Delirio",
+          "scriptData": [
+            {
+              "label": "Delirio"
+            }
+          ]
+        },
+        {
+          "name": "Convulsiones",
+          "scriptData": [
+            {
+              "label": "Convulsiones",
+              "script": "\n                        let modifier = 0\n                        if (this.effect.name.includes(\"Moderado\"))\n                            modifier = -20\n                        else\n                            modifier = -10\n                        \n                        let applicableCharacteristics = [\"ws\", \"bs\", \"s\", \"ag\", \"t\", \"dex\"]\n                        if (args.type == \"weapon\")\n                            args.prefillModifiers.modifier += modifier\n                        else if (args.type == \"characteristic\")\n                        {\n                            if (applicableCharacteristics.includes(args.item))\n                                args.prefillModifiers.modifier += modifier\n                        }\n                        else if (args.type == \"skill\")\n                        {\n                            if (applicableCharacteristics.includes(args.item.characteristic.key))\n                                args.prefillModifiers.modifier += modifier\n                        }"
+            }
+          ]
+        },
+        {
+          "name": "Fiebre (Severa)",
+          "scriptData": [
+            {
+              "label": "Fiebre (Severa)"
+            }
+          ]
+        },
+        {
+          "name": "Malestar",
+          "scriptData": [
+            {
+              "label": "Malestar",
+              "script": "\n                    if (game.user.isUniqueGM)\n                    {\n                        let fatigued = args.actor.hasCondition(\"fatigued\")\n                        if (!fatigued)\n                        {\n                            args.actor.addCondition(\"fatigued\")\n                            ui.notifications.notify(\"Fatiga añadida a \" + args.actor.name + \" que no puede ser quitada hasta que el síntoma Malestar se haya ido.\")\n                        }\n                    }\n                    "
+            }
+          ]
+        },
+        {
+          "name": "Hinchazón (Cara y cabeza)",
+          "scriptData": [
+            {
+              "label": "Hinchazón (Cara y cabeza)"
+            }
+          ]
+        }
+      ]
+    },
+    "Wings": {
+      "name": "Alas",
+      "description": "<p>Obtienes el Rasgo @UUID[Compendium.wfrp4e-core.items.EO05HX7jql0g605A]{Vuelo 60}. Sólo puedes ocultar esta mutación con ropa.</p>",
+      "effects": [
+        {
+          "name": "Alas",
+          "scriptData": [
+            {
+              "label": "Alas"
+            }
+          ]
+        }
+      ]
+    },
+    "Eyestalks": {
+      "name": "Tentáculos oculares",
+      "description": "<p>Ves por encima y alrededor de los obstáculos. No puedes ocultar esta mutación.</p>",
+      "effects": [
+        {
+          "name": "Tentáculos oculares",
+          "scriptData": [
+            {
+              "label": "Tentáculos oculares"
+            }
+          ]
+        }
+      ]
+    },
+    "Hopper": {
+      "name": "Saltarín",
+      "description": "<p>Movimiento reducido a 2, no se puede aumentar. Obtienes el Rasgo @UUID[Compendium.wfrp4e-core.items.j6v78dnOOdCB6c3d]{Rebotar}. No puedes ocultar esta mutación.</p>",
+      "effects": [
+        {
+          "name": "Saltarín",
+          "scriptData": [
+            {
+              "label": "Saltarín"
+            }
+          ]
+        }
+      ]
+    },
+    "Boar Head": {
+      "name": "Cabeza de Jabalí",
+      "description": "<p>+1 Punto de Armadura a la cabeza. Obtiene el Rasgo @UUID[Compendium.wfrp4e-core.items.BqPZn6q3VHn9HUrW]{Cuernos (Colmillos)}. No puedes ocultar esta mutación.</p>",
+      "effects": [
+        {
+          "name": "Cabeza de Jabalí",
+          "scriptData": [
+            {
+              "label": "Cabeza de Jabalí"
+            }
+          ]
+        }
+      ]
+    },
+    "Bulging Eyes": {
+      "name": "Ojos saltones",
+      "description": "<p>+10 a Iniciativa. Sólo puedes ocultar esta mutación con ropa.</p>",
+      "effects": [
+        {
+          "name": "Ojos saltones",
+          "scriptData": [
+            {
+              "label": "Ojos saltones"
+            }
+          ]
+        }
+      ]
+    },
+    "Rotting Flesh": {
+      "name": "Carne podrida",
+      "description": "<p>Ganas los Rasgos @UUID[Compendium.wfrp4e-core.items.pTorrE0l3VybAbtn]{Miedo 2} e @UUID[Compendium.wfrp4e-core.items.V0c3qBU1CMm8bmsW]{Infectado}</p>",
+      "effects": [
+        {
+          "name": "Carne podrida",
+          "scriptData": [
+            {
+              "label": "Carne podrida"
+            }
+          ]
+        }
+      ]
+    },
+    "Lingering Foulness": {
+      "name": "Suciedad persistente",
+      "description": "<p>Obtienes el síntoma @Symptom[Náuseas] durante [[/r 1d10]] horas después de interactuar con la suciedad.</p>",
+      "effects": [
+        {
+          "name": "Suciedad persistente",
+          "scriptData": [
+            {
+              "label": "Suciedad persistente"
+            }
+          ]
+        }
+      ]
+    },
+    "Three Eyes": {
+      "name": "Tres ojos",
+      "description": "<p>Obtienes el Talento @UUID[Compendium.wfrp4e-core.items.9h82z72XGo9tfgQS]{Sentidos desarrollados (Vista)}. Sólo puedes ocultar esta mutación con ropa </p>",
+      "effects": [
+        {
+          "name": "Tres ojos",
+          "scriptData": [
+            {
+              "label": "Tres ojos"
+            }
+          ]
+        }
+      ]
+    },
+    "Double Life": {
+      "name": "Doble vida",
+      "description": "<p>Eres tan hábil en mantener tu identidad secreta que eres capaz de llevar dos vidas del todo separadas. Cuando adquieres este talento, puedes entrar en una segunda Carrera junto con la Carrera del Caos. Ahora cuentas como perteneciente a ambas Carreras, y puedes adquirir Avances y Talentos en cualquiera de ellas, así como entrar y salir de nuevas Carreras por cualquiera de ellas. Como siempre, todo cambio de Carrera necesita la aprobación del DJ para que se ajuste mejor a los planes de campaña y refleje de manera adecuada la doble vida que llevas.</p>",
+      "effects": [
+        {
+          "name": "Doble vida",
+          "scriptData": []
+        }
+      ]
+    },
+    "Claws": {
+      "name": "Garras",
+      "description": "<p>Las manos cuentan como @UUID[Compendium.wfrp4e-core.items.AtpAudHA4ybXVlWM]{Armas} de criatura, con daño igual a tu BF. No puedes ocultar esta mutación.</p>",
+      "effects": [
+        {
+          "name": "Garras",
+          "scriptData": [
+            {
+              "label": "Garras"
+            }
+          ]
+        }
+      ]
+    },
+    "Soul Sickness": {
+      "name": "Enfermedad del alma",
+      "description": "<p>Obtienes el síntoma @Symptom[Convulsiones] durante [[/r 1d10]] horas si fracasas un Chequeo derivado de Voluntad</p>",
+      "effects": [
+        {
+          "name": "Enfermedad del alma",
+          "scriptData": [
+            {
+              "label": "Enfermedad del alma"
+            }
+          ]
+        }
+      ]
+    },
+    "Terrible Phobia": {
+      "name": "Fobia terrible",
+      "description": "<p>Obtienes el rasgo @UUID[Compendium.wfrp4e-core.items.4CMKeDTDrRQZbPIJ]{Temor (Objetivo)}. Determina el Objetivo tirando en la tabla @Table[fixations]{Fijaciones}.</p>",
+      "effects": [
+        {
+          "name": "Fobia terrible",
+          "scriptData": [
+            {
+              "label": "Fobia terrible"
+            }
+          ]
+        }
+      ]
+    },
+    "Hounds of Despair": {
+      "name": "Sabuesos de la desesperación",
+      "description": "<p>Obtienes el síntoma @Symptom[Malestar] durante [[/r 1d10]] horas si fracasas un Chequeo derivado de Voluntad.</p>",
+      "effects": [
+        {
+          "name": "Sabuesos de la desesperación",
+          "scriptData": [
+            {
+              "label": "Sabuesos de la desesperación"
+            }
+          ]
+        }
+      ]
+    },
+    "Goat Head": {
+      "name": "Cabeza de Cabra",
+      "description": "<p>Gana el Rasgo @UUID[Compendium.wfrp4e-core.items.BqPZn6q3VHn9HUrW]{Cuernos}. No puedes ocultar esta mutación.</p>",
+      "effects": [
+        {
+          "name": "Cabeza de Cabra",
+          "scriptData": [
+            {
+              "label": "Cabeza de Cabra"
+            }
+          ]
+        }
+      ]
+    },
+    "Suckered Hands and Feet": {
+      "name": "Manos y pies con ventosas",
+      "description": "<p>Obtienes el Rasgo @UUID[Compendium.wfrp4e-core.items.KII1gWnxIZ8HzmU5]{Trepador de paredes}. Sólo puedes ocultar esta mutación con ropa.</p>",
+      "effects": [
+        {
+          "name": "Manos y pies con ventosas",
+          "scriptData": [
+            {
+              "label": "Manos y pies con ventosas"
+            }
+          ]
+        }
+      ]
+    },
+    "Beast Head": {
+      "name": "Cabeza de bestia",
+      "description": "<p>Tira en la tabla @Table[beasthead]{Cabeza de Bestia}. No puedes ocultar esta mutación.</p>",
+      "effects": [
+        {
+          "name": "Cabeza de bestia",
+          "scriptData": [
+            {
+              "label": "Cabeza de bestia"
+            }
+          ]
+        }
+      ]
+    },
+    "Inhuman Beauty": {
+      "name": "Belleza inhumana",
+      "description": "<p>+10 a Empatía. No te quedan cicatrices.</p>",
+      "effects": [
+        {
+          "name": "Belleza inhumana",
+          "scriptData": [
+            {
+              "label": "Belleza inhumana"
+            }
+          ]
+        }
+      ]
+    },
+    "Hurried Masochism": {
+      "name": "Masoquismo acelerado",
+      "description": "<p>Obtienes el Rasgo @UUID[Compendium.wfrp4e-core.items.GbDyBCu8ZjDp6dkj]{Beligerante}. No puedes @UUID[Compendium.wfrp4e-core.journals.JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.bdfiyhEYtKs7irqc#fleeing]{Huir} voluntariamente.</p>",
+      "effects": [
+        {
+          "name": "Masoquismo acelerado",
+          "scriptData": [
+            {
+              "label": "Masoquismo acelerado"
+            }
+          ]
+        }
+      ]
+    },
+    "Uneven Horns": {
+      "name": "Cuernos desiguales",
+      "description": "<p>+1 Punto de Armadura en la Cabeza. Cuenta como @UUID[Compendium.wfrp4e-core.items.AtpAudHA4ybXVlWM]{Arma} de criatura con un Daño igual a tu BF. No puedes ocultar esta mutación.</p>",
+      "effects": [
+        {
+          "name": "Cuernos desiguales",
+          "scriptData": [
+            {
+              "label": "Cuernos desiguales"
+            }
+          ]
+        }
+      ]
+    },
+    "Big Ears": {
+      "name": "Orejas grandes",
+      "description": "<p>Obtienes el Talento @UUID[Compendium.wfrp4e-core.items.9h82z72XGo9tfgQS]{Sentidos desarrollados (Oído)}. Sólo puedes ocultar esta mutación con ropa.</p>",
+      "effects": [
+        {
+          "name": "Orejas grandes",
+          "scriptData": [
+            {
+              "label": "Orejas grandes"
+            }
+          ]
+        }
+      ]
+    },
+    "Leeches and Their Curative Properties": {
+      "name": "Sanguijuelas y Sus Propiedades Curativas",
+      "description": "<p>Los grimorios de conjuros suelen ser escritos por magos, y sus cubiertas a menudo están aseguradas con cerraduras. A veces, los grimorios incluso están protegidos por alarmas o resguardos mágicos. Portar un grimorio de conjuros se castiga como herejía, a menos que el mago propietario cuente con licencia otorgada por los Colegios de Magia.</p>",
+      "gmdescription": "<p>Este libro tiene una portada falsa. En realidad se titula <em>De Vitae Occultae Daemoniis </em> ('La vida secreta de los demonios')</p>\n<p>El libro está escrito en idioma clásico, y el PJ que lo lea adquirirá un conocimiento básico de los demonios como se describen en el @UUID[Compendium.wfrp4e-core.journals.3ZynTGhFpgwv6l1n.JournalEntryPage.NS7k4xBGElPSynkI]{Bestiario} y sufrirá una @Corruption[minor]{Exposición menor} a la Corrupción (utilizando <strong>Frialdad</strong>)</p>\n<p> </p>"
+    },
+    "Travelling Case": {
+      "name": "Maletín de viaje",
+      "gmdescription": "<p>El maletín de viaje de cuero de Ernst contiene sus efectos personales. En un compartimento oculto están los preparados que lleva a Altdorf: seis viales de líquidos verdes burbujeantes, polvos de colores y cualquier otro material que quieras inventarte.</p>\n<p>Ernst no sabe para qué sirven, sólo que deben entregarlos al <em>doktor</em> Schmidt de la @UUID[Compendium.wfrp4e-altdorf.journals.EmhvOkkzAir6pzCB.JournalEntryPage.OiAVm63T9JEFsVfR]{Universidad de Altdorf}. Lograr un Chequeo <strong>Desafiante (+0)</strong> de <strong>Oficio (Boticario)</strong> o uno <strong>Complicado (-10)</strong> de <strong>Sabiduría académica (Química)</strong> o similar los identifica como mejunjes para aliviar la parálisis y reponer las fuerzas. Si algún PJ que no esté cualificado se apodera de estos preparados, no podrá usarlos y puede incluso envenenarse por accidente. El consumo de dos sustancias diferentes causa ([[/r 1d10]] - Bonificador por Resistencia) Estados de @Condition[Envenenado] (mínimo 1), que se resisten superando un Chequeo <strong>Desafiante (+0)</strong> de <strong>Aguante</strong>.</p>",
+      "description": "<p>Contiene los efectos personales de Ernst</p>"
+    },
+    "Coat (big and warm)": {
+      "name": "Abrigo (grande y caliente)",
+      "description": "<p>Protege al portador contra las inclemencias del tiempo y el frío extremo; sin un buen abrigo o prenda similar, sufrirás penalizadores a la hora de resistir la Exposición al Frío.</p>"
+    },
+    "Coach Horn": {
+      "name": "Clarín de aviso"
+    },
+    "The Coach and Horses Inn": {
+      "name": "Posada La Diligencia y los Caballos"
+    },
+    "Seeds": {
+      "name": "Semillas"
+    },
+    "Jewellry": {
+      "name": "Joyería",
+      "description": "<p>Los precios varían según la artesanía, el tipo de metal y el valor de las gemas. Como norma general, los anillos comunes sin piedras preciosas cuestan 10 monedas del mismo tipo de metal (es decir, bronce, plata u oro), mientras que los collares cuestan 20 monedas del mismo tipo de metal.</p>"
+    },
+    "Trunk (Locked)": {
+      "name": "Baúl (Cerrado con llave)",
+      "description": "<p>Pertenencias de Isolde.</p>\n<p>Abrir el baúl tiene una dificultad <strong>Complicada (-10)</strong> y se requieren 2 NE</p>"
+    },
+    "Loaded Dice": {
+      "name": "Dado cargado"
+    },
+    "Pack of Marked Cards": {
+      "name": "Baraja de cartas marcadas",
+      "description": "Contiene 5 ases de más"
+    },
+    "Medical Bag": {
+      "name": "Bolsa para medicinas"
+    },
+    "Silver Locket": {
+      "name": "Guardapelo de plata"
+    },
+    "Ring": {
+      "name": "Anillo"
+    },
+    "Black Leather Jack": {
+      "name": "Chaqueta de cuero negra"
+    },
+    "Gang Colours": {
+      "name": "Distintivos de colla de estibadores"
+    },
+    "Improvised Flail": {
+      "name": "Mayal improvisado",
+      "description": "<p>Hecho con dos patas de taburete</p>"
+    },
+    "Burning Oil": {
+      "name": "Aceite ardiendo"
+    },
+    "Colourful clothing": {
+      "name": "Ropa colorida"
+    },
+    "Sand-glass": {
+      "name": "Reloj de arena",
+      "description": "<p>Cuenta intervalos de tres minutos y medio</p>"
+    },
+    "Collapsible Wrestling Ring": {
+      "name": "Cuadrilátero plegable"
+    },
+    "Chest": {
+      "name": "Cofre"
+    },
+    "Crushed Rose": {
+      "name": "Rosa aplastada"
+    },
+    "Sword of Office": {
+      "name": "Espada de su cargo"
+    },
+    "Robes (Lawyer)": {
+      "name": "Ropas (Jurista)"
+    },
+    "Amulets (Vernean)": {
+      "name": "Amuleto (de Verena)"
+    },
+    "Wig": {
+      "name": "Peluca"
+    },
+    "Town Seal": {
+      "name": "Sello de la ciudad"
+    },
+    "Fleas": {
+      "name": "Pulgas"
+    },
+    "Filthy Dagger": {
+      "name": "Daga sucia",
+      "gmdescription": "<p>Si esta arma hiere, el objetivo debe superar un Chequeo <b>Fácil (+40)</b> de <b>Aguante</b> o contraer una @UUID[Compendium.wfrp4e-core.items.kKccDTGzWzSXCBOb]{Herida supurante}</p>",
+      "special": "Si esta arma hiere, el objetivo debe superar un Chequeo <b>Fácil (+40)</b> de <b>Aguante</b> o contraer una @UUID[Compendium.wfrp4e-core.items.kKccDTGzWzSXCBOb]{Herida supurante}"
+    },
+    "Pointy Stick": {
+      "name": "Estaca"
+    },
+    "Trade Tools (Apothecary)": {
+      "name": "Herramientas de un Oficio (Boticario)",
+      "description": "<p><strong>Boticario</strong>: Las herramientas incluyen un almirez con su mano, cucharillas, frascos, y una balanza con sus pesos. Los talleres también incluyen mecheros de aceite y estantes llenos de ingredientes.</p>\n<p> </p>\n<p><strong>Artesano</strong>: el abanico potencial de herramientas utilizadas por los Artesanos es enorme. Los grupos de ejemplos incluyen:</p>\n<ul>\n    <li><strong>Carpintero</strong>: martillo y clavos, sierra, vara de medir, tiza y plomadas. Los talleres también incluyen tornos, cepillos de carpintero, sargentos y una buena cantidad de madera.</li>\n</ul>\n<ul>\n    <li><strong>Grabador</strong>: gubias, sacabocados, cera, ácido, martillo y cinceles. Los talleres también incluyen troqueles y prensas.</li>\n</ul>\n<ul>\n    <li><strong>Herrero</strong>: martillo, pinzas, perforadoras, estampadoras, brocas y barrenas. Los talleres también incluyen un yunque, una fragua, un bloque de estampación, martillos pilones y lingotes de metal.</li>\n</ul>\n<p> </p>\n<p><strong>Otros tipos de artesanos</strong>: Albañil, Alfarero, Armero, Calígrafo, Calafate, Cantero, Cartógrafo, Cerero, Cervecero, Cocinero, Curtidor, Embalsamador, Fabricante de arcos, Fabricante de armaduras, Fabricante de armas, Guarnicionero, Joyero, Orfebre, Pintor, Sastre, Soplador de vidrio, Tallador, Tallista, Tejedor, Tonelero, Vinatero y Zapatero.</p>\n<p> </p>\n<p><strong>Artista</strong>: pinceles y pintura, martillo y cinceles, limas y escofinas y espátulas. Los talleres también incluyen caballetes o pedestales y materiales en forma de tela, pergamino, vitela, madera, arcilla o piedra sin tallar.</p>\n<p><strong>Ingeniero</strong>: reloj de arena, vara de medir, mecha, escuadra y cartabón. Los talleres también incluyen poleas, sogas y mesas de dibujo.</p>\n<p><strong>Herbolario</strong>: mortero y mano de mortero, cuchillitos, tijeras de podar y guantes. Los talleres también incluyen tendederos para secar, filtros, embudos, cuencos y frascos.</p>\n<p><strong>Navegante</strong>: cuadrante, astrolabio, cartas de navegación y compases, reloj de arena y escandallo.</p>\n<p><strong>Físico</strong>: agujas y sutura, vendas, escalpelo, vinagre, fórceps y un espéculo. Los talleres también incluyen dibujos de anatomía, accesorios surtidos y una mesa de operaciones.</p>"
+    },
+    "Trade Tools (Thief)": {
+      "name": "Herramientas de un Oficio (Ladrón)",
+      "description": "<p><strong>Boticario</strong>: Las herramientas incluyen un almirez con su mano, cucharillas, frascos, y una balanza con sus pesos. Los talleres también incluyen mecheros de aceite y estantes llenos de ingredientes.</p>\n<p> </p>\n<p><strong>Artesano</strong>: el abanico potencial de herramientas utilizadas por los Artesanos es enorme. Los grupos de ejemplos incluyen:</p>\n<ul>\n    <li><strong>Carpintero</strong>: martillo y clavos, sierra, vara de medir, tiza y plomadas. Los talleres también incluyen tornos, cepillos de carpintero, sargentos y una buena cantidad de madera.</li>\n</ul>\n<ul>\n    <li><strong>Grabador</strong>: gubias, sacabocados, cera, ácido, martillo y cinceles. Los talleres también incluyen troqueles y prensas.</li>\n</ul>\n<ul>\n    <li><strong>Herrero</strong>: martillo, pinzas, perforadoras, estampadoras, brocas y barrenas. Los talleres también incluyen un yunque, una fragua, un bloque de estampación, martillos pilones y lingotes de metal.</li>\n</ul>\n<p> </p>\n<p><strong>Otros tipos de artesanos</strong>: Albañil, Alfarero, Armero, Calígrafo, Calafate, Cantero, Cartógrafo, Cerero, Cervecero, Cocinero, Curtidor, Embalsamador, Fabricante de arcos, Fabricante de armaduras, Fabricante de armas, Guarnicionero, Joyero, Orfebre, Pintor, Sastre, Soplador de vidrio, Tallador, Tallista, Tejedor, Tonelero, Vinatero y Zapatero.</p>\n<p> </p>\n<p><strong>Artista</strong>: pinceles y pintura, martillo y cinceles, limas y escofinas y espátulas. Los talleres también incluyen caballetes o pedestales y materiales en forma de tela, pergamino, vitela, madera, arcilla o piedra sin tallar.</p>\n<p><strong>Ingeniero</strong>: reloj de arena, vara de medir, mecha, escuadra y cartabón. Los talleres también incluyen poleas, sogas y mesas de dibujo.</p>\n<p><strong>Herbolario</strong>: mortero y mano de mortero, cuchillitos, tijeras de podar y guantes. Los talleres también incluyen tendederos para secar, filtros, embudos, cuencos y frascos.</p>\n<p><strong>Navegante</strong>: cuadrante, astrolabio, cartas de navegación y compases, reloj de arena y escandallo.</p>\n<p><strong>Físico</strong>: agujas y sutura, vendas, escalpelo, vinagre, fórceps y un espéculo. Los talleres también incluyen dibujos de anatomía, accesorios surtidos y una mesa de operaciones.</p>"
+    },
+    "Trade Tools (Tinker)": {
+      "name": "Herramientas de un Oficio (Manitas)",
+      "description": "<p><strong>Boticario</strong>: Las herramientas incluyen un almirez con su mano, cucharillas, frascos, y una balanza con sus pesos. Los talleres también incluyen mecheros de aceite y estantes llenos de ingredientes.</p>\n<p> </p>\n<p><strong>Artesano</strong>: el abanico potencial de herramientas utilizadas por los Artesanos es enorme. Los grupos de ejemplos incluyen:</p>\n<ul>\n    <li><strong>Carpintero</strong>: martillo y clavos, sierra, vara de medir, tiza y plomadas. Los talleres también incluyen tornos, cepillos de carpintero, sargentos y una buena cantidad de madera.</li>\n</ul>\n<ul>\n    <li><strong>Grabador</strong>: gubias, sacabocados, cera, ácido, martillo y cinceles. Los talleres también incluyen troqueles y prensas.</li>\n</ul>\n<ul>\n    <li><strong>Herrero</strong>: martillo, pinzas, perforadoras, estampadoras, brocas y barrenas. Los talleres también incluyen un yunque, una fragua, un bloque de estampación, martillos pilones y lingotes de metal.</li>\n</ul>\n<p> </p>\n<p><strong>Otros tipos de artesanos</strong>: Albañil, Alfarero, Armero, Calígrafo, Calafate, Cantero, Cartógrafo, Cerero, Cervecero, Cocinero, Curtidor, Embalsamador, Fabricante de arcos, Fabricante de armaduras, Fabricante de armas, Guarnicionero, Joyero, Orfebre, Pintor, Sastre, Soplador de vidrio, Tallador, Tallista, Tejedor, Tonelero, Vinatero y Zapatero.</p>\n<p> </p>\n<p><strong>Artista</strong>: pinceles y pintura, martillo y cinceles, limas y escofinas y espátulas. Los talleres también incluyen caballetes o pedestales y materiales en forma de tela, pergamino, vitela, madera, arcilla o piedra sin tallar.</p>\n<p><strong>Ingeniero</strong>: reloj de arena, vara de medir, mecha, escuadra y cartabón. Los talleres también incluyen poleas, sogas y mesas de dibujo.</p>\n<p><strong>Herbolario</strong>: mortero y mano de mortero, cuchillitos, tijeras de podar y guantes. Los talleres también incluyen tendederos para secar, filtros, embudos, cuencos y frascos.</p>\n<p><strong>Navegante</strong>: cuadrante, astrolabio, cartas de navegación y compases, reloj de arena y escandallo.</p>\n<p><strong>Físico</strong>: agujas y sutura, vendas, escalpelo, vinagre, fórceps y un espéculo. Los talleres también incluyen dibujos de anatomía, accesorios surtidos y una mesa de operaciones.</p>"
+    },
+    "Drugs and Herbs": {
+      "name": "Drogas y hierbas",
+      "description": "<p>Disponibilidad equivalente a Ciudad</p>"
+    },
+    "Collapsible Market Stall": {
+      "name": "Tenderete de mercado plegable"
+    },
+    "Large Collection of Amulets": {
+      "name": "Amplia colección de amuletos"
+    },
+    "Cosh": {
+      "name": "Cachiporra"
+    },
+    "The Riddles Ten": {
+      "name": "Los Diez Acertijos",
+      "description": "<p>Los libros de religión pueden adoptar cualquier forma en el Imperio, que es muy reputado por su observancia religiosa. Hay un mercado ávido de los textos más populares, la mayoría de los cuales se imprimen en ediciones baratas.</p>"
+    },
+    "Crude Staff": {
+      "name": "Bastón tosco"
+    },
+    "Deus Sigmar": {
+      "description": "<p>Esta copia de <em>Deus Sigmar</em> parece estar muy garabateada</p>"
+    },
+    "Fleas and bugs of all kinds": {
+      "name": "Pulgas y bichos de todo tipo"
+    },
+    "Karl the Cockroach (Pet)": {
+      "name": "Karl la Cucaracha (mascota)"
+    },
+    "Merchant Clothing (Best Quality)": {
+      "name": "Ropas de mercader de la mejor calidad"
+    },
+    "House Steinhäger": {
+      "name": "Mansión Steinhäger"
+    },
+    "Keys": {
+      "name": "Llaves"
+    },
+    "Candle (and stick)": {
+      "name": "Vela (con candelabro)",
+      "description": "<p>Proporciona luz a 10 yardas cuando se enciende.</p>"
+    },
+    "Bögenhafen Medallion": {
+      "name": "Medallón de Bögenhafen",
+      "description": "<p>Medallón de oro con el escudo de armas de Bögenhafen</p>"
+    },
+    "Jeweled Ring": {
+      "name": "Anillo con piedras preciosas",
+      "description": "<p>Los precios varían según la calidad de la artesanía, el tipo de metal y el valor de las gemas. Por regla general, los anillos comunes sin piedras preciosas cuestas 10 monedas de su tipo de metal (o sea, oro, plata o cobre) mientras que los collares cuestan 20 monedas del mismo tipo de metal.</p>"
+    },
+    "Finesty Quality Merchant Clothing": {
+      "name": "Ropas de mercader de la mejor calidad"
+    },
+    "Open Plate Helm": {
+      "name": "Casco de placas abierto"
+    },
+    "Sleeved Mail Shirt": {
+      "name": "Cota de malla con mangas"
+    },
+    "Apprentice (Fanna Geshenkle)": {
+      "name": "Aprendiz (Fanna Geshenkle)"
+    },
+    "Cermonial Dagger": {
+      "name": "Daga ceremonial"
+    },
+    "Fate of Bögenhafen": {
+      "name": "Destino de Bögenhafen"
+    },
+    "Tattered Robes": {
+      "name": "Ropajes raídos"
+    },
+    "Cudgel": {
+      "name": "Garrote"
+    },
+    "Riding Horse with Saddle and Harness": {
+      "name": "Caballo de monta con silla y arnés",
+      "description": "<p>@UUID[Actor.4DTXl9hXbWlfLa5J]{Caballo de monta}</p>\n<p>Capacidad de carga: 16</p>"
+    },
+    "Symbol of Rank": {
+      "name": "Símbolo de rango"
+    },
+    "Squad of 5 Road Wardens": {
+      "name": "Escuadra de 5 Guardas de Caminos"
+    },
+    "Quality Cloak": {
+      "name": "Capa de calidad"
+    },
+    "Quality Hat": {
+      "name": "Sombrero de calidad"
+    },
+    "Light Warhorse with Saddle and Harness": {
+      "name": "Caballo de guerra ligero con silla y arneses",
+      "gmdescription": "<p>Este precio puede duplicarse o triplicarse en tiempos de tensión o de guerra, en que nadie quiere desprenderse del material militar.</p>",
+      "description": "<p>@UUID[Compendium.wfrp4e-eis.actors.QhEFgUrPzF2NNWoS]{Caballo de guerra ligero}</p>\n<p>Capacidad de carga: 18</p>"
+    },
+    "Unit of 8-12 (or up to 16-24) Road Wardens": {
+      "name": "Unidad de 8 a 12 (o hasta de 16 a 24) Guardas de Caminos"
+    },
+    "Warrant Papers": {
+      "name": "Orden judicial"
+    },
+    "Selection of Scripts": {
+      "name": "Surtido de guiones"
+    },
+    "Clothing (secret pockets and pouches)": {
+      "name": "Ropa con bolsillos y fundas secretas"
+    },
+    "Quality Clothing": {
+      "name": "Ropa de calidad"
+    },
+    "Deck of Cards (Marked)": {
+      "name": "Baraja de cartas marcadas"
+    },
+    "Dice (Loaded)": {
+      "name": "Dados cargados"
+    },
+    "Forged Documents": {
+      "name": "Documentos falsificados"
+    },
+    "Ornate Mask": {
+      "name": "Antifaz decorado"
+    },
+    "Riding Horse with Saddle and Tack": {
+      "name": "Caballo de monta con silla y arnés",
+      "description": "<p>@UUID[Actor.4DTXl9hXbWlfLa5J]{Caballo de monta}</p>\n<p>Capacidad de carga: 16</p>"
+    },
+    "Quality Courtly Garb": {
+      "name": "Atuendo cortesano de calidad",
+      "description": "<p>La ropa de los nobles luce adornos del tipo puños y cuellos de encaje, tela de calidad excesiva y zapatos puntiagudos. Los sirvientes también visten atuendos cortesanos en los banquetes y las ceremonias, aunque sus sobrevestas y sus corsés son menos ostentosos que los de los nobles y por lo tanto se pueden adquirir a mitad de precio.</p>"
+    },
+    "Quality Jewellry": {
+      "name": "Joyas de calidad",
+      "description": "<p>Los precios varían según la calidad de la artesanía, el tipo de metal y el valor de las gemas. Por regla general, los anillos comunes sin piedras preciosas cuestas 10 monedas de su tipo de metal (o sea, oro, plata o cobre) mientras que los collares cuestan 20 monedas del mismo tipo de metal.</p>"
+    },
+    "Valet": {
+      "name": "Criado"
+    },
+    "Harp": {
+      "name": "Arpa",
+      "description": "<p>En esta categoría se incluyen diversos instrumentos. El precio y la impedimenta normales reflejan instrumentos de tamaño medio (por ejemplo, una mandolina, una cornamusa o un tambor pequeño). Los instrumentos pequeños salen a mitad de precio y tienen 0 puntos de Impedimenta (por ejemplo, una flauta travesera, una flauta dulce, o una pandereta). Los instrumentos más grandes salen por el doble de precio y tienen 2 puntos de Impedimenta (por ejemplo, un arpa, un laúd o un tambor grande).</p>"
+    },
+    "Leather Jerkin": {
+      "name": "Jubón de cuero"
+    },
+    "Stolen Farming Tools": {
+      "name": "Aperos de labranza robados"
+    },
+    "Stolen Livestock": {
+      "name": "Ganado robado"
+    },
+    "Goods worth 2d10 silver shillings": {
+      "name": "Mercancía por valor de 2d10 Chelines de plata"
+    },
+    "Pots and Pans": {
+      "name": "Ollas y sartenes"
+    },
+    "Porter Cap": {
+      "name": "Gorra de porteador"
+    },
+    "Tools": {
+      "name": "Herramientas"
+    },
+    "Trade Tools": {
+      "name": "Herramientas del oficio"
+    },
+    "Dirty Rags": {
+      "name": "Trapos sucios"
+    },
+    "Narcotics": {
+      "name": "Narcóticos"
+    },
+    "Daggers tucked into Boots": {
+      "name": "Dagas camufladas en sus botas"
+    },
+    "Empty Bottles": {
+      "name": "Botellas vacías"
+    },
+    "4d10 brass pennies": {
+      "name": "4d10 Peniques de Bronce"
+    },
+    "Poor Quality Blanket": {
+      "name": "Manta de mala calidad",
+      "description": "<p>Cuando se descansa se obtiene un bonificador +20 a los Chequeos de Aguante hechos para resistir la exposición al frío.</p>"
+    },
+    "Folding Table": {
+      "name": "Mesa plegable"
+    },
+    "Short Sword": {
+      "name": "Espada corta"
+    },
+    "Guards": {
+      "name": "Guardias"
+    },
+    "Strange Furs": {
+      "name": "Pieles raras"
+    },
+    "Exotic Spices and Rare Metals": {
+      "name": "Especias exóticas y metales raros"
+    },
+    "Very ‘Respectable’ Hat": {
+      "name": "Sombrero \"muy respetable\"",
+      "description": "<p>Los sombreros de calidad son símbolos de estatus en los pueblos y ciudades del Imperio. Cuanto más llamativo el sombrero, mejor.</p>"
+    },
+    "Quality Livery": {
+      "name": "Uniforme de calidad"
+    },
+    "Lantern Oil": {
+      "name": "Aceite para faroles",
+      "description": "<p>Contiene suficiente combustible para 4 horas de uso normal, o bien 8 horas de llama baja equivalente a una vela.</p>"
+    },
+    "Silver Shilling (secreted away)": {
+      "name": "Chelín de Plata (escondido por ahí)"
+    },
+    "10d10 brass pennies": {
+      "name": "10d10 Peniques de Bronce"
+    },
+    "10d10 Brass Penny": {
+      "name": "10d10 Peniques de Bronce"
+    },
+    "2d10 Brass Penny": {
+      "name": "2d10 Peniques de Bronce"
+    },
+    "4d10 Brass Penny": {
+      "name": "4d10 Peniques de Bronce"
+    },
+    "8d10 Brass Penny": {
+      "name": "8d10 Peniques de Bronce"
+    },
+    "6d10 Brass Penny": {
+      "name": "6d10 Peniques de Bronce"
+    },
+    "3d10 Silver Shilling": {
+      "name": "3d10 Chelines de Plata"
+    },
+    "5d10 Silver Shilling": {
+      "name": "5d10 Chelines de Plata"
+    },
+    "1d10 Silver Shilling": {
+      "name": "1d10 Chelines de Plata"
+    },
+    "Gold Crown (secreted away)": {
+      "name": "Corona de Oro (escondido por ahí)"
+    },
+    "1d10 Gold Crowns": {
+      "name": "1d10 Coronas de Oro"
+    },
+    "Art (Drama)": {
+      "name": "Arte (Teatro)"
+    },
+    "Entertain (Comedian)": {
+      "name": "Animar (Comediante)"
+    },
+    "Entertain (Speeches)": {
+      "name": "Animar (Discursos)"
+    },
+    "Language (Arabyan)": {
+      "name": "Hablar idioma (Árabe)"
+    },
+    "Language (Guilder)": {
+      "name": "Hablar idioma (Gremial)"
+    },
+    "Language (Southlander)": {
+      "name": "Hablar idioma (Sureño)"
+    },
+    "Lore (Bögenhafen)": {
+      "name": "Sabiduría académica (Bögenhafen)"
+    },
+    "Lore (Empire)": {
+      "name": "Sabiduría académica (Imperio)"
+    },
+    "Lore (Herbs)": {
+      "name": "Sabiduría académica (Hierbas)"
+    },
+    "Lore (Philosophy)": {
+      "name": "Sabiduría académica (Filosofía)"
+    },
+    "Lore (Rivers)": {
+      "name": "Sabiduría académica (Ríos)"
+    },
+    "Lore (Runes)": {
+      "name": "Sabiduría académica (Runas)"
+    },
+    "Lore (Vorbergland)": {
+      "name": "Sabiduría académica (Vorbergland)"
+    },
+    "Play (Harp)": {
+      "name": "Tocar (Arpa)"
+    },
+    "Ranged (Blackpowder)": {
+      "name": "A distancia (De Pólvora Negra)"
+    },
+    "Secret Signs (Cult)": {
+      "name": "Lengua secreta (Secta)"
+    },
+    "Secret Signs (Cultist)": {
+      "name": "Lengua secreta (Secta)"
+    },
+    "Trade (Brewing)": {
+      "name": "Oficio (Cervecero)"
+    },
+    "Trade (Boatbuilding)": {
+      "name": "Oficio (Carpintero de ribera)"
+    },
+    "Trade (Poisoner)": {
+      "name": "Oficio (Envenenador)"
+    },
+    "Trade (Tinker)": {
+      "name": "Oficio (Manitas)"
+    },
+    "Trade (Smithing)": {
+      "name": "Oficio (Herrero)"
+    },
+    "Acute Sense (Touch)": {
+      "name": "Sentidos desarrollados (Tacto)",
+      "tests": "Percepción (Tacto)",
+      "description": "<p>Uno de tus cinco sentidos principales está muy desarrollado, lo que te permite ver lo que otros no ven. Podrás llevar a cabo Chequeos de Percepción para detectar detalles normalmente imperceptibles con el sentido asociado, tal y como indique el DJ. Esto podría incluir: divisar a un águila más allá del alcance visual de todos los demás, oler un veneno casi inodoro, oír la respiración de un ratón inmóvil en el interior de una pared, reconocer una letra desgastada en un grabado o detectar que dos cervezas de una misma cervecería proceden de barriles diferentes.</p>"
+    },
+    "Craftman (Smithing)": {
+      "name": "Artesano (Herrero)",
+      "tests": "Oficio (Herrero)",
+      "description": "<p>Tienes un auténtico talento creativo. Suma la Habilidad de Oficio asociada a cualquier Carrera en la que entras. Si dicha Habilidad de Oficio ya está en tu Carrera, en lugar de ello puedes comprarla a razón de 5 PX menos por Avance.</p>"
+    },
+    "Detect Artifact": {
+      "name": "Detectar artefacto",
+      "tests": "Chequeos de Intuición para detectar artefactos mágicos",
+      "description": "<p>Eres capaz de notar cuándo hay magia en un artefacto. Puedes intentar un Chequeo de Intuición por cada artefacto mágico tocado. Si tienes éxito, notas que el objeto es mágico; además, cada NE proporciona también una regla especial específica de las que utiliza el objeto, si las hay. Normalmente, sólo puedes intentar este Chequeo una vez por artefacto tocado.</p>"
+    },
+    "Etiquette (Soldiers)": {
+      "name": "Etiqueta (Soldados)",
+      "tests": "Carisma y Cotilleo (Soldados)",
+      "description": "<p>Podrás mezclarte socialmente con el grupo elegido mientras vayas vestido de la forma adecuada y actúes con propiedad. Los grupos sociales de ejemplo para este Talento son: delincuentes, sectarios, agremiados, nobles, eruditos, sirvientes y soldados. Si no tienes el Talento, quienes sí lo tienen notarán tu incomodidad en un entorno poco familiar. Esto afecta principalmente a la interpretación del personaje, pero si el DJ lo decide puede suponer una bonificación a los Chequeos de Empatía.</p>",
+      "effects": [
+        {
+          "name": "Etiqueta (Soldados)",
+          "scriptData": [
+            {
+              "label": "Etiqueta (Soldados)"
+            }
+          ]
+        }
+      ]
+    },
+    "Etiquette (Labourers)": {
+      "name": "Etiqueta (Trabajadores)",
+      "tests": "Carisma y Cotilleo (Trabajadores)",
+      "description": "<p>Podrás mezclarte socialmente con el grupo elegido mientras vayas vestido de la forma adecuada y actúes con propiedad. Los grupos sociales de ejemplo para este Talento son: delincuentes, sectarios, agremiados, nobles, eruditos, sirvientes y soldados. Si no tienes el Talento, quienes sí lo tienen notarán tu incomodidad en un entorno poco familiar. Esto afecta principalmente a la interpretación del personaje, pero si el DJ lo decide puede suponer una bonificación a los Chequeos de Empatía.</p>"
+    },
+    "Etiquette (Criminals)": {
+      "name": "Etiqueta (Delincuentes)",
+      "tests": "Carisma y Cotilleo (Delincuentes)",
+      "description": "<p>Podrás mezclarte socialmente con el grupo elegido mientras vayas vestido de la forma adecuada y actúes con propiedad. Los grupos sociales de ejemplo para este Talento son: delincuentes, sectarios, agremiados, nobles, eruditos, sirvientes y soldados. Si no tienes el Talento, quienes sí lo tienen notarán tu incomodidad en un entorno poco familiar. Esto afecta principalmente a la interpretación del personaje, pero si el DJ lo decide puede suponer una bonificación a los Chequeos de Empatía.</p>"
+    },
+    "Etiquette (Servants)": {
+      "name": "Etiqueta (Sirvientes)",
+      "tests": "Carisma y Cotilleo (Sirvientes)",
+      "description": "<p>Podrás mezclarte socialmente con el grupo elegido mientras vayas vestido de la forma adecuada y actúes con propiedad. Los grupos sociales de ejemplo para este Talento son: delincuentes, sectarios, agremiados, nobles, eruditos, sirvientes y soldados. Si no tienes el Talento, quienes sí lo tienen notarán tu incomodidad en un entorno poco familiar. Esto afecta principalmente a la interpretación del personaje, pero si el DJ lo decide puede suponer una bonificación a los Chequeos de Empatía.</p>"
+    },
+    "Fast Hands (2)": {
+      "name": "Manos rápidas (2)",
+      "tests": "Prestidigitación, Cuerpo a cuerpo (Pelea) para tocar a un oponente",
+      "description": "<p>Puedes mover las manos con sorprendente destreza. Los presentes no tienen derecho a Chequeos de Percepción pasivos para darse cuenta de tu uso de la Habilidad Prestidigitación, y en su lugar tan sólo pueden enfrentarse a tus Chequeos de Prestidigitación si sospechan de forma activa y están vigilando tus movimientos. Además, todo intento de utilizar Cuerpo a cuerpo (Pelea) para simplemente tocar a un oponente te da un bonificador +10 x tu nivel en Manos rápidas.</p>"
+    },
+    "Fearless (Outlaws)": {
+      "name": "Intrépido (Forajidos)",
+      "tests": "Frialdad para oponerse al Intimidar, Miedo y Terror de tu Enemigo",
+      "description": "<p>Eres, o bien lo suficientemente valiente o lo suficientemente insensato como para que el miedo a ciertos enemigos se haya convertido en un recuerdo lejano. Mediante un único Chequeo <strong>Normal (+20)</strong> de <strong>Frialdad</strong>, puedes ignorar cualquier efecto de Intimidar, Miedo o Terror por parte del enemigo especificado cuando te encuentras con él. Los enemigos típicos incluyen hombres bestia, pieles verdes, forajidos, vampiros, vigilantes y brujas.</p>"
+    },
+    "Magic Resistance": {
+      "name": "Resistencia a la magia",
+      "description": "<p>El NE de cualquier hechizo que te afecta se reduce en 2 por cada punto que tienes en este Talento. El NE de un hechizo sólo lo modifica el talento de Resistencia a la magia mayor de los que puede haber en su área objetivo. Además, nunca podrás aprender los Talentos <em>Magia arcana</em>, <em>Bendecir</em>, <em>Invocar</em>, <em>Magia menor</em>, o <em>¡Brujo!</em>.</p>"
+    },
+    "Menacing*": {
+      "name": "Amenazador*",
+      "tests": "Intimidar",
+      "description": "<p>Tienes una presencia imponente. Cuando utilizas la Habilidad Intimidar, obtienes un bonificador al NE igual a tus niveles de Amenazador.</p>\n<p>* Sólo tiene efecto cuando @UUID[Actor.x782doqfhFIEgP8V]{Reinhardt} y @UUID[Actor.U7Y0XEF8Cnat4Y7Q]{Reinholdt} están juntos</p>"
+    },
+    "Menacing (2)": {
+      "name": "Amenazador (2)",
+      "tests": "Intimidar",
+      "description": "<p>Tienes una presencia imponente. Cuando utilizas la Habilidad Intimidar, obtienes un bonificador al NE igual a tus niveles de Amenazador.</p>\n<p>* Sólo tiene efecto cuando @UUID[Actor.x782doqfhFIEgP8V]{Reinhardt} y @UUID[Actor.U7Y0XEF8Cnat4Y7Q]{Reinholdt} están juntos</p>"
+    },
+    "Resistance (Chaos)": {
+      "name": "Resistencia (Caos)",
+      "tests": "Todos los utilizados para resistirse a la Amenaza asociada",
+      "description": "<p>Tu recia constitución te permite sobrevivir con más facilidad a una amenaza específica. Puedes tener éxito automáticamente en el primer Chequeo para resistir la amenaza específica, como por ejemplo Magia, Veneno, Enfermedad o Mutación en cada sesión de juego. Si el NE es importante, utiliza tu Bonificador por Resistencia como NE para el Chequeo.</p>"
+    },
+    "Savant (Law)": {
+      "name": "Sabio (Derecho)",
+      "tests": "Sabiduría académica (Derecho)",
+      "description": "<p>Eres excepcionalmente docto, y tienes un grado significativo de conocimiento especializado en un único campo de estudio. Automáticamente conoces tantos fragmentos de información correcta como tu nivel de Sabio (Saber) acerca de un tema relevante sin tener que chequear tu Habilidad de Sabiduría académica. Un Chequeo, como siempre, proporcionará más información de la forma habitual, según determine el DJ.</p>"
+    },
+    "Addict": {
+      "name": "Adicto"
+    },
+    "Hatred": {
+      "name": "Odio",
+      "description": "<p>Te ves consumido por el Odio hacia el Objetivo, que normalmente suele ser un grupo de personas o de criaturas, como por ejemplo, ‘hochlandeses’, ‘pulpos de las ciénagas’ o ‘esclavistas’. Jamás interaccionarás socialmente con algo o alguien a quien odies de esta forma. Al encontrarte con el objeto de tu Odio, deberás intentar un Chequeo de Psicología. Si fallas, te ves sujeto al Odio.</p>\n<p>Al final de cada asalto subsiguiente, puedes intentar un nuevo Chequeo de Psicología para acabar con el Odio. Si no lo consigues, los efectos del Odio acaban por sí solos de forma natural cuando todos los miembros del grupo especificado han muerto o se han ido, o pasas al Estado @Condition[Inconsciente].</p>\n<p>Mientras te ves sujeto al Odio, debes intentar destruir de inmediato al grupo odiado por el método más rápido y letal posible. Obtienes un bonificador de +1 NE a todos los Chequeos de combate contra el grupo especificado, y eres inmune al Miedo y al Intimidar (pero no al Terror) causados por tu odiado enemigo.</p>"
+    },
+    "Mutation (any you feel are required, Drauchen is change)": {
+      "name": "Mutación (la que veas apropiada, Drauchen va cambiando)",
+      "description": "<p>La criatura ha sido 'bendecida' con una Mutación. Tira en la tabla de @Table[mutatephys]{Mutación física}</p>"
+    },
+    "Stubborn": {
+      "name": "Tozudo",
+      "description": "<p>Aumenta la puntuación de V en +20 y requiere un Chequeo <strong>Enfrentado</strong> de <strong>Conducir</strong> o de <strong>Voluntad</strong> siempre que el jinete o el conductor necesiten controlar a la criatura. Si el Chequeo falla, el animal se para en seco y se niega a seguir adelante. Se le puede inducir a seguir adelante con un éxito en un Chequeo de <strong>Montar</strong>, Enfrentado a la <strong>Voluntad</strong> de la criatura, o un Chequeo <strong>Enfrentado</strong> de <strong>Carisma animal</strong> si alguien lo está guiando por la brida. En cualquier caso, no va más rápido que la mitad de la velocidad de Caminar.</p>"
+    },
+    "Teeth and Claws": {
+      "name": "Dientes y garras",
+      "description": "<p>La criatura lleva un arma cuerpo a cuerpo, o bien utiliza dientes, zarpas o cosas similares en combate. El arma causa tanto daño como la cifra entre paréntesis, que ya incluye el Bonificador por Fuerza de la criatura. Típicamente será 4 + Bonificador por Fuerza (lo que representa un Arma de mano).</p>"
+    },
+    "2 Tentacles": {
+      "name": "2 Tentáculos",
+      "description": "<p>La criatura dispone del número de tentáculos igual a #.</p>\n<ul>\n    <li>Obtiene una Acción de Ataque gratuito por tentáculo.</li>\n    <li>El ataque de cada tentáculo hace el daño indicado, que ya incluye su Bonificador por Fuerza.</li>\n    <li>\n        <p>Si causa Daño, también impone a su oponente 1 Estado de Enmarañado , lo que inicia una Presa entre el objetivo y dicho tentáculo.</p>\n        <ul>\n            <li>Si un tentáculo está haciendo una Presa, usa la Acción de Ataque gratuito de dicho tentáculo para resolverla, no la Acción de la criatura.</li>\n        </ul>\n    </li>\n</ul>\n<p></p>"
+    },
+    "Tongue Attack (3 yards)": {
+      "name": "Ataque de lengua (3 yardas)",
+      "description": "<p>La lengua prensil de la criatura se puede enroscar alrededor de su presa, arrastrándola a un macabro final. En su turno, puede llevar a cabo un Ataque gratuito gastando 1 Ventaja. Se trata de un ataque A distancia que hace tanto Daño como la fuerza indicada (el rango es la cifra entre paréntesis). Si el ataque impacta, el objetivo sufre 1 Estado de @Condition[Enmarañado] y, si es de un Tamaño menor, se ve arrastrado hacia la criatura y queda Trabado en combate cuerpo a cuerpo. Entonces, la criatura puede elegir entre liberar al objetivo, llevar acabo un Ataque gratuito utilizando su Rasgo Arma, o mantener el objetivo envuelto en su lengua, iniciando una Presa.</p>"
+    },
+    "Tongue Attack (6 yards)": {
+      "name": "Ataque de lengua (6 yardas)",
+      "description": "<p>La lengua prensil de la criatura se puede enroscar alrededor de su presa, arrastrándola a un macabro final. En su turno, puede llevar a cabo un Ataque gratuito gastando 1 Ventaja. Se trata de un ataque A distancia que hace tanto Daño como la fuerza indicada (el rango es la cifra entre paréntesis). Si el ataque impacta, el objetivo sufre 1 Estado de @Condition[Enmarañado] y, si es de un Tamaño menor, se ve arrastrado hacia la criatura y queda Trabado en combate cuerpo a cuerpo. Entonces, la criatura puede elegir entre liberar al objetivo, llevar acabo un Ataque gratuito utilizando su Rasgo Arma, o mantener el objetivo envuelto en su lengua, iniciando una Presa.</p>"
+    },
+    "Weapon (Varies)": {
+      "name": "Arma (Varias)",
+      "description": "<p>La criatura lleva un arma cuerpo a cuerpo, o bien utiliza dientes, zarpas o cosas similares en combate. El arma causa tanto daño como la cifra entre paréntesis, que ya incluye el Bonificador por Fuerza de la criatura. Típicamente será 4 + Bonificador por Fuerza (lo que representa un Arma de mano).</p>"
+    }
+  }
+}
