@@ -22,6 +22,6 @@ Tampoco se han traducido algunas imágenes de escenas. Esto se debe a que implic
 ## Instalación
 Si el módulo no apareciera automáticamente en *Instalar módulo* de Foundry (1), copa el siguiente enlace y pégalo manualmente en el recuadro de *Url del manifiesto*, luego pulsa Instalar
 
-https://github.com/Dentatum/wfrp4e-castellano-2/blob/master/module.json
+https://raw.githubusercontent.com/Dentatum/wfrp4e-es-enemigo/refs/heads/master/module.json
 
 <img width="918" height="778" alt="imagen" src="https://github.com/user-attachments/assets/c320b8ff-6057-4d1b-8eb5-128a54553ad0" />
