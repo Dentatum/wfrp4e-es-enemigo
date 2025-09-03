@@ -1,13 +1,10 @@
 Traducción fan en español para El Enemigo Interior de WFRP4. Imágenes tomadas de las ayudas de Devir.
 
 ## Contenido
-La traducción ahora mismo incluye: 
-
 - *Enemigo en las Sombras*, aventura y compendio.
 - *Muerte en el Reik* [En proceso].
 
 ## Requisitos
-El módulo requiere de lo siguiente para poder usarse:
 - Módulo Babele https://gitlab.com/riccisi/foundryvtt-babele
 - Módulo orignal de traducción en español (por Txus) https://github.com/Txus5012/WFRP4e-Castellano
 - Módulos premium oficiales, disponibles en https://cubicle7games.com/foundry-vtt-virtual-tabletop-games
