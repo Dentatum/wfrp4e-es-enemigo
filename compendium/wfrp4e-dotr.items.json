@@ -687,11 +687,11 @@
       "description": "<p>Un espolón metálico puede instalarse en la proa de un barco, asegurando que, en cualquier colisión frontal, la otra embarcación reciba todo el daño. También otorga al barco 5 PA en la parte frontal. La Patrulla fluvial y otras autoridades interpretan la posesión de un espolón como prueba de la intención de embestir y hundir otros navíos, por lo que cualquiera que tenga un espolón en su barco haría bien en poder presentar una carta de autorización de un noble local u otra autoridad, a menos que quiera que le tomen por pirata.</p>"
     },
     "Ram (Medium River Boat)": {
-      "name": "Ram (Barcaza típica o patrullera)",
+      "name": "Espolón (Barcaza típica o patrullera)",
       "description": "<p>Un espolón metálico puede instalarse en la proa de un barco, asegurando que, en cualquier colisión frontal, la otra embarcación reciba todo el daño. También otorga al barco 5 PA en la parte frontal. La Patrulla fluvial y otras autoridades interpretan la posesión de un espolón como prueba de la intención de embestir y hundir otros navíos, por lo que cualquiera que tenga un espolón en su barco haría bien en poder presentar una carta de autorización de un noble local u otra autoridad, a menos que quiera que le tomen por pirata.</p>"
     },
     "Ram (Small River Boat)": {
-      "name": "Ram (Bote de remos o esquife pesquero)",
+      "name": "Espolón (Bote de remos o esquife pesquero)",
       "description": "<p>Un espolón metálico puede instalarse en la proa de un barco, asegurando que, en cualquier colisión frontal, la otra embarcación reciba todo el daño. También otorga al barco 5 PA en la parte frontal. La Patrulla fluvial y otras autoridades interpretan la posesión de un espolón como prueba de la intención de embestir y hundir otros navíos, por lo que cualquiera que tenga un espolón en su barco haría bien en poder presentar una carta de autorización de un noble local u otra autoridad, a menos que quiera que le tomen por pirata.</p>"
     },
     "Musket Rests": {
