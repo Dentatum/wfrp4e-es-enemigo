@@ -18,7 +18,7 @@
     },
     "Castle Wittgenstein": {
       "name": "Castillo Wittgenstein",
-	  "image": "modules/wfrp4e-castellano-2/images/dotr/scenes/wittgenstein-castle-unlabeled.webp",
+	  "image": "modules/wfrp4e-es-enemigo/images/dotr/scenes/wittgenstein-castle-unlabeled.webp",
       "notes": {
         "5a. Ruins": "5a. Ruinas",
         "5b. Ruins": "5b. Ruinas",
@@ -36,7 +36,7 @@
     },
     "Emperor Luitpold": {
       "name": "Emperador Luitpold",
-	  "image": "modules/wfrp4e-castellano-2/images/dotr/scenes/emperor_luitpold_layout_big.webp"
+	  "image": "modules/wfrp4e-es-enemigo/images/dotr/scenes/emperor_luitpold_layout_big.webp"
     },
     "Etelka's Tower": {
       "name": "Torre de Etelka",
@@ -47,7 +47,7 @@
     },
     "Grissenwald": {
       "name": "Grissenwald",
-	  "image": "modules/wfrp4e-castellano-2/images/dotr/scenes/grissenwald-map.webp"
+	  "image": "modules/wfrp4e-es-enemigo/images/dotr/scenes/grissenwald-map.webp"
     },
     "Grissenwald Farmhouse": {
       "name": "Grissenwald - Granja"
@@ -57,7 +57,7 @@
     },
     "On The Trail of the Red Crown": {
       "name": "Tras el rastro de la Corona Roja",
-	  "image": "modules/wfrp4e-castellano-2/images/dotr/scenes/trail-of-the-red-crown.webp"
+	  "image": "modules/wfrp4e-es-enemigo/images/dotr/scenes/trail-of-the-red-crown.webp"
     },
     "Temple of Sigmar": {
       "name": "Templo de Sigmar",
@@ -104,7 +104,7 @@
     },
     "The Physician's House": {
       "name": "La casa del físico",
-	  "image": "modules/wfrp4e-castellano-2/images/dotr/scenes/the-physicians-house-unlabeled.webp",
+	  "image": "modules/wfrp4e-es-enemigo/images/dotr/scenes/the-physicians-house-unlabeled.webp",
       "notes": {
         "The Hallway": "Pasillo",
         "Dining Room": "Comedor",

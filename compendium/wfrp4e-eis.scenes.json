@@ -11,7 +11,7 @@
   "entries": {
     "Bögenhafen": {
       "name": "Bögenhafen",
-	  "image": "modules/wfrp4e-castellano-2/images/eis/scenes/bogenhafen.webp"
+	  "image": "modules/wfrp4e-es-enemigo/images/eis/scenes/bogenhafen.webp"
     },
     "Bögenhafen Sewers": {
       "name": "Alcantarillas de Bögenhafen",
@@ -35,7 +35,7 @@
     },
     "Steinhäger Offices": {
       "name": "Oficinas Steinhäger",
-	  "image": "modules/wfrp4e-castellano-2/images/eis/scenes/steinhager-offices-unlabeled.webp",
+	  "image": "modules/wfrp4e-es-enemigo/images/eis/scenes/steinhager-offices-unlabeled.webp",
       "drawings": {
         "Kaufmannstrasse": "Kaufmannstrasse",
         "Kurz Strasse": "Kurz Strasse",
@@ -55,7 +55,7 @@
     },
     "Teugen Houshold": {
       "name": "Finca de los Teugen",
-	  "image": "modules/wfrp4e-castellano-2/images/eis/scenes/teugen-household-unlabeled.webp",
+	  "image": "modules/wfrp4e-es-enemigo/images/eis/scenes/teugen-household-unlabeled.webp",
       "drawings": {
         "Hedge": "Seto",
         "Pond": "Estanque",
@@ -65,15 +65,15 @@
     },
     "The Crossed Pikes": {
       "name": "Las Picas Cruzadas",
-	  "image": "modules/wfrp4e-castellano-2/images/eis/scenes/crossed-pikes-unlabeled.webp"
+	  "image": "modules/wfrp4e-es-enemigo/images/eis/scenes/crossed-pikes-unlabeled.webp"
     },
     "The Golden Trout": {
       "name": "La Trucha Dorada",
-	  "image": "modules/wfrp4e-castellano-2/images/eis/scenes/golden-trout-unlabeled.webp"
+	  "image": "modules/wfrp4e-es-enemigo/images/eis/scenes/golden-trout-unlabeled.webp"
     },
     "Warehouse 13": {
       "name": "Almacén 13",
-	  "image": "modules/wfrp4e-castellano-2/images/eis/scenes/warehouse13-unlabeled.webp",
+	  "image": "modules/wfrp4e-es-enemigo/images/eis/scenes/warehouse13-unlabeled.webp",
       "drawings": {
         "Loading Area": "Zona de carga",
         "Store Rooms": "Salas de almacenaje"
@@ -81,7 +81,7 @@
     },
     "Black Arrow Keep": {
       "name": "Castillo Flecha Negra",
-	  "image": "modules/wfrp4e-castellano-2/images/eis/scenes/black-arrow-keep.webp",
+	  "image": "modules/wfrp4e-es-enemigo/images/eis/scenes/black-arrow-keep.webp",
       "drawings": {
         "Upper Tower Exterior": "Exterior de la torre superior",
         "Upper Tower Interior": "Interior de la torre superior",
@@ -110,11 +110,11 @@
     },
     "The Berebeli": {
       "name": "El Berebeli",
-	  "image": "modules/wfrp4e-castellano-2/images/eis/scenes/berebeli-unlabeled.webp"
+	  "image": "modules/wfrp4e-es-enemigo/images/eis/scenes/berebeli-unlabeled.webp"
     },
     "The Crossed Lances": {
       "name": "Las Lanzas Cruzadas",
-	  "image": "modules/wfrp4e-castellano-2/images/eis/scenes/crossed-lances.webp",
+	  "image": "modules/wfrp4e-es-enemigo/images/eis/scenes/crossed-lances.webp",
       "drawings": {
         "1. Bar Room": " ",
         "2. Snug": " ",
@@ -149,15 +149,15 @@
     },
     "Altdorf to Bögenhafen": {
       "name": "De Altdorf a Bögenhafen",
-	  "image": "modules/wfrp4e-castellano-2/images/eis/scenes/altdorf-to-bogenhafen.webp"
+	  "image": "modules/wfrp4e-es-enemigo/images/eis/scenes/altdorf-to-bogenhafen.webp"
     },
     "Duchy of Saponatheim": {
       "name": "Ducado de Saponatheim",
-	  "image": "modules/wfrp4e-castellano-2/images/eis/scenes/saponatheim-duchy-unlabeled.webp"
+	  "image": "modules/wfrp4e-es-enemigo/images/eis/scenes/saponatheim-duchy-unlabeled.webp"
     },
     "The Coach and Horses": {
       "name": "La Diligencia y los Caballos",
-	  "image": "modules/wfrp4e-castellano-2/images/eis/scenes/the-coach-and-horses-unlabeled.webp",
+	  "image": "modules/wfrp4e-es-enemigo/images/eis/scenes/the-coach-and-horses-unlabeled.webp",
       "notes": {
         "5. Coach House": "5. Cochera",
         "5. Stables": "5. Establos"

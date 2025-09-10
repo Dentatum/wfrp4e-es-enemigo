@@ -669,7 +669,7 @@
         },
         "The Imperial Calendar": {
           "name": "El calendario imperial",
-          "text": "<p>El mundo de Warhammer tarda 400 días en dar una vuelta a Söll, su sol, una estrella mucho más grande y caliente que la nuestra. Está orbitado por dos lunas. La mayor de ellas (conocida en el Imperio como Mannslieb, ‘Amada de Manann’) tiene un ciclo de 25 días y se parece a la luna de nuestro propio mundo. La otra (llamada Morrslieb, ‘Amada de Morr’) es errática, aparece ahora más cerca, ahora más lejos y tiene un ciclo impredecible. Los mitos antiguos dicen que cuando el Caos irrumpió por primera vez en el Mundo Conocido, se arrojó un enorme trozo de piedra bruja a la bóveda celeste, donde da vueltas sin fin hasta el día de hoy, esparciendo el Caos sobre las tierras que pasa. Sea cierto o no, los seguidores del Caos celebran festivales cuando Morrslieb está llena.</p>\n<p>El Calendario Imperial divide los 400 días del año en 12 meses de 32 o 33 días cada uno, con seis días intercalados adicionales. Cuatro de estos días entre meses son los festivales que marcan el cambio de estación: los solsticios de verano e invierno y los equinoccios de primavera y otoño. Los otros dos marcan los días en que ambas lunas están llenas al mismo tiempo: y los supersticiosos, e incluso los cínicos, evitan la espeluznante luz de ambos astros en Hexensnacht (‘la Noche Bruja’) y Geheimnisnacht (‘la Noche del Misterio’).</p>\n<h3>Días</h3>\n<p>Los días de la semana son:</p>\n<ul>\n    <li>\n        <p>Wellentag (VELL’n-taag): ‘labores’</p>\n    </li>\n    <li>\n        <p>Aubentag (OW-ben-taag): ‘levares’</p>\n    </li>\n    <li>\n        <p>Marktag (MARK-taag): ‘mércades’</p>\n    </li>\n    <li>\n        <p>Backertag (BAKKER-taag): ‘hornes’</p>\n    </li>\n    <li>\n        <p>Bezahltag (b’TZAAL-taag): ‘tributes’</p>\n    </li>\n    <li>\n        <p>Konistag (KO-nis-taag): ‘regies’</p>\n    </li>\n    <li>\n        <p>Angestag (AN-ges-taag): ‘primes'</p>\n    </li>\n    <li>\n        <p>Festag (FESS-taag): ‘sabático’</p>\n    </li>\n</ul>\n<h3>Meses</h3>\n<p>Los nombres de los meses y sus significados:</p>\n<ul>\n    <li>\n        <p>Nachhexen (Nach-HEX’n): ‘trasbrujo’</p>\n    </li>\n    <li>\n        <p>Jahrdrung (YAAR-drung): ‘novanio’</p>\n    </li>\n    <li>\n        <p>Pflugzeit (pFLOOG-tsight): ‘labrario’</p>\n    </li>\n    <li>\n        <p>Sigmarzeit (ZIGG-mar-tsight): ‘sigmario’</p>\n    </li>\n    <li>\n        <p>Sommerzeit (ZOMMER-tsight): ‘veranal’</p>\n    </li>\n    <li>\n        <p>Vorgeheim (FORR-g’hime): ‘antemisterio’</p>\n    </li>\n    <li>\n        <p>Nachgeheim (NACH-g’hime): ‘trasmisterio’</p>\n    </li>\n    <li>\n        <p>Erntezeit (ERN-t’sight): ‘cosechario’</p>\n    </li>\n    <li>\n        <p>Brauzeit (BRAOW-tsight): ‘destilario’</p>\n    </li>\n    <li>\n        <p>Kaldezeit (KAL-tsight): ‘gelidario’</p>\n    </li>\n    <li>\n        <p>Ulriczeit (UL-rik-tsight): ‘ulricario’</p>\n    </li>\n    <li>\n        <p>Vorhexen (FORR-hex’n): ‘antebrujo’</p>\n    </li>\n</ul>\n<blockquote class=\"sidebar\">\n    <h3 class=\"no-toc\" style=\"text-align:center\"><em>La armonía de las esferas</em></h3>\n    <p>‘Vinieron en navíos plateados. De un poder imposible, misteriosos. Entonces nuestro mundo estaba congelado, enorme y vacío, y la vida era simple y bárbara. Pero nos cambiaron. Lo cambiaron todo. Sólo los conocemos como los Ancestrales.</p>\n    <p>Tenían el poder de mover mundos y acercarlos o alejarlos del eterno calor de Söll, y así dieron vida a nuestro frío globo. Pero eso desequilibró los otros mundos, porque todo está conectado. Así que también los movieron, y formaron una armonía imposible entre las esferas, una perfección que puede verse hasta hoy en día observando los cielos.</p>\n    <p>Contemplad a los cinco hijos de Asuryan: Charyb, el mundo más cercano al sol, tarda 80 días en orbitar; mientras que Deiamol tarda 133 días y un tercio; Tigris, 200; nuestro mundo, 400; y Verdra, 800.</p>\n    <p>Comparadlo con los cinco consejeros de Asuryan: Lokratia tarda 1.600 días en orbitar, cuatro de nuestros años; Isharna, 10 años; Loekia, 30 años; Voelia, 150 años; y la lejana Obscuria tarda 300 años en circunnavegar el sol. Incluso después de tantos milenios, la armonía es una maravilla más allá de toda medida de contemplar y comprender’.</p>\n    <p><em>— </em>El Libro de los Días,<em> de Finreir de Saphery</em></p>\n</blockquote>\n<div class=\"journal-image\">\n    <img class=\"fit\" src=\"modules/wfrp4e-castellano-2/images/eis/calendar.webp\">\n</div>"
+          "text": "<p>El mundo de Warhammer tarda 400 días en dar una vuelta a Söll, su sol, una estrella mucho más grande y caliente que la nuestra. Está orbitado por dos lunas. La mayor de ellas (conocida en el Imperio como Mannslieb, ‘Amada de Manann’) tiene un ciclo de 25 días y se parece a la luna de nuestro propio mundo. La otra (llamada Morrslieb, ‘Amada de Morr’) es errática, aparece ahora más cerca, ahora más lejos y tiene un ciclo impredecible. Los mitos antiguos dicen que cuando el Caos irrumpió por primera vez en el Mundo Conocido, se arrojó un enorme trozo de piedra bruja a la bóveda celeste, donde da vueltas sin fin hasta el día de hoy, esparciendo el Caos sobre las tierras que pasa. Sea cierto o no, los seguidores del Caos celebran festivales cuando Morrslieb está llena.</p>\n<p>El Calendario Imperial divide los 400 días del año en 12 meses de 32 o 33 días cada uno, con seis días intercalados adicionales. Cuatro de estos días entre meses son los festivales que marcan el cambio de estación: los solsticios de verano e invierno y los equinoccios de primavera y otoño. Los otros dos marcan los días en que ambas lunas están llenas al mismo tiempo: y los supersticiosos, e incluso los cínicos, evitan la espeluznante luz de ambos astros en Hexensnacht (‘la Noche Bruja’) y Geheimnisnacht (‘la Noche del Misterio’).</p>\n<h3>Días</h3>\n<p>Los días de la semana son:</p>\n<ul>\n    <li>\n        <p>Wellentag (VELL’n-taag): ‘labores’</p>\n    </li>\n    <li>\n        <p>Aubentag (OW-ben-taag): ‘levares’</p>\n    </li>\n    <li>\n        <p>Marktag (MARK-taag): ‘mércades’</p>\n    </li>\n    <li>\n        <p>Backertag (BAKKER-taag): ‘hornes’</p>\n    </li>\n    <li>\n        <p>Bezahltag (b’TZAAL-taag): ‘tributes’</p>\n    </li>\n    <li>\n        <p>Konistag (KO-nis-taag): ‘regies’</p>\n    </li>\n    <li>\n        <p>Angestag (AN-ges-taag): ‘primes'</p>\n    </li>\n    <li>\n        <p>Festag (FESS-taag): ‘sabático’</p>\n    </li>\n</ul>\n<h3>Meses</h3>\n<p>Los nombres de los meses y sus significados:</p>\n<ul>\n    <li>\n        <p>Nachhexen (Nach-HEX’n): ‘trasbrujo’</p>\n    </li>\n    <li>\n        <p>Jahrdrung (YAAR-drung): ‘novanio’</p>\n    </li>\n    <li>\n        <p>Pflugzeit (pFLOOG-tsight): ‘labrario’</p>\n    </li>\n    <li>\n        <p>Sigmarzeit (ZIGG-mar-tsight): ‘sigmario’</p>\n    </li>\n    <li>\n        <p>Sommerzeit (ZOMMER-tsight): ‘veranal’</p>\n    </li>\n    <li>\n        <p>Vorgeheim (FORR-g’hime): ‘antemisterio’</p>\n    </li>\n    <li>\n        <p>Nachgeheim (NACH-g’hime): ‘trasmisterio’</p>\n    </li>\n    <li>\n        <p>Erntezeit (ERN-t’sight): ‘cosechario’</p>\n    </li>\n    <li>\n        <p>Brauzeit (BRAOW-tsight): ‘destilario’</p>\n    </li>\n    <li>\n        <p>Kaldezeit (KAL-tsight): ‘gelidario’</p>\n    </li>\n    <li>\n        <p>Ulriczeit (UL-rik-tsight): ‘ulricario’</p>\n    </li>\n    <li>\n        <p>Vorhexen (FORR-hex’n): ‘antebrujo’</p>\n    </li>\n</ul>\n<blockquote class=\"sidebar\">\n    <h3 class=\"no-toc\" style=\"text-align:center\"><em>La armonía de las esferas</em></h3>\n    <p>‘Vinieron en navíos plateados. De un poder imposible, misteriosos. Entonces nuestro mundo estaba congelado, enorme y vacío, y la vida era simple y bárbara. Pero nos cambiaron. Lo cambiaron todo. Sólo los conocemos como los Ancestrales.</p>\n    <p>Tenían el poder de mover mundos y acercarlos o alejarlos del eterno calor de Söll, y así dieron vida a nuestro frío globo. Pero eso desequilibró los otros mundos, porque todo está conectado. Así que también los movieron, y formaron una armonía imposible entre las esferas, una perfección que puede verse hasta hoy en día observando los cielos.</p>\n    <p>Contemplad a los cinco hijos de Asuryan: Charyb, el mundo más cercano al sol, tarda 80 días en orbitar; mientras que Deiamol tarda 133 días y un tercio; Tigris, 200; nuestro mundo, 400; y Verdra, 800.</p>\n    <p>Comparadlo con los cinco consejeros de Asuryan: Lokratia tarda 1.600 días en orbitar, cuatro de nuestros años; Isharna, 10 años; Loekia, 30 años; Voelia, 150 años; y la lejana Obscuria tarda 300 años en circunnavegar el sol. Incluso después de tantos milenios, la armonía es una maravilla más allá de toda medida de contemplar y comprender’.</p>\n    <p><em>— </em>El Libro de los Días,<em> de Finreir de Saphery</em></p>\n</blockquote>\n<div class=\"journal-image\">\n    <img class=\"fit\" src=\"modules/wfrp4e-es-enemigo/images/eis/calendar.webp\">\n</div>"
         },
         "NPCs": {
           "name": "PNJs",
@@ -681,47 +681,47 @@
         },
         "Handout 1: Wanted! Bold Adventurers!": {
           "name": "Ayuda 1: ¡Se buscan aventureros audaces!",
-          "src": "modules/wfrp4e-castellano-2/images/eis/handouts/eis-handout-01.webp"
+          "src": "modules/wfrp4e-es-enemigo/images/eis/handouts/eis-handout-01.webp"
         },
         "Handout 2: Rolf Hurtsis": {
           "name": "Ayuda 2: Rolf Hurtsis",
-          "src": "modules/wfrp4e-castellano-2/images/eis/handouts/eis-handout-02.webp"
+          "src": "modules/wfrp4e-es-enemigo/images/eis/handouts/eis-handout-02.webp"
         },
         "Handout 3: The Inheritance": {
           "name": "Ayuda 3: La Herencia",
-          "src": "modules/wfrp4e-castellano-2/images/eis/handouts/eis-handout-03.webp"
+          "src": "modules/wfrp4e-es-enemigo/images/eis/handouts/eis-handout-03.webp"
         },
         "Handout 4: The Affidavit": {
           "name": "Ayuda 4: La Declaración Jurada",
-          "src": "modules/wfrp4e-castellano-2/images/eis/handouts/eis-handout-04.webp"
+          "src": "modules/wfrp4e-es-enemigo/images/eis/handouts/eis-handout-04.webp"
         },
         "Handout 5: Josef Quartjin": {
           "name": "Ayuda 5: Josef Quartjin",
-          "src": "modules/wfrp4e-castellano-2/images/eis/handouts/eis-handout-05.webp"
+          "src": "modules/wfrp4e-es-enemigo/images/eis/handouts/eis-handout-05.webp"
         },
         "Handout 6: The Schaffenfest": {
           "name": "Ayuda 6: La Schaffenfest",
-          "src": "modules/wfrp4e-castellano-2/images/eis/handouts/eis-handout-06.webp"
+          "src": "modules/wfrp4e-es-enemigo/images/eis/handouts/eis-handout-06.webp"
         },
         "Handout 7: The Letter": {
           "name": "Ayuda 7: La carta",
-          "src": "modules/wfrp4e-castellano-2/images/eis/handouts/eis-handout-07.webp"
+          "src": "modules/wfrp4e-es-enemigo/images/eis/handouts/eis-handout-07.webp"
         },
         "Handout 8: Hour After Sunset": {
           "name": "Ayuda 8: Al caer el sol",
-          "src": "modules/wfrp4e-castellano-2/images/eis/handouts/eis-handout-08.webp"
+          "src": "modules/wfrp4e-es-enemigo/images/eis/handouts/eis-handout-08.webp"
         },
         "Handout 9: 'All Goes Well'": {
           "name": "Ayuda 9: 'Todo va bien'",
-          "src": "modules/wfrp4e-castellano-2/images/eis/handouts/eis-handout-09.webp"
+          "src": "modules/wfrp4e-es-enemigo/images/eis/handouts/eis-handout-09.webp"
         },
         "Handout 10: Herzen's Letter": {
           "name": "Ayuda 10: Carta de Herzen",
-          "src": "modules/wfrp4e-castellano-2/images/eis/handouts/eis-handout-10.webp"
+          "src": "modules/wfrp4e-es-enemigo/images/eis/handouts/eis-handout-10.webp"
         },
         "Handout 11: Magirius's Note": {
           "name": "Ayuda 11: Nota de Magirius",
-          "src": "modules/wfrp4e-castellano-2/images/eis/handouts/eis-handout-11.webp"
+          "src": "modules/wfrp4e-es-enemigo/images/eis/handouts/eis-handout-11.webp"
         }
       }
     },
@@ -913,7 +913,7 @@
       "pages": {
         "The Purple Hand": {
           "name": "La Mano Púrpura",
-          "text": "<p>Durante la campaña, el grupo se encontrará con cierta cantidad de sectas del Caos, pero ninguna tan extendida u odiosa como la Mano Púrpura.</p>\n<p>Esta organización vasta e interconectada tiene células en todo el Imperio y se ha pasado décadas infiltrando a agentes en posiciones de poder. Ahora, mientras otras fuerzas se preparan para atacar el Imperio desde fuera, la Mano Púrpura conspira para derribarlo desde dentro.</p>\n<p>Su plan es vasto, con una red de objetivos y contingencias tan complejas que ni siquiera los Magisters Magistri, como se autodenominan los líderes de la secta, entienden por completo la totalidad. Los sectarios individuales sólo conocen a un puñado de compañeros, y una fracción infinitesimal del plan. Esto proporciona a la secta una gran seguridad, por lo que un cazador de brujas que capture e interrogue a una docena de sectarios no conseguirá averiguar lo suficiente para perjudicar a la organización en general.</p>\n<div class=\"journal-image centered\">\n    <img src=\"modules/wfrp4e-castellano-2/images/eis/mano-purpura.webp\" width=\"388\" height=\"611\">\n</div>"
+          "text": "<p>Durante la campaña, el grupo se encontrará con cierta cantidad de sectas del Caos, pero ninguna tan extendida u odiosa como la Mano Púrpura.</p>\n<p>Esta organización vasta e interconectada tiene células en todo el Imperio y se ha pasado décadas infiltrando a agentes en posiciones de poder. Ahora, mientras otras fuerzas se preparan para atacar el Imperio desde fuera, la Mano Púrpura conspira para derribarlo desde dentro.</p>\n<p>Su plan es vasto, con una red de objetivos y contingencias tan complejas que ni siquiera los Magisters Magistri, como se autodenominan los líderes de la secta, entienden por completo la totalidad. Los sectarios individuales sólo conocen a un puñado de compañeros, y una fracción infinitesimal del plan. Esto proporciona a la secta una gran seguridad, por lo que un cazador de brujas que capture e interrogue a una docena de sectarios no conseguirá averiguar lo suficiente para perjudicar a la organización en general.</p>\n<div class=\"journal-image centered\">\n    <img src=\"modules/wfrp4e-es-enemigo/images/eis/mano-purpura.webp\" width=\"388\" height=\"611\">\n</div>"
         },
         "Tzeentch, The Changer Of The Ways": {
           "name": "Tzeentch, El que Cambia las Cosas",
